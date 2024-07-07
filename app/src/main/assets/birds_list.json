@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Zorzal",
+    "height": 25,
+    "height_location": 5,
+    "frequency": 1,
+    "risk": "high"
+  },
+  {
+    "id": 2,
+    "name": "Martineta",
+    "height": 25,
+    "height_location": 5,
+    "frequency": 1,
+    "risk": "high"
+  },
+  {
+    "id": 3,
+    "name": "Colibri",
+    "height": 25,
+    "height_location": 5,
+    "frequency": 1,
+    "risk": "high"
+  },
+  {
+    "id": 4,
+    "name": "Paloma",
+    "height": 25,
+    "height_location": 5,
+    "frequency": 1,
+    "risk": "high"
+  }
+]

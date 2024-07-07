@@ -1,0 +1,24 @@
+<resources>
+    #Titles pages
+    <string name="title_main_page_appbar">Menu</string>
+    <string name="title_main_page">Aves de las Sierras Centrales de Argentina</string>
+    <string name="birds_page_title">Lista de Aves</string>
+    <string name="observation_routes_page_title">Recorridos de observación</string>
+    <string name="about_us_page_title">Sobre nosotros</string>
+
+    <string name="app_name">Aves de Merlo</string>
+
+    #Images descriptions
+    <string name="main_page_image_description">Imagen de aves</string>
+    <string name="back_button">Boton flecha atras</string>
+    <string name="image_bird_description">Imagen del pajaro mencionado</string>
+
+    #Buttons actions
+    <string name="button_cancel">Menu</string>
+
+    #Buttons names
+    <string name="birds_list">Lista de Aves</string>
+    <string name="observation_routes">Recorridos de observación</string>
+    <string name="about_us">Sobre nosotros</string>
+
+</resources>
