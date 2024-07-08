@@ -5,25 +5,13 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
-import androidx.annotation.StringRes
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.room.Room
-import com.example.mybirdsapp.R
 import com.example.mybirdsapp.ui.theme.MyBirdsAppTheme
 import com.example.mybirdsapp.viewModels.HomeViewModel
 import com.example.mybirdsapp.models.room.ProductDatabase
 import com.example.mybirdsapp.viewModels.BirdsListViewModel
-
-/**
- * enum values that represent the screens in the app
- */
-enum class NameOfScreen(@StringRes val title: Int) {
-    Start(title = R.string.title_main_page_appbar),
-    BirdsPage(title = R.string.birds_page_title),
-    ObservationRoutesPage(title = R.string.observation_routes_page_title),
-    AboutUsPage(title = R.string.about_us_page_title)
-}
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

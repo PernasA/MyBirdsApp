@@ -11,13 +11,28 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class BirdsListViewModel(context: Context) : ViewModel() {
-    private val _dataList = MutableLiveData<List<Bird>>()
-    val dataBirdsList: LiveData<List<Bird>> = _dataList
+    private val _dataBirdsList = MutableLiveData<List<Bird>>()
+    val dataBirdsList: LiveData<List<Bird>> get() = _dataBirdsList
 
     init {
         viewModelScope.launch(Dispatchers.IO) {
-            val data = loadJsonFromAssets(context, "birds_list.json")
-            _dataList.postValue(data)
+            val birdJsonList = loadJsonFromAssets(context, "birds_list.json")
+            val birdList = birdJsonList.map { birdJson ->
+                Bird(
+                    name = birdJson.name,
+                    id = birdJson.id,
+                    imageResId = getDrawableIdByName(context, birdJson.imageName)
+                )
+            }
+            _dataBirdsList.postValue(birdList)
         }
+    }
+
+    private fun getDrawableIdByName(context: Context, imageName: String): Int {
+        return context.resources.getIdentifier(imageName, "drawable", context.packageName)
+    }
+
+    fun getBirdById(birdId: Int): Bird? {
+        return _dataBirdsList.value?.find { it.id == birdId }
     }
 }

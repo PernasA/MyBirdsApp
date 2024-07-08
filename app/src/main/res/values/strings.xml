@@ -3,6 +3,7 @@
     <string name="title_main_page_appbar">Menu</string>
     <string name="title_main_page">Aves de las Sierras Centrales de Argentina</string>
     <string name="birds_page_title">Lista de Aves</string>
+    <string name="bird_description_page_title">Información Detallada</string>
     <string name="observation_routes_page_title">Recorridos de observación</string>
     <string name="about_us_page_title">Sobre nosotros</string>
 
