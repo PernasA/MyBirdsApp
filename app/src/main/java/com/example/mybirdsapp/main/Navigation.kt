@@ -18,10 +18,9 @@ import androidx.navigation.navArgument
 import com.example.mybirdsapp.R
 import com.example.mybirdsapp.viewModels.BirdsListViewModel
 import com.example.mybirdsapp.views.BirdsListPage
-import com.example.mybirdsapp.views.room.DatabaseWidget
-import com.example.mybirdsapp.viewModels.HomeViewModel
+import com.example.mybirdsapp.views.AboutUsPage
 import com.example.mybirdsapp.views.BirdDescriptionPage
-import com.example.mybirdsapp.views.first_page.HomePage
+import com.example.mybirdsapp.views.HomePage
 import com.example.mybirdsapp.views.MyAppBar
 import com.example.mybirdsapp.views.ObservationRoutesPage
 
@@ -35,7 +34,6 @@ enum class NameOfScreen(@StringRes val title: Int) {
 
 @Composable
 fun Navigation(
-    homeViewModel: HomeViewModel,
     birdsListViewModel: BirdsListViewModel,
     navController: NavHostController = rememberNavController(),
 ) {
@@ -52,14 +50,13 @@ fun Navigation(
             )
         }
     ) { innerPadding ->
-        CreateNavigationHost(navController, homeViewModel, birdsListViewModel, innerPadding)
+        CreateNavigationHost(navController, birdsListViewModel, innerPadding)
     }
 }
 
 @Composable
 private fun CreateNavigationHost(
     navController: NavHostController,
-    homeViewModel: HomeViewModel,
     birdsListViewModel: BirdsListViewModel,
     innerPadding: PaddingValues
 ) {
@@ -101,7 +98,7 @@ private fun CreateNavigationHost(
         ) { backStackEntry ->
             val birdId = backStackEntry.arguments?.getInt("birdId") ?: return@composable
             val bird = birdsListViewModel.getBirdById(birdId) ?: return@composable
-            BirdDescriptionPage(bird = bird)
+            BirdDescriptionPage(bird = bird, birdsListViewModel)
         }
 
         composable(route = NameOfScreen.ObservationRoutesPageNav.name) {
@@ -113,18 +110,18 @@ private fun CreateNavigationHost(
         }
 
         composable(route = NameOfScreen.AboutUsPageNav.name) {
-            DatabaseWidget(
-                homeViewModel = homeViewModel,
-                state = homeViewModel.state,
-                onNextButtonClicked = {
-                    navController.navigate(NameOfScreen.ObservationRoutesPageNav.name)
-                },
-                onCancelButtonClicked = {
-                    cancelOrderAndNavigateToStart(navController)
-                },
-                Modifier.padding(innerPadding)
-            )
-            //AboutUsPage() Todo: Modificar
+            AboutUsPage()
+//            DatabaseWidget(
+//                homeViewModel = homeViewModel,
+//                state = homeViewModel.state,
+//                onNextButtonClicked = {
+//                    navController.navigate(NameOfScreen.ObservationRoutesPageNav.name)
+//                },
+//                onCancelButtonClicked = {
+//                    cancelOrderAndNavigateToStart(navController)
+//                },
+//                Modifier.padding(innerPadding)
+//            )
         }
     }
 }

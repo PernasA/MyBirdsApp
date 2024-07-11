@@ -1,7 +1,6 @@
 package com.example.mybirdsapp.utils
 
 import android.content.Context
-import com.example.mybirdsapp.models.Bird
 import com.example.mybirdsapp.models.BirdJson
 import com.google.gson.reflect.TypeToken
 import com.google.gson.Gson

@@ -22,4 +22,9 @@
     <string name="observation_routes">Recorridos de observación</string>
     <string name="about_us">Sobre nosotros</string>
 
+    #Texts
+    <string name="have_you_observed">¿Lo has observado?</string>
+    <string name="birds_observed">Aves observadas</string>
+
+
 </resources>

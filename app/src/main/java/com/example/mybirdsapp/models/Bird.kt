@@ -7,5 +7,9 @@ data class Bird (
     val height: Int = 0,
     val frequency: Int = 0,
     val risk: String = "",
-    val imageResId: Int = 0
+    val scientificName: String = "",
+    val englishName: String = "",
+    val description: String = "",
+    val imageResId: Int = 0,
+    val wasObserved: Boolean = false
 )

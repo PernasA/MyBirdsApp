@@ -1,4 +1,4 @@
-package com.example.mybirdsapp.views.first_page
+package com.example.mybirdsapp.views
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column

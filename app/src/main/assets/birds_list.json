@@ -1,57 +1,75 @@
 [
   {
     "id": 1,
-    "name": "Zorzal",
-    "height": 25,
-    "height_location": 5,
-    "frequency": 1,
+    "name": "Martineta Común",
+    "height": 39,
+    "height_location": 1,
+    "frequency": 2,
     "risk": "high",
-    "imageName": "orange_bird_draw"
+    "scientific_name": "Eudromia elegans",
+    "english_name": "Elegant Crested-Tinamou",
+    "image_name": "zorzal_chiguanco_pruebaa",
+    "description": "Descripción: cabeza grisácea con largo y fino copete negro rebatido hacia adelante; dos franjas blancas que se extienden arriba y debajo de los ojos, descendiendo por el cuello. Garganta blanca. Plumaje en general gris ocráceo, moteado con blanco y jaspeado con negro. Cola corta. Pico negruzco, robusto y algo curvado. Patas azuladas. Juvenil: menor tamaño que el adulto. Comportamiento: generalmente erguida; caminadora, se mantiene en grupos, rara vez vuela. Cuando percibe peligro corre y se oculta entre matas; en ocasiones escapa mediante imprevisto vuelo recto y corto. Alimentación: brotes, frutos, granos e insectos. Hábitat:  ambientes áridos, montes y pastizales. Comentario: conocida vulgarmente como Copetona."
   },
   {
     "id": 2,
-    "name": "Martineta",
+    "name": "Inambú Común",
     "height": 25,
-    "height_location": 5,
-    "frequency": 1,
+    "height_location": 123,
+    "frequency": 3,
     "risk": "high",
-    "imageName": "orange_bird_draw"
+    "scientific_name": "Nothura maculosa",
+    "english_name": "Spotted Nothura",
+    "image_name": "",
+    "description": "Descripción: plumaje críptico, estriado en su totalidad de negro, ocre y canela. Garganta blanca y vientre acanelado; flancos barrados. Cola corta parda. Patas amarillentas. Comportamiento: generalmente solitario,  terrícola. En ocasión de peligro se oculta o levanta vuelo en forma torpe y ruidosa, recorre unos 30 metros, cae bruscamente y se oculta nuevamente. Incuba el macho. Alimentación: principalmente semillas, también consume hormigas, saltamontes y orugas. Hábitat: a orillas de rutas,  áreas rurales, pastizales bajos, hasta la zona alta de la sierra de. Comentario: frecuente presa de cazadores, es el más conocido de los Inambúes, comúnmente llamado \"Perdiz\"."
   },
   {
     "id": 3,
-    "name": "Colibri",
-    "height": 25,
-    "height_location": 5,
-    "frequency": 1,
+    "name": "Macá Grande",
+    "height": 44,
+    "height_location": 1,
+    "frequency": 3,
     "risk": "high",
-    "imageName": "orange_bird_draw"
+    "scientific_name": "Podiceps major",
+    "english_name": "Great Grebe",
+    "image_name": "orange_bird_draw",
+    "description": "Descripción: esbelto. Cabeza gris; ojo pardo oscuro, iris con círculo blanco; nuca y copete negro que asemeja una crin; cuello largo negruzco por detrás y canela rojizo en los costados. Dorsal negro verdoso. Pecho canela; ventral blanco. Cola castaño rojiza. Pico largo y puntiagudo. Patas negras. Juvenil: líneas blancas y castañas en el cuello. Comportamiento: generalmente en pareja, muy acuático, confiado. Traslada a sus crías en el lomo. Alimentación: peces, ranas y crustáceos. Hábitat: lagos, represas y embalses. Comentario: plumaje muy vistoso en época reproductiva y mas pálido en período de reposo. Su canto asemeja un silbo atrompetado que suena como un lamento. También conocido como Huala."
   },
   {
     "id": 4,
-    "name": "Paloma",
-    "height": 25,
-    "height_location": 5,
-    "frequency": 1,
+    "name": "Macá Pico Grueso",
+    "height": 28,
+    "height_location": 1,
+    "frequency": 3,
     "risk": "high",
-    "imageName": "orange_bird_draw"
+    "scientific_name": "Podilymbus podiceps",
+    "english_name": "Pied-billed Grebe",
+    "image_name": "orange_bird_draw",
+    "description": "Descripción: aspecto compacto, color pardo grisáceo; corona y dorso algo más oscuros. Ventral gris claro jaspeado. Pico blanco amarillento. Patas negras. Comportamiento: vive en pareja, bastante territorial, esquivo, arisco y muy acuático. Alimentación: peces, crustáceos y larvas que obtiene en sus continuas inmersiones. Hábitat: lagos, lagunas y represas rurales. Comentario: frente al mínimo peligro se zambulle cambiando su ubicación. En época de reproducción presenta un plumaje mas contrastado, garganta oscura, franja negra en el medio del pico y periocular blanco intenso."
   },
   {
     "id": 5,
-    "name": "Zorzal",
-    "height": 25,
-    "height_location": 5,
-    "frequency": 1,
+    "name": "Macá Común",
+    "height": 23,
+    "height_location": 1,
+    "frequency": 3,
     "risk": "high",
-    "imageName": "orange_bird_draw"
+    "scientific_name": "Rollandia rolland",
+    "english_name": "White-tufted Grebe",
+    "image_name": "orange_bird_draw",
+    "description": "Descripción: la cabeza destaca el color rojo intenso de su iris y un penacho blanco con líneas negruzcas, mas erizado en la zona auricular; parte posterior de la cabeza, cuello y dorso negro intenso. Flancos pardo rojizo. En periodo de reposo su plumaje es mas parduzco, con flancos y vientre blanquecino. Juvenil: color gris parduzco con cuello estriado de blanco. Comportamiento: en pareja y grupos, vuela poco, muy acuático, zambullidor. Alimentación: peces y pequeños crustáceos. Hábitat: lagos, represas y lagunas. Comentario: su coloración es más llamativa en época de reproducción."
   },
   {
     "id": 6,
-    "name": "Martineta",
-    "height": 25,
-    "height_location": 5,
-    "frequency": 1,
+    "name": "Garza Mora",
+    "height": 75,
+    "height_location": 1,
+    "frequency": 2,
     "risk": "high",
-    "imageName": "orange_bird_draw"
+    "scientific_name": "Ardea cocoi",
+    "english_name": "Cocoi Heron",
+    "image_name": "orange_bird_draw",
+    "description": "Descripción: corona con largas plumas nucales negras; garganta y cuello\nblanco con línea negra discontinua en la parte anterior del cuello. Dorso\ngris; alas negras con cubiertas grises. Pecho blanco; ventral negruzco. Cola\nnegra. Pico largo y robusto de color naranja con base amarillenta. Patas\nlargas negruzcas. Juvenil: plumaje mas grisáceo. Comportamiento:\nsolitaria, muy arisca, vuelo elegante y pausado. Alimentación: peces,\nanfibios y reptiles. Hábitat: tanto en espejos de agua como en ambientes\nacuáticos con vegetación, donde predomine la tranquilidad. Comentario:\nes la más grande de las garzas de la región."
   },
   {
     "id": 7,
@@ -60,7 +78,10 @@
     "height_location": 5,
     "frequency": 1,
     "risk": "high",
-    "imageName": "orange_bird_draw"
+    "scientific_name": "",
+    "english_name": "",
+    "image_name": "orange_bird_draw",
+    "description": ""
   },
   {
     "id": 8,
@@ -69,7 +90,10 @@
     "height_location": 5,
     "frequency": 1,
     "risk": "high",
-    "imageName": "orange_bird_draw"
+    "scientific_name": "",
+    "english_name": "",
+    "image_name": "orange_bird_draw",
+    "description": ""
   },
   {
     "id": 9,
@@ -78,7 +102,10 @@
     "height_location": 5,
     "frequency": 1,
     "risk": "high",
-    "imageName": "orange_bird_draw"
+    "scientific_name": "",
+    "english_name": "",
+    "image_name": "orange_bird_draw",
+    "description": ""
   },
   {
     "id": 10,
@@ -87,7 +114,10 @@
     "height_location": 5,
     "frequency": 1,
     "risk": "high",
-    "imageName": "orange_bird_draw"
+    "scientific_name": "",
+    "english_name": "",
+    "image_name": "orange_bird_draw",
+    "description": ""
   },
   {
     "id": 11,
@@ -96,7 +126,10 @@
     "height_location": 5,
     "frequency": 1,
     "risk": "high",
-    "imageName": "orange_bird_draw"
+    "scientific_name": "",
+    "english_name": "",
+    "image_name": "orange_bird_draw",
+    "description": ""
   },
   {
     "id": 12,
@@ -105,7 +138,10 @@
     "height_location": 5,
     "frequency": 1,
     "risk": "high",
-    "imageName": "orange_bird_draw"
+    "scientific_name": "",
+    "english_name": "",
+    "image_name": "orange_bird_draw",
+    "description": ""
   },
   {
     "id": 13,
@@ -114,7 +150,10 @@
     "height_location": 5,
     "frequency": 1,
     "risk": "high",
-    "imageName": "orange_bird_draw"
+    "scientific_name": "",
+    "english_name": "",
+    "image_name": "orange_bird_draw",
+    "description": ""
   },
   {
     "id": 14,
@@ -123,7 +162,10 @@
     "height_location": 5,
     "frequency": 1,
     "risk": "high",
-    "imageName": "orange_bird_draw"
+    "scientific_name": "",
+    "english_name": "",
+    "image_name": "orange_bird_draw",
+    "description": ""
   },
   {
     "id": 15,
@@ -132,7 +174,10 @@
     "height_location": 5,
     "frequency": 1,
     "risk": "high",
-    "imageName": "orange_bird_draw"
+    "scientific_name": "",
+    "english_name": "",
+    "image_name": "orange_bird_draw",
+    "description": ""
   },
   {
     "id": 16,
@@ -141,7 +186,10 @@
     "height_location": 5,
     "frequency": 1,
     "risk": "high",
-    "imageName": "orange_bird_draw"
+    "scientific_name": "",
+    "english_name": "",
+    "image_name": "orange_bird_draw",
+    "description": ""
   },
   {
     "id": 17,
@@ -150,6 +198,9 @@
     "height_location": 5,
     "frequency": 1,
     "risk": "high",
-    "imageName": "orange_bird_draw"
+    "scientific_name": "",
+    "english_name": "",
+    "image_name": "orange_bird_draw",
+    "description": ""
   }
 ]
