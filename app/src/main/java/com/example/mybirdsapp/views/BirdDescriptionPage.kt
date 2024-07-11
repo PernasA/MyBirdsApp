@@ -15,10 +15,10 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Check
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Switch
-import androidx.compose.material3.SwitchDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
@@ -59,19 +59,7 @@ fun BirdDescriptionPage(bird: Bird, birdsListViewModel: BirdsListViewModel) {
             contentDescription = stringResource(id = R.string.image_bird_description),
             contentScale = ContentScale.FillWidth
         )
-        Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .height(90.dp)
-        ) {
-            Text(
-                text = stringResource(R.string.have_you_observed)
-            )
-            SwitchWasObserved(birdsListViewModel, bird.id)
-            Text(
-                text = "${stringResource(R.string.birds_observed)}: ${bird.id}"
-            )
-        }
+        RowCounterObserved(bird, birdsListViewModel)
     }
 }
 
@@ -135,22 +123,77 @@ fun RowNames(bird: Bird, modifier: Modifier) {
 }
 
 @Composable
+fun RowCounterObserved(bird: Bird, birdsListViewModel: BirdsListViewModel) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(90.dp)
+            .padding(top = 7.dp)
+    ) {
+        Column(Modifier.weight(1F).align(Alignment.Top)) {
+            Text(
+                text = stringResource(R.string.have_you_observed),
+                style = TextStyle(
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 18.sp,
+                    lineHeight = 18.sp,
+                    letterSpacing = 0.sp,
+                    textAlign = TextAlign.Center,
+                    color = Color.White,
+                ),
+                modifier = Modifier.fillMaxWidth()
+            )
+            SwitchWasObserved(birdsListViewModel, bird.id)
+        }
+        Column(Modifier.weight(1F).align(Alignment.Top)) {
+            Text(
+                text = stringResource(R.string.birds_observed),
+                style = TextStyle(
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 18.sp,
+                    lineHeight = 18.sp,
+                    letterSpacing = 0.sp,
+                    textAlign = TextAlign.Center,
+                    color = Color.White,
+                ),
+                modifier = Modifier.fillMaxWidth()
+            )
+            val counterState by GlobalCounterBirdsObserved.counter.observeAsState(0)
+            Text(
+                text = counterState.toString(),
+                style = TextStyle(
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 25.sp,
+                    lineHeight = 25.sp,
+                    letterSpacing = 0.sp,
+                    textAlign = TextAlign.Center,
+                    color = Color.White,
+                ),
+                modifier = Modifier.fillMaxWidth().padding(top = 7.dp)
+            )
+        }
+    }
+}
+
+@Composable
 fun SwitchWasObserved(birdsListViewModel: BirdsListViewModel, birdId: Int) {
     var checked by remember {
         mutableStateOf(birdsListViewModel.listObservedBirds[birdId-1].wasObserved)
     }
     Switch(
+        modifier = Modifier.fillMaxWidth(),
         checked = checked,
         onCheckedChange = {
             checked = it
             birdsListViewModel.editBirdWasObserved(RoomBird(birdId, checked))
+            GlobalCounterBirdsObserved.toggleCounter(checked)
         },
         thumbContent = if (checked) {
             {
                 Icon(
                     imageVector = Icons.Filled.Check,
                     contentDescription = null,
-                    modifier = Modifier.size(SwitchDefaults.IconSize),
+                    modifier = Modifier.size(20.dp),
                 )
             }
         } else { null }

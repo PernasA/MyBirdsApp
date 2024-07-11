@@ -62,7 +62,7 @@ fun HomePage(
 fun MyFilledButton(onClick: () -> Unit, buttonText: Int) {
     FilledTonalButton(
         onClick = { onClick() },
-        Modifier.padding(top = 20.dp)
+        Modifier.padding(top = 40.dp)
     ) {
         Text(stringResource(buttonText), fontSize = 30.sp)
     }

@@ -12,29 +12,34 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.Checkbox
+import androidx.compose.material3.CheckboxColors
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.Shadow
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.mybirdsapp.R
 import com.example.mybirdsapp.models.Bird
-import com.example.mybirdsapp.ui.theme.LightBlueDark
+import com.example.mybirdsapp.models.room.RoomBird
 import com.example.mybirdsapp.viewModels.BirdsListViewModel
 
 @Composable
@@ -52,12 +57,13 @@ fun BirdsListPage(
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(225.dp)
+                    .height(270.dp)
             ) {
                 for (bird in rowBirds) {
                     BirdCard(
                         bird,
                         onBirdClick,
+                        birdsListViewModel,
                         Modifier.weight(1F)
                     )
                 }
@@ -73,6 +79,7 @@ fun BirdsListPage(
 fun BirdCard(
     bird: Bird,
     onBirdClick: (Bird) -> Unit,
+    birdsListViewModel: BirdsListViewModel,
     modifier: Modifier
 ) {
     Card(
@@ -89,50 +96,82 @@ fun BirdCard(
             .clickable(onClick = { onBirdClick(bird) })
     ) {
         Column (
-            modifier.fillMaxSize().align(Alignment.CenterHorizontally)
+            modifier
+                .fillMaxSize()
+                .align(Alignment.CenterHorizontally)
         ) {
             Text(
                 modifier = Modifier
-                    .padding(top = 10.dp, bottom = 4.dp)
-                    .fillMaxWidth(),
+                    .padding(top = 10.dp)
+                    .fillMaxWidth()
+                    .height(50.dp),
                 text = "${bird.id}. ${bird.name}",
                 style = TextStyle(
                     fontWeight = FontWeight.Bold,
                     fontSize = 22.sp,
                     lineHeight = 22.sp,
                     letterSpacing = 0.sp,
-                    shadow = Shadow(LightBlueDark, blurRadius = 1.0f),
                     textAlign = TextAlign.Center,
                     color = Color.Black
-                )
+                ),
+                maxLines = 2
             )
             Image(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(8.dp)
+                    .height(150.dp)//todo:verify
+                    .padding(horizontal = 10.dp)
                     .border(BorderStroke(0.5.dp, Color.Black)),
                 painter = painterResource(id = bird.imageResId),
                 contentDescription = stringResource(id = R.string.image_bird_description),
                 contentScale = ContentScale.FillWidth
             )
+            CardRowCheckBox(
+                birdsListViewModel,
+                bird.id,
+                Modifier.fillMaxWidth().align(Alignment.CenterHorizontally)
+            )
         }
     }
 }
 
-@Preview(showBackground = true)
 @Composable
-fun BirdsListPagePreview() {
-    Row (
-        modifier = Modifier
-            .fillMaxWidth()
-            .height(220.dp)
-    ){
-        BirdCard(
-            bird = Bird(
-                1, "Zorzal colorado", 1, 1, 1, "",
-                "", "", "", R.drawable.orange_bird_draw, false
-            ), {},
-            modifier = Modifier.weight(1F)
+fun CardRowCheckBox(
+    birdsListViewModel: BirdsListViewModel,
+    birdId: Int,
+    modifier: Modifier
+    ) {
+    Row(
+        modifier = modifier
+            .padding(start =  15.dp, top = 10.dp, bottom = 10.dp, end = 10.dp)
+            .height(30.dp),//todo:verify
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        Text(
+            modifier = Modifier.align(Alignment.CenterVertically),
+            text = stringResource(id = R.string.bird_observed),
+            style = TextStyle(
+                fontWeight = FontWeight.Bold,
+                fontSize = 16.sp,
+                lineHeight = 16.sp,
+                letterSpacing = 0.sp,
+                color = Color.Black
+            )
+        )
+        Spacer(modifier = Modifier.width(8.dp))
+
+        var checked by remember {
+            mutableStateOf(birdsListViewModel.listObservedBirds[birdId-1].wasObserved)
+        }
+        Checkbox(
+            modifier = Modifier.align(Alignment.CenterVertically),
+            checked = checked,
+            onCheckedChange = {
+                checked = it
+                birdsListViewModel.editBirdWasObserved(RoomBird(birdId, checked))
+                GlobalCounterBirdsObserved.toggleCounter(checked)
+
+            }
         )
     }
 }

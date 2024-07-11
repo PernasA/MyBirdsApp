@@ -43,6 +43,10 @@ class BirdsListViewModel(
                 listObservedBirds = roomBirdsDao.getAllBirds().first()
                 if (listObservedBirds.isEmpty()){
                     createFileAllBirds(dataBirdsList.size)
+                    GlobalCounterBirdsObserved.setCounter(0)
+                } else {
+                    val quantityBirdsWereObserved = listObservedBirds.count { it.wasObserved }
+                    GlobalCounterBirdsObserved.setCounter(quantityBirdsWereObserved)
                 }
             }
         }

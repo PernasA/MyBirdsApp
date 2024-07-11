@@ -4,7 +4,7 @@
     <string name="title_main_page">Aves de las Sierras Centrales de Argentina</string>
     <string name="birds_page_title">Lista de Aves</string>
     <string name="bird_description_page_title">Información Detallada</string>
-    <string name="observation_routes_page_title">Recorridos de observación</string>
+    <string name="observation_routes_page_title">Recorridos</string>
     <string name="about_us_page_title">Sobre nosotros</string>
 
     <string name="app_name">Aves de Merlo</string>
@@ -19,12 +19,12 @@
 
     #Buttons names
     <string name="birds_list">Lista de Aves</string>
-    <string name="observation_routes">Recorridos de observación</string>
+    <string name="observation_routes">Recorridos</string>
     <string name="about_us">Sobre nosotros</string>
 
     #Texts
-    <string name="have_you_observed">¿Lo has observado?</string>
+    <string name="have_you_observed">¿Observaste esta ave?</string>
+    <string name="bird_observed">Ave observada:</string>
     <string name="birds_observed">Aves observadas</string>
-
 
 </resources>
