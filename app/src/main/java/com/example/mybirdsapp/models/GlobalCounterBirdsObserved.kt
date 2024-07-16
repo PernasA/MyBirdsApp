@@ -13,7 +13,7 @@ object GlobalCounterBirdsObserved {
         _counter.value = (_counter.value ?: 0) + 1
     }
 
-    fun toggleCounter(isObserved: Boolean) {
+    fun modifyCounter(isObserved: Boolean) {
         if (isObserved) {
             incrementCounter()
         } else {

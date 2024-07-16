@@ -11,11 +11,16 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Check
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Switch
+import androidx.compose.material3.SwitchDefaults
 import androidx.compose.material3.Text
+import androidx.compose.material3.VerticalDivider
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.livedata.observeAsState
@@ -39,34 +44,50 @@ import androidx.compose.ui.unit.sp
 import com.example.mybirdsapp.R
 import com.example.mybirdsapp.models.Bird
 import com.example.mybirdsapp.models.room.RoomBird
-import com.example.mybirdsapp.ui.theme.LightBlueDark
+import com.example.mybirdsapp.ui.theme.MossGreenPrimary
+import com.example.mybirdsapp.ui.theme.MossGreenPrimaryContainer
+import com.example.mybirdsapp.ui.theme.OrangeBird
 import com.example.mybirdsapp.viewModels.BirdsListViewModel
+
+sealed class WidgetItem {
+    data class RowNames(val bird: Bird) : WidgetItem()
+    data class RowCounterObserved(val bird: Bird, val birdsListViewModel: BirdsListViewModel) : WidgetItem()
+    data class RowBirdAttributes(val bird: Bird): WidgetItem()
+    data class BirdFullDescription(val bird: Bird): WidgetItem()
+}
 
 @Composable
 fun BirdDescriptionPage(bird: Bird, birdsListViewModel: BirdsListViewModel) {
-    Column(
+    val widgetItems = listOf(
+        WidgetItem.RowNames(bird),
+        WidgetItem.RowCounterObserved(bird, birdsListViewModel),
+        WidgetItem.RowBirdAttributes(bird),
+        WidgetItem.BirdFullDescription(bird)
+    )
+    LazyColumn(
         modifier = Modifier
             .fillMaxSize()
             .padding(16.dp)
     ) {
-        RowNames(bird = bird, modifier = Modifier.align(Alignment.CenterHorizontally))
-        Image(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(5.dp)
-                .border(BorderStroke(0.5.dp, Color.White)),
-            painter = painterResource(id = bird.imageResId),
-            contentDescription = stringResource(id = R.string.image_bird_description),
-            contentScale = ContentScale.FillWidth
-        )
-        RowCounterObserved(bird, birdsListViewModel)
+        items(widgetItems) { item ->
+            when (item) {
+                is WidgetItem.RowNames ->
+                    RowNames(item.bird)
+                is WidgetItem.RowCounterObserved ->
+                    RowCounterObserved(item.bird, item.birdsListViewModel)
+                is WidgetItem.RowBirdAttributes ->
+                    RowBirdAttributes(item.bird)
+                is WidgetItem.BirdFullDescription ->
+                    BirdFullDescription(item.bird)
+            }
+        }
     }
 }
 
 @Composable
-fun RowNames(bird: Bird, modifier: Modifier) {
+fun RowNames(bird: Bird) {
     Row(
-        modifier = modifier
+        modifier = Modifier
             .fillMaxWidth()
             .height(90.dp)
     ) {
@@ -80,7 +101,7 @@ fun RowNames(bird: Bird, modifier: Modifier) {
                 fontSize = 28.sp,
                 lineHeight = 28.sp,
                 letterSpacing = 0.sp,
-                shadow = Shadow(LightBlueDark, blurRadius = 1.0f),
+                shadow = Shadow(OrangeBird, blurRadius = 1.0f),
                 textAlign = TextAlign.Left,
                 color = Color.White,
                 lineBreak = LineBreak.Heading
@@ -100,7 +121,7 @@ fun RowNames(bird: Bird, modifier: Modifier) {
                     fontSize = 20.sp,
                     lineHeight = 20.sp,
                     letterSpacing = 0.sp,
-                    shadow = Shadow(LightBlueDark, blurRadius = 1.0f),
+                    shadow = Shadow(OrangeBird, blurRadius = 1.0f),
                     textAlign = TextAlign.Right,
                     color = Color.White,
                     fontStyle = FontStyle.Italic
@@ -113,13 +134,22 @@ fun RowNames(bird: Bird, modifier: Modifier) {
                     fontSize = 20.sp,
                     lineHeight = 20.sp,
                     letterSpacing = 0.sp,
-                    shadow = Shadow(LightBlueDark, blurRadius = 1.0f),
+                    shadow = Shadow(OrangeBird, blurRadius = 1.0f),
                     textAlign = TextAlign.Right,
                     color = Color.Yellow
                 )
             )
         }
     }
+    Image(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(5.dp)
+                .border(BorderStroke(0.5.dp, OrangeBird)),
+            painter = painterResource(id = bird.imageResId),
+            contentDescription = stringResource(id = R.string.image_bird_description),
+            contentScale = ContentScale.FillWidth
+        )
 }
 
 @Composable
@@ -130,7 +160,10 @@ fun RowCounterObserved(bird: Bird, birdsListViewModel: BirdsListViewModel) {
             .height(90.dp)
             .padding(top = 7.dp)
     ) {
-        Column(Modifier.weight(1F).align(Alignment.Top)) {
+        Column(
+            Modifier
+                .weight(1F)
+                .align(Alignment.Top)) {
             Text(
                 text = stringResource(R.string.have_you_observed),
                 style = TextStyle(
@@ -145,7 +178,10 @@ fun RowCounterObserved(bird: Bird, birdsListViewModel: BirdsListViewModel) {
             )
             SwitchWasObserved(birdsListViewModel, bird.id)
         }
-        Column(Modifier.weight(1F).align(Alignment.Top)) {
+        Column(
+            Modifier
+                .weight(1F)
+                .align(Alignment.Top)) {
             Text(
                 text = stringResource(R.string.birds_observed),
                 style = TextStyle(
@@ -154,7 +190,7 @@ fun RowCounterObserved(bird: Bird, birdsListViewModel: BirdsListViewModel) {
                     lineHeight = 18.sp,
                     letterSpacing = 0.sp,
                     textAlign = TextAlign.Center,
-                    color = Color.White,
+                    color = MossGreenPrimaryContainer,
                 ),
                 modifier = Modifier.fillMaxWidth()
             )
@@ -167,9 +203,11 @@ fun RowCounterObserved(bird: Bird, birdsListViewModel: BirdsListViewModel) {
                     lineHeight = 25.sp,
                     letterSpacing = 0.sp,
                     textAlign = TextAlign.Center,
-                    color = Color.White,
+                    color = MossGreenPrimaryContainer,
                 ),
-                modifier = Modifier.fillMaxWidth().padding(top = 7.dp)
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(top = 7.dp)
             )
         }
     }
@@ -183,10 +221,11 @@ fun SwitchWasObserved(birdsListViewModel: BirdsListViewModel, birdId: Int) {
     Switch(
         modifier = Modifier.fillMaxWidth(),
         checked = checked,
+        colors = SwitchDefaults.colors(checkedThumbColor = Color.White),
         onCheckedChange = {
             checked = it
             birdsListViewModel.editBirdWasObserved(RoomBird(birdId, checked))
-            GlobalCounterBirdsObserved.toggleCounter(checked)
+            GlobalCounterBirdsObserved.modifyCounter(checked)
         },
         thumbContent = if (checked) {
             {
@@ -194,8 +233,180 @@ fun SwitchWasObserved(birdsListViewModel: BirdsListViewModel, birdId: Int) {
                     imageVector = Icons.Filled.Check,
                     contentDescription = null,
                     modifier = Modifier.size(20.dp),
+                    tint = MossGreenPrimary,
                 )
             }
         } else { null }
+    )
+}
+
+@Composable
+fun RowBirdAttributes(bird: Bird){
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(110.dp)
+            .padding(top = 7.dp, start = 5.dp, end = 5.dp)
+    ) {
+        Column(
+            Modifier
+                .weight(1F)
+                .align(Alignment.Top)
+        ) {
+            Text(
+                text = stringResource(R.string.bird_height),
+                style = TextStyle(
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 18.sp,
+                    lineHeight = 18.sp,
+                    letterSpacing = 0.sp,
+                    textAlign = TextAlign.Center,
+                    color = Color.White,
+                ),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(bottom = 5.dp)
+            )
+            Text(
+                text = bird.height.toString(),
+                style = TextStyle(
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 18.sp,
+                    lineHeight = 18.sp,
+                    letterSpacing = 0.sp,
+                    textAlign = TextAlign.Center,
+                    color = Color.White,
+                ),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(top = 7.dp)
+            )
+        }
+        VerticalDivider (
+            color = Color.White,
+            modifier = Modifier
+                .width(1.dp)
+                .fillMaxHeight()
+        )
+        Column(
+            Modifier
+                .weight(1F)
+                .align(Alignment.Top)
+        ) {
+            Text(
+                text = stringResource(R.string.bird_frequency),
+                style = TextStyle(
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 18.sp,
+                    lineHeight = 18.sp,
+                    letterSpacing = 0.sp,
+                    textAlign = TextAlign.Center,
+                    color = Color.White,
+                ),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(bottom = 5.dp)
+            )
+            val frequencyText = when(bird.frequency){
+                1 -> stringResource(R.string.frequency_1_very_high)
+                2 -> stringResource(R.string.frequency_2_high)
+                3 -> stringResource(R.string.frequency_3_middle)
+                4 -> stringResource(R.string.frequency_4_low)
+                else -> {stringResource(R.string.frequency_undefined)}
+            }
+            Text(
+                text = frequencyText,
+                style = TextStyle(
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 18.sp,
+                    lineHeight = 18.sp,
+                    letterSpacing = 0.sp,
+                    textAlign = TextAlign.Center,
+                    color = Color.White,
+                ),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(top = 7.dp)
+            )
+        }
+        VerticalDivider (
+            color = Color.White,
+            modifier = Modifier
+                .width(1.dp)
+                .fillMaxHeight()
+        )
+        Column(
+            Modifier
+                .weight(1F)
+                .align(Alignment.Top)
+        ) {
+            Text(
+                text = stringResource(R.string.bird_hight_location),
+                style = TextStyle(
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 18.sp,
+                    lineHeight = 18.sp,
+                    letterSpacing = 0.sp,
+                    textAlign = TextAlign.Center,
+                    color = Color.White,
+                ),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(bottom = 5.dp)
+            )
+            val heightLocationText = when(bird.heightLocation){
+                1 -> stringResource(R.string.height_location_1)
+                2 -> stringResource(R.string.height_location_2)
+                3 -> stringResource(R.string.height_location_3)
+                12 -> stringResource(R.string.height_location_12)
+                13 -> stringResource(R.string.height_location_13)
+                23 -> stringResource(R.string.height_location_23)
+                123 -> stringResource(R.string.height_location_123)
+                else -> {stringResource(R.string.frequency_undefined)}
+            }
+            Text(
+                text = heightLocationText,
+                style = TextStyle(
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 18.sp,
+                    lineHeight = 18.sp,
+                    letterSpacing = 0.sp,
+                    textAlign = TextAlign.Center,
+                    color = Color.White,
+                ),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(top = 7.dp)
+            )
+        }
+    }
+}
+
+@Composable
+fun BirdFullDescription(bird: Bird) {
+    Text(
+        modifier = Modifier.padding(top = 18.dp),
+        text = stringResource(id = R.string.bird_full_description),
+        style = TextStyle(
+            fontWeight = FontWeight.Bold,
+            fontSize = 18.sp,
+            lineHeight = 18.sp,
+            letterSpacing = 0.sp,
+            textAlign = TextAlign.Left,
+            color = MossGreenPrimary,
+        )
+    )
+    Text(
+        modifier = Modifier.padding(top = 8.dp),
+        text = bird.description,
+        style = TextStyle(
+            fontWeight = FontWeight.Normal,
+            fontSize = 16.sp,
+            lineHeight = 16.sp,
+            letterSpacing = 0.sp,
+            textAlign = TextAlign.Justify,
+            color = Color.White,
+            lineBreak = LineBreak.Paragraph
+        )
     )
 }

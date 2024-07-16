@@ -26,5 +26,24 @@
     <string name="have_you_observed">¿Observaste esta ave?</string>
     <string name="bird_observed">Ave observada:</string>
     <string name="birds_observed">Aves observadas</string>
+    <string name="bird_height">Medida aproximada</string>
+    <string name="bird_frequency">Facilidad observación</string>
+    <string name="bird_hight_location">Altimetría (msnm)</string>
+    <string name="bird_full_description">Descripción general</string>
 
+    #Texts frequencys
+    <string name="frequency_1_very_high">Muy dificil</string>
+    <string name="frequency_2_high">Dificil</string>
+    <string name="frequency_3_middle">Moderado</string>
+    <string name="frequency_4_low">Fácil</string>
+    <string name="frequency_undefined">Indefinida</string>
+
+    #Texts heights location
+    <string name="height_location_1">500–1200</string>
+    <string name="height_location_2">500–1200</string>
+    <string name="height_location_3">500–1200</string>
+    <string name="height_location_12">500–1200</string>
+    <string name="height_location_13">500–1200</string>
+    <string name="height_location_23">500–1200</string>
+    <string name="height_location_123">500–1200</string>
 </resources>

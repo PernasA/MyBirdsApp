@@ -18,7 +18,6 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Checkbox
-import androidx.compose.material3.CheckboxColors
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -40,6 +39,7 @@ import androidx.compose.ui.unit.sp
 import com.example.mybirdsapp.R
 import com.example.mybirdsapp.models.Bird
 import com.example.mybirdsapp.models.room.RoomBird
+import com.example.mybirdsapp.ui.theme.MossGreenPrimary2
 import com.example.mybirdsapp.viewModels.BirdsListViewModel
 
 @Composable
@@ -84,12 +84,12 @@ fun BirdCard(
 ) {
     Card(
         colors = CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.onSecondaryContainer,
+            containerColor = MaterialTheme.colorScheme.primaryContainer,
         ),
         elevation = CardDefaults.cardElevation(
             defaultElevation = 22.dp,
         ),
-        border = BorderStroke(2.dp, Color.White),
+        border = BorderStroke(2.dp, MossGreenPrimary2),
         modifier = modifier
             .fillMaxHeight()
             .padding(start = 4.dp, top = 6.dp, end = 4.dp, bottom = 6.dp)
@@ -119,12 +119,12 @@ fun BirdCard(
             Image(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(150.dp)//todo:verify
+                    .height(150.dp)
                     .padding(horizontal = 10.dp)
-                    .border(BorderStroke(0.5.dp, Color.Black)),
+                    .border(BorderStroke(0.5.dp, MossGreenPrimary2)),
                 painter = painterResource(id = bird.imageResId),
                 contentDescription = stringResource(id = R.string.image_bird_description),
-                contentScale = ContentScale.FillWidth
+                contentScale = ContentScale.Crop
             )
             CardRowCheckBox(
                 birdsListViewModel,
@@ -144,7 +144,7 @@ fun CardRowCheckBox(
     Row(
         modifier = modifier
             .padding(start =  15.dp, top = 10.dp, bottom = 10.dp, end = 10.dp)
-            .height(30.dp),//todo:verify
+            .height(30.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
         Text(
@@ -169,9 +169,8 @@ fun CardRowCheckBox(
             onCheckedChange = {
                 checked = it
                 birdsListViewModel.editBirdWasObserved(RoomBird(birdId, checked))
-                GlobalCounterBirdsObserved.toggleCounter(checked)
-
-            }
+                GlobalCounterBirdsObserved.modifyCounter(checked)
+            },
         )
     }
 }

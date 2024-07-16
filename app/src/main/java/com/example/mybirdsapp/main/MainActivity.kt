@@ -20,7 +20,7 @@ class MainActivity : ComponentActivity() {
         val birdsListViewModel = prepareDatabaseAndBirdsListViewModel(this)
 
         setContent {
-            MyBirdsAppTheme (darkTheme = true, dynamicColor = false) {
+            MyBirdsAppTheme (darkTheme = true) {
                 Navigation(birdsListViewModel.value)
             }
         }
