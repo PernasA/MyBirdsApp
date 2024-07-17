@@ -156,10 +156,10 @@ fun RowNames(bird: Bird) {
     Image(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(5.dp)
+                .padding(top = 20.dp, start = 5.dp, end = 5.dp)
                 .border(BorderStroke(0.5.dp, OrangeBird)),
             painter = painterResource(id = bird.imageResId),
-            contentDescription = stringResource(id = R.string.image_bird_description),
+            contentDescription = stringResource(R.string.image_bird_description),
             contentScale = ContentScale.FillWidth
         )
 }
@@ -170,7 +170,7 @@ fun RowCounterObserved(bird: Bird, birdsListViewModel: BirdsListViewModel) {
         modifier = Modifier
             .fillMaxWidth()
             .height(90.dp)
-            .padding(top = 7.dp)
+            .padding(top = 35.dp)
     ) {
         Column(
             Modifier
@@ -231,7 +231,7 @@ fun SwitchWasObserved(birdsListViewModel: BirdsListViewModel, birdId: Int) {
         mutableStateOf(birdsListViewModel.listObservedBirds[birdId-1].wasObserved)
     }
     Switch(
-        modifier = Modifier.fillMaxWidth(),
+        modifier = Modifier.fillMaxWidth().padding(top = 5.dp),
         checked = checked,
         colors = SwitchDefaults.colors(checkedThumbColor = Color.White),
         onCheckedChange = {
@@ -258,7 +258,7 @@ fun RowBirdAttributes(bird: Bird){
         modifier = Modifier
             .fillMaxWidth()
             .height(120.dp)
-            .padding(top = 7.dp, start = 5.dp, end = 5.dp)
+            .padding(top = 35.dp, start = 5.dp, end = 5.dp)
     ) {
         Column(
             Modifier
@@ -306,7 +306,7 @@ fun RowBirdAttributes(bird: Bird){
             )
         }
         VerticalDivider (
-            color = MossGreenPrimary,
+            color = OrangeBird,
             modifier = Modifier
                 .width(1.dp)
                 .fillMaxHeight()
@@ -333,7 +333,7 @@ fun RowBirdAttributes(bird: Bird){
             FrequencyIconImage(bird.frequency)
         }
         VerticalDivider (
-            color = MossGreenPrimary,
+            color = OrangeBird,
             modifier = Modifier
                 .width(1.dp)
                 .fillMaxHeight()
@@ -379,17 +379,17 @@ fun RowBirdAttributes(bird: Bird){
                         color = Color.White
                     ),
                     modifier = Modifier.padding(top = 6.dp)
-                        .zIndex(0f)
+                        .zIndex(1f)
                         .align(Alignment.Center),
-                    maxLines = 2
+                    maxLines = 3
                 )
                 Image(
                     painter = painterResource(R.drawable.mountain),
                     contentDescription = stringResource(R.string.image_mountain_description),
                     modifier = Modifier
                         .fillMaxSize()
-                        .zIndex(1f)
-                        .graphicsLayer(alpha = 0.4f),
+                        .zIndex(0f)
+                        .graphicsLayer(alpha = 0.6f),
                     contentScale = ContentScale.Fit,
                     colorFilter = ColorFilter.tint(MossGreenPrimary)
                 )
@@ -416,8 +416,8 @@ fun FrequencyIconImage(birdFrequency: Int) {
 @Composable
 fun BirdFullDescription(bird: Bird) {
     Text(
-        modifier = Modifier.padding(top = 18.dp),
-        text = stringResource(id = R.string.bird_full_description),
+        modifier = Modifier.padding(top = 45.dp),
+        text = stringResource(R.string.bird_full_description),
         style = TextStyle(
             fontWeight = FontWeight.Bold,
             fontSize = MEDIUM_TEXT_SIZE,
@@ -428,7 +428,7 @@ fun BirdFullDescription(bird: Bird) {
         )
     )
     Text(
-        modifier = Modifier.padding(top = 8.dp),
+        modifier = Modifier.padding(top = 10.dp),
         text = bird.description,
         style = TextStyle(
             fontWeight = FontWeight.Normal,

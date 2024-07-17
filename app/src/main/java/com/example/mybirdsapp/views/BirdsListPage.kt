@@ -39,7 +39,7 @@ import androidx.compose.ui.unit.sp
 import com.example.mybirdsapp.R
 import com.example.mybirdsapp.models.Bird
 import com.example.mybirdsapp.models.room.RoomBird
-import com.example.mybirdsapp.ui.theme.MossGreenPrimary2
+import com.example.mybirdsapp.ui.theme.MossGreenRealTertiary
 import com.example.mybirdsapp.utils.Constants.Companion.SUBTITLE_TEXT_SIZE
 import com.example.mybirdsapp.utils.Constants.Companion.TITLE_TEXT_SIZE
 import com.example.mybirdsapp.viewModels.BirdsListViewModel
@@ -91,7 +91,7 @@ fun BirdCard(
         elevation = CardDefaults.cardElevation(
             defaultElevation = 22.dp,
         ),
-        border = BorderStroke(2.dp, MossGreenPrimary2),
+        border = BorderStroke(2.dp, MossGreenRealTertiary),
         modifier = modifier
             .fillMaxHeight()
             .padding(start = 4.dp, top = 6.dp, end = 4.dp, bottom = 6.dp)
@@ -123,9 +123,9 @@ fun BirdCard(
                     .fillMaxWidth()
                     .height(150.dp)
                     .padding(horizontal = 10.dp)
-                    .border(BorderStroke(0.5.dp, MossGreenPrimary2)),
+                    .border(BorderStroke(0.5.dp, MossGreenRealTertiary)),
                 painter = painterResource(id = bird.imageResId),
-                contentDescription = stringResource(id = R.string.image_bird_description),
+                contentDescription = stringResource(R.string.image_bird_description),
                 contentScale = ContentScale.Crop
             )
             CardRowCheckBox(
@@ -151,7 +151,7 @@ fun CardRowCheckBox(
     ) {
         Text(
             modifier = Modifier.align(Alignment.CenterVertically),
-            text = stringResource(id = R.string.bird_observed),
+            text = stringResource(R.string.bird_observed),
             style = TextStyle(
                 fontWeight = FontWeight.Bold,
                 fontSize = SUBTITLE_TEXT_SIZE,

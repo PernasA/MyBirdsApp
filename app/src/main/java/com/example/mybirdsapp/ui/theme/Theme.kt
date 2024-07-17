@@ -18,16 +18,7 @@ private val DarkColorScheme = darkColorScheme(
     secondary = MossGreenSecondary,
     tertiary = MossGreenRealTertiary,
     primaryContainer = MossGreenPrimaryContainer,
-    secondaryContainer = MossGreenPrimary2,
-    onSurfaceVariant = Color.Black,
-)
-
-private val MoreMossGreenColorScheme = darkColorScheme(
-    primary = MossGreenPrimary2,
-    secondary = MossGreenSecondary2,
-    tertiary = MossGreenTertiary2,
-    primaryContainer = MossGreenPrimaryContainer2,
-    secondaryContainer = MossGreenPrimaryContainer2,
+    secondaryContainer = MossGreenRealTertiary, //estaba antes el MossGreenPrimary2
     onSurfaceVariant = Color.Black,
 )
 

@@ -1,7 +1,9 @@
 <resources>
     #Titles pages
     <string name="title_main_page_appbar">Menu</string>
-    <string name="title_main_page">Aves de las Sierras Centrales de Argentina</string>
+    <string name="title_main_page">AVES</string>
+    <string name="subtitle_main_page">De las Sierras Centrales\nde Argentina</string>
+    <string name="second_subtitle_main_page">con centro en Villa de Merlo - San Luis</string>
     <string name="birds_page_title">Lista de Aves</string>
     <string name="bird_description_page_title">Información Detallada</string>
     <string name="observation_routes_page_title">Recorridos</string>
@@ -18,11 +20,14 @@
 
     #Buttons actions
     <string name="button_cancel">Menu</string>
+    <string name="button_share">Compartir</string>
+    <string name="button_share_text">Te invito a descargar esta aplicación sobre aves.\nTiene mucho contenido interesante! En la Play Store aparece como Aves Merlo San Luis</string>
 
     #Buttons names
     <string name="birds_list">Lista de Aves</string>
     <string name="observation_routes">Recorridos</string>
     <string name="about_us">Sobre nosotros</string>
+    <string name="button_info">Information</string>
 
     #Texts
     <string name="have_you_observed">¿Observaste esta ave?</string>
@@ -32,16 +37,16 @@
     <string name="bird_frequency">Facilidad observación</string>
     <string name="bird_hight_location">Altimetría (msnm)</string>
     <string name="bird_full_description">Descripción general</string>
-
+    <string name="tooltip_message_observation_routes">En esta sección se muestran\ndistintos recorridos para\nrealizar en la zona serrana\ny avistar distintos tipos de aves.</string>
 
     #Texts heights location
-    <string name="height_location_1">500/1200</string>
-    <string name="height_location_2">1200/1600</string>
-    <string name="height_location_3">1600/2200</string>
-    <string name="height_location_12">500/1600</string>
-    <string name="height_location_13">500/1200\n1600/2200</string>
-    <string name="height_location_23">1200/2200</string>
-    <string name="height_location_123">500/2200</string>
-    <string name="frequency_undefined">Indefinida</string>
+    <string name="height_location_1">\n500/1200</string>
+    <string name="height_location_2">\n1200/1600</string>
+    <string name="height_location_3">\n1600/2200</string>
+    <string name="height_location_12">\n500/1600</string>
+    <string name="height_location_13">\n500/1200\n1600/2200</string>
+    <string name="height_location_23">\n1200/2200</string>
+    <string name="height_location_123">\n500/2200</string>
+    <string name="frequency_undefined">\nIndefinida</string>
 
 </resources>
