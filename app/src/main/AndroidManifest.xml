@@ -5,7 +5,7 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@drawable/orange_bird_draw"
+        android:icon="@mipmap/orange_bird_app"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/orange_bird_app_round"
         android:supportsRtl="true"

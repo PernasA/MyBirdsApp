@@ -40,6 +40,8 @@ import com.example.mybirdsapp.R
 import com.example.mybirdsapp.models.Bird
 import com.example.mybirdsapp.models.room.RoomBird
 import com.example.mybirdsapp.ui.theme.MossGreenPrimary2
+import com.example.mybirdsapp.utils.Constants.Companion.SUBTITLE_TEXT_SIZE
+import com.example.mybirdsapp.utils.Constants.Companion.TITLE_TEXT_SIZE
 import com.example.mybirdsapp.viewModels.BirdsListViewModel
 
 @Composable
@@ -108,8 +110,8 @@ fun BirdCard(
                 text = "${bird.id}. ${bird.name}",
                 style = TextStyle(
                     fontWeight = FontWeight.Bold,
-                    fontSize = 22.sp,
-                    lineHeight = 22.sp,
+                    fontSize = TITLE_TEXT_SIZE,
+                    lineHeight = TITLE_TEXT_SIZE,
                     letterSpacing = 0.sp,
                     textAlign = TextAlign.Center,
                     color = Color.Black
@@ -152,8 +154,8 @@ fun CardRowCheckBox(
             text = stringResource(id = R.string.bird_observed),
             style = TextStyle(
                 fontWeight = FontWeight.Bold,
-                fontSize = 16.sp,
-                lineHeight = 16.sp,
+                fontSize = SUBTITLE_TEXT_SIZE,
+                lineHeight = SUBTITLE_TEXT_SIZE,
                 letterSpacing = 0.sp,
                 color = Color.Black
             )

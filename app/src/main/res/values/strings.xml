@@ -13,6 +13,8 @@
     <string name="main_page_image_description">Imagen de aves</string>
     <string name="back_button">Boton flecha atras</string>
     <string name="image_bird_description">Imagen del pajaro mencionado</string>
+    <string name="image_ruler_description">Imagen de regla</string>
+    <string name="image_mountain_description">Imagen de montaña</string>
 
     #Buttons actions
     <string name="button_cancel">Menu</string>
@@ -31,19 +33,15 @@
     <string name="bird_hight_location">Altimetría (msnm)</string>
     <string name="bird_full_description">Descripción general</string>
 
-    #Texts frequencys
-    <string name="frequency_1_very_high">Muy dificil</string>
-    <string name="frequency_2_high">Dificil</string>
-    <string name="frequency_3_middle">Moderado</string>
-    <string name="frequency_4_low">Fácil</string>
-    <string name="frequency_undefined">Indefinida</string>
 
     #Texts heights location
-    <string name="height_location_1">500–1200</string>
-    <string name="height_location_2">500–1200</string>
-    <string name="height_location_3">500–1200</string>
-    <string name="height_location_12">500–1200</string>
-    <string name="height_location_13">500–1200</string>
-    <string name="height_location_23">500–1200</string>
-    <string name="height_location_123">500–1200</string>
+    <string name="height_location_1">500/1200</string>
+    <string name="height_location_2">1200/1600</string>
+    <string name="height_location_3">1600/2200</string>
+    <string name="height_location_12">500/1600</string>
+    <string name="height_location_13">500/1200\n1600/2200</string>
+    <string name="height_location_23">1200/2200</string>
+    <string name="height_location_123">500/2200</string>
+    <string name="frequency_undefined">Indefinida</string>
+
 </resources>

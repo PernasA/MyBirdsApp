@@ -2,7 +2,9 @@ package com.example.mybirdsapp.views
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.border
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
@@ -14,6 +16,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Check
 import androidx.compose.material3.Icon
@@ -29,8 +32,11 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.graphics.Shadow
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -41,12 +47,18 @@ import androidx.compose.ui.text.style.LineBreak
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.zIndex
 import com.example.mybirdsapp.R
 import com.example.mybirdsapp.models.Bird
 import com.example.mybirdsapp.models.room.RoomBird
 import com.example.mybirdsapp.ui.theme.MossGreenPrimary
 import com.example.mybirdsapp.ui.theme.MossGreenPrimaryContainer
+import com.example.mybirdsapp.ui.theme.MossGreenTertiaryLight
 import com.example.mybirdsapp.ui.theme.OrangeBird
+import com.example.mybirdsapp.utils.Constants.Companion.BIG_TEXT_SIZE
+import com.example.mybirdsapp.utils.Constants.Companion.MEDIUM_TEXT_SIZE
+import com.example.mybirdsapp.utils.Constants.Companion.SUBTITLE_TEXT_SIZE
+import com.example.mybirdsapp.utils.Constants.Companion.TITLE_TEXT_SIZE
 import com.example.mybirdsapp.viewModels.BirdsListViewModel
 
 sealed class WidgetItem {
@@ -98,8 +110,8 @@ fun RowNames(bird: Bird) {
             text = "${bird.id}. ${bird.name}",
             style = TextStyle(
                 fontWeight = FontWeight.Bold,
-                fontSize = 28.sp,
-                lineHeight = 28.sp,
+                fontSize = BIG_TEXT_SIZE,
+                lineHeight = BIG_TEXT_SIZE,
                 letterSpacing = 0.sp,
                 shadow = Shadow(OrangeBird, blurRadius = 1.0f),
                 textAlign = TextAlign.Left,
@@ -118,8 +130,8 @@ fun RowNames(bird: Bird) {
                 text = bird.scientificName,
                 style = TextStyle(
                     fontWeight = FontWeight.Bold,
-                    fontSize = 20.sp,
-                    lineHeight = 20.sp,
+                    fontSize = TITLE_TEXT_SIZE,
+                    lineHeight = TITLE_TEXT_SIZE,
                     letterSpacing = 0.sp,
                     shadow = Shadow(OrangeBird, blurRadius = 1.0f),
                     textAlign = TextAlign.Right,
@@ -131,8 +143,8 @@ fun RowNames(bird: Bird) {
                 text = bird.englishName,
                 style = TextStyle(
                     fontWeight = FontWeight.Bold,
-                    fontSize = 20.sp,
-                    lineHeight = 20.sp,
+                    fontSize = TITLE_TEXT_SIZE,
+                    lineHeight = TITLE_TEXT_SIZE,
                     letterSpacing = 0.sp,
                     shadow = Shadow(OrangeBird, blurRadius = 1.0f),
                     textAlign = TextAlign.Right,
@@ -168,8 +180,8 @@ fun RowCounterObserved(bird: Bird, birdsListViewModel: BirdsListViewModel) {
                 text = stringResource(R.string.have_you_observed),
                 style = TextStyle(
                     fontWeight = FontWeight.Bold,
-                    fontSize = 18.sp,
-                    lineHeight = 18.sp,
+                    fontSize = MEDIUM_TEXT_SIZE,
+                    lineHeight = MEDIUM_TEXT_SIZE,
                     letterSpacing = 0.sp,
                     textAlign = TextAlign.Center,
                     color = Color.White,
@@ -186,8 +198,8 @@ fun RowCounterObserved(bird: Bird, birdsListViewModel: BirdsListViewModel) {
                 text = stringResource(R.string.birds_observed),
                 style = TextStyle(
                     fontWeight = FontWeight.Bold,
-                    fontSize = 18.sp,
-                    lineHeight = 18.sp,
+                    fontSize = MEDIUM_TEXT_SIZE,
+                    lineHeight = MEDIUM_TEXT_SIZE,
                     letterSpacing = 0.sp,
                     textAlign = TextAlign.Center,
                     color = MossGreenPrimaryContainer,
@@ -199,8 +211,8 @@ fun RowCounterObserved(bird: Bird, birdsListViewModel: BirdsListViewModel) {
                 text = counterState.toString(),
                 style = TextStyle(
                     fontWeight = FontWeight.Bold,
-                    fontSize = 25.sp,
-                    lineHeight = 25.sp,
+                    fontSize = BIG_TEXT_SIZE,
+                    lineHeight = BIG_TEXT_SIZE,
                     letterSpacing = 0.sp,
                     textAlign = TextAlign.Center,
                     color = MossGreenPrimaryContainer,
@@ -245,7 +257,7 @@ fun RowBirdAttributes(bird: Bird){
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .height(110.dp)
+            .height(120.dp)
             .padding(top = 7.dp, start = 5.dp, end = 5.dp)
     ) {
         Column(
@@ -257,8 +269,8 @@ fun RowBirdAttributes(bird: Bird){
                 text = stringResource(R.string.bird_height),
                 style = TextStyle(
                     fontWeight = FontWeight.Bold,
-                    fontSize = 18.sp,
-                    lineHeight = 18.sp,
+                    fontSize = MEDIUM_TEXT_SIZE,
+                    lineHeight = MEDIUM_TEXT_SIZE,
                     letterSpacing = 0.sp,
                     textAlign = TextAlign.Center,
                     color = Color.White,
@@ -271,8 +283,8 @@ fun RowBirdAttributes(bird: Bird){
                 text = bird.height.toString(),
                 style = TextStyle(
                     fontWeight = FontWeight.Bold,
-                    fontSize = 18.sp,
-                    lineHeight = 18.sp,
+                    fontSize = MEDIUM_TEXT_SIZE,
+                    lineHeight = MEDIUM_TEXT_SIZE,
                     letterSpacing = 0.sp,
                     textAlign = TextAlign.Center,
                     color = Color.White,
@@ -281,9 +293,20 @@ fun RowBirdAttributes(bird: Bird){
                     .fillMaxWidth()
                     .padding(top = 7.dp)
             )
+            Image(
+                painter = painterResource(R.drawable.ruler),
+                contentDescription = stringResource(R.string.image_ruler_description),
+                modifier = Modifier
+                    .align(Alignment.CenterHorizontally)
+                    .fillMaxWidth()
+                    .height(40.dp)
+                    .padding(horizontal = 14.dp),
+                contentScale = ContentScale.FillBounds,
+                colorFilter = ColorFilter.tint(MossGreenPrimary)
+            )
         }
         VerticalDivider (
-            color = Color.White,
+            color = MossGreenPrimary,
             modifier = Modifier
                 .width(1.dp)
                 .fillMaxHeight()
@@ -297,40 +320,20 @@ fun RowBirdAttributes(bird: Bird){
                 text = stringResource(R.string.bird_frequency),
                 style = TextStyle(
                     fontWeight = FontWeight.Bold,
-                    fontSize = 18.sp,
-                    lineHeight = 18.sp,
+                    fontSize = MEDIUM_TEXT_SIZE,
+                    lineHeight = MEDIUM_TEXT_SIZE,
                     letterSpacing = 0.sp,
                     textAlign = TextAlign.Center,
                     color = Color.White,
                 ),
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(bottom = 5.dp)
+                    .padding(bottom = 10.dp)
             )
-            val frequencyText = when(bird.frequency){
-                1 -> stringResource(R.string.frequency_1_very_high)
-                2 -> stringResource(R.string.frequency_2_high)
-                3 -> stringResource(R.string.frequency_3_middle)
-                4 -> stringResource(R.string.frequency_4_low)
-                else -> {stringResource(R.string.frequency_undefined)}
-            }
-            Text(
-                text = frequencyText,
-                style = TextStyle(
-                    fontWeight = FontWeight.Bold,
-                    fontSize = 18.sp,
-                    lineHeight = 18.sp,
-                    letterSpacing = 0.sp,
-                    textAlign = TextAlign.Center,
-                    color = Color.White,
-                ),
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(top = 7.dp)
-            )
+            FrequencyIconImage(bird.frequency)
         }
         VerticalDivider (
-            color = Color.White,
+            color = MossGreenPrimary,
             modifier = Modifier
                 .width(1.dp)
                 .fillMaxHeight()
@@ -344,8 +347,8 @@ fun RowBirdAttributes(bird: Bird){
                 text = stringResource(R.string.bird_hight_location),
                 style = TextStyle(
                     fontWeight = FontWeight.Bold,
-                    fontSize = 18.sp,
-                    lineHeight = 18.sp,
+                    fontSize = MEDIUM_TEXT_SIZE,
+                    lineHeight = MEDIUM_TEXT_SIZE,
                     letterSpacing = 0.sp,
                     textAlign = TextAlign.Center,
                     color = Color.White,
@@ -364,21 +367,49 @@ fun RowBirdAttributes(bird: Bird){
                 123 -> stringResource(R.string.height_location_123)
                 else -> {stringResource(R.string.frequency_undefined)}
             }
-            Text(
-                text = heightLocationText,
-                style = TextStyle(
-                    fontWeight = FontWeight.Bold,
-                    fontSize = 18.sp,
-                    lineHeight = 18.sp,
-                    letterSpacing = 0.sp,
-                    textAlign = TextAlign.Center,
-                    color = Color.White,
-                ),
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(top = 7.dp)
-            )
+            Box(modifier = Modifier.fillMaxSize().align(Alignment.CenterHorizontally)) {
+                Text(
+                    text = heightLocationText,
+                    style = TextStyle(
+                        fontWeight = FontWeight.Bold,
+                        fontSize = MEDIUM_TEXT_SIZE,
+                        lineHeight = MEDIUM_TEXT_SIZE,
+                        letterSpacing = 0.sp,
+                        textAlign = TextAlign.Center,
+                        color = Color.White
+                    ),
+                    modifier = Modifier.padding(top = 6.dp)
+                        .zIndex(0f)
+                        .align(Alignment.Center),
+                    maxLines = 2
+                )
+                Image(
+                    painter = painterResource(R.drawable.mountain),
+                    contentDescription = stringResource(R.string.image_mountain_description),
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .zIndex(1f)
+                        .graphicsLayer(alpha = 0.4f),
+                    contentScale = ContentScale.Fit,
+                    colorFilter = ColorFilter.tint(MossGreenPrimary)
+                )
+            }
+
         }
+    }
+}
+
+@Composable
+fun FrequencyIconImage(birdFrequency: Int) {
+    for (i in 1..4) {
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(12.dp)
+                .padding(horizontal = 17.dp, vertical = 2.dp)
+                .clip(RoundedCornerShape(8.dp))
+                .background(if (i <= birdFrequency) Color.White else MossGreenTertiaryLight)
+        )
     }
 }
 
@@ -389,8 +420,8 @@ fun BirdFullDescription(bird: Bird) {
         text = stringResource(id = R.string.bird_full_description),
         style = TextStyle(
             fontWeight = FontWeight.Bold,
-            fontSize = 18.sp,
-            lineHeight = 18.sp,
+            fontSize = MEDIUM_TEXT_SIZE,
+            lineHeight = MEDIUM_TEXT_SIZE,
             letterSpacing = 0.sp,
             textAlign = TextAlign.Left,
             color = MossGreenPrimary,
@@ -401,8 +432,8 @@ fun BirdFullDescription(bird: Bird) {
         text = bird.description,
         style = TextStyle(
             fontWeight = FontWeight.Normal,
-            fontSize = 16.sp,
-            lineHeight = 16.sp,
+            fontSize = SUBTITLE_TEXT_SIZE,
+            lineHeight = SUBTITLE_TEXT_SIZE,
             letterSpacing = 0.sp,
             textAlign = TextAlign.Justify,
             color = Color.White,

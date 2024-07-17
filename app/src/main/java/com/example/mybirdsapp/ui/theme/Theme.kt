@@ -7,11 +7,11 @@ import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 
-//el primary no se usa
-//el secondary no se usa
-//el terciary es para el appbar
-//el primaryContainer es para el fondo de la card
-//el secondaryContainer es para los botones del HomePage
+// el primary no se usa
+// el secondary no se usa
+// el terciary es para el appbar
+// el primaryContainer es para el fondo de la card
+// el secondaryContainer es para los botones del HomePage
 
 private val DarkColorScheme = darkColorScheme(
     primary = MossGreenPrimary,
