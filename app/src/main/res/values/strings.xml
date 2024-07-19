@@ -7,7 +7,7 @@
     <string name="birds_page_title">Lista de Aves</string>
     <string name="bird_description_page_title">Información Detallada</string>
     <string name="observation_routes_page_title">Recorridos</string>
-    <string name="about_us_page_title">Sobre nosotros</string>
+    <string name="about_us_page_title">Créditos</string>
 
     <string name="app_name">Aves de Merlo</string>
 
@@ -15,18 +15,23 @@
     <string name="main_page_image_description">Imagen de aves</string>
     <string name="back_button">Boton flecha atras</string>
     <string name="image_bird_description">Imagen del pajaro mencionado</string>
+    <string name="image_book_description">Tapa del libro</string>
+    <string name="image_writer_description">Foto del escritor del libro</string>
     <string name="image_ruler_description">Imagen de regla</string>
     <string name="image_mountain_description">Imagen de montaña</string>
 
     #Buttons actions
     <string name="button_cancel">Menu</string>
     <string name="button_share">Compartir</string>
-    <string name="button_share_text">Te invito a descargar esta aplicación sobre aves.\nTiene mucho contenido interesante! En la Play Store aparece como Aves Merlo San Luis</string>
+    <string name="button_whatsapp">Contactar a Raúl</string>
+    <string name="button_linkedIn">Perfil LinkedIn</string>
+    <string name="button_share_text">Te invito a descargar esta aplicación sobre aves.\n
+    Tiene mucho contenido interesante! En la Play Store aparece como Aves Merlo San Luis</string>
 
     #Buttons names
     <string name="birds_list">Lista de Aves</string>
     <string name="observation_routes">Recorridos</string>
-    <string name="about_us">Sobre nosotros</string>
+    <string name="about_us">  Créditos  </string>
     <string name="button_info">Information</string>
 
     #Texts
@@ -37,7 +42,23 @@
     <string name="bird_frequency">Facilidad observación</string>
     <string name="bird_hight_location">Altimetría (msnm)</string>
     <string name="bird_full_description">Descripción general</string>
-    <string name="tooltip_message_observation_routes">En esta sección se muestran\ndistintos recorridos para\nrealizar en la zona serrana\ny avistar distintos tipos de aves.</string>
+    <string name="tooltip_message_observation_routes">En esta sección se muestran\n
+    distintos recorridos para\nrealizar en la zona serrana\ny avistar distintos tipos de aves.</string>
+
+    #About Us Page
+    <string name="book_name">Libro Aves de las Sierras Centrales de Merlo</string>
+    <string name="book_full_description">Este libro fue escrito en 2020 con el objetivo de ayudar a los
+    observadores de aves a relacionar con más claridad a los distintos tipos de aves.\nIncluye
+    información importante para detectar distintos de aves en las sierras Centrales,
+    especialmente en Merlo, San Luis y alrededores.</string>
+
+    <string name="writer_name">Escritor Raúl Balla</string>
+    <string name="writer_full_description">Raúl es un argentino amante de los pájaros. Este libro fue escrito en 2020 con el objetivo de ayudar a los
+    observadores de aves a relacionar con más claridad a los distintos tipos de aves.\nIncluye
+    información importante para detectar distintos de aves en las sierras Centrales,
+    especialmente en Merlo, San Luis y alrededores.</string>
+
+    <string name="developer_name">Programador\nAgustin Pernas</string>
 
     #Texts heights location
     <string name="height_location_1">\n500/1200</string>

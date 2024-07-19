@@ -1,7 +1,6 @@
 package com.example.mybirdsapp.views
 
 import android.content.Intent
-import android.graphics.drawable.shapes.Shape
 import android.net.Uri
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
@@ -24,8 +23,6 @@ import androidx.compose.material3.ExtendedFloatingActionButton
 import androidx.compose.material3.FilledTonalButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.LargeFloatingActionButton
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Shapes
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -37,7 +34,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Shadow
-import androidx.compose.ui.graphics.drawscope.DrawStyle
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
@@ -98,11 +94,11 @@ fun HomePage(
             Modifier.padding(top = 40.dp)
         )
         Image(
-            painter = painterResource(id = R.drawable.zorzal_chiguanco_pruebaa),
+            painter = painterResource(id = R.drawable.zorzal_bird),
             contentDescription = stringResource(R.string.main_page_image_description),
             modifier = Modifier
                 .size(200.dp)
-                .padding(top = 40.dp)
+                .padding(top = 50.dp)
                 .border(BorderStroke(1.dp, OrangeBird)),
             contentScale = ContentScale.Crop
         )
@@ -124,7 +120,7 @@ fun RowTitle(modifier: Modifier) {
             color = Color.White,
             shadow = Shadow(OrangeBird),
         ),
-        modifier = modifier.padding(top = 15.dp)
+        modifier = modifier.padding(top = 30.dp)
     )
     Text(
         text = stringResource(R.string.subtitle_main_page),
@@ -151,7 +147,8 @@ fun RowTitle(modifier: Modifier) {
             color = Color.White,
             shadow = Shadow(OrangeBird)
         ),
-        modifier = modifier.padding(5.dp)
+        modifier = modifier
+            .padding(top = 5.dp, start = 5.dp, end = 5.dp, bottom = 25.dp)
     )
 }
 
@@ -162,7 +159,7 @@ fun MyFilledButton(onClick: () -> Unit, buttonText: Int, modifier: Modifier) {
         modifier,
         border = BorderStroke(0.7.dp, MossGreenPrimaryContainer),
     ) {
-        Text(stringResource(buttonText), fontSize = 26.sp)
+        Text(stringResource(buttonText), fontSize = 24.sp)
     }
 }
 

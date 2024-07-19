@@ -257,7 +257,7 @@ fun RowBirdAttributes(bird: Bird){
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .height(120.dp)
+            .height(150.dp)
             .padding(top = 35.dp, start = 5.dp, end = 5.dp)
     ) {
         Column(
