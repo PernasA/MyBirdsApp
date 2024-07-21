@@ -17,11 +17,11 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.example.mybirdsapp.R
 import com.example.mybirdsapp.viewModels.BirdsListViewModel
+import com.example.mybirdsapp.viewModels.ObservationRoutesViewModel
 import com.example.mybirdsapp.views.BirdsListPage
 import com.example.mybirdsapp.views.AboutUsPage
 import com.example.mybirdsapp.views.BirdDescriptionPage
 import com.example.mybirdsapp.views.HomePage
-import com.example.mybirdsapp.views.MyAppBar
 import com.example.mybirdsapp.views.ObservationRoutesPage
 
 enum class NameOfScreen(@StringRes val title: Int) {
@@ -35,6 +35,7 @@ enum class NameOfScreen(@StringRes val title: Int) {
 @Composable
 fun Navigation(
     birdsListViewModel: BirdsListViewModel,
+    observationRoutesViewModel: ObservationRoutesViewModel,
     navController: NavHostController = rememberNavController(),
 ) {
     val backStackEntry by navController.currentBackStackEntryAsState()
@@ -50,7 +51,7 @@ fun Navigation(
             )
         }
     ) { innerPadding ->
-        CreateNavigationHost(navController, birdsListViewModel, innerPadding)
+        CreateNavigationHost(navController, birdsListViewModel, observationRoutesViewModel, innerPadding)
     }
 }
 
@@ -58,6 +59,7 @@ fun Navigation(
 private fun CreateNavigationHost(
     navController: NavHostController,
     birdsListViewModel: BirdsListViewModel,
+    observationRoutesViewModel: ObservationRoutesViewModel,
     innerPadding: PaddingValues
 ) {
     NavHost(
@@ -103,25 +105,15 @@ private fun CreateNavigationHost(
 
         composable(route = NameOfScreen.ObservationRoutesPageNav.name) {
             ObservationRoutesPage(
+                observationRoutesViewModel,
                 observationRouteDescriptionOnClick = {
                     navController.navigate(NameOfScreen.ObservationRoutesPageNav.name)
-                }
+                },
             )
         }
 
         composable(route = NameOfScreen.AboutUsPageNav.name) {
             AboutUsPage()
-//            DatabaseWidget(
-//                homeViewModel = homeViewModel,
-//                state = homeViewModel.state,
-//                onNextButtonClicked = {
-//                    navController.navigate(NameOfScreen.ObservationRoutesPageNav.name)
-//                },
-//                onCancelButtonClicked = {
-//                    cancelOrderAndNavigateToStart(navController)
-//                },
-//                Modifier.padding(innerPadding)
-//            )
         }
     }
 }

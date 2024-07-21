@@ -1,4 +1,4 @@
-package com.example.mybirdsapp.views
+package com.example.mybirdsapp.main
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
@@ -13,7 +13,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import com.example.mybirdsapp.R
-import com.example.mybirdsapp.main.NameOfScreen
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

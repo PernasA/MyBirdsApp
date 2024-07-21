@@ -9,7 +9,7 @@ import com.example.mybirdsapp.R
 import com.example.mybirdsapp.models.Bird
 import com.example.mybirdsapp.models.room.RoomBird
 import com.example.mybirdsapp.models.room.RoomBirdsDao
-import com.example.mybirdsapp.utils.loadJsonFromAssets
+import com.example.mybirdsapp.utils.loadJsonBirdsFromAssets
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
@@ -23,7 +23,7 @@ class BirdsListViewModel(
 
     init {
         viewModelScope.launch(Dispatchers.IO) {
-            val birdJsonList = loadJsonFromAssets(context, "birds_list.json")
+            val birdJsonList = loadJsonBirdsFromAssets(context, "birds_list.json")
             dataBirdsList = birdJsonList.map { birdJson ->
                 Bird(
                     name = birdJson.name,

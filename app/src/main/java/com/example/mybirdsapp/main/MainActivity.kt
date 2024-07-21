@@ -12,16 +12,17 @@ import androidx.room.Room
 import com.example.mybirdsapp.ui.theme.MyBirdsAppTheme
 import com.example.mybirdsapp.models.room.RoomBirdsDatabase
 import com.example.mybirdsapp.viewModels.BirdsListViewModel
+import com.example.mybirdsapp.viewModels.ObservationRoutesViewModel
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         val birdsListViewModel = prepareDatabaseAndBirdsListViewModel(this)
-
+        val observationRoutesViewModel = ObservationRoutesViewModel(this)
         setContent {
             MyBirdsAppTheme (darkTheme = true) {
-                Navigation(birdsListViewModel.value)
+                Navigation(birdsListViewModel.value, observationRoutesViewModel)
             }
         }
     }

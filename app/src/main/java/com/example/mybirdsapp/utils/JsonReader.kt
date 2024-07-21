@@ -2,13 +2,25 @@ package com.example.mybirdsapp.utils
 
 import android.content.Context
 import com.example.mybirdsapp.models.BirdJson
+import com.example.mybirdsapp.models.ObservationRoute
 import com.google.gson.reflect.TypeToken
 import com.google.gson.Gson
 import java.io.InputStreamReader
 
-fun loadJsonFromAssets(context: Context, fileName: String): List<BirdJson> {
+fun loadJsonBirdsFromAssets(
+    context: Context, fileName: String
+): List<BirdJson> {
     val inputStream = context.assets.open(fileName)
     val reader = InputStreamReader(inputStream)
     val type = object : TypeToken<List<BirdJson>>() {}.type
+    return Gson().fromJson(reader, type)
+}
+
+fun loadJsonObservationRoutesFromAssets(
+    context: Context, fileName: String
+): List<ObservationRoute> {
+    val inputStream = context.assets.open(fileName)
+    val reader = InputStreamReader(inputStream)
+    val type = object : TypeToken<List<ObservationRoute>>() {}.type
     return Gson().fromJson(reader, type)
 }

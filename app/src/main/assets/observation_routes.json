@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "name": "Damiana Vega",
+    "description": "",
+    "image_name": "",
+    "birds": [
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Filo Serrano y arroyos",
+    "description": "",
+    "image_name": "",
+    "birds": [
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Monte del Whitii",
+    "description": "",
+    "image_name": "",
+    "birds": [
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Bajo de Veliz",
+    "description": "",
+    "image_name": "",
+    "birds": [
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Carpintería",
+    "description": "",
+    "image_name": "",
+    "birds": [
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Lago Piscu Yaco",
+    "description": "",
+    "image_name": "",
+    "birds": [
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Boca del Río",
+    "description": "",
+    "image_name": "",
+    "birds": [
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Reserva Don Félix y Sacha Juan",
+    "description": "",
+    "image_name": "",
+    "birds": [
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 },
+      { "id": 1 }
+    ]
+  }
+]
