@@ -14,7 +14,5 @@ data class BirdJson (
     @SerializedName("scientific_name")
     val scientificName: String = "",
     @SerializedName("english_name")
-    val englishName: String = "",
-    @SerializedName("image_name")
-    val imageName: String = ""
+    val englishName: String = ""
 )

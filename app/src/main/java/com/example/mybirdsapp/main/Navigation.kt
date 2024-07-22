@@ -22,6 +22,7 @@ import com.example.mybirdsapp.views.BirdsListPage
 import com.example.mybirdsapp.views.AboutUsPage
 import com.example.mybirdsapp.views.BirdDescriptionPage
 import com.example.mybirdsapp.views.HomePage
+import com.example.mybirdsapp.views.ObservationRouteDescriptionPage
 import com.example.mybirdsapp.views.ObservationRoutesPage
 
 enum class NameOfScreen(@StringRes val title: Int) {
@@ -29,6 +30,7 @@ enum class NameOfScreen(@StringRes val title: Int) {
     BirdsPageNav(title = R.string.birds_page_title),
     BirdDescriptionPageNav(title = R.string.bird_description_page_title),
     ObservationRoutesPageNav(title = R.string.observation_routes_page_title),
+    ObservationRouteDescriptionPageNav(title = R.string.observation_route_description_page_title),
     AboutUsPageNav(title = R.string.about_us_page_title)
 }
 
@@ -106,10 +108,23 @@ private fun CreateNavigationHost(
         composable(route = NameOfScreen.ObservationRoutesPageNav.name) {
             ObservationRoutesPage(
                 observationRoutesViewModel,
-                observationRouteDescriptionOnClick = {
-                    navController.navigate(NameOfScreen.ObservationRoutesPageNav.name)
+                observationRouteDescriptionOnClick = { observationRoute ->
+                    navController.navigate(
+                        "${NameOfScreen.ObservationRouteDescriptionPageNav.name}/${observationRoute.id}"
+                    )
                 },
             )
+        }
+
+        composable(
+            route = "${NameOfScreen.ObservationRouteDescriptionPageNav.name}/{observationRouteId}",
+            arguments = listOf(
+                navArgument("observationRouteId") { type = NavType.IntType }
+            )
+        ) { backStackEntry ->
+            val observationRouteId = backStackEntry.arguments?.getInt("observationRouteId") ?: return@composable
+            val observationRoute = observationRoutesViewModel.getObservationRouteById(observationRouteId) ?: return@composable
+            ObservationRouteDescriptionPage(observationRoute, observationRoutesViewModel, birdsListViewModel)
         }
 
         composable(route = NameOfScreen.AboutUsPageNav.name) {
@@ -124,6 +139,7 @@ fun getCurrentScreen(route: String?): NameOfScreen {
         route.startsWith("${NameOfScreen.BirdDescriptionPageNav.name}/") -> NameOfScreen.BirdDescriptionPageNav
         route == NameOfScreen.BirdsPageNav.name -> NameOfScreen.BirdsPageNav
         route == NameOfScreen.ObservationRoutesPageNav.name -> NameOfScreen.ObservationRoutesPageNav
+        route.startsWith("${NameOfScreen.ObservationRouteDescriptionPageNav.name}/") -> NameOfScreen.ObservationRouteDescriptionPageNav
         route == NameOfScreen.AboutUsPageNav.name -> NameOfScreen.AboutUsPageNav
         else -> NameOfScreen.StartNav
     }

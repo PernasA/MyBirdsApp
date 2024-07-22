@@ -9,6 +9,7 @@ import com.example.mybirdsapp.R
 import com.example.mybirdsapp.models.Bird
 import com.example.mybirdsapp.models.room.RoomBird
 import com.example.mybirdsapp.models.room.RoomBirdsDao
+import com.example.mybirdsapp.utils.DrawableResourcesMap
 import com.example.mybirdsapp.utils.loadJsonBirdsFromAssets
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.first
@@ -35,7 +36,7 @@ class BirdsListViewModel(
                     scientificName = birdJson.scientificName,
                     englishName = birdJson.englishName,
                     description = birdJson.description,
-                    imageResId = getDrawableIdByName(context, birdJson.imageName)
+                    imageResId = getDrawableIdByName(birdJson.id)
                 )
             }
 
@@ -52,17 +53,8 @@ class BirdsListViewModel(
         }
     }
 
-    private fun getDrawableIdByName(context: Context, imageName: String): Int {
-        try {
-            val resourceId = context.resources.getIdentifier(imageName, "drawable", context.packageName)
-            if (resourceId == 0) {
-                throw Resources.NotFoundException("Resource not found")
-            }
-            return resourceId
-        } catch (e: Resources.NotFoundException) {
-            Log.e("ImageError", "Imagen no encontrada: $imageName", e)
-            return R.drawable.orange_bird_draw
-        }
+    private fun getDrawableIdByName(birdId: Int): Int {
+        return DrawableResourcesMap.drawableMapBirds[birdId] ?: R.drawable.orange_bird_draw
     }
 
     fun getBirdById(birdId: Int): Bird? {

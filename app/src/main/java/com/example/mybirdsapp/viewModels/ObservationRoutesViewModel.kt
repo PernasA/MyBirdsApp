@@ -1,12 +1,11 @@
 package com.example.mybirdsapp.viewModels
 
 import android.content.Context
-import android.content.res.Resources
-import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.mybirdsapp.R
 import com.example.mybirdsapp.models.ObservationRoute
+import com.example.mybirdsapp.utils.DrawableResourcesMap
 import com.example.mybirdsapp.utils.loadJsonObservationRoutesFromAssets
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -23,17 +22,8 @@ class ObservationRoutesViewModel(
         }
     }
 
-    private fun getDrawableIdByName(context: Context, imageName: String): Int {
-        try {
-            val resourceId = context.resources.getIdentifier(imageName, "drawable", context.packageName)
-            if (resourceId == 0) {
-                throw Resources.NotFoundException("Resource not found")
-            }
-            return resourceId
-        } catch (e: Resources.NotFoundException) {
-            Log.e("ImageError", "Imagen no encontrada: $imageName", e)
-            return R.drawable.map
-        }
+    fun getDrawableIdByRouteId(routeId: Int): Int {
+        return DrawableResourcesMap.drawableMapObservationRoutes[routeId] ?: R.drawable.map
     }
 
     fun getObservationRouteById(observationRouteId: Int): ObservationRoute? {

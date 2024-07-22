@@ -7,6 +7,7 @@
     <string name="birds_page_title">Lista de Aves</string>
     <string name="bird_description_page_title">Información Detallada</string>
     <string name="observation_routes_page_title">Recorridos</string>
+    <string name="observation_route_description_page_title">Información de ruta</string>
     <string name="about_us_page_title">Créditos</string>
 
     <string name="app_name">Aves de Merlo</string>
@@ -19,11 +20,13 @@
     <string name="image_writer_description">Foto del escritor del libro</string>
     <string name="image_ruler_description">Imagen de regla</string>
     <string name="image_mountain_description">Imagen de montaña</string>
+    <string name="image_route_description">Imagen de la ruta de observación mencionada</string>
 
     #Buttons actions
     <string name="button_cancel">Menu</string>
     <string name="button_share">Compartir</string>
     <string name="button_whatsapp">Contactar a Raúl</string>
+    <string name="button_maps">Ver en Google Maps</string>
     <string name="button_linkedIn">Perfil LinkedIn</string>
     <string name="button_share_text">Te invito a descargar esta aplicación sobre aves.\n
     Tiene mucho contenido interesante! En la Play Store aparece como Aves Merlo San Luis</string>

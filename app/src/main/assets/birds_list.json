@@ -5,11 +5,9 @@
     "height": 39,
     "height_location": 1,
     "frequency": 2,
-    "risk": "high",
     "scientific_name": "Eudromia elegans",
     "english_name": "Elegant Crested-Tinamou",
-    "image_name": "zorzal_bird",
-    "description": "Descripción: cabeza grisácea con largo y fino copete negro rebatido hacia adelante; dos franjas blancas que se extienden arriba y debajo de los ojos, descendiendo por el cuello. Garganta blanca. Plumaje en general gris ocráceo, moteado con blanco y jaspeado con negro. Cola corta. Pico negruzco, robusto y algo curvado. Patas azuladas. Juvenil: menor tamaño que el adulto. Comportamiento: generalmente erguida; caminadora, se mantiene en grupos, rara vez vuela. Cuando percibe peligro corre y se oculta entre matas; en ocasiones escapa mediante imprevisto vuelo recto y corto. Alimentación: brotes, frutos, granos e insectos. Hábitat:  ambientes áridos, montes y pastizales. Comentario: conocida vulgarmente como Copetona."
+    "description": "Cabeza grisácea con largo y fino copete negro rebatido hacia adelante; dos franjas blancas que se extienden arriba y debajo de los ojos, descendiendo por el cuello. Garganta blanca. Plumaje en general gris ocráceo, moteado con blanco y jaspeado con negro. Cola corta. Pico negruzco, robusto y algo curvado. Patas azuladas. Juvenil: menor tamaño que el adulto. Comportamiento: generalmente erguida; caminadora, se mantiene en grupos, rara vez vuela. Cuando percibe peligro corre y se oculta entre matas; en ocasiones escapa mediante imprevisto vuelo recto y corto. Alimentación: brotes, frutos, granos e insectos. Hábitat:  ambientes áridos, montes y pastizales. Comentario: conocida vulgarmente como Copetona."
   },
   {
     "id": 2,
@@ -17,11 +15,9 @@
     "height": 25,
     "height_location": 123,
     "frequency": 3,
-    "risk": "high",
     "scientific_name": "Nothura maculosa",
     "english_name": "Spotted Nothura",
-    "image_name": "",
-    "description": "Descripción: plumaje críptico, estriado en su totalidad de negro, ocre y canela. Garganta blanca y vientre acanelado; flancos barrados. Cola corta parda. Patas amarillentas. Comportamiento: generalmente solitario,  terrícola. En ocasión de peligro se oculta o levanta vuelo en forma torpe y ruidosa, recorre unos 30 metros, cae bruscamente y se oculta nuevamente. Incuba el macho. Alimentación: principalmente semillas, también consume hormigas, saltamontes y orugas. Hábitat: a orillas de rutas,  áreas rurales, pastizales bajos, hasta la zona alta de la sierra de. Comentario: frecuente presa de cazadores, es el más conocido de los Inambúes, comúnmente llamado \"Perdiz\"."
+    "description": "Plumaje críptico, estriado en su totalidad de negro, ocre y canela. Garganta blanca y vientre acanelado; flancos barrados. Cola corta parda. Patas amarillentas. Comportamiento: generalmente solitario,  terrícola. En ocasión de peligro se oculta o levanta vuelo en forma torpe y ruidosa, recorre unos 30 metros, cae bruscamente y se oculta nuevamente. Incuba el macho. Alimentación: principalmente semillas, también consume hormigas, saltamontes y orugas. Hábitat: a orillas de rutas,  áreas rurales, pastizales bajos, hasta la zona alta de la sierra de. Comentario: frecuente presa de cazadores, es el más conocido de los Inambúes, comúnmente llamado \"Perdiz\"."
   },
   {
     "id": 3,
@@ -29,11 +25,9 @@
     "height": 44,
     "height_location": 1,
     "frequency": 3,
-    "risk": "high",
     "scientific_name": "Podiceps major",
     "english_name": "Great Grebe",
-    "image_name": "orange_bird_draw",
-    "description": "Descripción: esbelto. Cabeza gris; ojo pardo oscuro, iris con círculo blanco; nuca y copete negro que asemeja una crin; cuello largo negruzco por detrás y canela rojizo en los costados. Dorsal negro verdoso. Pecho canela; ventral blanco. Cola castaño rojiza. Pico largo y puntiagudo. Patas negras. Juvenil: líneas blancas y castañas en el cuello. Comportamiento: generalmente en pareja, muy acuático, confiado. Traslada a sus crías en el lomo. Alimentación: peces, ranas y crustáceos. Hábitat: lagos, represas y embalses. Comentario: plumaje muy vistoso en época reproductiva y mas pálido en período de reposo. Su canto asemeja un silbo atrompetado que suena como un lamento. También conocido como Huala."
+    "description": "Esbelto. Cabeza gris; ojo pardo oscuro, iris con círculo blanco; nuca y copete negro que asemeja una crin; cuello largo negruzco por detrás y canela rojizo en los costados. Dorsal negro verdoso. Pecho canela; ventral blanco. Cola castaño rojiza. Pico largo y puntiagudo. Patas negras. Juvenil: líneas blancas y castañas en el cuello. Comportamiento: generalmente en pareja, muy acuático, confiado. Traslada a sus crías en el lomo. Alimentación: peces, ranas y crustáceos. Hábitat: lagos, represas y embalses. Comentario: plumaje muy vistoso en época reproductiva y mas pálido en período de reposo. Su canto asemeja un silbo atrompetado que suena como un lamento. También conocido como Huala."
   },
   {
     "id": 4,
@@ -41,11 +35,9 @@
     "height": 28,
     "height_location": 1,
     "frequency": 3,
-    "risk": "high",
     "scientific_name": "Podilymbus podiceps",
     "english_name": "Pied-billed Grebe",
-    "image_name": "orange_bird_draw",
-    "description": "Descripción: aspecto compacto, color pardo grisáceo; corona y dorso algo más oscuros. Ventral gris claro jaspeado. Pico blanco amarillento. Patas negras. Comportamiento: vive en pareja, bastante territorial, esquivo, arisco y muy acuático. Alimentación: peces, crustáceos y larvas que obtiene en sus continuas inmersiones. Hábitat: lagos, lagunas y represas rurales. Comentario: frente al mínimo peligro se zambulle cambiando su ubicación. En época de reproducción presenta un plumaje mas contrastado, garganta oscura, franja negra en el medio del pico y periocular blanco intenso."
+    "description": "Aspecto compacto, color pardo grisáceo; corona y dorso algo más oscuros. Ventral gris claro jaspeado. Pico blanco amarillento. Patas negras. Comportamiento: vive en pareja, bastante territorial, esquivo, arisco y muy acuático. Alimentación: peces, crustáceos y larvas que obtiene en sus continuas inmersiones. Hábitat: lagos, lagunas y represas rurales. Comentario: frente al mínimo peligro se zambulle cambiando su ubicación. En época de reproducción presenta un plumaje mas contrastado, garganta oscura, franja negra en el medio del pico y periocular blanco intenso."
   },
   {
     "id": 5,
@@ -53,11 +45,9 @@
     "height": 23,
     "height_location": 1,
     "frequency": 3,
-    "risk": "high",
     "scientific_name": "Rollandia rolland",
     "english_name": "White-tufted Grebe",
-    "image_name": "orange_bird_draw",
-    "description": "Descripción: la cabeza destaca el color rojo intenso de su iris y un penacho blanco con líneas negruzcas, mas erizado en la zona auricular; parte posterior de la cabeza, cuello y dorso negro intenso. Flancos pardo rojizo. En periodo de reposo su plumaje es mas parduzco, con flancos y vientre blanquecino. Juvenil: color gris parduzco con cuello estriado de blanco. Comportamiento: en pareja y grupos, vuela poco, muy acuático, zambullidor. Alimentación: peces y pequeños crustáceos. Hábitat: lagos, represas y lagunas. Comentario: su coloración es más llamativa en época de reproducción."
+    "description": "La cabeza destaca el color rojo intenso de su iris y un penacho blanco con líneas negruzcas, mas erizado en la zona auricular; parte posterior de la cabeza, cuello y dorso negro intenso. Flancos pardo rojizo. En periodo de reposo su plumaje es mas parduzco, con flancos y vientre blanquecino. Juvenil: color gris parduzco con cuello estriado de blanco. Comportamiento: en pareja y grupos, vuela poco, muy acuático, zambullidor. Alimentación: peces y pequeños crustáceos. Hábitat: lagos, represas y lagunas. Comentario: su coloración es más llamativa en época de reproducción."
   },
   {
     "id": 6,
@@ -65,142 +55,379 @@
     "height": 75,
     "height_location": 1,
     "frequency": 2,
-    "risk": "high",
     "scientific_name": "Ardea cocoi",
     "english_name": "Cocoi Heron",
-    "image_name": "orange_bird_draw",
-    "description": "Descripción: corona con largas plumas nucales negras; garganta y cuello\nblanco con línea negra discontinua en la parte anterior del cuello. Dorso\ngris; alas negras con cubiertas grises. Pecho blanco; ventral negruzco. Cola\nnegra. Pico largo y robusto de color naranja con base amarillenta. Patas\nlargas negruzcas. Juvenil: plumaje mas grisáceo. Comportamiento:\nsolitaria, muy arisca, vuelo elegante y pausado. Alimentación: peces,\nanfibios y reptiles. Hábitat: tanto en espejos de agua como en ambientes\nacuáticos con vegetación, donde predomine la tranquilidad. Comentario:\nes la más grande de las garzas de la región."
+    "description": "Corona con largas plumas nucales negras; garganta y cuello\nblanco con línea negra discontinua en la parte anterior del cuello. Dorso\ngris; alas negras con cubiertas grises. Pecho blanco; ventral negruzco. Cola\nnegra. Pico largo y robusto de color naranja con base amarillenta. Patas\nlargas negruzcas. Juvenil: plumaje mas grisáceo. Comportamiento:\nsolitaria, muy arisca, vuelo elegante y pausado. Alimentación: peces,\nanfibios y reptiles. Hábitat: tanto en espejos de agua como en ambientes\nacuáticos con vegetación, donde predomine la tranquilidad. Comentario:\nes la más grande de las garzas de la región."
   },
   {
     "id": 7,
-    "name": "Colibri",
-    "height": 25,
-    "height_location": 5,
-    "frequency": 1,
-    "risk": "high",
-    "scientific_name": "",
-    "english_name": "",
-    "image_name": "orange_bird_draw",
-    "description": ""
+    "name": "Garza Blanca",
+    "height": 65,
+    "height_location": 1,
+    "frequency": 3,
+    "scientific_name": "Ardea alba",
+    "english_name": "Great Egret",
+    "description": "Grande; completamente blanca, las patas son negras, en vuelo sobrepasan el largo del cuerpo. Pico amarillo anaranjado, muy largo y puntiagudo. Iris amarillo. Juvenil: similar al adulto pero con pico negro. Comportamiento: solitaria o en grupo, a veces junto a otras garzas. A\nmenudo posa en árboles. Alimentación: captura peces, anfibios y crustáceos. Hábitat: lagos, lagunas, represas y otros humedales en campos bajos. Comentario: vuela lento y pausado como todas las garzas, lo hace con el cuello retraído en forma de \"S\". Camina con sigilo en orillas decursos y espejos de agua. En periodo reproductivo desarrolla en pecho y dorso, largas y desflecadas plumas llamadas \"egretes\"."
   },
   {
     "id": 8,
-    "name": "Paloma",
-    "height": 25,
-    "height_location": 5,
-    "frequency": 1,
-    "risk": "high",
-    "scientific_name": "",
-    "english_name": "",
-    "image_name": "orange_bird_draw",
-    "description": ""
+    "name": "Garcita Blanca",
+    "height": 40,
+    "height_location": 1,
+    "frequency": 3,
+    "scientific_name": "Egretta thula",
+    "english_name": "Snowy Egret",
+    "description": "Completamente blanca. Iris amarillo. Pico puntiagudo negro, en su base amarillo. Patas negras con dedos amarillos, en vuelo sobrepasan su cuerpo. Juvenil: similar a los adultos, salvo sus patas que son negruzcas con amarillo verdoso. Comportamiento: con frecuencia en grupos o bandadas junto a otras garzas. Alimentación: peces, crustáceos e insectos. Hábitat: humedales, islotes, represas, lagos y zonas rurales. Comentario: vuelo elegante y lento, cuello retraído. En periodo de reproducción presenta largos \"egretes\" en zona nucal, pecho y dorso. Hábil pescadora."
   },
   {
     "id": 9,
-    "name": "Zorzal",
-    "height": 25,
-    "height_location": 5,
-    "frequency": 1,
-    "risk": "high",
-    "scientific_name": "",
-    "english_name": "",
-    "image_name": "orange_bird_draw",
-    "description": ""
+    "name": "Garcita Bueyera",
+    "height": 35,
+    "height_location": 1,
+    "frequency": 2,
+    "scientific_name": "Bubulcus ibis",
+    "english_name": "Cattle Egret",
+    "description": "Plumaje de reposo sexual enteramente blanco. Iris amarillo, cuello más corto que otras garzas. Pico robusto y grueso, amarillo anaranjado. Patas negro verdosas con dedos negruzcos. Juvenil: pico y patas negras. Comportamiento: siempre en grupos y bandadas, bastante caminadora. Alimentación: captura insectos, si logra atrapar una rana o lagartija no la desaprovecha. Hábitat: en campos acompañando al ganado; también en humedales y represas; posa en árboles y postes. Comentario: en periodo reproductivo aparecen plumas canela en la corona, nuca, pecho y dorso; sus patas se tornan amarillo rojizo. Esta garza (originaria de África) apareció en el país a principio de la década del 70 y se distribuyó ampliamente por todo el territorio."
   },
   {
     "id": 10,
-    "name": "Martineta",
-    "height": 25,
-    "height_location": 13,
-    "frequency": 1,
-    "risk": "high",
-    "scientific_name": "",
-    "english_name": "",
-    "image_name": "orange_bird_draw",
-    "description": ""
+    "name": "Garcita Azulada",
+    "height": 34,
+    "height_location": 1,
+    "frequency": 2,
+    "scientific_name": "Butorides striata",
+    "english_name": "Striated Heron",
+    "description": "Iris amarillo; corona y nuca con largas plumas negras. Dorso y alas gris azulada con ribetes blancos en las secundarias. Garganta y parte anterior del cuello ocráceo; flancos y vientre grisáceos. Cola gris. Pico negruzco con base más clara, con relación a la cabeza, es largo y agudo. Patas amarillas. Juvenil: plumaje más pálido, pecho y vientre estriado. Comportamiento: solitaria, muy arisca, generalmente permanece semi agachada. Menea la cola. Alimentación: captura peces, reptiles, anfibios e insectos. Hábitat: cerca del agua, en represas rurales, arroyos, lagos; entre la vegetación o sobre ramas. Comentario: en época reproductiva las patas se tornan más anaranjadas; el dorso y alas se oscurecen más aún. Practica la pesca quedándose inmóvil."
   },
   {
     "id": 11,
-    "name": "Colibri",
-    "height": 25,
-    "height_location": 5,
-    "frequency": 1,
-    "risk": "high",
-    "scientific_name": "",
-    "english_name": "",
-    "image_name": "orange_bird_draw",
-    "description": ""
+    "name": "Cuervillo de Cañada",
+    "height": 40,
+    "height_location": 1,
+    "frequency": 3,
+    "scientific_name": "Plegadis chihi",
+    "english_name": "White-faced Ibis",
+    "description": "Iris rojo. Coloración general pardo rojizo con reflejos violáceos. Pico largo, curvo, negruzco. Patas negras, en vuelo sobrepasan bastante la cola. Juvenil: parduzco, cabeza y cuello jaspeado de blanco. Comportamiento: bastante terrícola. Forma grandes grupos, vuela en bandadas, lo hace con el cuello y patas estiradas, mantienen formación en V. Alimentación: peces, caracoles, langostas y larvas. Hábitat: diversos ambientes acuáticos poco profundos, humedales rurales, pantanos, represas y orillas de lagos. Comentario: en período reproductivo sus colores son más brillantes, con reflejos verdes, el dorso castaño y cara con línea blanca."
   },
   {
     "id": 12,
-    "name": "Paloma",
-    "height": 25,
-    "height_location": 5,
-    "frequency": 1,
-    "risk": "high",
-    "scientific_name": "",
-    "english_name": "",
-    "image_name": "orange_bird_draw",
-    "description": ""
+    "name": "Cóndor Andino",
+    "height": 95,
+    "height_location": 23,
+    "frequency": 3,
+    "scientific_name": "Vultur gryphus",
+    "english_name": "Andean Condor",
+    "description": "Gran tamaño, envergadura alar de 3 metros aproximadamente. Coloración negra. Cabeza y cuello implumes; collar blanco. Alas con primarias abiertas (como dedos) y cubiertas externas negras; destacado manto dorsal blanco, visible aún desde lejos. Macho posee cresta grande y el iris pardo; en la hembra el iris es rojo. Pico negro en su base y blanquecino el resto. Patas grises. Juvenil: pardo con la cabeza negruzca. Comportamiento: vive en grupos. Monógamo, confiado, posa en sitios expuestos. Alimentación: no es cazador, se alimenta de carroña. Hábitat: diariamente surca el cielo en las sierras de Comechingones. Comentario: majestuoso planeador, provoca alegría y admiración cuando nuestros ojos perciben su cercanía. Su vida se extiende hasta los 70 años"
   },
   {
     "id": 13,
-    "name": "Zorzal",
-    "height": 25,
-    "height_location": 5,
-    "frequency": 1,
-    "risk": "high",
-    "scientific_name": "",
-    "english_name": "",
-    "image_name": "orange_bird_draw",
-    "description": ""
+    "name": "Jote Cabeza Colorada",
+    "height": 55,
+    "height_location": 123,
+    "frequency": 3,
+    "scientific_name": "Cathartes aura",
+    "english_name": "Turkey Vulture",
+    "description": "Cabeza y parte del cuello colorado con pliegues blancos, implumes. Iris pardo con fino anillo blanco alrededor de la pupila. Plumaje pardo muy oscuro; visto desde abajo su silueta y el color blancuzco de las remeras hacen fácil su identificación. Pico blanquecino. Patas rosadas. Comportamiento: solitario, a veces 2 o 3 ejemplares planeando juntos remontando en las corrientes térmicas. Frecuentemente se lo ve con las alas extendidas aireándose, método que utiliza para combatir parásitos. Alimentación: carroña. Hábitat: distintos ambientes y alturas, en áreas rurales, periurbanas y serranías. Comentario: cumple un papel importante como \"Ave Limpiadora\". Con su elegante planeo surca el cielo en permanente búsqueda de alimento; su aguda visión y sensible olfato le ayudan a encontrar animales en descomposición."
   },
   {
     "id": 14,
-    "name": "Martineta",
-    "height": 25,
-    "height_location": 5,
-    "frequency": 1,
-    "risk": "high",
-    "scientific_name": "",
-    "english_name": "",
-    "image_name": "orange_bird_draw",
-    "description": ""
+    "name": "Jote Cabeza Negra",
+    "height": 53,
+    "height_location": 123,
+    "frequency": 3,
+    "scientific_name": "Coragyps atratus",
+    "english_name": "Black Vulture",
+    "description": "Cabeza y cuello implume, muy arrugados, de color gris oscuro. Coloración negro opaco, con notables manchas blancas en los extremos de las alas, detalle que ayuda a su identificación. Cola corta. Pico corto, ganchudo. Patas grises. Comportamiento: vive en grupos; bastante confiado. Posa en árboles, vuela alternando aleteos con planeo. Alimentación: carroña y huevos. Hábitat: ambientes rurales, urbanos y serranos. Comentario: estas aves juegan un importante papel en el ecosistema por su forma de alimentarse, lamentablemente frecuenta vertedero de residuos. Vuelan en busca de alimento basándose en su visión; su olfato es pobre, siguen a otras aves carroñeras para que lo guíen en busca de alimento."
   },
   {
     "id": 15,
-    "name": "Colibri",
-    "height": 25,
-    "height_location": 5,
-    "frequency": 1,
-    "risk": "high",
-    "scientific_name": "",
-    "english_name": "",
-    "image_name": "orange_bird_draw",
-    "description": ""
+    "name": "Sirirí Pampa",
+    "height": 38,
+    "height_location": 1,
+    "frequency": 3,
+    "scientific_name": "Dendrocygna viduata",
+    "english_name": "White-faced Whistling-Duck",
+    "description": "\nEn tierra postura erecta. Parte anterior de la cabeza blanca y posterior negra; garganta blanca; pequeño collar negro; cuello por delante blanco, por detrás negro y castaño en la base del cuello. Dorso rayado de canela y negro; alas negras. Pecho castaño, resto ventral negro con fino barrado blanco y negro en los flancos. Cola negra. Pico oscuro con franja grisácea. Patas gris azuladas. Juvenil: colores más tenues, cabeza gris acanelada. Comportamiento: formas bandadas, a veces junto a otros patos. Acuático. Las crías se desplazan siguiendo a sus padres en fila. Alimentación: granos, hierbas e insectos; con el pico filtra algas y microorganismos acuáticos. Hábitat: humedales rurales, lagunas y cunetas con juncos; también visto en lagos. Comentario: es reconocido por su repetido canto al volar \"siririi\", muchas veces se lo escucha durante la noche.\n"
   },
   {
     "id": 16,
-    "name": "Paloma",
-    "height": 25,
-    "height_location": 5,
-    "frequency": 1,
-    "risk": "high",
-    "scientific_name": "",
-    "english_name": "",
-    "image_name": "orange_bird_draw",
-    "description": ""
+    "name": "Coscoroba",
+    "height": 65,
+    "height_location": 1,
+    "frequency": 2,
+    "scientific_name": "Coscoroba coscoroba",
+    "english_name": "Coscoroba Swan",
+    "description": "Esbelto y con aspecto de cisne. Gran porte. Blanco; con las puntas de las alas negras, apenas visible cuando esta posado, pero muy notable en vuelo o despliegue nupcial. Pico rojo, achatado. Patas rojo apagado. El tamaño del macho es ligeramente mayor. Juvenil: plumaje manchado de pardo. Comportamiento: en pareja o grupos, muy acuático. Sus crías al nacer nadan en fila por detrás de sus padres. Alimentación: principalmente hierbas acuáticas y algunas semillas, pero también pequeños peces y moluscos. Hábitat: humedales, lagos y lagunas medianamente grandes. Comentario: vuela rápido y con el cuello extendido."
   },
   {
     "id": 17,
-    "name": "Martineta",
-    "height": 25,
-    "height_location": 5,
+    "name": "Pato Overo",
+    "height": 37,
+    "height_location": 1,
+    "frequency": 2,
+    "scientific_name": "Anas sibilatrix",
+    "english_name": "Chiloe Wigeon",
+    "description": "Amplia frente y cara blanca; cabeza, garganta y cuello pardo negruzco; nuca y parte posterior del cuello verde azulado brillante. Dorso pardo oscuro con plumas bordeadas de blanco; alas pardas fileteadas de blanco, en su parte media franjas blancas visibles en vuelo. Pecho pardo barrado con finas bandas blancas, continuando blanco hacia el vientre. Flancos canela; rabadilla blanca. Cola negruzca. Pico azulado con base y punta negra. Patas negruzcas. Hembra: algo más pequeña, parecida al macho, de colores poco notables. Comportamiento: en pareja y grupos; acuático, esquivo, es buen volador. Alimentación: vegetación acuática, hierbas verdes y semillas. Hábitat: sectores algo profundos y calmos de lagunas, represas y lagos. Comentario: su canto es un largo silbo trinado."
+  },
+  {
+    "id": 18,
+    "name": "Pato Barcino",
+    "height": 33,
+    "height_location": 123,
+    "frequency": 4,
+    "scientific_name": "Anas flavirostris",
+    "english_name": "Yellow-billed Tea",
+    "description": "Cabeza y cuello pardo, finamente barrado de ocre. Dorsopardo oscuro con plumas bordeadas de ocre; alas pardas; espejo alar negro y verde metálico, entre fajas canela y blancuzca visibles en vuelo. Pecho salpicado de lunares pardos, continuando más claros hacia el vientre. Destacado contraste entre el dorso y vientre. Flancos uniformes y claros. Cola parda, corta. Pico amarillo, culmen negro y punta negruzca. Patas grisáceas. Comportamiento: en pareja y grupos; acuático, muy arisco e inquieto, a veces posa sobre postes y árboles. Alimentación: insectos acuáticos, pequeños crustáceos, también algas o semillas de plantas. Hábitat: humedales, lagunas pequeñas, represas, lagos y arroyos alto-serranos. Comentario: donde hay agua seguro que lo encontrará. Es parecido al Pato Maicero pero algo más pequeño y de cuello más corto."
+  },
+  {
+    "id": 19,
+    "name": "Pato Zambullidor Chico",
+    "height": 31,
+    "height_location": 1,
+    "frequency": 2,
+    "scientific_name": "Oxyura vittata",
+    "english_name": "Lake Duck",
+    "description": "Dimorfismo sexual. Cuerpo compacto. Macho: cabeza y cuello negro. Dorso, pecho y flancos castaño rojizo; abdomen pardo plateado; alas pardas. Cola pardo oscuro con pocas plumas. Pico corto azul celeste, uña del pico oscura. Patas grises. Hembra: cabeza parda con notable banda blanquecina debajo de los ojos; pico pardo; garganta blanquecina; dorso barrado ocráceo; pecho y vientre pardo. Juvenil: similar a la hembra. Comportamiento: a menudo en grupos, más zambullidor que otros patos. Desconfiado. Vuela poco. Alimentación: moluscos, crustáceos e insectos. Hábitat: represas y lagos con abundante vegetación. Comentario: En período de reproducción mantiene la cola elevada, también cuando se siente amenazado."
+  },
+  {
+    "id": 20,
+    "name": "Águila Mora",
+    "height": 60,
+    "height_location": 123,
+    "frequency": 3,
+    "scientific_name": "Geranoaetus melanoleucus",
+    "english_name": "Black-chested Buzzard-Eagle",
+    "description": "Cabeza y dorso gris plomizo. Anchas y largas alas, por debajo blanquecino barrado de pardo negruzco con puntas negras. Garganta blanquecina; pechera gris oscuro, con manchitas blancas; ventral blanco barrado de negruzco. Cola corta con fina banda terminal blanca. Pico gris en la punta, cera amarilla, base de la mandíbula amarillenta. Patas amarillas con poderosas garras. Hembra: de mayor tamaño. Juvenil: estriado de pardo negruzco y canela, sin pechera, alas más angostas, cola finamente barrada, pico verdoso. Comportamiento: generalmente solitaria. En ocasiones posa expuesta. Alimentación: mamíferos medianos o pequeños como liebres y cuises, también aves y reptiles; eventualmente carroña. Hábitat: ambientes abiertos, desde lo alto de las sierras hasta los valles, también cerca de poblados. Comentario: mientras vuela o halconea en altura, destaca silueta triangular; planea en círculos elevándose con las corrientes térmicas. A veces efectúa vuelo veloz o en picada."
+  },
+  {
+    "id": 21,
+    "name": "Gavilán Planeador",
+    "height": 50,
+    "height_location": 3,
+    "frequency": 2,
+    "scientific_name": "Circus buffoni",
+    "english_name": "Long-winged Harrier",
+    "description": "Dimorfismo sexual. Macho: plumaje variable negro, negruzco o gris pizarra. Hembra: algo más grande, el plumaje siempre con algo de pardo, dorso pardo oscuro, jaspeado en flancos y zona ventral. Juvenil: similar a la hembra. Comportamiento: solitario, planea lento. Alimentación: roedores y reptiles, también aves y sus pichones. Hábitat: pastizales y pajonales, por lo general cercanos a humedales o cursos de agua. Comentario: planea a baja altura con las alas en \"V\" hacia arriba. Atrapa a sus presas dejándose caer sorpresivamente sobre ellas. Esta especie varía notablemente su coloración a lo largo de su vida, básicamente existen plumajes claros y oscuros."
+  },
+  {
+    "id": 22,
+    "name": "Aguilucho Común",
+    "height": 44,
+    "height_location": 123,
+    "frequency": 3,
+    "scientific_name": "Geranoaetus polyosoma",
+    "english_name": "Variable Hawk",
+    "description": "Dimorfismo sexual. Macho: cabeza, dorso y cobertores alares grises con primarias negras. Garganta, pecho, vientre y flancos blancos; estos últimos finamente barrados. Cola blanca con faja negra. Pico gris pizarra, cera amarilla. Patas y garras amarillas. Hembra: más grande, posee dorso castaño rojizo. Comportamiento: solitario, halconea, posa expuesta sobre postes, árboles secos o rocas despejadas. Alimentación: roedores, reptiles, aves e insectos. Hábitat: con frecuencia se lo ve en lo alto de las serranías, pero también en zona de valles y llanuras. Comentario: existen fases castañas y negras. Juveniles y subadultos tienen plumajes de transición que dificultan la identificación. Es una rapaz común."
+  },
+  {
+    "id": 23,
+    "name": "Águila Coronada",
+    "height": 62,
+    "height_location": 12,
     "frequency": 1,
-    "risk": "high",
+    "scientific_name": "Buteogallus coronatus",
+    "english_name": "Crowned Eagle",
+    "description": "Cabeza gris ceniza, en la corona prominente y abundante copete. Dorso grisáceo; alas largas y anchas, gris oscuro con punta negra. Ventral gris ocráceo. Cola corta, gris oscuro con franja blanca, bien nítida en la sección media, continúa con banda negra y fina línea terminal blanca. Pico negro, cera y base de la mandíbula amarilla. Patas amarillas. Hembra: más grande. Juvenil: más pardo, ventral blanquecino jaspeado de ocráceo, pico sin amarillo, cola sin bandas definidas. Comportamiento: solitaria, posa sobre postes de tendido eléctrico, en lo alto de árboles secos y también sobre rocas. Alimentación: caza en áreas abiertas, prefiere mamíferos pequeños como piches, peludos, zorrinos y también serpientes. Hábitat: territorios extensos, bosques autóctonos algo rocosos y también zonas rurales poco pobladas. Comentario: población muy escasa."
+  },
+  {
+    "id": 24,
+    "name": "Halcón Peregrino",
+    "height": 37,
+    "height_location": 123,
+    "frequency": 3,
+    "scientific_name": "Falco peregrinus",
+    "english_name": "Peregrine Falcon",
+    "description": "Cabeza y nuca pardo oscuro; cera y párpados amarillos, iris pardo; zona malar y auricular negras. Dorso plomizo con barras oscuras; alas pardo-oscuras, ventralmente grises barradas de blanco. Garganta y pecho blanquecino; ventral apenas estriado, resto barrado. Cola larga con tenues barras ocres, punta blanca. Pico gris con punta negra. Patas amarillas. Hembra: algo más grande. Juvenil: cabeza estriada y zona ventral estriado grueso. Comportamiento: solitario, agresivo, posa alto. Alimentación: cazador de palomas y otras aves en vuelo; en el suelo atrapa insectos, roedores y reptiles. Hábitat: serranías, áreas rurales y poblados. Comentario: considerada el ave más veloz, en picada cuando caza, puede superar los 300 km/h."
+  },
+  {
+    "id": 25,
+    "name": "Halconcito Colorado",
+    "height": 25,
+    "height_location": 123,
+    "frequency": 3,
+    "scientific_name": "Falco sparverius",
+    "english_name": "American Kestre",
+    "description": "Dimorfismo sexual. Macho: corona gris; mejillas blancas con dos franjas negras verticales bien marcadas y otra similar en la nuca. Dorso rojizo con ondas negras; hombro gris plateado; alas largas, gris azuladas con pintas negras. Pecho y zona ventral blanco con puntos negros. Cola larga rojiza, con banda negra y punta blanca. Pico negro, cera y mandíbulas amarillas. Patas amarillas. Hembra: algo más grande, colores más opacos, cubiertas rojizas, ventralmente estriada. Comportamiento: por lo general solitario, territorial, vuelo veloz, ágil, se mantiene en un lugar fijo batiendo rápidamente las alas. Posa visible, lo hace en postes o cables de tendido eléctrico, también en árboles secos. Alimentación: cazas pequeños reptiles, roedores, lagartijas, aves e insectos. Hábitat: adaptado a diversos ambientes, se lo encuentra en pastizal alto serrano, valles, zonas rurales y cercanías de poblados. Comentario: es el más común de los halcones."
+  },
+  {
+    "id": 26,
+    "name": "Gallineta Común",
+    "height": 27,
+    "height_location": 1,
+    "frequency": 3,
+    "scientific_name": "Pardirallus sanguinolentus",
+    "english_name": "Plumbeous Rail",
+    "description": "Cabeza gris; iris rojo vivo; corona y nuca gris parduzco. Dorso pardo oliváceo; alas pardas. Garganta, cuello, pecho y abdomen gris plomizo. Cola erecta parda. Pico ligeramente curvo hacia abajo, verdoso con mancha inferior roja y superior celeste verdosa a la altura de la mandíbula. Patas rojo rosáceo, dedos largos. Juvenil: aún más parduzco, garganta blanquecina. Comportamiento: solitaria, palustre, confiada, muy activa. Alimentación: lombrices, insectos y larvas. Hábitat: ambientes acuáticos, entre matorrales y juncales. Comentario: generalmente camina con largas zancadas, raramente nada o vuela."
+  },
+  {
+    "id": 27,
+    "name": "Gallareta Ligas Rojas",
+    "height": 35,
+    "height_location": 1,
+    "frequency": 3,
+    "scientific_name": "Fulica armillata",
+    "english_name": "Red-gartered Coot",
+    "description": "Cabeza y cuello negro; resto del cuerpo negro pizarra. Iris rojo. Cola con plumas blancas apenas visibles. Pico y escudete amarillo claro, separados por una mancha roja. Patas verdes con tonos rojizos, la parte desnuda superior de color rojo morado. Juvenil: gris parduzco con la garganta y cuello blanquecino. Comportamiento: en grupo, palustre, bastante bullanguera, confiada. Alimentación: muy variada; insectos, moluscos, sanguijuelas, hojas, brotes y semillas de plantas acuáticas. Hábitat: lagunas, lagos, cunetas, entre juncales y lugares abiertos. Comentario: buena nadadora y buceadora. En ocasión de peligro escapa carreteando sobre el agua batiendo las alas."
+  },
+  {
+    "id": 28,
+    "name": "Jacana",
+    "height": 22,
+    "height_location": 1,
+    "frequency": 2,
+    "scientific_name": "Jacana jacana",
+    "english_name": "Wattled Jacana",
+    "description": "Cabeza, cuello, pecho y vientre negro. Dorso rufo; alas redondeadas con espolón; primarias y secundarias amarillentas, con la punta de las plumas rufo, solo visibles en vuelo. Pico amarillo con escudete rojo. Patas con dedos muy largos, de tonos verdosos. Juvenil: muy distinto; corona parda y parte posterior del cuello pardo oscuro; ceja, garganta, cuello, pecho y ventral blanco. Dorso y cola parda. Comportamiento: solitario o en grupos, palustre, arisco. Alimentación: pequeños peces, insectos y otros invertebrados. Hábitat: humedales y represas rurales. Comentario: plumaje vistoso. Camina sobre la vegetación flotante. También llamado Gallito de agua."
+  },
+  {
+    "id": 29,
+    "name": "Tero Real",
+    "height": 34,
+    "height_location": 1,
+    "frequency": 3,
+    "scientific_name": "Himantopus mexicanus",
+    "english_name": "Black-necked Stilt",
+    "description": "Coloración contrastada en blanco y negro. Cabeza blanca, post ocular, nuca y parte trasera del cuello negro. Dorso, zona escapular y alas negras. Parte frontal del cuello, pecho, vientre, flancos y rabadilla blanca. Cola blanca. Pico largo fino, negro. Patas rojas sumamente largas. Juvenil: dorsal parduzco y patas rosadas. Comportamiento: en pareja, muchas veces en grupos. Alimentación: lombrices, insectos y moluscos. Hábitat: siempre asociado a lugares acuáticos poco profundos, bordes de lagunas, represas o campos inundados. Comentario: figura estilizada, muy elegante, se mueve pausadamente. Vuela a baja altura."
+  },
+  {
+    "id": 30,
+    "name": "Pitotoy Grande",
+    "height": 29,
+    "height_location": 1,
+    "frequency": 2,
+    "scientific_name": "Tringa melanoleuca",
+    "english_name": "Greater Yellowlegs",
+    "description": "El largo del pico representa una vez y media el largo de la cabeza, con ligera curvatura hacia arriba, negro, algo más claro en su base. Garganta y cejas blanquecinas. Lados de la cabeza, pecho y flancos con leve jaspeado de pardo. Dorso pardo salpicado de blanco y negruzco; alas pardas salpicadas de blanco. Ventral blanco. Cola blanca barrada de pardo. Patas largas, amarillas. Comportamiento: en bandada, también se lo ve solitario. Al caminar balancea la cabeza, canta en vuelo. Alimentación: enterrando su pico en áreas fangosas atrapa renacuajos, crustáceos y peces pequeños. Hábitat: asociado a otras zancudas en zonas lacustres fangosas, represas rurales, también se lo observó en lago Piscu Yaco. Comentario: en plumaje nupcial presenta dorso más oscuro y zona ventral con intenso jaspeado de pardo. Llegan a la zona en primavera o verano, desde Alaska y Canadá, donde nidifica."
+  },
+  {
+    "id": 31,
+    "name": "Torcacita Común",
+    "height": 15,
+    "height_location": 1,
+    "frequency": 4,
+    "scientific_name": "Columbina picui",
+    "english_name": "Picui Ground-Dove",
+    "description": "Pequeña. Cabeza y cuello gris ceniza con celeste. Ojo azulado con ligero círculo blanco. Dorso grisáceo; alas grises oscuro, línea alar blanca y filete negro que bordea los extremos del ala. Garganta blanca; pecho gris tornándose blanquecino hacia el vientre. Cola bastante larga, parda con las plumas externas blancas. Pico negro. Patas rojizas. Hembra: cabeza, cuello y zona dorsal más oscura, sin reflejos azulinos en la cabeza. Comportamiento: en pareja y bandadas. Confiada, semi terrícola. Alimentación: granos y semillas pequeñas. Hábitat: poblados, zonas serranas, en zonas rurales es muy abundante. Comentario: es fácil detectar las parejas en las bandadas."
+  },
+  {
+    "id": 32,
+    "name": "Yerutí Común",
+    "height": 26,
+    "height_location": 1,
+    "frequency": 3,
+    "scientific_name": "Leptotila verreauxi",
+    "english_name": "White-tipped Dove",
+    "description": "Cabeza gris; frente gris rosado claro; dorso del cuello y espalda gris azulado tornasolado; dorso y alas pardas. Garganta blanquecina; pecho gris rosado claro; partes inferiores acaneladas con el vientre blanquecino (característica que identifica a la especie). Cola negruzca con banda blanca en plumas externas. Pico negro azulado. Patas rosáceas. Comportamiento: solitaria, muy arisca, oculta. Alimentación: semillas, granos, frutos y algunos insectos. Hábitat: prefiere ambientes arbustivos y montes densos. Comentario: camina por el piso en busca de alimento, es más oída que vista, destaca su melancólico canto."
+  },
+  {
+    "id": 33,
+    "name": "Loro Barranquero",
+    "height": 42,
+    "height_location": 1,
+    "frequency": 3,
+    "scientific_name": "Cyanoliseus patagonus",
+    "english_name": "Burrowing Parakeet",
+    "description": "Cabeza gris verdosa; párpados y zona alrededor del ojo blanca; frente negruzca. Dorsal verdoso; alas verdosas con puntas azules y en su parte interna negra. Garganta y pecho, pardo oscuro con algunas plumas blanquecinas en la zona del collar; área ventral rojo anaranjado bordeada de amarillo. Cola verde oliva. Pico gris oscuro. Patas blanquecinas. Comportamiento: en pareja, vuela y se desplaza en bandadas. Bullanguero, arisco. Alimentación: semillas, brotes y frutos. Hábitat: anida en cuevas ubicadas en barrancos, forma colonias; durante el día posa sobre ramas secas de árboles altos o sobre cables de tendido eléctrico. Comentario: ante el mínimo peligro emite grito de alarma."
+  },
+  {
+    "id": 34,
+    "name": "Catita Serrana Grande",
+    "height": 19,
+    "height_location": 12,
+    "frequency": 2,
+    "scientific_name": "Psilopsiagon aymara",
+    "english_name": " Gray-hooded Parakeet",
+    "description": "Boina parda; mejillas y garganta blancuzca. Dorso y alas verdes. Ventral gris ceniza tornándose amarillo verdoso en el abdomen y en los flancos. Cola larga, verde. Pico pequeño, blanquecino. Patas grises. Comportamiento: en pareja y bandada. Muy bullanguera. Posa en arbustos, cardales y pastizales altos. Alimentación: frutos pequeños, brotes y semillas tanto autóctonas como exóticas. Hábitat: áreas urbanas altas y principalmente en quebradas del área serrana. Comentario: figura esbelta, atractivos colores. Se la observa todo el año. Vuela velozmente y lo hace en forma recta. Vocaliza en vuelo."
+  },
+  {
+    "id": 35,
+    "name": "Cuclillo Canela",
+    "height": 26,
+    "height_location": 1,
+    "frequency": 2,
+    "scientific_name": "Coccyzus melacoryphus",
+    "english_name": "Dark-billed Cuckoo",
+    "description": "Cabeza gris plomiza; banda auricular negra. Dorso y alas gris parduzco. Garganta voluminosa, pecho y vientre ocre amarillento. Cola larga gris parduzca, en la parte ventral es negra con puntas blancas, muy notables. Pico negro, robusto, curvo hacia abajo. Patas negras. Juvenil: garganta, pecho y vientre blancuzco. Comportamiento: solitario, sigiloso, bastante oculto. Alimentación: larvas, insectos y semillas. Hábitat: bosques y montes, prefiere vegetación frondosa y alta. Comentario: observado en primavera-verano."
+  },
+  {
+    "id": 36,
+    "name": "Pirincho",
+    "height": 36,
+    "height_location": 1,
+    "frequency": 3,
+    "scientific_name": "Guira guira",
+    "english_name": "Guira Cuckoo",
+    "description": "Ojos ocres; copete retráctil y desprolijo. Dorso pardo estriado. Ventral ocráceo, estriado fino en el pecho. Cola larga pendular de tres colores, ocre, negro y blanco. Pico amarillento. Comportamiento: en grupo, a veces solitario. Bullanguero, vuelo discontinuo, lento con largo planeo. Alimentación: insectos, culebras, pequeños anfibios, saquea nidos comiendo huevos y pichones. Hábitat: montes, zonas rurales y urbanas. Comentario: sorprende su hábito alimentario muy generalista. Construye su nido y cría en forma comunitaria. Es común verlos agrupados calentándose de espaldas al sol, abriendo su plumaje. Conocido también como \"Urraca\"."
+  },
+  {
+    "id": 37,
+    "name": "Crespín",
+    "height": 28,
+    "height_location": 1,
+    "frequency": 2,
+    "scientific_name": "Tapera naevia",
+    "english_name": "Striped Cuckoo",
+    "description": "Color predominante, el ocre. Copete rufo erecto, despeinado; ceja blanca; línea malar negra. Dorso oscuro estriado. Larga cola parda. Pico amarillento; culmen negro. Juvenil: plumaje moteado, mas rufo en dorso y alas. Comportamiento: solitario, oculto, pasivo, desconfiado. Vuelo largo, con planeo. Generalmente posa en lo alto. Alimentación: invertebrados, pequeños reptiles, huevos y frutos. Hábitat: áreas rurales, boscosas y periurbanas. Comentario: más oído que, visto, posee canto melancólico y lastimero que a veces despista sobre su verdadera ubicación. Ave misteriosa, su insistente canto y dificultad en observarlo han dado lugar a diversas leyendas. Parasita nidos de otras aves colocando un pequeño huevo blanco, a veces simulando a los del hospedante. Llega a la zona durante la primavera."
+  },
+  {
+    "id": 38,
+    "name": "Alilicucú Común",
+    "height": 22,
+    "height_location": 1,
+    "frequency": 3,
+    "scientific_name": "Megascops choliba",
+    "english_name": "Tropical Screech-Owl",
+    "description": "Iris amarillo; circulo facial gris blanquecino; pequeñas pero notables orejas erectas. Plumaje dorsal gris parduzco estriado de negro. Ventral con finas estrías negras (parecen crucecitas). Pico verdoso grisáceo. Patas con garras pequeñas. Comportamiento: en pareja. Durante el día permanece pasivo e inmóvil. Alimentación: insectos y roedores pequeños. Hábitat: montes, arboledas rurales y urbanas. Comentario: de hábitos crepusculares y nocturnos, visión adaptada a la oscuridad, vuelo sigiloso. Su canto es oído durante la noche. Plumaje mimético, asemeja la corteza de los árboles. Depredador benéfico, controla la población de roedores."
+  },
+  {
+    "id": 39,
+    "name": "Caburé Chico",
+    "height": 16,
+    "height_location": 1,
+    "frequency": 2,
+    "scientific_name": "Glaucidium brasilianum",
+    "english_name": "Ferruginous Pygmy-Owl",
+    "description": "Cabeza parda con estrías ocráceas y pintitas blancas; en la parte posterior del cuello manchitas blancas y negras; iris amarillo; leve ceja blanquecina. Parte dorsal pardo oscuro. Alas pardas con motas blanco-ocráceas, cubiertas alares con motas blancas. Pecho pardo machado de blanco; ventral blanco con gruesas estrías pardo oscuro. Cola pardo-oscura con pocas barras blancuzcas. Pico córneo. Patas emplumadas, garras amarillas. En la nuca dos aureolas simulan ojos. Hembra: leve mayor tamaño. Comportamiento: solitario, sigiloso. Alimentación: principalmente roedores y aves. Hábitat: montes rurales y arbolados urbanos. Comentario: activo tanto de día como de noche. Caza con gran paciencia, las aves se alborotan con su presencia, rodeándolo y acosándolo."
+  },
+  {
+    "id": 40,
+    "name": "Lechucita Vizcachera",
+    "height": 25,
+    "height_location": 1,
+    "frequency": 3,
+    "scientific_name": "Athene cunicularia",
+    "english_name": "Burrowing Owl",
+    "description": "Grandes ojos, iris amarillo; ceja y garganta blanca. Dorsal pardo con pecas blancas. Pecho blanco barrado pardo; ventral blanquecino. Cola barrada. Pico ganchudo. Patas emplumadas blancuzcas. Comportamiento: en pareja y grupo familiar, bastante terrícola. Vuelo corto, halconea. Posa en postes, montículos o en el suelo junto a su cueva. Alimentación: roedores e insectos. Hábitat: áreas rurales y urbanas. Comentario: activa tanto de día como de noche. Siempre erguida, mirada directa y profunda. Vigilante, rota su cabeza, también la bambolea y parece saludar. Percibe con facilidad los movimientos y sonidos de baja intensidad de sus presas. Benéfica para el ambiente."
+  },
+  {
+    "id": 41,
+    "name": "Lechuzón de Campo",
+    "height": 38,
+    "height_location": 1,
+    "frequency": 2,
+    "scientific_name": "Asio flammeus",
+    "english_name": "Short-eared Owl",
+    "description": "Relativamente grande. Cabeza redonda, iris amarillo, mancha negra rodea los ojos; cara blanquecina, disco facial ocráceo blanquecino con bordes negruzcos; pequeñas orejas visibles solo cuando está en alerta. Partes posteriores de la cabeza, cuello, dorsales y alas, crema ocrácea con manchas pardo oscuro. Pecho crema con estrías negruzcas que se van perdiendo hacia el vientre. Cola barrada de ocre y pardo oscuro. Pico negro, en su base blanco. Patas emplumadas crema ocráceo. Comportamiento: solitario, bastante diurno; vuela bajo con lento aleteo, muy silencioso. Alimentación: principalmente roedores. Hábitat: aéreas rurales abiertas. Comentario: posa sobre postes de alambrados."
+  },
+  {
+    "id": 42,
+    "name": "Picaflor Común",
+    "height": 7,
+    "height_location": 123,
+    "frequency": 3,
+    "scientific_name": "Chlorostilbon lucidus",
+    "english_name": "Glittering-bellied Esmerald",
+    "description": "Dimorfismo sexual. Macho: verde esmeralda con reflejos metalizados dorados; mancha blanca muy pequeña detrás de los ojos (a veces ausente). Garganta y cuello azul brillante. Alas parduzcas. Cola azul furcada. Pico fino y largo, rojo con punta negra. Hembra: más pequeña, garganta y ventral grisáceo; mancha blanca más extensa detrás de los ojos; cola azul, blanco en la punta de las plumas externas. Comportamiento: solitario, muy activo. Alimentación: néctar de las flores tubulares componen su principal alimento, también consumen pequeños insectos. Hábitat: bosques, montes, zonas serranas, rurales y urbanas. Comentario: importante polinizador, se mueve constantemente de flor en flor. Cuando una planta produce abundante oferta de alimento, puede ser visitada por varios individuos."
+  },
+  {
+    "id": 43,
+    "name": "",
+    "height": 0,
+    "height_location": 1,
+    "frequency": 3,
     "scientific_name": "",
     "english_name": "",
-    "image_name": "orange_bird_draw",
     "description": ""
   }
+
 ]

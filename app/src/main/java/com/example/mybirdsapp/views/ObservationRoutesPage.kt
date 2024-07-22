@@ -36,7 +36,7 @@ import com.example.mybirdsapp.viewModels.ObservationRoutesViewModel
 @Composable
 fun ObservationRoutesPage(
     observationRoutesViewModel: ObservationRoutesViewModel,
-    observationRouteDescriptionOnClick: () -> Unit
+    observationRouteDescriptionOnClick: (ObservationRoute) -> Unit
 ) {
     val observationRouteList = observationRoutesViewModel.observationRouteList
     Box(modifier = Modifier.fillMaxSize()) {
@@ -56,7 +56,7 @@ fun ObservationRoutesPage(
             horizontalArrangement = Arrangement.SpaceEvenly
         ) {
             items(observationRouteList) { observationRoute ->
-                MyListItem(observationRoute) {}
+                MyListItem(observationRoute, observationRouteDescriptionOnClick)
             }
         }
     }
