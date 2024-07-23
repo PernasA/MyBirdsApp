@@ -125,7 +125,7 @@ fun RowName(
         )
         ExtendedRouteMapButton(Modifier.weight(1F), observationRoute)
     }
-    val routeImageResId = observationRouteViewModel.getDrawableIdByRouteId(observationRoute.id)
+    val routeImageResId = observationRouteViewModel.getDrawableIdByRouteIdPosition(observationRoute.id)
     Image(
         modifier = Modifier
             .fillMaxWidth()

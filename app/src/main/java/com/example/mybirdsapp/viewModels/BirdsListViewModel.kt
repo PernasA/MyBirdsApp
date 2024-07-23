@@ -1,30 +1,30 @@
 package com.example.mybirdsapp.viewModels
 
 import android.content.Context
-import android.content.res.Resources
-import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.mybirdsapp.R
 import com.example.mybirdsapp.models.Bird
 import com.example.mybirdsapp.models.room.RoomBird
 import com.example.mybirdsapp.models.room.RoomBirdsDao
-import com.example.mybirdsapp.utils.DrawableResourcesMap
-import com.example.mybirdsapp.utils.loadJsonBirdsFromAssets
+import com.example.mybirdsapp.utils.DrawableResourcesList
+import com.example.mybirdsapp.utils.InterfaceJsonLoader
+import com.example.mybirdsapp.utils.JsonReader
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
+import org.jetbrains.annotations.TestOnly
 
 class BirdsListViewModel(
     context: Context,
-    private val roomBirdsDao: RoomBirdsDao
+    private val roomBirdsDao: RoomBirdsDao,
+    private val jsonReader: InterfaceJsonLoader = JsonReader()
 ) : ViewModel() {
     var dataBirdsList: List<Bird> = emptyList()
     var listObservedBirds: List<RoomBird> = emptyList()
 
     init {
         viewModelScope.launch(Dispatchers.IO) {
-            val birdJsonList = loadJsonBirdsFromAssets(context, "birds_list.json")
+            val birdJsonList = jsonReader.loadJsonBirdsFromAssets(context, "birds_list.json")
             dataBirdsList = birdJsonList.map { birdJson ->
                 Bird(
                     name = birdJson.name,
@@ -32,11 +32,10 @@ class BirdsListViewModel(
                     heightLocation = birdJson.heightLocation,
                     height = birdJson.height,
                     frequency = birdJson.frequency,
-                    risk = birdJson.risk,
                     scientificName = birdJson.scientificName,
                     englishName = birdJson.englishName,
                     description = birdJson.description,
-                    imageResId = getDrawableIdByName(birdJson.id)
+                    imageResId = getDrawableIdByBirdIdPosition(birdJson.id)
                 )
             }
 
@@ -53,8 +52,12 @@ class BirdsListViewModel(
         }
     }
 
-    private fun getDrawableIdByName(birdId: Int): Int {
-        return DrawableResourcesMap.drawableMapBirds[birdId] ?: R.drawable.orange_bird_draw
+    /*
+    There is a list that is ordered the same way than the ids of the routes. Id route 1 = position 0
+    */
+    @TestOnly
+    fun getDrawableIdByBirdIdPosition(birdId: Int): Int {
+        return DrawableResourcesList.drawableListBirds[birdId-1]
     }
 
     fun getBirdById(birdId: Int): Bird? {
@@ -68,7 +71,8 @@ class BirdsListViewModel(
         }
     }
 
-    private fun createFileAllBirds(quantityOfBirds: Int) {
+    @TestOnly
+    fun createFileAllBirds(quantityOfBirds: Int) {
         listObservedBirds = List(quantityOfBirds) { index ->
             RoomBird(id = index + 1, wasObserved = false)
         }

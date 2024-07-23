@@ -421,6 +421,196 @@
   },
   {
     "id": 43,
+    "name": "Picaflor Cometa",
+    "height": 15,
+    "height_location": 123,
+    "frequency": 3,
+    "scientific_name": "Sappho sparganurus",
+    "english_name": "Red-tailled Comet",
+    "description": "Dimorfismo sexual. Ambos con llamativos colores brillantes y escamados. Macho: cabeza, cuello, hombros y vientre verde; garganta negra; lomo rojo carmín; alas pardas. Cola larga (unos 9 cm), roja con barras negras muy separadas. Pico corto, negro ligeramente curvado. Hembra: bastante más pequeña; cola más corta, verde con plumas externas blancas; lomo verde; ventral grisáceo con puntos verdes. Comportamiento: solitario, muy territorial. Posa visible. Alimentación: néctar de las flores y pequeños insectos. Hábitat: en verano permanece en zonas serranas medias y altas, a partir de marzo se lo observa con más frecuencia en bosques y áreas urbanas. Comentario: Inconfundible."
+  },
+  {
+    "id": 44,
+    "name": "Martín Pescador Chico",
+    "height": 17,
+    "height_location": 1,
+    "frequency": 2,
+    "scientific_name": "Chloroceryle americana",
+    "english_name": "Green Kingfisher",
+    "description": "Dimorfismo sexual. Macho: cabeza grande. Dorso verde metalizado, alas con pintas blancas. Garganta blanca; pecho rufo; vientre blanco; flancos manchados. Cola corta, verde con pintas blancas. Pico negro, largo, agudo y robusto. Patas gris oscuro. Hembra: garganta amarillenta; collar pectoral y semicollar ventral verdoso. Comportamiento: solitario, pasivo, desconfiado. Vuelo veloz y ondulado, se zambulle para pescar. Alimentación: peces pequeños, insectos y crustáceos. Hábitat: en orillas de ambientes acuáticos con vegetación y ramas bajas. Comentario: por su intenso y colorido plumaje resulta fácil su identificación. Posa en lugares sombreados desde donde observa a sus posibles presas."
+  },
+  {
+    "id": 45,
+    "name": "Durmilí",
+    "height": 18,
+    "height_location": 1,
+    "frequency": 3,
+    "scientific_name": "Nystalus maculatus",
+    "english_name": "Spot-backed Puffbird",
+    "description": "Cabeza grande, redonda; iris amarillo; ceja clara; barba blanca; collar completo ocre anaranjado. Dorsal y alas pardo oscuro moteado canela. Ventral blanco con gruesas estrías negras. Cola fina barrada de ocre y negro. Pico robusto. Patas cortas, 2 dedos hacia adelante y 2 hacia atrás. Comportamiento: solitario, rara vez en pareja; bastante pasivo, de vuelo corto y lento. Posa expuesto. Alimentación: pequeños reptiles, culebras e insectos. Hábitat: montes, áreas rurales, periferia urbana y piedemonte. Comentario: conociendo su melancólico canto se lo puede ubicar fácilmente."
+  },
+  {
+    "id": 46,
+    "name": "Carpintero Real",
+    "height": 23,
+    "height_location": 12,
+    "frequency": 3,
+    "scientific_name": "Colaptes melanochlorus",
+    "english_name": "Green-barred Woodpecker",
+    "description": "Cara y zona auricular blanquecina; malar rojo; frente y corona negra; nuca roja. Dorso y alas negras, barrado de amarillo verdoso y algo blanquecino. Pecho amarillento con puntos negros; zona ventral más clara también con puntos negros. Cola negra, rígida. Pico negro, robusto. Hembra: banda malar negra con manchitas blancas. Comportamiento: en pareja, algo terrícola. Alimentación: insectos, muchas veces hormigas. De los troncos extrae larvas utilizando su pico y larga lengua pegajosa. Hábitat: serranías, áreas boscosas, urbanas y rurales. Comentario: posee patas aptas para trepar."
+  },
+  {
+    "id": 47,
+    "name": "Carpintero Campestre",
+    "height": 28,
+    "height_location": 123,
+    "frequency": 3,
+    "scientific_name": "Colaptes campestris",
+    "english_name": "Field Flicker",
+    "description": " Cabeza y nuca negra; zona loral, periocular y garganta blanca; banda malar roja; zona auricular, cuello y pecho amarillo; espalda y alas negras barradas de blancuzco, primarias parduzcas manchado de amarillo; zona ventral barrada de negro y blanco más clara; lomo y rabadilla blanca; cola negra rígida. Pico negro, robusto. Patas gris parduzco. Hembra y Juvenil: malar negro punteado de blanco. Comportamiento: en pareja o grupo familiar. Terrícola. Alimentación: con frecuencia hormigas, también otros insectos como larvas de la madera y pequeños reptiles. Hábitat: desde zonas rurales hasta ambientes alto-serranos. Muchas veces posa en postes de alambrados. Comentario: su estridente canto se percibe desde lejos."
+  },
+  {
+    "id": 48,
+    "name": "Carpintero Lomo Blanco",
+    "height": 28,
+    "height_location": 1,
+    "frequency": 2,
+    "scientific_name": "Campephilus leucopogon",
+    "english_name": "Cream-backed Woodpecker",
+    "description": "Cuerpo negro con triángulo dorsal blanco crema. Cabeza grande con copete rojo intenso; mancha oval negro y crema en mejillas; iris amarillo, mancha blanquecina circundando el ojo. Alas negras con manchas castañas, ventralmente cubiertas negras con manchas canela. Cola rígida utilizada como apoyo. Pico recto, agudo, blanquecino. Patas poderosas adaptadas para trepar. Hembra: frontal del copete negro, malar crema y negro. Comportamiento: en pareja o grupos familiares. Alimentación: larvas e insectos, principalmente hormigas. Hábitat: bosques y arboledas. Comentario: ojos llamativos. Generalmente recorre árboles secos, en ellos efectúan un fuerte golpeteo sobre la corteza en busca de larvas."
+  },
+  {
+    "id": 49,
+    "name": "Carpintero Negro",
+    "height": 28,
+    "height_location": 1,
+    "frequency": 1,
+    "scientific_name": "Dryocopus schulzi",
+    "english_name": "Black-bodied Woodpecker",
+    "description": "Enteramente negro. Cabeza grisácea; frente, corona y copete, rojo intenso; iris castaño; línea blanca en ambos lados del cuello; banda malar roja; garganta blanquecina. Alas negras, base de las primarias blancas, ventralmente blancas con gris oscuro. Cola negra, la utiliza de apoyo. Pico corneo y robusto. Patas negruzcas, robustas. Hembra: no tiene banda malar roja. Comportamiento: solitario o en parejas. Trepador. Recorre la parte media y alta de los árboles. Alimentación: insectos y larvas. Hábitat: prefiere bosques nativos. Comentario: utiliza su pico para golpetear en la madera, así obtiene presas que extrae con su larga lengua. Muy escaso debido a los desmontes que destruyen su hábitat natural."
+  },
+  {
+    "id": 50,
+    "name": "Caminera Colorada",
+    "height": 15,
+    "height_location": 23,
+    "frequency": 3,
+    "scientific_name": "Geositta rufipennis",
+    "english_name": "Rufous-banded Miner",
+    "description": "Ceja y garganta blanquecina. Dorso pardo; alas rufas con terminales blanquecinas. Ventral blanco acanelado; flancos rojizos. Cola rufa con banda subapical negruzca. Pico corto negruzco con mandíbula clara. Patas negras. Comportamiento: solitaria, terrícola. Muy confiada pero inquieta, recorredora. Vuelo corto y a baja altura. Alimentación: semillas, insectos y sus larvas. Hábitat: Pastizales de altura y terrenos rocosos. Comentario: generalmente se la encuentra caminando entre las piedras. Su suave “cloqueo” delata su ubicación."
+  },
+  {
+    "id": 51,
+    "name": "Remolinera Serrana",
+    "height": 16,
+    "height_location": 23,
+    "frequency": 3,
+    "scientific_name": "Cinclodes comechingonus",
+    "english_name": "Cordoba Cinclodes",
+    "description": "Ceja blanquecina; garganta blanca con puntos pardos. Dorso pardo; alas con ancha banda rojiza continuada con fina banda negruzca visibles aún posada. Pecho y vientre blanquecino. Cola negruzca, plumas centrales rojizas con puntas externas canela. Comportamiento: solitaria y en pareja. Confiada, recorredora. Alimentación: lombrices, insectos y larvas. Hábitat: humedales y cursos de agua en las sierras de Comechingones. Comentario: se diferencia de otras remolineras por su mandíbula amarilla y por elevar la cola. Catalogada como Endémica de Argentina."
+  },
+  {
+    "id": 52,
+    "name": "Remolinera Chocolate",
+    "height": 16,
+    "height_location": 23,
+    "frequency": 3,
+    "scientific_name": "Cinclodes olrogi",
+    "english_name": "Olrog´s Cinclodes",
+    "description": "Más pequeña, rechoncha y más oscura que otras remolineras. Ceja blanca muy notable por detrás de los ojos. Garganta blanca jaspeado de gris. Dorsal castaño; alas pardas, banda alar blancuzca con pequeña franja negruzca. Pecho jaspeado de ocráceo; ventral pardo acanelado algo estriado. Cola pardo negruzco oscuro, con plumas centrales castañas y punta acaneladas. Pico más pequeño que otras remolineras. Comportamiento: solitaria, recorredora, inquieta. Alimentación: lombrices, insectos y larvas. Hábitat: sector alto de la sierra de Comechingones, siempre cercana a lagunitas o cursos de agua. Comentario: catalogada como Endémica en las Sierras de Córdoba y San Luis. (M. Nores - D. Izurieta, 1979)."
+  },
+  {
+    "id": 53,
+    "name": "Hornero",
+    "height": 18,
+    "height_location": 1,
+    "frequency": 4,
+    "scientific_name": "Furnarius rufus",
+    "english_name": "Rufous Hornero",
+    "description": "Cabeza y dorso pardo castaño, lomo más apagado. Alas pardas con banda canela. Garganta blanca. Pecho y vientre gris ocráceo. Cola rufa. Pico pardo oscuro con base clara. Patas negruzcas. Comportamiento: en pareja, canta a dúo batiendo las alas. Muy confiado, caminador. Alimentación: insectos, larvas, lombrices, también semillas y frutos de distintas plantas. Hábitat: diversos ambientes, montes, áreas rurales y urbanas. Comentario: es el ave Nacional. Hace su nido de barro y paja con forma de horno, demora alrededor de 15 días en construirlo, lo utiliza solo una vez, luego innumerables especies lo aprovechan. Es frecuentemente parasitado por el Tordo Renegrido (Molothrus bonariensis)."
+  },
+  {
+    "id": 54,
+    "name": "Hornerito Copetón",
+    "height": 15,
+    "height_location": 1,
+    "frequency": 2,
+    "scientific_name": "Furnarius cristatus",
+    "english_name": "Crested Hornero",
+    "description": "Similar al Hornero pero de tamaño más pequeño, con copete e iris rojizo. Cabeza y dorsal pardo. Alas castañas con plumas ribeteadas de grisáceo. Garganta blanca; ventral gris ocráceo; abdomen blanquecino. Cola con tonos rojizos. Pico con leve curvatura hacia abajo. Patas negras. Comportamiento: solitario o en pareja, bastante terrícola y confiado. Alimentación: insectos y semillas. Hábitat: zonas rurales (corrales de ganado) y en montes. Comentario: construye su nido con barro y paja, similar al nido del Hornero, pero de tamaño más pequeño."
+  },
+  {
+    "id": 55,
+    "name": "Crestudo",
+    "height": 15,
+    "height_location": 1,
+    "frequency": 3,
+    "scientific_name": "Coryphisteria alaudina",
+    "english_name": "Lark-like Brushrunner",
+    "description": "Cabeza parda, notable copete erecto, pardo oscuro. Cara blanca con manchas canela; zona auricular canela. Dorsal parduzco con borde blanco en sus plumas; alas negruzcas con las secundarias ribeteadas de blanco. Garganta, pecho y zona ventral blanquecina con grueso estriado canela. Cola negruzca con plumas externas castañas. Patas anaranjado claro. Comportamiento: vive en grupo, confiado, bastante terrícola. Alimentación: lombrices, insectos y larvas. Hábitat: principalmente en zona seca o árida de montes y llanuras, tanto rurales como urbanas. Comentario: es un ave sociable entre los de su especie, las crías son alimentadas por el grupo familiar."
+  },
+  {
+    "id": 56,
+    "name": "Curutié Blanco",
+    "height": 14,
+    "height_location": 1,
+    "frequency": 3,
+    "scientific_name": "Cranioleuca pyrrhophia",
+    "english_name": "Stripe-crowned Spinetail",
+    "description": "Cabeza grisácea con estrías oscuras; plumas semierectas en la corona; periocular blanco; notable ceja blanca; antifaz oscuro. Espalda gris parduzco, hombros rufos, resto dorsal y alas castañas. Garganta y pecho blanco; vientre blancuzco. Cola parduzca con plumas externas castañas. Pico algo largo. Comportamiento: solitario, confiado, muy inquieto. Alimentación: insectos, sus larvas y huevos. Hábitat: montes y bosques, también áreas rurales y urbanas. Comentario: se desplaza entre las ramas y follaje con acrobáticos movimientos, no baja al suelo."
+  },
+  {
+    "id": 57,
+    "name": "Canastero Pálido",
+    "height": 15,
+    "height_location": 23,
+    "frequency": 3,
+    "scientific_name": "Asthenes modesta",
+    "english_name": "Cordilleran Canastero",
+    "description": "Ceja larga ocre blanquecina; mancha gular naranja con pintitas negras y blancas. Dorso pardo oscuro; alas pardas con detalles oscuros y blanquecinos. Ventral gris, acentuando ocráceo hacia los flancos. Cola generalmente erecta, rufo con vexilo interno negruzco. Pico y patas negras. Comportamiento: solitario, muy terrícola, confiado, inquieto y ágil. Efectúa vuelos cortos. Alimentación: busca insectos y larvas para alimentarse. Hábitat: entre rocas y pastizales de la zona alta de la sierra de Comechingones. Comentario: se lo ve todo el año, aparece entre las rocas, grietas o matas. Es posible confundirlo con el Espartillero Serrano (Asthenes sclateri), con quien comparte ambiente."
+  },
+  {
+    "id": 58,
+    "name": "Espatillero Serrano",
+    "height": 16,
+    "height_location": 23,
+    "frequency": 3,
+    "scientific_name": "Asthenes sclateri",
+    "english_name": "Puna Canastero",
+    "description": "Notable mancha gular anaranjada. Cabeza parda, estriada de negro; ceja blancuzca; lados de la cara y cuello grisáceo. Dorsal pardo claro estriado de negro, muy contrastado; alas pardas con banda canela. Ventral gris ocráceo. Cola larga parda oscura, canela en la punta de las plumas externas, por debajo manchas blancuzcas, visibles en abanico cuando se asienta. Pico negruzco, mitad basal de la mandíbula córneo. Patas parduzcas. Juvenil: color apagado, mancha gular tenue o ausente. Comportamiento: solitario, muy terrícola. Alimentación: insectívoro. Hábitat: entre rocas, grietas y pastizales de la zona alta de la sierra de Comechingones. Comentario: muy diferente a otros Asthenes (Canasteros). Posee estridente canto que ayuda a detectar su ubicación."
+  },
+  {
+    "id": 59,
+    "name": "Pijuí Frente Gris",
+    "height": 15,
+    "height_location": 12,
+    "frequency": 3,
+    "scientific_name": "Synallaxis frontalis",
+    "english_name": "Sooty-fronted Spinetail",
+    "description": "Corona castaña, se extiende hasta la nuca; frente gris; loral y cejas ligeramente blanquecinas; iris amarillo verdoso; garganta blanca con mancha gular negra. Dorsal parduzco; alas pardo-rojizas. Ventral gris blanquecino. Cola relativamente larga, pardo rojizo. Pico negro puntiagudo. Patas gris oscuro. Juvenil: plumaje apagado, carece de mancha gular. Comportamiento: solitario, confiado, oculto, muy inquieto. Alimentación: pequeños insectos y sus larvas. Hábitat: serranías, montes nativos, permanece en la zona media de los arbustos y matorrales. Comentario: más oído que visto, insistente trino orienta su ubicación. Llega a la zona en primavera."
+  },
+  {
+    "id": 60,
+    "name": "Coludito Copetón",
+    "height": 16,
+    "height_location": 1,
+    "frequency": 3,
+    "scientific_name": "Leptasthenura platensis",
+    "english_name": "Tufted Tit-Spinetail",
+    "description": "Notable copete estriado de ocre; fina ceja blancuzca. Cabeza y dorsal pardo grisáceo; alas pardas con banda negruzca y canela. Garganta y pecho blancuzco con finas estrías negras. Ventral grisáceo con tintes canela. Cola parda con largas plumas externas canela. Pico corto. Patas negruzcas. Comportamiento: solo o en pareja, acrobático, movedizo, trino suave. Alimentación: pequeños insectos, larvas y otros invertebrados. Hábitat: montes, árboles y arbustos nativos en zonas rurales y periurbanas. Comentario: para reproducirse, a veces utiliza un antiguo nido de Hornero que tapiza con hierbas secas y plumas."
+  },
+  {
+    "id": 61,
+    "name": "Cacholote Castaño",
+    "height": 23,
+    "height_location": 12,
+    "frequency": 3,
+    "scientific_name": "Pseudoseisura lophotes",
+    "english_name": "Brown Cacholote",
+    "description": "Coloración general parda con tono castaño. Notable copete negruzco que nace en la frente; cabeza castaña; iris marfil. Garganta y lados de la cara, castaño más oscuro. Dorso y alas castañas con la punta de las plumas negruzcas. Ventral castaño claro. Cola rufa. Pico negruzco, base blanquecina. Patas negras. Comportamiento: en pareja, terrícola, vuelo ondulado; fuerte y ruidoso canto, lo hace a dúo. Alimentación: insectos que encuentra entre hojas secas y en la corteza de los árboles; también come semillas y frutos. Hábitat: múltiples ambientes; áreas serranas medias, rurales y urbanas. Comentario: muy oportunista, puede robar carroña."
+  },
+  {
+    "id": 62,
     "name": "",
     "height": 0,
     "height_location": 1,
@@ -429,5 +619,4 @@
     "english_name": "",
     "description": ""
   }
-
 ]

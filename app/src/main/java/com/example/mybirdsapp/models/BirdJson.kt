@@ -7,7 +7,6 @@ data class BirdJson (
     val name: String = "",
     val height: Int = 0,
     val frequency: Int = 0,
-    val risk: String = "",
     val description: String = "",
     @SerializedName("height_location")
     val heightLocation: Int = 0,

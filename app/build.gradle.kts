@@ -66,6 +66,12 @@ dependencies {
     implementation(libs.gson)
     implementation(libs.androidx.runtime.livedata)
     testImplementation(libs.junit)
+    testImplementation(libs.mockk)
+    testImplementation(libs.androidx.core.testing)
+    testImplementation(fileTree(mapOf(
+        "dir" to "C:\\Users\\Agustin\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.kotlinx\\kotlinx-coroutines-test-jvm\\1.7.3\\89e34400f452dab68fbb3caa66d854c89aaafa07",
+        "include" to listOf("*.aar", "*.jar")
+    )))
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
@@ -76,7 +82,6 @@ dependencies {
     implementation(libs.androidx.room.runtime)
     annotationProcessor(libs.androidx.room.compiler)
     implementation(libs.androidx.room.ktx)
-    // To use Kotlin annotation processing tool (kapt)
     ksp(libs.androidx.room.compiler)
 
 }

@@ -17,6 +17,11 @@ navigationRuntimeKtx = "2.7.7"
 navigationCompose = "2.7.7"
 firebaseCrashlyticsBuildtools = "3.0.2"
 runtimeLivedata = "1.6.8"
+sdkcoroutines = "1.0.0"
+mockk = "1.13.12"
+coreTesting = "2.2.0"
+media3TestUtilsRobolectric = "1.3.1"
+roomCoroutines = "2.1.0-alpha04"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -41,6 +46,11 @@ androidx-navigation-runtime-ktx = { group = "androidx.navigation", name = "navig
 androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
 firebase-crashlytics-buildtools = { group = "com.google.firebase", name = "firebase-crashlytics-buildtools", version.ref = "firebaseCrashlyticsBuildtools" }
 androidx-runtime-livedata = { group = "androidx.compose.runtime", name = "runtime-livedata", version.ref = "runtimeLivedata" }
+sdkcoroutines = { group = "com.google.android.libraries.sdkcoroutines", name = "sdkcoroutines", version.ref = "sdkcoroutines" }
+mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
+androidx-core-testing = { group = "androidx.arch.core", name = "core-testing", version.ref = "coreTesting" }
+androidx-media3-test-utils-robolectric = { group = "androidx.media3", name = "media3-test-utils-robolectric", version.ref = "media3TestUtilsRobolectric" }
+androidx-room-coroutines = { group = "androidx.room", name = "room-coroutines", version.ref = "roomCoroutines" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
