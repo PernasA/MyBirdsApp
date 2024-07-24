@@ -240,7 +240,7 @@ fun ExtendedShareButton() {
 @Preview(showBackground = true)
 @Composable
 fun HomePagePreview() {
-    MyBirdsAppTheme {
+    MyBirdsAppTheme (true) {
         HomePage(
             birdsListOnClick = {},
             observationRoutesOnClick = {},

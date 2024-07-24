@@ -72,6 +72,7 @@ dependencies {
         "dir" to "C:\\Users\\Agustin\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.kotlinx\\kotlinx-coroutines-test-jvm\\1.7.3\\89e34400f452dab68fbb3caa66d854c89aaafa07",
         "include" to listOf("*.aar", "*.jar")
     )))
+    testImplementation(libs.ui.test.junit4)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))

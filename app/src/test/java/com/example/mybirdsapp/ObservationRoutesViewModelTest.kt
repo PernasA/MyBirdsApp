@@ -21,7 +21,6 @@ import org.junit.After
 class ObservationRoutesViewModelTest {
 
     private val testDispatcher = StandardTestDispatcher()
-
     private val mockContext = mockk<Context>(relaxed = true)
     private val mockJsonReader = mockk<JsonReader>()
 
@@ -80,7 +79,6 @@ class ObservationRoutesViewModelTest {
     @After
     fun tearDown() {
         Dispatchers.resetMain()
-
-        //testDispatcher.cleanupTestCoroutines()
+        unmockkAll()
     }
 }

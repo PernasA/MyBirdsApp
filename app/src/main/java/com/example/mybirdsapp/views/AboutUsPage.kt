@@ -316,7 +316,7 @@ fun openLinkedIn(context: Context) {
 @Preview(showBackground = true)
 @Composable
 fun AboutUsPagePreview() {
-    MyBirdsAppTheme {
+    MyBirdsAppTheme (true) {
         AboutUsPage()
     }
 }

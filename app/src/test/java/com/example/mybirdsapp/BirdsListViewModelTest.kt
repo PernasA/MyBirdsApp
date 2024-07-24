@@ -25,7 +25,6 @@ import org.junit.After
 class BirdsListViewModelTest {
 
     private val testDispatcher = StandardTestDispatcher()
-
     private val mockContext = mockk<Context>(relaxed = true)
     private val mockJsonReader = mockk<JsonReader>()
     private val mockRoomBirdsDao = mockk<RoomBirdsDao>()

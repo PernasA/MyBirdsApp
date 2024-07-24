@@ -1,11 +1,11 @@
 package com.example.mybirdsapp.ui.theme
 
-import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
+import org.jetbrains.annotations.TestOnly
 
 // el primary no se usa
 // el secondary no se usa
@@ -13,7 +13,8 @@ import androidx.compose.ui.graphics.Color
 // el primaryContainer es para el fondo de la card
 // el secondaryContainer es para los botones del HomePage
 
-private val DarkColorScheme = darkColorScheme(
+@TestOnly
+val DarkColorScheme = darkColorScheme(
     primary = MossGreenPrimary,
     secondary = MossGreenSecondary,
     tertiary = MossGreenRealTertiary,
@@ -22,7 +23,8 @@ private val DarkColorScheme = darkColorScheme(
     onSurfaceVariant = Color.Black,
 )
 
-private val LightColorScheme = lightColorScheme(
+@TestOnly
+val LightColorScheme = lightColorScheme(
     primary = MossGreenPrimaryLight,
     secondary = MossGreenSecondaryLight,
     tertiary = MossGreenTertiaryLight,
@@ -32,10 +34,10 @@ private val LightColorScheme = lightColorScheme(
 
 @Composable
 fun MyBirdsAppTheme(
-    darkTheme: Boolean = isSystemInDarkTheme(),
+    darkTheme: Boolean,
     content: @Composable () -> Unit
 ) {
-    val colorScheme = if (darkTheme) DarkColorScheme//MoreMossGreenColorScheme
+    val colorScheme = if (darkTheme) DarkColorScheme
     else LightColorScheme
     MaterialTheme(
         colorScheme = colorScheme,
