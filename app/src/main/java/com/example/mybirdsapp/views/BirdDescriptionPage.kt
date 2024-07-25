@@ -158,7 +158,8 @@ fun RowNames(bird: Bird) {
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(top = 20.dp, start = 5.dp, end = 5.dp)
-                .border(BorderStroke(0.5.dp, OrangeBird)),
+                .border(BorderStroke(0.8.dp, OrangeBird), RoundedCornerShape(8.dp))
+                .clip(RoundedCornerShape(8.dp)),
             painter = painterResource(id = bird.imageResId),
             contentDescription = stringResource(R.string.image_bird_description),
             contentScale = ContentScale.FillWidth
@@ -295,7 +296,7 @@ fun RowBirdAttributes(bird: Bird){
                     .padding(top = 7.dp)
             )
             Image(
-                painter = painterResource(R.drawable.ruler),
+                painter = painterResource(R.drawable.icon_ruler),
                 contentDescription = stringResource(R.string.image_ruler_description),
                 modifier = Modifier
                     .align(Alignment.CenterHorizontally)
@@ -385,7 +386,7 @@ fun RowBirdAttributes(bird: Bird){
                     maxLines = 3
                 )
                 Image(
-                    painter = painterResource(R.drawable.mountain),
+                    painter = painterResource(R.drawable.icon_mountain),
                     contentDescription = stringResource(R.string.image_mountain_description),
                     modifier = Modifier
                         .fillMaxSize()

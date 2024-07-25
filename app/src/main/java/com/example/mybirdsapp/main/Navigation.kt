@@ -7,6 +7,10 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
@@ -24,6 +28,8 @@ import com.example.mybirdsapp.views.BirdDescriptionPage
 import com.example.mybirdsapp.views.HomePage
 import com.example.mybirdsapp.views.ObservationRouteDescriptionPage
 import com.example.mybirdsapp.views.ObservationRoutesPage
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 enum class NameOfScreen(@StringRes val title: Int) {
     StartNav(title = R.string.title_main_page_appbar),
@@ -72,16 +78,34 @@ private fun CreateNavigationHost(
             .padding(innerPadding)
     ) {
         composable(route = NameOfScreen.StartNav.name) {
+            val scope = rememberCoroutineScope()
+            var isLoading by remember { mutableStateOf(false) }
             HomePage(
                 birdsListOnClick = {
-                    navController.navigate(NameOfScreen.BirdsPageNav.name)
+                    scope.launch {
+                        isLoading = true
+                        delay(1000)
+                        navController.navigate(NameOfScreen.BirdsPageNav.name)
+                        isLoading = false
+                    }
                 },
                 observationRoutesOnClick = {
-                    navController.navigate(NameOfScreen.ObservationRoutesPageNav.name)
+                    scope.launch {
+                        isLoading = true
+                        delay(500)
+                        navController.navigate(NameOfScreen.ObservationRoutesPageNav.name)
+                        isLoading = false
+                    }
                 },
                 aboutUsOnClick = {
-                    navController.navigate(NameOfScreen.AboutUsPageNav.name)
-                }
+                    scope.launch {
+                        isLoading = true
+                        delay(1000)
+                        navController.navigate(NameOfScreen.AboutUsPageNav.name)
+                        isLoading = false
+                    }
+                },
+                isLoading = isLoading
             )
         }
 

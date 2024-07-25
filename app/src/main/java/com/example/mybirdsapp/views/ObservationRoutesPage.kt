@@ -19,6 +19,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
@@ -41,7 +42,7 @@ fun ObservationRoutesPage(
     val observationRouteList = observationRoutesViewModel.observationRouteList
     Box(modifier = Modifier.fillMaxSize()) {
         Image(
-            painter = painterResource(R.drawable.topographic_map),
+            painter = painterResource(R.drawable.util_topographic_map),
             contentDescription = null,
             modifier = Modifier.fillMaxSize(),
             contentScale = ContentScale.FillBounds
@@ -78,6 +79,7 @@ fun MyListItem(
         modifier = Modifier
             .fillMaxWidth()
             .height(70.dp)
+            .alpha(0.8f)
             .padding(start = 4.dp, top = 6.dp, end = 4.dp, bottom = 6.dp)
             .clickable(onClick = { onObservationRouteClick(observationRoute) })
     ) {

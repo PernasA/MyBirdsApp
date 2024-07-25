@@ -4,13 +4,14 @@ import android.content.Intent
 import android.net.Uri
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
@@ -19,7 +20,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.Share
-import androidx.compose.material3.ExtendedFloatingActionButton
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.FilledTonalButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.LargeFloatingActionButton
@@ -32,6 +33,9 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.alpha
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Shadow
 import androidx.compose.ui.input.pointer.pointerInput
@@ -53,6 +57,7 @@ import com.example.mybirdsapp.R
 import com.example.mybirdsapp.ui.theme.MossGreenPrimary
 import com.example.mybirdsapp.ui.theme.MossGreenPrimaryContainer
 import com.example.mybirdsapp.ui.theme.MossGreenRealTertiary
+import com.example.mybirdsapp.ui.theme.MossGreenSecondaryLight
 import com.example.mybirdsapp.ui.theme.MyBirdsAppTheme
 import com.example.mybirdsapp.ui.theme.OrangeBird
 import com.example.mybirdsapp.utils.Constants.Companion.BIG_TEXT_SIZE
@@ -62,48 +67,70 @@ import com.example.mybirdsapp.utils.Constants.Companion.MEDIUM_TEXT_SIZE
 fun HomePage(
     birdsListOnClick: () -> Unit,
     observationRoutesOnClick: () -> Unit,
-    aboutUsOnClick: () -> Unit
+    aboutUsOnClick: () -> Unit,
+    isLoading: Boolean = false
 ) {
     val showTooltip = remember { mutableStateOf(false) }
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .pointerInput(Unit) {
-                detectTapGestures {
-                    if (showTooltip.value) {
-                        showTooltip.value = false
-                    }
-                }
-            },
-        horizontalAlignment = Alignment.CenterHorizontally,
-    ){
-        RowTitle(
-            Modifier
-                .align(Alignment.CenterHorizontally)
-                .padding(horizontal = 8.dp)
-        )
-        MyFilledButton(
-            birdsListOnClick,
-            R.string.birds_list,
-            Modifier.padding(top = 40.dp)
-        )
-        RowRoutesButtons(observationRoutesOnClick, showTooltip)
-        MyFilledButton(
-            aboutUsOnClick,
-            R.string.about_us,
-            Modifier.padding(top = 40.dp)
-        )
-        Image(
-            painter = painterResource(id = R.drawable.zorzal_bird),
-            contentDescription = stringResource(R.string.main_page_image_description),
+    Box(modifier = Modifier.fillMaxSize()) {
+        Column(
             modifier = Modifier
-                .size(200.dp)
-                .padding(top = 50.dp)
-                .border(BorderStroke(1.dp, OrangeBird)),
-            contentScale = ContentScale.Crop
-        )
-        ExtendedShareButton()
+                .fillMaxSize()
+                .pointerInput(Unit) {
+                    detectTapGestures {
+                        if (showTooltip.value) {
+                            showTooltip.value = false
+                        }
+                    }
+                },
+            horizontalAlignment = Alignment.CenterHorizontally,
+        ){
+            RowTitle(
+                Modifier
+                    .align(Alignment.CenterHorizontally)
+                    .padding(horizontal = 8.dp)
+            )
+            Image(
+                painter = painterResource(id = R.drawable.util_zorzal_book),
+                contentDescription = stringResource(R.string.main_page_image_description),
+                modifier = Modifier
+                    .size(320.dp)
+                    .padding(top = 30.dp)
+                    .clip(RoundedCornerShape(32.dp))
+                    .shadow(100.dp, RoundedCornerShape(32.dp))
+                    .border(BorderStroke(1.dp, OrangeBird), RoundedCornerShape(32.dp)),
+                contentScale = ContentScale.Crop
+            )
+            Column (
+                Modifier
+                    .width(250.dp)
+                    .padding(top = 40.dp)) {
+                MyFilledButton(
+                    birdsListOnClick,
+                    R.string.birds_list,
+                    Modifier.padding(top = 20.dp)
+                )
+                RowRoutesButtons(observationRoutesOnClick, showTooltip, isLoading)
+                MyFilledButton(
+                    aboutUsOnClick,
+                    R.string.about_us,
+                    Modifier.padding(top = 20.dp)
+                )
+            }
+        }
+        if (isLoading) {
+            Box(
+                modifier = Modifier
+                    .fillMaxSize()// Fondo semitransparente
+                    .align(Alignment.Center)
+            ) {
+                CircularProgressIndicator(
+                    color = OrangeBird,
+                    modifier = Modifier.align(Alignment.Center)
+                )
+            }
+        }
     }
+    ExtendedShareButton()
 }
 
 @Composable
@@ -156,7 +183,7 @@ fun RowTitle(modifier: Modifier) {
 fun MyFilledButton(onClick: () -> Unit, buttonText: Int, modifier: Modifier) {
     FilledTonalButton(
         onClick = { onClick() },
-        modifier,
+        modifier.fillMaxWidth(),
         border = BorderStroke(0.7.dp, MossGreenPrimaryContainer),
     ) {
         Text(stringResource(buttonText), fontSize = 24.sp)
@@ -164,13 +191,19 @@ fun MyFilledButton(onClick: () -> Unit, buttonText: Int, modifier: Modifier) {
 }
 
 @Composable
-fun RowRoutesButtons(observationRoutesOnClick: () -> Unit, showTooltipState: MutableState<Boolean>) {
+fun RowRoutesButtons(
+    observationRoutesOnClick: () -> Unit,
+    showTooltipState: MutableState<Boolean>,
+    isLoading: Boolean
+) {
     val showTooltip by showTooltipState
-    Row (modifier = Modifier.padding(top = 40.dp)) {
+    Row (modifier = Modifier.padding(top = 20.dp)) {
         MyFilledButton(
             observationRoutesOnClick,
             R.string.observation_routes,
-            Modifier.padding(end = 5.dp)
+            Modifier
+                .padding(end = 5.dp)
+                .weight(1F)
         )
         Box(modifier = Modifier.width(5.dp))
         Box(
@@ -225,16 +258,22 @@ fun ExtendedShareButton() {
     val whatsappIntent = Intent(Intent.ACTION_VIEW).apply {
         data = Uri.parse("https://api.whatsapp.com/send?text=$shareText")
     }
-    ExtendedFloatingActionButton(
-        onClick = { context.startActivity(whatsappIntent) },
-        text = { Text(stringResource(R.string.button_share), fontSize = MEDIUM_TEXT_SIZE) },
-        icon = { Icon(Icons.Filled.Share, stringResource(R.string.button_share)) },
-        containerColor = MossGreenRealTertiary,
-        contentColor = OrangeBird,
+    Box(
         modifier = Modifier
-            .padding(top = 60.dp)
-            .height(40.dp)
-    )
+            .fillMaxSize()
+            .padding(end = 10.dp),
+        contentAlignment = Alignment.BottomEnd
+    ) {
+        LargeFloatingActionButton(
+            onClick = { context.startActivity(whatsappIntent) },
+            shape = CircleShape,
+            containerColor = MossGreenSecondaryLight,
+            contentColor = Color.Black,
+            modifier = Modifier.size(60.dp)
+        ) {
+            Icon(Icons.Filled.Share, stringResource(R.string.button_share))
+        }
+    }
 }
 
 @Preview(showBackground = true)
@@ -244,7 +283,8 @@ fun HomePagePreview() {
         HomePage(
             birdsListOnClick = {},
             observationRoutesOnClick = {},
-            aboutUsOnClick = {}
+            aboutUsOnClick = {},
+            isLoading = true
         )
     }
 }

@@ -10,12 +10,12 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ExtendedFloatingActionButton
@@ -24,6 +24,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.layout.ContentScale
@@ -52,7 +53,7 @@ fun AboutUsPage() {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .padding(top = 5.dp, start = 5.dp, end = 5.dp, bottom = 8.dp)
+            .padding(top = 5.dp, start = 9.dp, end = 9.dp, bottom = 5.dp)
     ) {
         Column (Modifier.weight(1F)) {
             BookCard(Modifier.weight(1F))
@@ -74,7 +75,7 @@ fun BookCard(modifier: Modifier) {
         border = BorderStroke(2.dp, MossGreenPrimary),
         modifier = modifier
             .fillMaxWidth()
-            .padding(start = 4.dp, top = 6.dp, end = 4.dp, bottom = 6.dp)
+            .padding(start = 4.dp, top = 15.dp, end = 4.dp, bottom = 6.dp)
     ) {
         Row (
             Modifier.fillMaxSize(),
@@ -84,8 +85,9 @@ fun BookCard(modifier: Modifier) {
                 modifier = Modifier
                     .width(150.dp)
                     .padding(horizontal = 10.dp, vertical = 10.dp)
-                    .border(BorderStroke(0.5.dp, Color.Black)),
-                painter = painterResource(R.drawable.tapa_libro_recortada),
+                    .border(BorderStroke(0.8.dp, OrangeBird), RoundedCornerShape(8.dp))
+                    .clip(RoundedCornerShape(8.dp)),
+                painter = painterResource(R.drawable.util_book_front),
                 contentDescription = stringResource(R.string.image_book_description),
                 contentScale = ContentScale.Fit
             )
@@ -142,7 +144,7 @@ fun WriterCard(modifier: Modifier) {
         border = BorderStroke(2.dp, MossGreenPrimary),
         modifier = modifier
             .fillMaxWidth()
-            .padding(start = 4.dp, top = 6.dp, end = 4.dp, bottom = 6.dp)
+            .padding(start = 4.dp, top = 15.dp, end = 4.dp, bottom = 6.dp)
     ) {
         Row (
             Modifier.fillMaxSize(),
@@ -152,8 +154,9 @@ fun WriterCard(modifier: Modifier) {
                 modifier = Modifier
                     .width(130.dp)
                     .padding(horizontal = 10.dp, vertical = 10.dp)
-                    .border(BorderStroke(0.5.dp, OrangeBird)),
-                painter = painterResource(R.drawable.foto_raul_balla),
+                    .border(BorderStroke(0.8.dp, OrangeBird), RoundedCornerShape(8.dp))
+                    .clip(RoundedCornerShape(8.dp)),
+                painter = painterResource(R.drawable.util_raul_balla),
                 contentDescription = stringResource(R.string.image_book_description),
                 contentScale = ContentScale.Fit
             )
@@ -210,8 +213,8 @@ fun DeveloperCard() {
         ),
         border = BorderStroke(2.dp, MossGreenPrimary),
         modifier = Modifier
-            .height(120.dp)
-            .padding(start = 4.dp, top = 6.dp, end = 4.dp, bottom = 6.dp)
+            .height(140.dp)
+            .padding(start = 4.dp, top = 15.dp, end = 4.dp, bottom = 15.dp)
     ) {
         Row (
             Modifier.fillMaxSize(),
@@ -221,8 +224,9 @@ fun DeveloperCard() {
                 modifier = Modifier
                     .width(110.dp)
                     .padding(vertical = 10.dp, horizontal = 10.dp)
-                    .border(BorderStroke(0.5.dp, OrangeBird)),
-                painter = painterResource(R.drawable.agustin_photo),
+                    .border(BorderStroke(0.8.dp, OrangeBird), RoundedCornerShape(8.dp))
+                    .clip(RoundedCornerShape(8.dp)),
+                painter = painterResource(R.drawable.util_agustin_photo),
                 contentDescription = stringResource(R.string.image_book_description),
                 contentScale = ContentScale.Fit
             )
@@ -254,7 +258,7 @@ fun DeveloperCard() {
 @Composable
 fun ExtendedContactWriterButton(modifier: Modifier) {
     val context = LocalContext.current
-    val whatsappIcon: ImageVector = ImageVector.vectorResource(id = R.drawable.whatsapp_icon)
+    val whatsappIcon: ImageVector = ImageVector.vectorResource(id = R.drawable.icon_whatsapp_icon)
 
     ExtendedFloatingActionButton(
         onClick = { openWhatsappWriter(context) },
@@ -288,7 +292,7 @@ fun openWhatsappWriter(context: Context) {
 @Composable
 fun ExtendedContactDeveloperButton(modifier: Modifier) {
     val context = LocalContext.current
-    val linkedInIcon: ImageVector = ImageVector.vectorResource(id = R.drawable.linkedin_icon)
+    val linkedInIcon: ImageVector = ImageVector.vectorResource(id = R.drawable.icon_linkedin_icon)
 
     ExtendedFloatingActionButton(
         onClick = { openLinkedIn(context) },
