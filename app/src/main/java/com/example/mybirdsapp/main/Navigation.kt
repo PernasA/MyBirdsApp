@@ -148,7 +148,7 @@ private fun CreateNavigationHost(
         ) { backStackEntry ->
             val observationRouteId = backStackEntry.arguments?.getInt("observationRouteId") ?: return@composable
             val observationRoute = observationRoutesViewModel.getObservationRouteById(observationRouteId) ?: return@composable
-            ObservationRouteDescriptionPage(observationRoute, observationRoutesViewModel, birdsListViewModel)
+            ObservationRouteDescriptionPage(observationRoute, observationRoutesViewModel)
         }
 
         composable(route = NameOfScreen.AboutUsPageNav.name) {

@@ -7,13 +7,12 @@ import android.widget.Toast
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.LocationOn
@@ -44,57 +43,21 @@ import com.example.mybirdsapp.ui.theme.OrangeBird
 import com.example.mybirdsapp.utils.Constants.Companion.BIG_TEXT_SIZE
 import com.example.mybirdsapp.utils.Constants.Companion.MEDIUM_TEXT_SIZE
 import com.example.mybirdsapp.utils.Constants.Companion.SUBTITLE_TEXT_SIZE
-import com.example.mybirdsapp.viewModels.BirdsListViewModel
+import com.example.mybirdsapp.utils.Constants.Companion.TITLE_TEXT_SIZE
 import com.example.mybirdsapp.viewModels.ObservationRoutesViewModel
-
-sealed class WidgetItemRoute {
-    data class RowName(
-        val observationRoute: ObservationRoute,
-        val observationRouteViewModel: ObservationRoutesViewModel
-    ) : WidgetItem()
-    data class RowDescription(val observationRoute: ObservationRoute) : WidgetItem()
-    data class RowBirdsList(
-        val observationRoute: ObservationRoute,
-        val observationRouteViewModel: ObservationRoutesViewModel,
-        val birdsListViewModel: BirdsListViewModel
-    ): WidgetItem()
-}
 
 @Composable
 fun ObservationRouteDescriptionPage(
     observationRoute: ObservationRoute,
     observationRouteViewModel: ObservationRoutesViewModel,
-    birdsListViewModel: BirdsListViewModel
 ) {
-    val widgetItems = listOf(
-        WidgetItemRoute.RowName(observationRoute, observationRouteViewModel),
-        WidgetItemRoute.RowDescription(observationRoute),
-        WidgetItemRoute.RowBirdsList(
-            observationRoute,
-            observationRouteViewModel,
-            birdsListViewModel
-        )
-    )
-    LazyColumn(
+    Column(
         modifier = Modifier
             .fillMaxSize()
             .padding(16.dp)
     ) {
-        items(widgetItems) { item ->
-            when (item) {
-                is WidgetItemRoute.RowName ->
-                    RowName(item.observationRoute, item.observationRouteViewModel)
-                is WidgetItemRoute.RowDescription ->
-                    RowDescription(item.observationRoute)
-                is WidgetItemRoute.RowBirdsList ->
-                    RowBirdsList(
-                        item.observationRoute,
-                        item.observationRouteViewModel,
-                        item.birdsListViewModel
-                    )
-                else -> {}
-            }
-        }
+        RowName(observationRoute, observationRouteViewModel)
+        RowDescription(observationRoute)
     }
 }
 
@@ -106,7 +69,7 @@ fun RowName(
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .height(100.dp)
+            .height(90.dp)
     ) {
         Text(
             modifier = Modifier
@@ -131,7 +94,7 @@ fun RowName(
     Image(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(top = 20.dp, start = 5.dp, end = 5.dp)
+            .padding(top = 2.dp, start = 5.dp, end = 5.dp)
             .border(BorderStroke(0.8.dp, OrangeBird), RoundedCornerShape(8.dp))
             .clip(RoundedCornerShape(8.dp)),
         painter = painterResource(id = routeImageResId),
@@ -184,37 +147,28 @@ fun RowDescription(
     observationRoute: ObservationRoute
 ) {
     Text(
-        modifier = Modifier.padding(top = 45.dp),
+        modifier = Modifier.padding(top = 30.dp),
         text = stringResource(R.string.bird_full_description),
         style = TextStyle(
             fontWeight = FontWeight.Bold,
-            fontSize = MEDIUM_TEXT_SIZE,
-            lineHeight = MEDIUM_TEXT_SIZE,
+            fontSize = TITLE_TEXT_SIZE,
+            lineHeight = TITLE_TEXT_SIZE,
             letterSpacing = 0.sp,
             textAlign = TextAlign.Left,
             color = MossGreenPrimary,
         )
     )
     Text(
-        modifier = Modifier.padding(top = 10.dp),
+        modifier = Modifier.padding(top = 15.dp),
         text = observationRoute.description,
         style = TextStyle(
             fontWeight = FontWeight.Normal,
-            fontSize = SUBTITLE_TEXT_SIZE,
-            lineHeight = SUBTITLE_TEXT_SIZE,
+            fontSize = MEDIUM_TEXT_SIZE,
+            lineHeight = MEDIUM_TEXT_SIZE,
             letterSpacing = 0.sp,
             textAlign = TextAlign.Justify,
             color = Color.White,
             lineBreak = LineBreak.Paragraph
         )
     )
-}
-
-@Composable
-fun RowBirdsList(
-        observationRoute: ObservationRoute,
-        observationRouteViewModel: ObservationRoutesViewModel,
-        birdsListViewModel: BirdsListViewModel
-) {
-
 }

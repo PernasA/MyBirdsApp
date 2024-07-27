@@ -14,8 +14,8 @@
 
     #Images descriptions
     <string name="main_page_image_description">Imagen de aves</string>
-    <string name="back_button">Boton flecha atras</string>
-    <string name="image_bird_description">Imagen del pajaro mencionado</string>
+    <string name="back_button">Botón flecha atrás</string>
+    <string name="image_bird_description">Imagen del pájaro mencionado</string>
     <string name="image_book_description">Tapa del libro</string>
     <string name="image_writer_description">Foto del escritor del libro</string>
     <string name="image_ruler_description">Imagen de regla</string>
@@ -23,7 +23,6 @@
     <string name="image_route_description">Imagen de la ruta de observación mencionada</string>
 
     #Buttons actions
-    <string name="button_cancel">Menu</string>
     <string name="button_share">Compartir</string>
     <string name="button_whatsapp">Contactar a Raúl</string>
     <string name="button_maps">Ver en\nGoogle Maps</string>
@@ -35,7 +34,7 @@
     <string name="birds_list">Lista de Aves</string>
     <string name="observation_routes">Recorridos</string>
     <string name="about_us">  Créditos  </string>
-    <string name="button_info">Information</string>
+    <string name="button_info">Información</string>
 
     #Texts
     <string name="have_you_observed">¿Observaste esta ave?</string>
@@ -50,16 +49,10 @@
 
     #About Us Page
     <string name="book_name">Libro Aves de las Sierras Centrales de Merlo</string>
-    <string name="book_full_description">Este libro fue escrito en 2020 con el objetivo de ayudar a los
-    observadores de aves a relacionar con más claridad a los distintos tipos de aves.\nIncluye
-    información importante para detectar distintos de aves en las sierras Centrales,
-    especialmente en Merlo, San Luis y alrededores.</string>
+    <string name="book_full_description">Esta guía facilita la identificación de aves silvestres en las Sierras Centrales de Argentina, en Córdoba y San Luis. Invita a disfrutar de la naturaleza con un sistema novedoso que ayuda a recorrer circuitos predeterminados, haciendo de la observación y fotografía de aves una actividad agradable y gratificante.</string>
 
     <string name="writer_name">Escritor Raúl Balla</string>
-    <string name="writer_full_description">Raúl es un argentino amante de los pájaros. Este libro fue escrito en 2020 con el objetivo de ayudar a los
-    observadores de aves a relacionar con más claridad a los distintos tipos de aves.\nIncluye
-    información importante para detectar distintos de aves en las sierras Centrales,
-    especialmente en Merlo, San Luis y alrededores.</string>
+    <string name="writer_full_description">Argentino, nació el 29 de agosto de 1956 en Noetinger, Córdoba. Desde el 2008 reside en Merlo, San Luis. Participa activamente en el COA Chiguanco en la localidad y permanece vinculado a sus amigos del COA Ñacurutú de General Roca. Colabora con gran empeño en su comunidad para difundir el conocimiento y cariño por las aves.</string>
 
     <string name="developer_name">Programador\nAgustin Pernas</string>
 
