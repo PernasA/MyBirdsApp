@@ -44,7 +44,7 @@ La aplicación permite a los usuarios:
 9. AndroidJUnit4 para los tests instrumentados.
 10. Git y Github para el control de versiones.
 
-## CRÉDITOS
+## Créditos
 
 ### Autor
 
