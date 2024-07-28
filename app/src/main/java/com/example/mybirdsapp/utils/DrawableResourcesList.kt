@@ -18,22 +18,22 @@ object DrawableResourcesList {
         R.drawable.icon_orange_bird_draw, R.drawable.b34_catita_serrana_grande, R.drawable.icon_orange_bird_draw, // 33 34 35
         R.drawable.b36_pirincho, R.drawable.b37_crespin, R.drawable.icon_orange_bird_draw, // 36 37 38
         R.drawable.b39_cabure, R.drawable.b40_lechucita_vizcachera, R.drawable.icon_orange_bird_draw, // 39 40 41
-        R.drawable.b42_loro_barranquero, R.drawable.b43_picaflor_cometa, R.drawable.icon_orange_bird_draw, // 42 43 44
-        R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, // 45 46 47
-        R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, // 48 49 50
-        R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, // 51 52 53
-        R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, // 54 55 56
-        R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, // 57 58 59
-        R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, // 60 61 62
-        R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, // 63 64 65
-        R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, // 66 67 68
-        R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, // 69 70 71
-        R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, // 72 73 74
+        R.drawable.b42_loro_barranquero, R.drawable.b43_picaflor_cometa, R.drawable.b44_martin_pescador_chico, // 42 43 44
+        R.drawable.b45_durmili, R.drawable.b46_carpintero_real, R.drawable.icon_orange_bird_draw, // 45 46 47
+        R.drawable.b48_carpintero_lomo_blanco, R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, // 48 49 50
+        R.drawable.b51_remolinera_serrana, R.drawable.b52_remolinera_chocolate, R.drawable.b53_hornero, // 51 52 53
+        R.drawable.icon_orange_bird_draw, R.drawable.b55_crestudo, R.drawable.b56_curutie_blanco, // 54 55 56
+        R.drawable.b57_canastero_palido, R.drawable.b58_espartillero_serrano, R.drawable.icon_orange_bird_draw, // 57 58 59
+        R.drawable.b60_coludito_copeton, R.drawable.b61_cacholote_castanio, R.drawable.b62_chinchero_grande, // 60 61 62
+        R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, R.drawable.b65_gallito_de_collar, // 63 64 65
+        R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, R.drawable.b68_churrinche, // 66 67 68
+        R.drawable.b69_cachudito_pico_negro, R.drawable.icon_orange_bird_draw, R.drawable.b71_benteveo, // 69 70 71
+        R.drawable.b72_picabuey, R.drawable.b73_birro, R.drawable.icon_orange_bird_draw, // 72 73 74
         R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, // 75 76 77
         R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, // 78 79 80
         R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, // 81 82 83
         R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, // 84 85 86
-        R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, // 87 88 89
+        R.drawable.icon_orange_bird_draw, R.drawable.b88_zorzal_chiguanco, R.drawable.icon_orange_bird_draw, // 87 88 89
         R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, // 90 91 92
         R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, // 93 94 95
         R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, R.drawable.icon_orange_bird_draw, // 96 97 98

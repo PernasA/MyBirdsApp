@@ -106,7 +106,7 @@ fun BirdCard(
         ) {
             Text(
                 modifier = Modifier
-                    .padding(top = 10.dp)
+                    .padding(top = 10.dp, start = 2.dp, end = 2.dp)
                     .fillMaxWidth()
                     .height(50.dp),
                 text = "${bird.id}. ${bird.name}",
