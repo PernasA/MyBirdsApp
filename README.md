@@ -1,8 +1,8 @@
 # Aves de Merlo San Luis
 
-Aves de Merlo San Luis es una aplicación móvil diseñada para ayudarte a identificar y registrar las aves que observas en la región de Merlo, San Luis. La aplicación permite a los usuarios almacenar una lista de aves observadas y proporciona una interfaz fácil de usar para la navegación y el registro de observaciones.
+Aves de Merlo San Luis es una aplicación móvil diseñada para ayudarte a identificar y registrar las aves que observas en la región de Merlo, San Luis. La aplicación permite a los usuarios almacenar una lista de aves observadas, elegir distintos recorridos en los alrededores de Merlo y proporciona una interfaz fácil de usar para la navegación y el registro de observaciones.
 
-## Comenzando
+## Introducción
 
 Estas instrucciones te guiarán en la configuración del entorno necesario para ejecutar la aplicación localmente en tu máquina o cómo descargarla desde Google Play Store.
 
@@ -44,16 +44,16 @@ La aplicación permite a los usuarios:
 9. AndroidJUnit4 para los tests instrumentados.
 10. Git y Github para el control de versiones.
 
-# CRÉDITOS
+## CRÉDITOS
 
-## Autor
+### Autor
 
-    Ing. Agustin Pernas - Desarrollador de la aplicación - [Perfil de LinkedIn](https://www.linkedin.com/in/agustinbpernas/)
+Ing. Agustin Pernas - Desarrollador de la aplicación - [Perfil de LinkedIn](https://www.linkedin.com/in/agustinbpernas/)
 
-## Agradecimientos
+### Agradecimientos
 
-    Raúl Balla, escritor del libro que me inspiró a desarrollar esta aplicación.
+Raúl Balla, escritor del libro que me inspiró a desarrollar esta aplicación.
 
-## Licencia
+### Licencia
 
 Este proyecto está licenciado bajo la Licencia MIT - mira el archivo [LICENSE.md](LICENSE.md) para más detalles.
