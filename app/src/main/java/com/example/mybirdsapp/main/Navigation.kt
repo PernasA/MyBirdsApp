@@ -160,17 +160,13 @@ private fun CreateNavigationHost(
 fun getCurrentScreen(route: String?): NameOfScreen {
     return when {
         route == null -> NameOfScreen.StartNav
-        route.startsWith("${NameOfScreen.BirdDescriptionPageNav.name}/") -> NameOfScreen.BirdDescriptionPageNav
+        route.startsWith("${NameOfScreen.BirdDescriptionPageNav.name}/") ->
+            NameOfScreen.BirdDescriptionPageNav
         route == NameOfScreen.BirdsPageNav.name -> NameOfScreen.BirdsPageNav
         route == NameOfScreen.ObservationRoutesPageNav.name -> NameOfScreen.ObservationRoutesPageNav
-        route.startsWith("${NameOfScreen.ObservationRouteDescriptionPageNav.name}/") -> NameOfScreen.ObservationRouteDescriptionPageNav
+        route.startsWith("${NameOfScreen.ObservationRouteDescriptionPageNav.name}/") ->
+            NameOfScreen.ObservationRouteDescriptionPageNav
         route == NameOfScreen.AboutUsPageNav.name -> NameOfScreen.AboutUsPageNav
         else -> NameOfScreen.StartNav
     }
-}
-
-private fun cancelOrderAndNavigateToStart(
-    navController: NavHostController
-) {
-    navController.popBackStack(NameOfScreen.StartNav.name, inclusive = false)
 }

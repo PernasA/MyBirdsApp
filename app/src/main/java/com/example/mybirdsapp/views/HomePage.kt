@@ -109,7 +109,7 @@ fun HomePage(
                     R.string.birds_list,
                     Modifier.padding(top = 20.dp)
                 )
-                RowRoutesButtons(observationRoutesOnClick, showTooltip, isLoading)
+                RowRoutesButtons(observationRoutesOnClick, showTooltip)
                 MyFilledButton(
                     aboutUsOnClick,
                     R.string.about_us,
@@ -193,8 +193,7 @@ fun MyFilledButton(onClick: () -> Unit, buttonText: Int, modifier: Modifier) {
 @Composable
 fun RowRoutesButtons(
     observationRoutesOnClick: () -> Unit,
-    showTooltipState: MutableState<Boolean>,
-    isLoading: Boolean
+    showTooltipState: MutableState<Boolean>
 ) {
     val showTooltip by showTooltipState
     Row (modifier = Modifier.padding(top = 20.dp)) {

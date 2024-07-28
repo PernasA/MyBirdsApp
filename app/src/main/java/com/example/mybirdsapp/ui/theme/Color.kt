@@ -12,4 +12,4 @@ val MossGreenSecondaryLight = Color(0xFFADFF2F) // Verde Lima
 val MossGreenTertiaryLight = Color(0xFF90EE90) // Verde Claro
 val MossGreenPrimaryContainerLight = Color(0xFFB0E57C) // Verde Lima Claro
 
-val OrangeBird = Color(0xffeb700a)
+val OrangeBird = Color(0xFFEB700A)

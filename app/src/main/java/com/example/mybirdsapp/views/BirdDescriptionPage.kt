@@ -403,14 +403,14 @@ fun RowBirdAttributes(bird: Bird){
 
 @Composable
 fun FrequencyIconImage(birdFrequency: Int) {
-    for (i in 1..4) {
+    for (i in 4 downTo 1) {
         Box(
             modifier = Modifier
                 .fillMaxWidth()
                 .height(12.dp)
                 .padding(horizontal = 17.dp, vertical = 2.dp)
                 .clip(RoundedCornerShape(8.dp))
-                .background(if (i <= birdFrequency) Color.White else MossGreenTertiaryLight)
+                .background(if (i <= birdFrequency) MossGreenTertiaryLight else Color.White)
         )
     }
 }

@@ -5,7 +5,12 @@ import com.example.mybirdsapp.models.ObservationRoute
 import com.example.mybirdsapp.utils.DrawableResourcesList
 import com.example.mybirdsapp.utils.JsonReader
 import com.example.mybirdsapp.viewModels.ObservationRoutesViewModel
-import io.mockk.*
+import io.mockk.coEvery
+import io.mockk.coVerify
+import io.mockk.every
+import io.mockk.mockk
+import io.mockk.mockkObject
+import io.mockk.unmockkAll
 import kotlinx.coroutines.Dispatchers
 import org.junit.Before
 import org.junit.Test
