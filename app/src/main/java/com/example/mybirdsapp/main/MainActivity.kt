@@ -2,7 +2,6 @@ package com.example.mybirdsapp.main
 
 import android.content.Context
 import android.os.Bundle
-import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
@@ -14,7 +13,7 @@ import com.example.mybirdsapp.models.room.RoomBirdsDatabase
 import com.example.mybirdsapp.viewModels.BirdsListViewModel
 import com.example.mybirdsapp.viewModels.ObservationRoutesViewModel
 
-class MainActivity : ComponentActivity() {
+class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()

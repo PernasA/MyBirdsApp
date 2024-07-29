@@ -27,7 +27,6 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import com.example.mybirdsapp.R
 import com.example.mybirdsapp.models.ObservationRoute
 import com.example.mybirdsapp.ui.theme.MossGreenPrimary
@@ -95,7 +94,6 @@ fun MyListItem(
                     fontWeight = FontWeight.Bold,
                     fontSize = TITLE_TEXT_SIZE,
                     lineHeight = TITLE_TEXT_SIZE,
-                    letterSpacing = 0.sp,
                     textAlign = TextAlign.Center,
                     color = Color.Black
                 ),

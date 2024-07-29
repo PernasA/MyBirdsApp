@@ -13,6 +13,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.LocationOn
@@ -34,7 +35,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.LineBreak
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import com.example.mybirdsapp.R
 import com.example.mybirdsapp.models.Coordinates
 import com.example.mybirdsapp.models.ObservationRoute
@@ -51,13 +51,15 @@ fun ObservationRouteDescriptionPage(
     observationRoute: ObservationRoute,
     observationRouteViewModel: ObservationRoutesViewModel,
 ) {
-    Column(
+    LazyColumn(
         modifier = Modifier
-            .fillMaxSize()
-            .padding(16.dp)
+        .fillMaxSize()
+        .padding(16.dp)
     ) {
-        RowName(observationRoute, observationRouteViewModel)
-        RowDescription(observationRoute)
+        item {
+            RowName(observationRoute, observationRouteViewModel)
+            RowDescription(observationRoute)
+        }
     }
 }
 
@@ -81,7 +83,6 @@ fun RowName(
                 fontWeight = FontWeight.Bold,
                 fontSize = BIG_TEXT_SIZE,
                 lineHeight = BIG_TEXT_SIZE,
-                letterSpacing = 0.sp,
                 shadow = Shadow(OrangeBird, blurRadius = 1.0f),
                 textAlign = TextAlign.Left,
                 color = Color.White,
@@ -153,7 +154,6 @@ fun RowDescription(
             fontWeight = FontWeight.Bold,
             fontSize = TITLE_TEXT_SIZE,
             lineHeight = TITLE_TEXT_SIZE,
-            letterSpacing = 0.sp,
             textAlign = TextAlign.Left,
             color = MossGreenPrimary,
         )
@@ -165,7 +165,6 @@ fun RowDescription(
             fontWeight = FontWeight.Normal,
             fontSize = MEDIUM_TEXT_SIZE,
             lineHeight = MEDIUM_TEXT_SIZE,
-            letterSpacing = 0.sp,
             textAlign = TextAlign.Justify,
             color = Color.White,
             lineBreak = LineBreak.Paragraph

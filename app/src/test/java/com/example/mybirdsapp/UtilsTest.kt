@@ -52,16 +52,21 @@ class UtilsTest {
 
     @Test
     fun testTitleTextSize() {
-        assertEquals(20.sp, Constants.TITLE_TEXT_SIZE)
+        assertEquals(22.sp, Constants.TITLE_TEXT_SIZE)
     }
 
     @Test
     fun testMediumTextSize() {
-        assertEquals(16.sp, Constants.MEDIUM_TEXT_SIZE)
+        assertEquals(17.sp, Constants.MEDIUM_TEXT_SIZE)
     }
 
     @Test
     fun testSubtitleTextSize() {
-        assertEquals(14.sp, Constants.SUBTITLE_TEXT_SIZE)
+        assertEquals(15.sp, Constants.SUBTITLE_TEXT_SIZE)
+    }
+
+    @Test
+    fun testButtonHomeTextSize() {
+        assertEquals(24.sp, Constants.BUTTON_HOME_TEXT_SIZE)
     }
 }

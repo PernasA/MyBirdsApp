@@ -46,7 +46,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.LineBreak
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import androidx.compose.ui.zIndex
 import com.example.mybirdsapp.R
 import com.example.mybirdsapp.models.Bird
@@ -113,7 +112,6 @@ fun RowNames(bird: Bird) {
                 fontWeight = FontWeight.Bold,
                 fontSize = BIG_TEXT_SIZE,
                 lineHeight = BIG_TEXT_SIZE,
-                letterSpacing = 0.sp,
                 shadow = Shadow(OrangeBird, blurRadius = 1.0f),
                 textAlign = TextAlign.Left,
                 color = Color.White,
@@ -133,7 +131,6 @@ fun RowNames(bird: Bird) {
                     fontWeight = FontWeight.Bold,
                     fontSize = TITLE_TEXT_SIZE,
                     lineHeight = TITLE_TEXT_SIZE,
-                    letterSpacing = 0.sp,
                     shadow = Shadow(OrangeBird, blurRadius = 1.0f),
                     textAlign = TextAlign.Right,
                     color = Color.White,
@@ -146,7 +143,6 @@ fun RowNames(bird: Bird) {
                     fontWeight = FontWeight.Bold,
                     fontSize = TITLE_TEXT_SIZE,
                     lineHeight = TITLE_TEXT_SIZE,
-                    letterSpacing = 0.sp,
                     shadow = Shadow(OrangeBird, blurRadius = 1.0f),
                     textAlign = TextAlign.Right,
                     color = Color.Yellow
@@ -171,7 +167,7 @@ fun RowCounterObserved(bird: Bird, birdsListViewModel: BirdsListViewModel) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .height(90.dp)
+            .height(110.dp) //TODO:CHECKEAR TAMAÑOS
             .padding(top = 35.dp)
     ) {
         Column(
@@ -184,7 +180,6 @@ fun RowCounterObserved(bird: Bird, birdsListViewModel: BirdsListViewModel) {
                     fontWeight = FontWeight.Bold,
                     fontSize = MEDIUM_TEXT_SIZE,
                     lineHeight = MEDIUM_TEXT_SIZE,
-                    letterSpacing = 0.sp,
                     textAlign = TextAlign.Center,
                     color = Color.White,
                 ),
@@ -202,7 +197,6 @@ fun RowCounterObserved(bird: Bird, birdsListViewModel: BirdsListViewModel) {
                     fontWeight = FontWeight.Bold,
                     fontSize = MEDIUM_TEXT_SIZE,
                     lineHeight = MEDIUM_TEXT_SIZE,
-                    letterSpacing = 0.sp,
                     textAlign = TextAlign.Center,
                     color = MossGreenPrimaryContainer,
                 ),
@@ -215,7 +209,6 @@ fun RowCounterObserved(bird: Bird, birdsListViewModel: BirdsListViewModel) {
                     fontWeight = FontWeight.Bold,
                     fontSize = BIG_TEXT_SIZE,
                     lineHeight = BIG_TEXT_SIZE,
-                    letterSpacing = 0.sp,
                     textAlign = TextAlign.Center,
                     color = MossGreenPrimaryContainer,
                 ),
@@ -273,7 +266,6 @@ fun RowBirdAttributes(bird: Bird){
                     fontWeight = FontWeight.Bold,
                     fontSize = MEDIUM_TEXT_SIZE,
                     lineHeight = MEDIUM_TEXT_SIZE,
-                    letterSpacing = 0.sp,
                     textAlign = TextAlign.Center,
                     color = Color.White,
                 ),
@@ -287,7 +279,6 @@ fun RowBirdAttributes(bird: Bird){
                     fontWeight = FontWeight.Bold,
                     fontSize = MEDIUM_TEXT_SIZE,
                     lineHeight = MEDIUM_TEXT_SIZE,
-                    letterSpacing = 0.sp,
                     textAlign = TextAlign.Center,
                     color = Color.White,
                 ),
@@ -324,7 +315,6 @@ fun RowBirdAttributes(bird: Bird){
                     fontWeight = FontWeight.Bold,
                     fontSize = MEDIUM_TEXT_SIZE,
                     lineHeight = MEDIUM_TEXT_SIZE,
-                    letterSpacing = 0.sp,
                     textAlign = TextAlign.Center,
                     color = Color.White,
                 ),
@@ -351,7 +341,6 @@ fun RowBirdAttributes(bird: Bird){
                     fontWeight = FontWeight.Bold,
                     fontSize = MEDIUM_TEXT_SIZE,
                     lineHeight = MEDIUM_TEXT_SIZE,
-                    letterSpacing = 0.sp,
                     textAlign = TextAlign.Center,
                     color = Color.White,
                 ),
@@ -376,7 +365,6 @@ fun RowBirdAttributes(bird: Bird){
                         fontWeight = FontWeight.Bold,
                         fontSize = MEDIUM_TEXT_SIZE,
                         lineHeight = MEDIUM_TEXT_SIZE,
-                        letterSpacing = 0.sp,
                         textAlign = TextAlign.Center,
                         color = Color.White
                     ),
@@ -424,7 +412,6 @@ fun BirdFullDescription(bird: Bird) {
             fontWeight = FontWeight.Bold,
             fontSize = MEDIUM_TEXT_SIZE,
             lineHeight = MEDIUM_TEXT_SIZE,
-            letterSpacing = 0.sp,
             textAlign = TextAlign.Left,
             color = MossGreenPrimary,
         )
@@ -436,7 +423,6 @@ fun BirdFullDescription(bird: Bird) {
             fontWeight = FontWeight.Normal,
             fontSize = SUBTITLE_TEXT_SIZE,
             lineHeight = SUBTITLE_TEXT_SIZE,
-            letterSpacing = 0.sp,
             textAlign = TextAlign.Justify,
             color = Color.White,
             lineBreak = LineBreak.Paragraph

@@ -37,7 +37,6 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import com.example.mybirdsapp.R
 import com.example.mybirdsapp.models.Bird
 import com.example.mybirdsapp.models.room.RoomBird
@@ -114,7 +113,6 @@ fun BirdCard(
                     fontWeight = FontWeight.Bold,
                     fontSize = TITLE_TEXT_SIZE,
                     lineHeight = TITLE_TEXT_SIZE,
-                    letterSpacing = 0.sp,
                     textAlign = TextAlign.Center,
                     color = Color.Black
                 ),
@@ -159,7 +157,6 @@ fun CardRowCheckBox(
                 fontWeight = FontWeight.Bold,
                 fontSize = SUBTITLE_TEXT_SIZE,
                 lineHeight = SUBTITLE_TEXT_SIZE,
-                letterSpacing = 0.sp,
                 color = Color.Black
             )
         )

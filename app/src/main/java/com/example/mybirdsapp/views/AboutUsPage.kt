@@ -8,6 +8,7 @@ import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
@@ -15,7 +16,10 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ExtendedFloatingActionButton
@@ -38,7 +42,6 @@ import androidx.compose.ui.text.style.LineBreak
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import com.example.mybirdsapp.R
 import com.example.mybirdsapp.ui.theme.MossGreenPrimary
 import com.example.mybirdsapp.ui.theme.MossGreenSecondary
@@ -77,13 +80,16 @@ fun BookCard(modifier: Modifier) {
             .fillMaxWidth()
             .padding(start = 4.dp, top = 15.dp, end = 4.dp, bottom = 6.dp)
     ) {
-        Row (
-            Modifier.fillMaxSize(),
+        val scrollState = rememberScrollState()
+        Row(
+            Modifier
+                .fillMaxSize()
+                .verticalScroll(scrollState),
             verticalAlignment = Alignment.CenterVertically
-        ){
+        ) {
             Image(
                 modifier = Modifier
-                    .width(150.dp)
+                    .width(130.dp)
                     .padding(horizontal = 10.dp, vertical = 10.dp)
                     .border(BorderStroke(0.8.dp, OrangeBird), RoundedCornerShape(8.dp))
                     .clip(RoundedCornerShape(8.dp)),
@@ -91,12 +97,12 @@ fun BookCard(modifier: Modifier) {
                 contentDescription = stringResource(R.string.image_book_description),
                 contentScale = ContentScale.Fit
             )
-            Column (
+            Column(
                 Modifier
-                    .fillMaxSize()
-                    .align(Alignment.CenterVertically)
+                    .fillMaxWidth()
                     .padding(start = 2.dp, end = 18.dp),
-                verticalArrangement = Arrangement.SpaceEvenly
+                verticalArrangement = Arrangement.SpaceEvenly,
+                horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Text(
                     modifier = Modifier
@@ -107,7 +113,6 @@ fun BookCard(modifier: Modifier) {
                         fontWeight = FontWeight.Bold,
                         fontSize = TITLE_TEXT_SIZE,
                         lineHeight = TITLE_TEXT_SIZE,
-                        letterSpacing = 0.sp,
                         textAlign = TextAlign.Center,
                         color = Color.Black
                     )
@@ -121,7 +126,6 @@ fun BookCard(modifier: Modifier) {
                         fontWeight = FontWeight.Normal,
                         fontSize = SUBTITLE_TEXT_SIZE,
                         lineHeight = SUBTITLE_TEXT_SIZE,
-                        letterSpacing = 0.sp,
                         textAlign = TextAlign.Justify,
                         color = Color.Black,
                         lineBreak = LineBreak.Paragraph
@@ -146,13 +150,16 @@ fun WriterCard(modifier: Modifier) {
             .fillMaxWidth()
             .padding(start = 4.dp, top = 15.dp, end = 4.dp, bottom = 6.dp)
     ) {
-        Row (
-            Modifier.fillMaxSize(),
+        val scrollState = rememberScrollState()
+        Row(
+            Modifier
+                .fillMaxSize()
+                .verticalScroll(scrollState),
             verticalAlignment = Alignment.CenterVertically
-        ){
+        ) {
             Image(
                 modifier = Modifier
-                    .width(130.dp)
+                    .width(110.dp)
                     .padding(horizontal = 10.dp, vertical = 10.dp)
                     .border(BorderStroke(0.8.dp, OrangeBird), RoundedCornerShape(8.dp))
                     .clip(RoundedCornerShape(8.dp)),
@@ -176,7 +183,6 @@ fun WriterCard(modifier: Modifier) {
                         fontWeight = FontWeight.Bold,
                         fontSize = TITLE_TEXT_SIZE,
                         lineHeight = TITLE_TEXT_SIZE,
-                        letterSpacing = 0.sp,
                         textAlign = TextAlign.Center,
                         color = Color.Black
                     )
@@ -190,7 +196,6 @@ fun WriterCard(modifier: Modifier) {
                         fontWeight = FontWeight.Normal,
                         fontSize = SUBTITLE_TEXT_SIZE,
                         lineHeight = SUBTITLE_TEXT_SIZE,
-                        letterSpacing = 0.sp,
                         textAlign = TextAlign.Justify,
                         color = Color.Black,
                         lineBreak = LineBreak.Paragraph
@@ -244,7 +249,6 @@ fun DeveloperCard() {
                         fontWeight = FontWeight.Bold,
                         fontSize = TITLE_TEXT_SIZE,
                         lineHeight = TITLE_TEXT_SIZE,
-                        letterSpacing = 0.sp,
                         textAlign = TextAlign.Center,
                         color = Color.Black
                     )

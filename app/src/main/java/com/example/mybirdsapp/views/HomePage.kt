@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
@@ -58,8 +59,9 @@ import com.example.mybirdsapp.ui.theme.MossGreenRealTertiary
 import com.example.mybirdsapp.ui.theme.MossGreenSecondaryLight
 import com.example.mybirdsapp.ui.theme.MyBirdsAppTheme
 import com.example.mybirdsapp.ui.theme.OrangeBird
-import com.example.mybirdsapp.utils.Constants.Companion.BIG_TEXT_SIZE
+import com.example.mybirdsapp.utils.Constants.Companion.BUTTON_HOME_TEXT_SIZE
 import com.example.mybirdsapp.utils.Constants.Companion.MEDIUM_TEXT_SIZE
+import com.example.mybirdsapp.utils.Constants.Companion.TITLE_TEXT_SIZE
 
 @Composable
 fun HomePage(
@@ -70,55 +72,26 @@ fun HomePage(
 ) {
     val showTooltip = remember { mutableStateOf(false) }
     Box(modifier = Modifier.fillMaxSize()) {
-        Column(
-            modifier = Modifier
-                .fillMaxSize()
-                .pointerInput(Unit) {
-                    detectTapGestures {
-                        if (showTooltip.value) {
-                            showTooltip.value = false
-                        }
+        LazyColumn(
+            Modifier.fillMaxSize().pointerInput(Unit) {
+                detectTapGestures {
+                    if (showTooltip.value) {
+                        showTooltip.value = false
                     }
-                },
-            horizontalAlignment = Alignment.CenterHorizontally,
-        ){
-            RowTitle(
-                Modifier
-                    .align(Alignment.CenterHorizontally)
-                    .padding(horizontal = 8.dp)
-            )
-            Image(
-                painter = painterResource(id = R.drawable.b88_zorzal_chiguanco),
-                contentDescription = stringResource(R.string.main_page_image_description),
-                modifier = Modifier
-                    .size(320.dp)
-                    .padding(top = 30.dp)
-                    .clip(RoundedCornerShape(32.dp))
-                    .shadow(100.dp, RoundedCornerShape(32.dp))
-                    .border(BorderStroke(1.dp, OrangeBird), RoundedCornerShape(32.dp)),
-                contentScale = ContentScale.Crop
-            )
-            Column (
-                Modifier
-                    .width(250.dp)
-                    .padding(top = 40.dp)) {
-                MyFilledButton(
-                    birdsListOnClick,
-                    R.string.birds_list,
-                    Modifier.padding(top = 20.dp)
-                )
-                RowRoutesButtons(observationRoutesOnClick, showTooltip)
-                MyFilledButton(
-                    aboutUsOnClick,
-                    R.string.about_us,
-                    Modifier.padding(top = 20.dp)
+                }
+            },
+        ) {
+            item {
+                HomePageInit(
+                    birdsListOnClick, observationRoutesOnClick,
+                    aboutUsOnClick, showTooltip
                 )
             }
         }
         if (isLoading) {
             Box(
                 modifier = Modifier
-                    .fillMaxSize()// Fondo semitransparente
+                    .fillMaxSize()
                     .align(Alignment.Center)
             ) {
                 CircularProgressIndicator(
@@ -127,8 +100,55 @@ fun HomePage(
                 )
             }
         }
+        ExtendedShareButton()
     }
-    ExtendedShareButton()
+}
+
+@Composable
+fun HomePageInit(
+    birdsListOnClick: () -> Unit,
+    observationRoutesOnClick: () -> Unit,
+    aboutUsOnClick: () -> Unit,
+    showTooltip: MutableState<Boolean>
+) {
+    Column(
+        modifier = Modifier
+            .fillMaxSize(),
+        horizontalAlignment = Alignment.CenterHorizontally,
+    ){
+        RowTitle(
+            Modifier
+                .align(Alignment.CenterHorizontally)
+                .padding(horizontal = 8.dp)
+        )
+        Image(
+            painter = painterResource(id = R.drawable.b88_zorzal_chiguanco),
+            contentDescription = stringResource(R.string.main_page_image_description),
+            modifier = Modifier
+                .size(320.dp)
+                .padding(top = 30.dp)
+                .clip(RoundedCornerShape(32.dp))
+                .shadow(100.dp, RoundedCornerShape(32.dp))
+                .border(BorderStroke(1.dp, OrangeBird), RoundedCornerShape(32.dp)),
+            contentScale = ContentScale.Crop
+        )
+        Column (
+            Modifier
+                .width(250.dp)
+                .padding(top = 40.dp)) {
+            MyFilledButton(
+                birdsListOnClick,
+                R.string.birds_list,
+                Modifier.padding(top = 20.dp)
+            )
+            RowRoutesButtons(observationRoutesOnClick, showTooltip)
+            MyFilledButton(
+                aboutUsOnClick,
+                R.string.about_us,
+                Modifier.padding(top = 20.dp)
+            )
+        }
+    }
 }
 
 @Composable
@@ -152,9 +172,8 @@ fun RowTitle(modifier: Modifier) {
         style = TextStyle(
             fontWeight = FontWeight.Bold,
             fontFamily = FontFamily.Serif,
-            fontSize = BIG_TEXT_SIZE,
-            lineHeight = BIG_TEXT_SIZE,
-            letterSpacing = 0.sp,
+            fontSize = TITLE_TEXT_SIZE,
+            lineHeight = TITLE_TEXT_SIZE,
             textAlign = TextAlign.Center,
             color = OrangeBird,
             shadow = Shadow(MossGreenRealTertiary)
@@ -167,7 +186,6 @@ fun RowTitle(modifier: Modifier) {
             fontWeight = FontWeight.Bold,
             fontSize = MEDIUM_TEXT_SIZE,
             lineHeight = MEDIUM_TEXT_SIZE,
-            letterSpacing = 0.sp,
             textAlign = TextAlign.Center,
             color = Color.White,
             shadow = Shadow(OrangeBird)
@@ -184,7 +202,7 @@ fun MyFilledButton(onClick: () -> Unit, buttonText: Int, modifier: Modifier) {
         modifier.fillMaxWidth(),
         border = BorderStroke(0.7.dp, MossGreenPrimaryContainer),
     ) {
-        Text(stringResource(buttonText), fontSize = 24.sp)
+        Text(stringResource(buttonText), fontSize = BUTTON_HOME_TEXT_SIZE)
     }
 }
 
