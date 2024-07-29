@@ -13,7 +13,7 @@
         android:theme="@style/Theme.MyBirdsApp"
         tools:targetApi="31">
         <activity
-            android:name=".main.MainActivity"
+            android:name="com.pernasa.mybirdsapp.main.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.MyBirdsApp">
             <intent-filter>
