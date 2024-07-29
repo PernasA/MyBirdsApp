@@ -28,23 +28,23 @@ object DrawableResourcesList {
         R.drawable.icon_bird, R.drawable.icon_bird, R.drawable.b65_gallito_de_collar, // 63 64 65
         R.drawable.icon_bird, R.drawable.icon_bird, R.drawable.b68_churrinche, // 66 67 68
         R.drawable.b69_cachudito_pico_negro, R.drawable.icon_bird, R.drawable.b71_benteveo, // 69 70 71
-        R.drawable.b72_picabuey, R.drawable.b73_birro, R.drawable.icon_bird, // 72 73 74
-        R.drawable.icon_bird, R.drawable.icon_bird, R.drawable.icon_bird, // 75 76 77
-        R.drawable.icon_bird, R.drawable.icon_bird, R.drawable.icon_bird, // 78 79 80
-        R.drawable.icon_bird, R.drawable.icon_bird, R.drawable.icon_bird, // 81 82 83
-        R.drawable.icon_bird, R.drawable.icon_bird, R.drawable.icon_bird, // 84 85 86
-        R.drawable.icon_bird, R.drawable.b88_zorzal_chiguanco, R.drawable.icon_bird, // 87 88 89
-        R.drawable.icon_bird, R.drawable.icon_bird, R.drawable.icon_bird, // 90 91 92
-        R.drawable.icon_bird, R.drawable.icon_bird, R.drawable.icon_bird, // 93 94 95
-        R.drawable.icon_bird, R.drawable.icon_bird, R.drawable.icon_bird, // 96 97 98
+        R.drawable.b72_picabuey, R.drawable.b73_birro, R.drawable.b74_pico_de_plata, // 72 73 74
+        R.drawable.icon_bird, R.drawable.b76_tijereta, R.drawable.icon_bird, // 75 76 77
+        R.drawable.b78_monjita_blanca, R.drawable.b79_gaucho_serrano, R.drawable.b80_dormilona_gris, // 78 79 80
+        R.drawable.icon_bird, R.drawable.b82_cortarramas, R.drawable.b83_juan_chiviro, // 81 82 83
+        R.drawable.icon_bird, R.drawable.b85_ratona_aperdizada, R.drawable.b86_tacuarita_azul, // 84 85 86
+        R.drawable.b87_zorzal_colorado, R.drawable.b88_zorzal_chiguanco, R.drawable.b89_calandria_grande, // 87 88 89
+        R.drawable.b90_calandria_real, R.drawable.icon_bird, R.drawable.b92_aranero_corona_rojiza, // 90 91 92
+        R.drawable.icon_bird, R.drawable.icon_bird, R.drawable.b95_yal_plomizo, // 93 94 95
+        R.drawable.icon_bird, R.drawable.icon_bird, R.drawable.b98_pepitero_chico, // 96 97 98
         R.drawable.icon_bird, R.drawable.icon_bird, R.drawable.icon_bird, // 99 100 101
-        R.drawable.icon_bird, R.drawable.icon_bird, R.drawable.icon_bird, // 102 103 104
-        R.drawable.icon_bird, R.drawable.icon_bird, R.drawable.icon_bird, // 105 106 107
-        R.drawable.icon_bird, R.drawable.icon_bird, R.drawable.icon_bird, // 108 109 110
-        R.drawable.icon_bird, R.drawable.icon_bird, R.drawable.icon_bird, // 111 112 113
+        R.drawable.b102_monterita_cabeza_negra, R.drawable.icon_bird, R.drawable.icon_bird, // 102 103 104
+        R.drawable.icon_bird, R.drawable.icon_bird, R.drawable.b107_piquito_de_oro_chicho, // 105 106 107
+        R.drawable.icon_bird, R.drawable.b109_verdon, R.drawable.icon_bird, // 108 109 110
+        R.drawable.b111_rey_del_bosque, R.drawable.b112_reinamora_grande, R.drawable.b113_chingolo, // 111 112 113
         R.drawable.icon_bird, R.drawable.icon_bird, R.drawable.icon_bird, // 114 115 116
-        R.drawable.icon_bird, R.drawable.icon_bird, R.drawable.icon_bird, // 117 118 119
-        R.drawable.icon_bird, R.drawable.icon_bird, R.drawable.icon_bird, // 120 121 122
+        R.drawable.icon_bird, R.drawable.b118_loica_comun, R.drawable.icon_bird, // 117 118 119
+        R.drawable.b120_cabecita_negra, R.drawable.icon_bird, R.drawable.icon_bird, // 120 121 122
         R.drawable.icon_bird, R.drawable.icon_bird, R.drawable.icon_bird, // 123 124 125
         R.drawable.icon_bird, R.drawable.icon_bird, R.drawable.icon_bird, // 126 127 128
         R.drawable.icon_bird, R.drawable.icon_bird, R.drawable.icon_bird, // 129 130 131
