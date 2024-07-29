@@ -90,7 +90,6 @@ fun BirdDescriptionPage(bird: Bird, birdsListViewModel: BirdsListViewModel) {
                     RowBirdAttributes(item.bird)
                 is WidgetItem.BirdFullDescription ->
                     BirdFullDescription(item.bird)
-                else -> {}
             }
         }
     }
@@ -167,7 +166,7 @@ fun RowCounterObserved(bird: Bird, birdsListViewModel: BirdsListViewModel) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .height(110.dp) //TODO:CHECKEAR TAMAÑOS
+            .height(110.dp)
             .padding(top = 35.dp)
     ) {
         Column(

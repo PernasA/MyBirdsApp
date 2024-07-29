@@ -1,6 +1,7 @@
 package com.example.mybirdsapp.main
 
 import android.content.Context
+import android.content.res.Configuration
 import androidx.activity.ComponentActivity
 
 open class BaseActivity : ComponentActivity() {
@@ -11,11 +12,9 @@ open class BaseActivity : ComponentActivity() {
     private fun adjustFontScale(context: Context): Context {
         val configuration = context.resources.configuration
         if (configuration.fontScale != 1.0f) {
-            configuration.fontScale = 1.0f
-            val metrics = context.resources.displayMetrics
-            val res = context.createConfigurationContext(configuration)
-            metrics.scaledDensity = configuration.fontScale * metrics.density
-            return res
+            val newConfig = Configuration(configuration)
+            newConfig.fontScale = 1.0f
+            return context.createConfigurationContext(newConfig)
         }
         return context
     }
