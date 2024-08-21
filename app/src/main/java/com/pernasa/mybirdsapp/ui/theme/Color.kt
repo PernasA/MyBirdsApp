@@ -13,3 +13,6 @@ val MossGreenTertiaryLight = Color(0xFF90EE90) // Verde Claro
 val MossGreenPrimaryContainerLight = Color(0xFFB0E57C) // Verde Lima Claro
 
 val OrangeBird = Color(0xFFEB700A)
+
+val SearchFieldBackground = Color(0xFFE0F2E0) // Verde muy claro y suave
+val SearchPlaceholderColor = Color(0xFF757575) // Gris oscuro

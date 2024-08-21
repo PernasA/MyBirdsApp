@@ -10,7 +10,12 @@ import com.pernasa.mybirdsapp.utils.DrawableResourcesList
 import com.pernasa.mybirdsapp.utils.InterfaceJsonLoader
 import com.pernasa.mybirdsapp.utils.JsonReader
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import org.jetbrains.annotations.TestOnly
 
@@ -20,7 +25,22 @@ class BirdsListViewModel(
     private val jsonReader: InterfaceJsonLoader = JsonReader()
 ) : ViewModel() {
     var dataBirdsList: List<Bird> = emptyList()
-    var listObservedBirds: List<RoomBird> = emptyList()
+
+    private val _listObservedBirds = MutableStateFlow<List<RoomBird>>(emptyList())
+    val listObservedBirds: StateFlow<List<RoomBird>> = _listObservedBirds
+
+    fun getBirdObservationState(birdId: Int): Flow<Boolean> {
+        return _listObservedBirds
+            .map { birds -> birds.firstOrNull { it.id == birdId }?.wasObserved ?: false }
+    }
+
+    fun editBirdWasObserved(bird: RoomBird) {
+        _listObservedBirds.update { birds ->
+            birds.map {
+                if (it.id == bird.id) it.copy(wasObserved = bird.wasObserved) else it
+            }
+        }
+    }
 
     init {
         viewModelScope.launch(Dispatchers.IO) {
@@ -40,21 +60,18 @@ class BirdsListViewModel(
             }
 
             viewModelScope.launch {
-                listObservedBirds = roomBirdsDao.getAllBirds().first()
-                if (listObservedBirds.isEmpty()){
+                _listObservedBirds.value = roomBirdsDao.getAllBirds().first()
+                if (_listObservedBirds.value.isEmpty()){
                     createFileAllBirds(dataBirdsList.size)
                     GlobalCounterBirdsObserved.setCounter(0)
                 } else {
-                    val quantityBirdsWereObserved = listObservedBirds.count { it.wasObserved }
+                    val quantityBirdsWereObserved = _listObservedBirds.value.count { it.wasObserved }
                     GlobalCounterBirdsObserved.setCounter(quantityBirdsWereObserved)
                 }
             }
         }
     }
 
-    /*
-    There is a list that is ordered the same way than the ids of the routes. Id route 1 = position 0
-    */
     @TestOnly
     fun getDrawableIdByBirdIdPosition(birdId: Int): Int {
         return DrawableResourcesList.drawableListBirds[birdId-1]
@@ -64,20 +81,13 @@ class BirdsListViewModel(
         return dataBirdsList.find { it.id == birdId }
     }
 
-    fun editBirdWasObserved(roomBird: RoomBird) {
-        viewModelScope.launch {
-            listObservedBirds[roomBird.id-1].wasObserved = roomBird.wasObserved
-            roomBirdsDao.editWasObservedBird(roomBird)
-        }
-    }
-
     @TestOnly
     fun createFileAllBirds(quantityOfBirds: Int) {
-        listObservedBirds = List(quantityOfBirds) { index ->
+        _listObservedBirds.value = List(quantityOfBirds) { index ->
             RoomBird(id = index + 1, wasObserved = false)
         }
         viewModelScope.launch {
-            roomBirdsDao.insertAll(listObservedBirds)
+            roomBirdsDao.insertAll(_listObservedBirds.value)
         }
     }
 }

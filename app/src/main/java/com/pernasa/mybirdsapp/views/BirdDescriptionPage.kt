@@ -25,6 +25,7 @@ import androidx.compose.material3.SwitchDefaults
 import androidx.compose.material3.Text
 import androidx.compose.material3.VerticalDivider
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.runtime.mutableStateOf
@@ -221,19 +222,17 @@ fun RowCounterObserved(bird: Bird, birdsListViewModel: BirdsListViewModel) {
 
 @Composable
 fun SwitchWasObserved(birdsListViewModel: BirdsListViewModel, birdId: Int) {
-    var checked by remember {
-        mutableStateOf(birdsListViewModel.listObservedBirds[birdId-1].wasObserved)
-    }
+    val isChecked by birdsListViewModel.getBirdObservationState(birdId).collectAsState(initial = false)
+
     Switch(
         modifier = Modifier.fillMaxWidth().padding(top = 5.dp),
-        checked = checked,
+        checked = isChecked,
         colors = SwitchDefaults.colors(checkedThumbColor = Color.White),
-        onCheckedChange = {
-            checked = it
+        onCheckedChange = { checked ->
             birdsListViewModel.editBirdWasObserved(RoomBird(birdId, checked))
             GlobalCounterBirdsObserved.modifyCounter(checked)
         },
-        thumbContent = if (checked) {
+        thumbContent = if (isChecked) {
             {
                 Icon(
                     imageVector = Icons.Filled.Check,

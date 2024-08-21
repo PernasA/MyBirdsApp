@@ -29,6 +29,7 @@
     <string name="button_linkedIn">Perfil LinkedIn</string>
     <string name="button_share_text">Te invito a descargar esta aplicación sobre aves.\n
     Tiene mucho contenido interesante! En la Play Store aparece como Aves Merlo San Luis</string>
+    <string name="search_by_name">Buscar ave por nombre</string>
 
     #Buttons names
     <string name="birds_list">Lista de Aves</string>
