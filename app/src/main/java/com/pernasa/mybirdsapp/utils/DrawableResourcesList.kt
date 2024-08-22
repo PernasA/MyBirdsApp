@@ -9,24 +9,24 @@ object DrawableResourcesList {
         R.drawable.b6_garza_mora, R.drawable.b7_garza_blanca, R.drawable.b8_garcita_blanca, // 6 7 8
         R.drawable.b9_garcita_bueyera, R.drawable.b10_garcita_azulada, R.drawable.b11_cuervillo_de_caniada, // 9 10 11
         R.drawable.b12_condor_andino, R.drawable.b13_jote_cabeza_colorada, R.drawable.b14_jote_cabeza_negra, // 12 13 14
-        R.drawable.b15_siriri_pampa, R.drawable.b16_coscoroba, R.drawable.icon_bird, // 15 16 17
+        R.drawable.b15_siriri_pampa, R.drawable.b16_coscoroba, R.drawable.b17_pato_overo, // 15 16 17
         R.drawable.b18_pato_barcino, R.drawable.b19_pato_zambullidor_chico, R.drawable.b20_aguila_mora, // 18 19 20
-        R.drawable.icon_bird, R.drawable.b22_aguilucho_comun_nianco, R.drawable.icon_bird, // 21 22 23
-        R.drawable.icon_bird, R.drawable.icon_bird, R.drawable.icon_bird, // 24 25 26
-        R.drawable.icon_bird, R.drawable.icon_bird, R.drawable.b29_tero_real, // 27 28 29
-        R.drawable.b30_pitotoy_grande, R.drawable.icon_bird, R.drawable.icon_bird, // 30 31 32
-        R.drawable.b33_loro_barranquero, R.drawable.b34_catita_serrana_grande, R.drawable.icon_bird, // 33 34 35
-        R.drawable.b36_pirincho, R.drawable.b37_crespin, R.drawable.icon_bird, // 36 37 38
-        R.drawable.b39_cabure, R.drawable.b40_lechucita_vizcachera, R.drawable.icon_bird, // 39 40 41
+        R.drawable.b21_gavilan_planeador, R.drawable.b22_aguilucho_comun_nianco, R.drawable.icon_bird, // 21 22 23
+        R.drawable.icon_bird, R.drawable.b25_halconcito_colorado, R.drawable.b26_gallineta_comun_picopintado, // 24 25 26
+        R.drawable.b27_gallareta_ligas_rojas, R.drawable.icon_bird, R.drawable.b29_tero_real, // 27 28 29
+        R.drawable.b30_pitotoy_grande, R.drawable.b31_torcacita_comun_picui, R.drawable.b32_yeruti_comun_ris, // 30 31 32
+        R.drawable.b33_loro_barranquero, R.drawable.b34_catita_serrana_grande, R.drawable.b35_cuclillo_canela, // 33 34 35
+        R.drawable.b36_pirincho, R.drawable.b37_crespin, R.drawable.b38_alilicucu_comun, // 36 37 38
+        R.drawable.b39_cabure, R.drawable.b40_lechucita_vizcachera, R.drawable.b41_lechuzon_de_campo_, // 39 40 41
         R.drawable.b42_picaflor_comun_verde, R.drawable.b43_picaflor_cometa, R.drawable.b44_martin_pescador_chico, // 42 43 44
-        R.drawable.b45_durmili, R.drawable.b46_carpintero_real, R.drawable.icon_bird, // 45 46 47
-        R.drawable.b48_carpintero_lomo_blanco, R.drawable.icon_bird, R.drawable.icon_bird, // 48 49 50
+        R.drawable.b45_durmili, R.drawable.b46_carpintero_real, R.drawable.b47_carpintero_campestre, // 45 46 47
+        R.drawable.b48_carpintero_lomo_blanco, R.drawable.b49_carpintero_negro, R.drawable.b50_caminera_colorada, // 48 49 50
         R.drawable.b51_remolinera_serrana, R.drawable.b52_remolinera_chocolate, R.drawable.b53_hornero, // 51 52 53
-        R.drawable.icon_bird, R.drawable.b55_crestudo, R.drawable.b56_curutie_blanco, // 54 55 56
-        R.drawable.b57_canastero_palido, R.drawable.b58_espartillero_serrano, R.drawable.icon_bird, // 57 58 59
+        R.drawable.b54_hornerito_copeton_, R.drawable.b55_crestudo, R.drawable.b56_curutie_blanco, // 54 55 56
+        R.drawable.b57_canastero_palido, R.drawable.b58_espartillero_serrano, R.drawable.b59_pijui_frente_gris, // 57 58 59
         R.drawable.b60_coludito_copeton, R.drawable.b61_cacholote_castanio, R.drawable.b62_chinchero_grande, // 60 61 62
-        R.drawable.b63_choca_comun_coronanegruzca, R.drawable.icon_bird, R.drawable.b65_gallito_de_collar, // 63 64 65
-        R.drawable.icon_bird, R.drawable.icon_bird, R.drawable.b68_churrinche, // 66 67 68
+        R.drawable.b63_choca_comun_coronanegruzca, R.drawable.b64_gallito_copeton, R.drawable.b65_gallito_de_collar, // 63 64 65
+        R.drawable.b66_piojito_gris, R.drawable.icon_bird, R.drawable.b68_churrinche, // 66 67 68
         R.drawable.b69_cachudito_pico_negro, R.drawable.icon_bird, R.drawable.b71_benteveo, // 69 70 71
         R.drawable.b72_picabuey, R.drawable.b73_birro, R.drawable.b74_pico_de_plata, // 72 73 74
         R.drawable.icon_bird, R.drawable.b76_tijereta, R.drawable.icon_bird, // 75 76 77
