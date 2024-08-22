@@ -35,6 +35,9 @@ class BirdsListViewModel(
     }
 
     fun editBirdWasObserved(bird: RoomBird) {
+        viewModelScope.launch {
+            roomBirdsDao.editWasObservedBird(bird)
+        }
         _listObservedBirds.update { birds ->
             birds.map {
                 if (it.id == bird.id) it.copy(wasObserved = bird.wasObserved) else it
