@@ -1,6 +1,10 @@
 package com.pernasa.mybirdsapp.main
 
+import android.app.AlertDialog
 import android.content.Context
+import android.content.Intent
+import android.content.SharedPreferences
+import android.net.Uri
 import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -14,11 +18,23 @@ import com.pernasa.mybirdsapp.viewModels.BirdsListViewModel
 import com.pernasa.mybirdsapp.viewModels.ObservationRoutesViewModel
 
 class MainActivity : BaseActivity() {
+    private val prefs_name = "AppPrefs"
+    private val launch_counter = "launch_counter"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         val birdsListViewModel = prepareDatabaseAndBirdsListViewModel(this)
         val observationRoutesViewModel = ObservationRoutesViewModel(this)
+
+        val sharedPreferences = getSharedPreferences(prefs_name, Context.MODE_PRIVATE)
+        val launchCount = sharedPreferences.getInt(launch_counter, 8) - 1
+        sharedPreferences.edit().putInt(launch_counter, launchCount).apply()
+
+        if (launchCount <= 0) {
+            showRateAppDialog(sharedPreferences)
+        }
+
         setContent {
             MyBirdsAppTheme (darkTheme = true) {
                 Navigation(birdsListViewModel.value, observationRoutesViewModel)
@@ -40,5 +56,29 @@ class MainActivity : BaseActivity() {
                 }
             }
         })
+    }
+
+    private fun showRateAppDialog(sharedPreferences: SharedPreferences) {
+        val dialogBuilder = AlertDialog.Builder(this)
+        dialogBuilder.setTitle("¡Gracias por usar la aplicación!")
+        dialogBuilder.setMessage("Si te gusta la aplicación, por favor califícala en Google Play. Me ayuda mucho a seguir mejorándola :)")
+        dialogBuilder.setPositiveButton("Calificar") { _, _ ->
+            openGooglePlayStore()
+            sharedPreferences.edit().putInt(launch_counter, 300).apply()
+        }
+        dialogBuilder.setNegativeButton("Más tarde") { dialog, _ ->
+            dialog.dismiss()
+            sharedPreferences.edit().putInt(launch_counter, 20).apply()
+        }
+        dialogBuilder.create().show()
+    }
+
+    private fun openGooglePlayStore() {
+        val appPackageName = packageName
+        try {
+            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=$appPackageName"))) //todo: CUANDO ESTE PUBLICADA, CHECKEAR EL LINK A LA PLAY STORE
+        } catch (e: android.content.ActivityNotFoundException) {
+            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=$appPackageName")))
+        }
     }
 }

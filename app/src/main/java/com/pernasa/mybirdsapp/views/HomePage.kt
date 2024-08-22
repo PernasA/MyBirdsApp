@@ -271,7 +271,7 @@ fun ExtendedShareButton() {
     val context = LocalContext.current
     val shareText = stringResource(id = R.string.button_share_text)
     val whatsappIntent = Intent(Intent.ACTION_VIEW).apply {
-        data = Uri.parse("https://api.whatsapp.com/send?text=$shareText")
+        data = Uri.parse("https://api.whatsapp.com/send?text=$shareText") //TODO: CHECKEAR EL LINK A LA PLAY STORE
     }
     Box(
         modifier = Modifier
