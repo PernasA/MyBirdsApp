@@ -34,16 +34,16 @@ object DrawableResourcesList {
         R.drawable.icon_bird, R.drawable.b82_cortarramas, R.drawable.b83_juan_chiviro, // 81 82 83
         R.drawable.icon_bird, R.drawable.b85_ratona_aperdizada, R.drawable.b86_tacuarita_azul, // 84 85 86
         R.drawable.b87_zorzal_colorado, R.drawable.b88_zorzal_chiguanco, R.drawable.b89_calandria_grande, // 87 88 89
-        R.drawable.b90_calandria_real, R.drawable.icon_bird, R.drawable.b92_aranero_corona_rojiza, // 90 91 92
-        R.drawable.icon_bird, R.drawable.icon_bird, R.drawable.b95_yal_plomizo, // 93 94 95
-        R.drawable.icon_bird, R.drawable.icon_bird, R.drawable.b98_pepitero_chico, // 96 97 98
-        R.drawable.icon_bird, R.drawable.icon_bird, R.drawable.icon_bird, // 99 100 101
+        R.drawable.b90_calandria_real, R.drawable.b91_cachirla_palida, R.drawable.b92_aranero_corona_rojiza, // 90 91 92
+        R.drawable.b93_naranjero, R.drawable.b94_yal_platero, R.drawable.b95_yal_plomizo, // 93 94 95
+        R.drawable.b96_jilguero_dorado, R.drawable.b97_soldadito_comun_chaqueno, R.drawable.b98_pepitero_chico, // 96 97 98
+        R.drawable.b99_monterita_canela, R.drawable.b100_sietevestidos_serran, R.drawable.b101_monterita_de_collar, // 99 100 101
         R.drawable.b102_monterita_cabeza_negra, R.drawable.icon_bird, R.drawable.icon_bird, // 102 103 104
-        R.drawable.icon_bird, R.drawable.icon_bird, R.drawable.b107_piquito_de_oro_chicho, // 105 106 107
-        R.drawable.icon_bird, R.drawable.b109_verdon, R.drawable.icon_bird, // 108 109 110
+        R.drawable.b105_cardenal_comun_copete_rojo, R.drawable.b106_brasita_de_fuego, R.drawable.b107_piquito_de_oro_chicho, // 105 106 107
+        R.drawable.b108_piquitodeoro_grande, R.drawable.b109_verdon, R.drawable.b110_fueguero_comun, // 108 109 110
         R.drawable.b111_rey_del_bosque, R.drawable.b112_reinamora_grande, R.drawable.b113_chingolo, // 111 112 113
-        R.drawable.icon_bird, R.drawable.icon_bird, R.drawable.icon_bird, // 114 115 116
-        R.drawable.icon_bird, R.drawable.b118_loica_comun, R.drawable.icon_bird, // 117 118 119
+        R.drawable.b114_cachilo_ceja_amarilla, R.drawable.b115_boyerito, R.drawable.b116_tordo_renegrido, // 114 115 116
+        R.drawable.b117_tordo_musico, R.drawable.b118_loica_comun, R.drawable.b119_pecho_colorado, // 117 118 119
         R.drawable.b120_cabecita_negra, R.drawable.b121_tataupa_montaraz, R.drawable.icon_bird, // 120 121 122
         R.drawable.icon_bird, R.drawable.icon_bird, R.drawable.icon_bird, // 123 124 125
         R.drawable.icon_bird, R.drawable.icon_bird, R.drawable.icon_bird, // 126 127 128
