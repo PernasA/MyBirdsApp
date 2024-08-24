@@ -21,10 +21,12 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.pernasa.mybirdsapp.R
 import com.pernasa.mybirdsapp.viewModels.BirdsListViewModel
+import com.pernasa.mybirdsapp.viewModels.GameGuessViewModel
 import com.pernasa.mybirdsapp.viewModels.ObservationRoutesViewModel
 import com.pernasa.mybirdsapp.views.BirdsListPage
 import com.pernasa.mybirdsapp.views.AboutUsPage
 import com.pernasa.mybirdsapp.views.BirdDescriptionPage
+import com.pernasa.mybirdsapp.views.GameGuessPage
 import com.pernasa.mybirdsapp.views.HomePage
 import com.pernasa.mybirdsapp.views.ObservationRouteDescriptionPage
 import com.pernasa.mybirdsapp.views.ObservationRoutesPage
@@ -36,6 +38,7 @@ enum class NameOfScreen(@StringRes val title: Int) {
     BirdsPageNav(title = R.string.birds_page_title),
     BirdDescriptionPageNav(title = R.string.bird_description_page_title),
     ObservationRoutesPageNav(title = R.string.observation_routes_page_title),
+    GameGuessPageNav(title = R.string.game_guess_page_title),
     ObservationRouteDescriptionPageNav(title = R.string.observation_route_description_page_title),
     AboutUsPageNav(title = R.string.about_us_page_title)
 }
@@ -59,7 +62,12 @@ fun Navigation(
             )
         }
     ) { innerPadding ->
-        CreateNavigationHost(navController, birdsListViewModel, observationRoutesViewModel, innerPadding)
+        CreateNavigationHost(
+            navController,
+            birdsListViewModel,
+            observationRoutesViewModel,
+            innerPadding
+        )
     }
 }
 
@@ -97,10 +105,18 @@ private fun CreateNavigationHost(
                         isLoading = false
                     }
                 },
+                gameGuessOnClick = {
+                    scope.launch {
+                        isLoading = true
+                        delay(600)
+                        navController.navigate(NameOfScreen.GameGuessPageNav.name)
+                        isLoading = false
+                    }
+                },
                 aboutUsOnClick = {
                     scope.launch {
                         isLoading = true
-                        delay(1000)
+                        delay(700)
                         navController.navigate(NameOfScreen.AboutUsPageNav.name)
                         isLoading = false
                     }
@@ -140,6 +156,10 @@ private fun CreateNavigationHost(
             )
         }
 
+        composable(route = NameOfScreen.GameGuessPageNav.name) {
+            GameGuessPage(birdsListViewModel.gameGuessViewModel)
+        }
+
         composable(
             route = "${NameOfScreen.ObservationRouteDescriptionPageNav.name}/{observationRouteId}",
             arguments = listOf(
@@ -166,6 +186,7 @@ fun getCurrentScreen(route: String?): NameOfScreen {
         route == NameOfScreen.ObservationRoutesPageNav.name -> NameOfScreen.ObservationRoutesPageNav
         route.startsWith("${NameOfScreen.ObservationRouteDescriptionPageNav.name}/") ->
             NameOfScreen.ObservationRouteDescriptionPageNav
+        route == NameOfScreen.GameGuessPageNav.name -> NameOfScreen.GameGuessPageNav
         route == NameOfScreen.AboutUsPageNav.name -> NameOfScreen.AboutUsPageNav
         else -> NameOfScreen.StartNav
     }

@@ -1,6 +1,7 @@
 package com.pernasa.mybirdsapp.viewModels
 
 import android.content.Context
+import android.content.SharedPreferences
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.pernasa.mybirdsapp.models.Bird
@@ -22,9 +23,11 @@ import org.jetbrains.annotations.TestOnly
 class BirdsListViewModel(
     context: Context,
     private val roomBirdsDao: RoomBirdsDao,
+    sharedPreferences: SharedPreferences,
     private val jsonReader: InterfaceJsonLoader = JsonReader()
 ) : ViewModel() {
     var dataBirdsList: List<Bird> = emptyList()
+    lateinit var gameGuessViewModel: GameGuessViewModel
 
     private val _listObservedBirds = MutableStateFlow<List<RoomBird>>(emptyList())
     val listObservedBirds: StateFlow<List<RoomBird>> = _listObservedBirds
@@ -61,6 +64,8 @@ class BirdsListViewModel(
                     imageResId = getDrawableIdByBirdIdPosition(birdJson.id)
                 )
             }
+
+            gameGuessViewModel = GameGuessViewModel(dataBirdsList, sharedPreferences)
 
             viewModelScope.launch {
                 _listObservedBirds.value = roomBirdsDao.getAllBirds().first()

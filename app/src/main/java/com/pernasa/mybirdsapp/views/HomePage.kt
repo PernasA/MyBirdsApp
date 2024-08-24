@@ -20,7 +20,9 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.Share
+import androidx.compose.material.icons.outlined.PlayArrow
 import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.ExtendedFloatingActionButton
 import androidx.compose.material3.FilledTonalButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.LargeFloatingActionButton
@@ -67,23 +69,27 @@ import com.pernasa.mybirdsapp.utils.Constants.Companion.TITLE_TEXT_SIZE
 fun HomePage(
     birdsListOnClick: () -> Unit,
     observationRoutesOnClick: () -> Unit,
+    gameGuessOnClick: () -> Unit,
     aboutUsOnClick: () -> Unit,
     isLoading: Boolean = false
 ) {
     val showTooltip = remember { mutableStateOf(false) }
     Box(modifier = Modifier.fillMaxSize()) {
         LazyColumn(
-            Modifier.fillMaxSize().pointerInput(Unit) {
-                detectTapGestures {
-                    if (showTooltip.value) {
-                        showTooltip.value = false
+            Modifier
+                .fillMaxSize()
+                .pointerInput(Unit) {
+                    detectTapGestures {
+                        if (showTooltip.value) {
+                            showTooltip.value = false
+                        }
                     }
-                }
-            },
+                },
         ) {
             item {
                 HomePageInit(
                     birdsListOnClick, observationRoutesOnClick,
+                    gameGuessOnClick,
                     aboutUsOnClick, showTooltip
                 )
             }
@@ -108,6 +114,7 @@ fun HomePage(
 fun HomePageInit(
     birdsListOnClick: () -> Unit,
     observationRoutesOnClick: () -> Unit,
+    gameGuessOnClick: () -> Unit,
     aboutUsOnClick: () -> Unit,
     showTooltip: MutableState<Boolean>
 ) {
@@ -125,8 +132,8 @@ fun HomePageInit(
             painter = painterResource(id = R.drawable.b88_zorzal_chiguanco),
             contentDescription = stringResource(R.string.main_page_image_description),
             modifier = Modifier
-                .size(320.dp)
-                .padding(top = 30.dp)
+                .size(300.dp)
+                .padding(top = 20.dp)
                 .clip(RoundedCornerShape(32.dp))
                 .shadow(100.dp, RoundedCornerShape(32.dp))
                 .border(BorderStroke(1.dp, OrangeBird), RoundedCornerShape(32.dp)),
@@ -135,17 +142,23 @@ fun HomePageInit(
         Column (
             Modifier
                 .width(250.dp)
-                .padding(top = 40.dp)) {
+                .padding(top = 26.dp)) {
             MyFilledButton(
                 birdsListOnClick,
                 R.string.birds_list,
-                Modifier.padding(top = 20.dp)
+                Modifier.padding(top = 15.dp)
             )
             RowRoutesButtons(observationRoutesOnClick, showTooltip)
             MyFilledButton(
+                onClick = gameGuessOnClick,
+                R.string.game_guess,
+                Modifier.padding(top = 15.dp),
+                OrangeBird
+            )
+            MyFilledButton(
                 aboutUsOnClick,
                 R.string.about_us,
-                Modifier.padding(top = 20.dp)
+                Modifier.padding(top = 15.dp)
             )
         }
     }
@@ -165,7 +178,7 @@ fun RowTitle(modifier: Modifier) {
             color = Color.White,
             shadow = Shadow(OrangeBird),
         ),
-        modifier = modifier.padding(top = 30.dp)
+        modifier = modifier.padding(top = 15.dp)
     )
     Text(
         text = stringResource(R.string.subtitle_main_page),
@@ -178,7 +191,7 @@ fun RowTitle(modifier: Modifier) {
             color = OrangeBird,
             shadow = Shadow(MossGreenRealTertiary)
         ),
-        modifier = modifier.padding(8.dp)
+        modifier = modifier.padding(5.dp)
     )
     Text(
         text = stringResource(R.string.second_subtitle_main_page),
@@ -196,15 +209,21 @@ fun RowTitle(modifier: Modifier) {
 }
 
 @Composable
-fun MyFilledButton(onClick: () -> Unit, buttonText: Int, modifier: Modifier) {
+fun MyFilledButton(
+    onClick: () -> Unit,
+    buttonText: Int,
+    modifier: Modifier,
+    textColor: Color? = Color.White
+    ) {
     FilledTonalButton(
         onClick = { onClick() },
         modifier.fillMaxWidth(),
         border = BorderStroke(0.7.dp, MossGreenPrimaryContainer),
     ) {
-        Text(stringResource(buttonText), fontSize = BUTTON_HOME_TEXT_SIZE)
+        Text(stringResource(buttonText), fontSize = BUTTON_HOME_TEXT_SIZE, color = textColor ?: Color.White)
     }
 }
+
 
 @Composable
 fun RowRoutesButtons(
@@ -212,7 +231,7 @@ fun RowRoutesButtons(
     showTooltipState: MutableState<Boolean>
 ) {
     val showTooltip by showTooltipState
-    Row (modifier = Modifier.padding(top = 20.dp)) {
+    Row (modifier = Modifier.padding(top = 18.dp)) {
         MyFilledButton(
             observationRoutesOnClick,
             R.string.observation_routes,
@@ -298,6 +317,7 @@ fun HomePagePreview() {
         HomePage(
             birdsListOnClick = {},
             observationRoutesOnClick = {},
+            gameGuessOnClick = {},
             aboutUsOnClick = {},
             isLoading = true
         )

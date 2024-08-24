@@ -612,402 +612,402 @@
   {
     "id": 62,
     "name": "Chinchero Grande",
-    "height": 0,
+    "height": 26,
     "height_location": 1,
     "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "scientific_name": "Drymornis bridgesii",
+    "english_name": "Scimitar-billed Woodcreeper",
+    "description": "Cabeza con semicopete castaño oscuro; marcada ceja blanca que desciende por el cuello escamándose hasta la espalda; malar blanco escamado. Dorso castaño claro; alas castañas con tonos parduzcos. Garganta blanca; zona ventral con grueso escamado blanco. Cola castaña oscura, la utiliza de apoyo. Pico muy largo y curvo. Patas negras. Comportamiento: generalmente solitario, trepador, muy terrícola. Repetido y estridente canto. Alimentación: insectos, los atrapa escarbando en el suelo, entre el pasto o golpeando la corteza de los árboles. Hábitat: áreas rurales y periurbanas. Comentario: camina bamboleándose."
   },
   {
     "id": 63,
     "name": "Choca Común",
-    "height": 0,
+    "height": 13,
     "height_location": 1,
-    "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "frequency": 2,
+    "scientific_name": "Thamnophilus caerulescens",
+    "english_name": "Variable Antshrike",
+    "description": "Dimorfismo sexual. Macho: ojo negro, saltón; cabeza plomiza, corona negra, a veces eleva sus plumas. Dorso gris; alas pardas, cubiertas negras con filetes blancos. Garganta grisácea, pasa a canela en la zona ventral. Cola negra con ápice blanco. Pico con pequeño gancho apical. Patas negras. Hembra: corona castaña; dorso gris o pardo oliváceo.  Comportamiento: solitaria o en pareja, vuela poco, bastante oculta. Alimentación: pequeños insectos, sus huevos y larvas; también algunos frutos silvestres. Hábitat: zona media de árboles con abundante vegetación. Comentario: su canto casi siempre es contestado y su llamada asemeja a un maullido."
   },
   {
     "id": 64,
     "name": "Gallito Copetón",
-    "height": 0,
+    "height": 21,
     "height_location": 1,
-    "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "frequency": 2,
+    "scientific_name": "Rhinocrypta lanceolata",
+    "english_name": "Crested Gallito",
+    "description": "Cabeza y cuello pardo con notable estriado blanco; llamativo copete. Dorsal y alas pardas. Garganta y pecho parduzco; flancos castaño rojizo; resto ventral blanquecino. Cola parduzca algo larga, con frecuencia erecta. Pico gris, mandíbula más clara. Patas negras. Comportamiento: solitario o en pareja, muy terrícola, escurridizo. Alimentación: insectos, larvas y huevos de hormigas, también le atraen los gusanos. Hábitat: montes y áreas arbustivas preferentemente áridas o semiáridas Comentario: se desplaza caminando en forma rápida entre los matorrales, el cloqueo de su canto se oye a distancia, pero es difícil verlo."
   },
   {
     "id": 65,
     "name": "Gallito de Collar",
-    "height": 0,
-    "height_location": 1,
-    "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "height": 14,
+    "height_location": 12,
+    "frequency": 2,
+    "scientific_name": "Melanopareia maximiliani",
+    "english_name": "Olive-crowned Crescentchest",
+    "description": "Cara negra a modo de antifaz; ceja larga blanquecina; con fina línea negra en su parte superior. Frente, corona y zona dorsal gris oliváceo, en la espalda mancha blanca no siempre visible. Alas pardas. Garganta canela, collar negro, fina línea blanca entre ellos; resto ventral rufo. Cola parda algo más oscura. Pico parduzco con base azulada. Patas pardo rosáceas. Comportamiento: solitario o en pareja, vuelo bajo poco vigoroso, más bien oculto, recorredor. Alimentación: hormigas y otros insectos. Hábitat: zona media y baja de bosques, montes con pastizal, hasta zona media de las sierras. Comentario: llamativa coloración. Canto parecido al de una rana."
   },
   {
     "id": 66,
     "name": "Piojito Gris",
-    "height": 0,
+    "height": 11,
     "height_location": 1,
-    "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "frequency": 2,
+    "scientific_name": "Serpophaga nigricans",
+    "english_name": "Sooty Tyrannule",
+    "description": "Plumaje general gris. Cabeza gris oscura, leve ceja blanquecina apenas notable. Dorsal gris; alas grises parduzco con finas líneas claras. Garganta blanquecina, pecho y zona ventral gris claro. Cola, pico y patas negras. Comportamiento: solitario o en pareja, abre y cierra la cola, vuelo elástico, confiado. Alimentación: larvas y pequeños insectos que captura en vuelos cortos sobre el agua o muy cerca de ella. Hábitat: humedales, arroyos, ríos, lagunas o cunetas; sobre arbustos o vegetación flotante. Comentario: vive asociado al agua, siempre posa visible."
   },
   {
     "id": 67,
     "name": "Piojito Común",
-    "height": 0,
+    "height": 9,
     "height_location": 1,
-    "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "frequency": 2,
+    "scientific_name": "Serpophaga subcristata",
+    "english_name": "White-crested Tyrannulet",
+    "description": "Muy pequeño. Cabeza gris plomiza, corona blanquecina poco visible, a veces la eriza en forma de cresta; leve ceja blanquecina. Dorso gris con tintes oliva; alas parduzcas con filetes blanquecinos. Garganta y pecho blanquecino. Vientre amarillento. Cola parda oscura con ribetes blanquecinos, por debajo amarillenta. Pico negro, corto. Patas negras. Comportamiento: generalmente solo, oculto. Alimentación: pequeños insectos. Hábitat: bosques nativos, áreas rurales y zona urbana. Comentario: muy movedizo, recorre constantemente el follaje."
   },
   {
     "id": 68,
     "name": "Churrinche",
-    "height": 0,
+    "height": 13,
     "height_location": 1,
     "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "scientific_name": "Pyrocephalus rubinus",
+    "english_name": "Vermilion Flycatcher",
+    "description": "Dimorfismo sexual. Macho: corona y semicopete rojo; cara negra. Dorso negruzco; alas negras, con plumas orilladas de gris. Garganta, pecho y vientre totalmente rojo. Cola, pico y patas negras. Hembra: poco llamativa, cabeza, dorso y cola parduzca; garganta, pecho y zona ventral blanquecina con estrías parduzcas tornándose rosáceo en la zona subcaudal. Juvenil: similar a la hembra. Comportamiento: en pareja, confiado, bastante territorial. Alimentación: con acrobáticos vuelos atrapa insectos voladores, en tierra busca hormigas, escarabajos y grillos. Hábitat: áreas rurales y cercanía de poblados. Comentario: el macho es muy vistoso, percha a media altura, canta en vuelo. Llega a la zona en primavera."
   },
   {
     "id": 69,
     "name": "Cachudito Pico Negro",
-    "height": 0,
+    "height": 10,
     "height_location": 1,
-    "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "frequency": 2,
+    "scientific_name": "Anairetes parulus",
+    "english_name": "Tufted Tit-Tyrant",
+    "description": "Muy pequeño. Cabeza negra con abundantes estrías blanquecinas. Notable y fino copete negro rebatido hacia adelante; iris blanco. Dorso gris; alas pardas con banda blanquecina en las cubiertas. Garganta y pecho blanquecino con finas estrías pardas; vientre blanquecino o amarillento. Cola parda oscura, punta y borde de las plumas laterales blanquecina. Pico y patas negras. Comportamiento: solo o en pareja, muy inquieto, confiado, posa expuesta. Alimentación: pequeños insectos, los captura recorriendo arbustos entre las ramas y hojas. Hábitat: montes nativos más bien áridos. Comentario: canto monótono, merodea la vegetación generalmente a baja altura."
   },
   {
     "id": 70,
     "name": "Calandrita",
-    "height": 0,
+    "height": 13,
     "height_location": 1,
     "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "scientific_name": "Stigmatura budytoides",
+    "english_name": "Greater Wagtail-Tyrant",
+    "description": "Cabeza gris; amplia ceja blanquecina, en algunos casos amarillenta; línea ocular negruzca. Dorso gris oliváceo; alas parduzcas, con reborde blanco en remeras internas y cubiertas. Garganta, pecho y vientre amarillo pálido. Cola negra, larga, algo erecta, con laterales y ápice blanco. Pico y patas negras. Comportamiento: en pareja o grupos familiares, muy inquieta. Alimentación: insectos que busca intensamente en el follaje. Hábitat: montes arbustivos rurales hasta piedemonte, en la zona media alta de los árboles. Comentario: canta a dúo, muy bullanguera."
   },
   {
     "id": 71,
     "name": "Benteveo Común",
-    "height": 0,
-    "height_location": 1,
+    "height": 22,
+    "height_location": 12,
     "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "scientific_name": "Pitangus sulphuratus",
+    "english_name": "Great Kiskadee",
+    "description": "Cabeza grande; corona y lados de la cabeza negro, notable ceja blanca que rodea la corona, copete poco visible amarillo intenso. Dorso pardo oliváceo; alas y cola castañas. Garganta blanca; pecho y vientre amarillo. Pico robusto, negro. Patas negras. Comportamiento: solo o en pareja, muy confiado. Alimentación: captura insectos e invertebrados de todo tipo, peces, reptiles pequeños, caracoles, frutos y algunas semillas; es oportunista, roba comida a otras aves o mamíferos. Hábitat: adaptado a muchos ambientes, regularmente cerca del agua, desde zonas urbanas y rurales hasta piedemonte. Comentario: bullanguero, posa en sitios visibles. También conocido por Pitojuán y Bichofeo."
   },
   {
     "id": 72,
     "name": "Picabuey",
-    "height": 0,
+    "height": 17,
     "height_location": 1,
     "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "scientific_name": "Machetornis rixosa",
+    "english_name": "Cattle Tyrant",
+    "description": "Coloración pálida. Cabeza gris ceniza, corona oculta, roja. Dorsal gris parduzco con algún tono oliva; alas y cola parduzcas. Garganta blanquecina. Pecho y vientre amarillo pálido. Pico y patas negras. Comportamiento: solo o en pareja, muy confiado, bastante terrícola. Alimentación: atrapa insectos mediante un vuelo corto o carreritas por el suelo. Hábitat: poblados, plazas, parques y jardines; también en zonas rurales. Comentario: frecuentemente se lo ve sobre el lomo del ganado."
   },
   {
     "id": 73,
     "name": "Birro Común",
-    "height": 0,
+    "height": 16,
     "height_location": 1,
     "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "scientific_name": "Hirundinea ferruginea",
+    "english_name": "Cliff Flycatcher",
+    "description": "Corona, nuca y dorsal pardo con tonos castaños; rabadilla castaña; alas pardas oscuras, remeras castañas con ápice pardo oscuro. Pecho y vientre castaño anaranjado. Cola castaña con banda terminal pardo oscuro. Pico y patas negras. Comportamiento: solitario, trina bastante seguido, vuelo elástico. Alimentación: insectos que atrapa en cortos y acrobáticos vuelos. Hábitat: montes, sobre árboles secos; en zona urbana sobre la parte más alta de los tejados. Comentario: cuando caza generalmente regresa a su mismo atalaya ubicado más bien en lo alto. Permanece en la zona o se ausenta poco tiempo."
   },
   {
     "id": 74,
     "name": "Pico de Plata",
-    "height": 0,
-    "height_location": 1,
+    "height": 13,
+    "height_location": 13,
     "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "scientific_name": "Hymenops perspicillatus",
+    "english_name": "Spectacled Tyrant",
+    "description": "Dimorfismo sexual. Macho: desde lejos se lo ve negro, atrae su llamativo ojo carnoso amarillento, también contrasta la banda blanca de sus alas. Pico blanquecino amarillento. Hembra: muy diferente, plumaje pardo jaspeado; alas algo rufas; vientre blanquecino; conserva características del ojo. Menos expuesta, rara vez se la encuentra junto al macho. Juvenil: similar a la hembra, ojo sin periocular. Comportamiento: solitario, terrícola, vuelo elástico, muy arisco. Alimentación: insectos y lombrices. Hábitat: sectores generalmente húmedos, zona rural y serrana alta. Comentario: caza en el aire. Posa expuesto sobre postes, alambrados o en montículos rocosos."
   },
   {
     "id": 75,
     "name": "Tuquito Gris",
-    "height": 0,
+    "height": 17,
     "height_location": 1,
     "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "scientific_name": "Empidonomus aurantioatrocristatus",
+    "english_name": "Crowned Slaty-Flycatcher",
+    "description": "Ceja gris; frente y corona negra, con plumas semiocultas amarillo oro. Dorso gris oscuro; alas pardo-grisáceas. Ventral grisáceo; abdomen blanquecino con algún tono amarillento. Cola negruzca. Pico y patas negras. Juvenil: más blanquecino; alas parduzcas, remeras y cubiertas alares blanquecinos; cola algo parda. Comportamiento: solitario o en pareja, posa visible, confiado. Alimentación: insectos, caza en vuelo. Hábitat: montes rurales, áreas periurbanas. Comentario: en otoño se desplaza al norte del país, llega nuevamente a la zona en primavera."
   },
   {
     "id": 76,
     "name": "Tijereta",
-    "height": 0,
+    "height": 38,
     "height_location": 1,
     "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "scientific_name": "Tyrannus savana",
+    "english_name": "Fork-tailed Flycatcher",
+    "description": "Cabeza y cara negra; corona semioculta amarilla. Dorso gris; alas pardas. Garganta, pecho y ventral blanco. Cola negra con dos plumas externas muy largas (unos 28 cm). Pico y patas negras. Hembra: cola más corta. Juvenil: plumaje similar, la cola es muy corta. Comportamiento: solitaria y en pareja. Agresiva. Alimentación: insectos, caza en vuelo. En época de cría recurre a larvas o huevos de hormigas. Hábitat: ambientes abiertos, montes, áreas rurales y poblados. Comentario: inconfundible. Posa en sitios visibles a baja altura, cardales, alambrados; rara vez en el piso. Defendiendo su nido persigue a otras aves. En otoño migra al norte, regresa en primavera."
   },
   {
     "id": 77,
     "name": "Monjita Coronada",
-    "height": 0,
+    "height": 20,
     "height_location": 1,
-    "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "frequency": 2,
+    "scientific_name": "Xolmis coronatus",
+    "english_name": "Black-crowned Monjita",
+    "description": "Cabeza blanca, corona y línea postocular negra. Dorso gris parduzco; alas negras con líneas y puntas blancas, muy visibles en vuelo. Garganta, pecho y vientre blancos. Cola, pico y patas negras. Comportamiento: solitaria, algo terrícola, arisca; a veces vuela alto, posa visible prefiere ramas altas y postes. Alimentación: insectos, caza en vuelo. Hábitat: montes autóctonos, área abiertas o semiabiertas con arbustos dispersos. Comentario: llega a la zona en otoño e invierno, proviene del sur del país."
   },
   {
     "id": 78,
     "name": "Monjita Blanca",
-    "height": 0,
+    "height": 17,
     "height_location": 1,
     "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "scientific_name": "Xolmis irupero",
+    "english_name": "White Monjita",
+    "description": "Enteramente blanca, contrastan sus ojos, pico y patas negras; también en sus blancas alas sobresale el detalle de los bordes y puntas negras, igual que su cola totalmente blanca con terminales negras. Comportamiento: generalmente solitaria, territorial, arisca, muy desconfiada, vuela bajo. Alimentación: captura insectos voladores en cortos y acrobáticos vuelos. Hábitat: montes, llanuras, zonas rurales y periurbanas. Comentario: bella e inconfundible; llamativa como la simpleza de sus colores. Posa visible en postes, alambrados y sectores altos de los arbustos."
   },
   {
     "id": 79,
     "name": "Gaucho Serrano",
-    "height": 0,
-    "height_location": 1,
+    "height": 21,
+    "height_location": 23,
     "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "scientific_name": "Agriornis montanus",
+    "english_name": "Black-billed Shrike-Tyrant",
+    "description": "Gris parduzco. Iris blanquecino con manchitas pardas. Garganta estriada de blanco. Alas con filetes blancos en las remeras. Cola blanca, gris parduzco en plumas centrales; en vuelo muestra notable blancura. Pico negro, rodeado de vibrisas. Patas negras. Juvenil: Color uniforme parduzco; iris pardo. Comportamiento: solitario, expuesto, muy confiado, terrícola, vuelo largo. Alimentación: insectos, lombrices, granos, carroña. Hábitat: entre rocas y pastizales altos serranos. Comentario: en zona serrana alta es fácil encontrarlo. Algunos autores (M. Nores y D. Izurieta 1979) dan a la subespecie “fumosus” como endémica de la región serrana de Córdoba y San Luis."
   },
   {
     "id": 80,
     "name": "Dormilona Gris",
-    "height": 0,
+    "height": 16,
     "height_location": 1,
     "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "scientific_name": "Muscisaxicola rufivertex",
+    "english_name": "Rufous-naped Ground-Tyrant",
+    "description": " Corona y nuca castaño-rojiza; frente gris, cejas blancas. Dorso gris; alas negras con ribetes pardos y grises. Cuello y pecho gris muy tenue. Ventralmente blanquecina. Cola negra ribeteada de blanquecino. Pico y patas negras. Juvenil: corona más pálida. Comportamiento: solitaria, siempre erguida, confiada, terrícola. Alimentación: insectos y larvas, también consume semillas y frutos silvestres. Hábitat: zona alta, más bien rocosa de las sierras de Comechingones. Comentario: postura elegante, muy llamativa, su armonioso colorido recuerda un frac."
   },
   {
     "id": 81,
     "name": "Dormilona Canela",
-    "height": 0,
-    "height_location": 1,
-    "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "height": 16,
+    "height_location": 3,
+    "frequency": 2,
+    "scientific_name": "Muscisaxicola capistratus",
+    "english_name": "Cinnamon-bellied Ground-Tyrant",
+    "description": "Frente y loral negro; iris y máscara negra alrededor del ojo; corona y nuca castaña. Dorsal pardo grisáceo; alas pardas con ribetes claros. Garganta y pecho blanquecino; vientre y subcaudal canela; flancos canela oscuro. Cola negra, timoneras laterales bordeadas de blanco. Pico y patas negras. Comportamiento: solitaria, posa erguida, terrícola, vuelo ágil y rápido. Alimentación: insectos y larvas. Hábitat: ocasionalmente se la puede encontrar en la zona alta, más bien rocosa de las sierras. Comentario: residente en el sur del país; de paso por la zona en Primavera."
   },
   {
     "id": 82,
     "name": "Cortarramas",
-    "height": 0,
+    "height": 17,
     "height_location": 1,
     "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "scientific_name": "Phytotoma rutila",
+    "english_name": "White-tipped Plantcutter",
+    "description": "Ambos poseen semicopete. Macho: iris rojo anaranjado; corona gris. Dorso plomizo negruzco; alas negras con bandas blancas en las cubiertas. Frente, garganta, pecho y vientre rojo ladrillo. Cola negra con ápice blanco. Pico corto, grueso, bordes aserrados. Patas negruzcas. Hembra: dorsal grisáceo con notables estrías pardas oscuras; alas pardas con ribetes ocráceos; ventral gris acanelado con grueso estriado pardo; cola parda, ápice blanco. Juvenil: plumaje intermedio apagado. Comportamiento: solitario o en pareja, confiado, posa visible. Alimentación: brotes tiernos, semillas y frutos silvestres. Hábitat: preferentemente montes arbustivos. Comentario: colores vistosos. Su canto semeja una puerta que rechina."
   },
   {
     "id": 83,
     "name": "Juan Chiviro",
-    "height": 0,
+    "height": 15,
     "height_location": 1,
-    "frequency": 3,
+    "frequency": 2,
     "scientific_name": "",
     "english_name": "",
-    "description": ""
+    "description": "Llamativo iris rojo anaranjado; cabeza grande; frente y cejas castañas; cara y collar en la parte posterior del cuello gris parduzco. Dorso y cola verde oliváceo; alas algo parduzcas. Garganta blanquecina; pecho amarillento; resto ventral blanquecino con algo de canela. Pico robusto y grueso. Patas negruzcas. Comportamiento: solitario, movimientos acrobáticos. Alimentación: insectos, utiliza sus patas para destruir capullos y así extrae la crisálida con su pico. Hábitat: montes y bosques nativos, en zona rural y urbana hasta piedemonte. Comentario: canto melodioso. Recorre el follaje a media altura, bastante oculto, es más oído que visto."
   },
   {
     "id": 84,
     "name": "Ratona Común",
-    "height": 0,
-    "height_location": 1,
+    "height": 10,
+    "height_location": 12,
     "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "scientific_name": "Troglodytes aedon",
+    "english_name": "House Wren",
+    "description": "Pequeña. Cabeza gris parduzco; periocular blanquecino. Dorsal pardo oscuro con estrías ocráceas; alas y cola castaña con barras negruzcas. Garganta blanquecina; ventral pardo claro. Pico fino, largo y oscuro, base blanco-amarillenta. Patas negruzcas. Comportamiento: solitaria y en pareja. Confiada, muy activa, vuelo corto. Alimentación: insectos y gusanos pequeños. Hábitat: ambientes urbanos y rurales, bosques, montes y quebradas. Comentario: cercana al hombre, muy vista, también conocida con el nombre de \"Ratonera” o “Pititorra\"."
   },
   {
     "id": 85,
     "name": "Ratona Aperdizada",
-    "height": 0,
-    "height_location": 1,
+    "height": 10,
+    "height_location": 13,
     "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "scientific_name": "Cistothorus platensis",
+    "english_name": "Sedge Wren",
+    "description": "Plumaje general ocráceo. Ceja y garganta blanquecina; iris pardo; corona, cuello y dorso pardo con estrías negras. Alas pardas con barras ocráceas. Ventral gris blanquecino; flancos y rabadilla canela. Cola erecta, con muchas barras negruzcas. Pico pardo, mandíbula gris. Patas anaranjadas. Comportamiento: solitaria o en pareja. Muy cantora, inquieta, ágil, vuelo corto. Alimentación: insectos pequeños, larvas y sus huevos. Hábitat: pastizales rurales y alto serranos. Comentario: su pequeño tamaño y coloración la ayudan a mantenerse casi siempre oculta; sube a la parte alta de los pastos en actitud curiosa y vigilante. Muy activa en primavera en la zona alta de la sierra."
   },
   {
     "id": 86,
     "name": "Tacuarita Azul",
-    "height": 0,
+    "height": 11,
     "height_location": 1,
     "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "scientific_name": "Polioptila dumicola",
+    "english_name": "Masked Gnatcatcher",
+    "description": "Dimorfismo sexual. Macho: antifaz negro; corona y dorso gris azulado; alas azuladas con filetes negros y blancos. Garganta y pecho gris. Vientre más claro que el resto del cuerpo. Cola larga, angosta, negra con timoneras externas blancas, por debajo toda blanca, a veces la lleva erecta. Pico y patas negras. Hembra: coloración mas pálida, sin antifaz. Juvenil: similar a la hembra. Comportamiento: en pareja, a menudo en grupitos. Trino insistente, confiada, inquieta, movimientos acrobáticos. Alimentación: principalmente insectos. Hábitat: montes serranos y áreas arbustivas rurales. Comentario: vive en continuo movimiento, recorre arbustales y la zona media de los árboles."
   },
   {
     "id": 87,
     "name": "Zorzal Colorado",
-    "height": 0,
+    "height": 23,
     "height_location": 1,
     "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "scientific_name": "Turdus rufiventris",
+    "english_name": "Rufous-bellied Thrush",
+    "description": "Cabeza pardo grisácea; anillo periocular amarillo. Dorso y alas pardas. Garganta blanquecina estriada de pardo; pecho gris ocráceo; abdomen y subcaudales rufo anaranjado. Cola parda. Pico amarillento en macho adulto; hembra y juvenil pico gris. Comportamiento: solitario y en pareja. Expuesto, terrícola. Alimentación: principalmente lombrices, también incorpora insectos y pequeños frutos. Hábitat: diversos ambientes, bosques, montes y áreas urbanas; merodea en jardines. Comentario: canta desde muy temprano; no permite acercamiento, camina dando saltitos."
   },
   {
     "id": 88,
     "name": "Zorzal Chiguanco",
-    "height": 0,
-    "height_location": 1,
-    "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "height": 25,
+    "height_location": 123,
+    "frequency": 4,
+    "scientific_name": "Turdus chiguanco",
+    "english_name": "Chiguanco Thrush",
+    "description": "Totalmente negruzco; notable anillo periocular amarillo. Pico y patas amarillo anaranjado. Hembra: color pardo ceniza. Juvenil: similar a la hembra. Comportamiento: solo o en pareja, muy terrícola, siempre visible, posa erguido, cabeza levantada, pecho saliente y alas inclinadas que sobresalen del cuerpo; avanza dando saltitos elevando la cola. Alimentación: frutos silvestres, gusanos e invertebrados. Hábitat: múltiples ambientes. En toda la sierra de Comechingones, montes serranos, valles, abunda en poblados, muy confiado con el hombre. Comentario: muy visto, posee el tamaño mayor entre los zorzales. También llamado “Mirlo”."
   },
   {
     "id": 89,
     "name": "Calandria Grande",
-    "height": 0,
+    "height": 25,
     "height_location": 1,
     "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "scientific_name": "Mimus saturninus",
+    "english_name": "Chalk-browed Mockingbird",
+    "description": "Corona gris; ojo pardo; ancha ceja blanquecina; pequeña banda negruzca a modo de antifaz. Dorso parduzco con leve estriado negruzco; alas negras con filetes blanquecinos. Garganta, pecho y vientre blancuzco. Cola oscura casi negra con puntas blancas, excepto en las plumas centrales. Pico más largo que en las otras calandrias. Patas negras. Juvenil: pecho algo manchado, ojos más claros y ceja menos notable. Comportamiento: en pareja, muy confiada, expuesta, corretea por el suelo. Imita a otras especies, incluso el silbido humano. Alimentación: insectos, sus larvas y frutos silvestres. Hábitat: abunda en poblados y zonas rurales. Comentario: es la de mayor tamaño y más común de todas las calandrias."
   },
   {
     "id": 90,
     "name": "Calandria Real",
-    "height": 0,
-    "height_location": 1,
-    "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "height": 20,
+    "height_location": 13,
+    "frequency": 2,
+    "scientific_name": "Mimus Triurus",
+    "english_name": "White-banded Mockingbird",
+    "description": "Corona gris; ceja blanquecina. Dorsal gris parduzco; alas pardas con una visible línea blanca; rabadilla canela. Garganta y pecho blancuzco; flancos y vientre ocráceo. Cola larga, blanca con timoneras centrales negras, con frecuencia la eleva. Pico más corto y fino que en las otras calandrias. Patas negras. Comportamiento: solitaria, terrícola; vuela corto a baja altura; bastante arisca. Alimentación: insectos y frutos silvestres. Hábitat: prefiere montes nativos arbustivos de zonas rurales y áreas periurbanas. Ocasionalmente en roquedales altoserranos. Comentario: es la más pequeña de las calandrias. En vuelo, las franjas blancas de sus alas y cola muestran gran contraste facilitando su identificación"
   },
   {
     "id": 91,
     "name": "Cachirla Pálida",
-    "height": 0,
-    "height_location": 1,
+    "height": 14,
+    "height_location": 3,
     "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "scientific_name": "Anthus hellmayri",
+    "english_name": "Hellmary´s Pipit",
+    "description": "Dorso estriado entre pardo y ocráceo. Ventral blanquecino, leve estriado ocre en flancos y pecho. Alas pardas oscuras. Cola negruzca, plumas externas claras. Pico negruzco. Patas rosáceas, posee uña muy larga y arqueada en el dedo hacia atrás. Comportamiento: solitaria o en pareja, confiada, muy mimética. Durante la época reproductiva el macho realiza despliegues elevándose, luego se deja caer con las alas entreabiertas, como intentando flotar en el aire, vocaliza en el descenso. Alimentación: insectos y semillas. Hábitat: pastizales alto-serranos, en áreas rocosas cercanas a cursos de agua o humedales. Comentario: es común encontrarlas, pero lograr su identificación certera es difícil, las Cachirlas son similares entre sí. Su trino también lo es."
   },
   {
     "id": 92,
     "name": "Arañero Corona Rojiza",
-    "height": 0,
-    "height_location": 1,
+    "height": 12,
+    "height_location": 12,
     "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "scientific_name": "Myioborus brunniceps",
+    "english_name": "Brown-capped Redstart",
+    "description": "Notable corona castaño rojiza, pequeña frente negra; ceja y anillo ocular blanco; cara gris negruzca. Dorso gris plomizo; espalda amarillo oliva; alas pardas. Garganta y zona ventral amarillo oro. Cola negra con timoneras externas blancas, más notables en vuelo. Pico y patas negras. Juvenil: corona gris. Comportamiento: curioso, confiado, muy inquieto, silba y trina constantemente. Alimentación: invertebrados que obtiene en distintos estratos de la vegetación, también caza en vuelo con escaso recorrido. Hábitat: bosques serranos, rurales y zonas urbanas, merodea jardines. Comentario: se lo ve con mayor frecuencia a partir del otoño."
   },
   {
     "id": 93,
     "name": "Naranjero",
-    "height": 0,
+    "height": 17,
     "height_location": 1,
     "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "scientific_name": "Pipraeidea bonariensis",
+    "english_name": "Blue-and-Yellow Tanager",
+    "description": "Dimorfismo sexual. Macho: capuchón celeste violáceo; loral, semicollar y espalda negra. Alas negras con brillos y ribetes celestes. Rabadilla y pecho anaranjado; ventral amarillo anaranjado. Cola negra con ribetes azulados. Pico gris con base clara. Patas grisáceas. Hembra: muy distinta, poco llamativa; dorso pardo oliváceo, ventral ocráceo. Juvenil: similar a la hembra, el macho con reflejos azulados. Comportamiento: en pareja o grupo familiar, desconfiado. Alimentación: frutos silvestres, semillas, brotes tiernos e insectos. Hábitat: bosque nativo, áreas rurales, poblados; merodea zona arbustiva, media y alta; poco terrícola. Comentario: el macho es muy llamativo, también llamado Sietecolores. Ave perseguida, su población está en disminución. Otro nombre científico: Thraupis bonariensis."
   },
   {
     "id": 94,
     "name": "Yal Platero",
-    "height": 0,
-    "height_location": 1,
-    "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "height": 14,
+    "height_location": 2,
+    "frequency": 2,
+    "scientific_name": "Phrygilus alaudinus",
+    "english_name": "Band-tailed Sierra-Finch",
+    "description": "Dimorfismo sexual. Macho: loral negro, cabeza, garganta, cuello y pecho gris azulado aclarando hacia el abdomen, termina blanco. Dorsal gris azulado con estrías negras y pardas; alas negro parduzcas, ribeteadas gris azulado. Cola negra con aureolas blancas, en vuelo muestra una banda blanca. Pico anaranjado, cónico y corto. Patas amarillo anaranjado. Hembra: dorso ocráceo con estrías pardas, pecho moteado, abdomen blanco; cola pardo oscuro con aureolas blancas, pico y patas mas pálidas que el macho. Comportamiento: generalmente en pareja. Confiado, expuesto, terrícola. Alimentación: semillas e invertebrados. Hábitat: ladera de montaña o posado sobre arbustos nativos. Comentario: atractivo color. Se lo observa todo el año en la sierra de Comechingones, zona Mirador del Sol."
   },
   {
     "id": 95,
     "name": "Yal Plomizo",
-    "height": 0,
-    "height_location": 1,
+    "height": 13,
+    "height_location": 3,
     "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "scientific_name": "Phrygilus unicolor",
+    "english_name": "Plumbeos Sierra-Finch",
+    "description": "Dimorfismo sexual. Macho: no posee ceja; cabeza y partes dorsales gris plomizo. Garganta, pecho y zona ventral gris claro. Alas y cola pardo negruzco, ribeteadas de gris plomizo. Pico gris azulado. Patas parduzcas. Hembra: cabeza y partes dorsales gris parduzco con estriado pardo negruzco; garganta y partes ventrales blanquecinas con estriado pardo; alas y cola parduzcas ribeteadas de blanquecino. Juvenil: similar a la hembra. Comportamiento: en pareja o en grupos. Terrícola, confiado. Alimentación: semillas, brotes, frutos silvestres e invertebrados en época reproductiva. Hábitat: pastizales, laderas y zonas pedregosas, zona alta de las sierras; generalmente merodea por el suelo. Comentario: bastante silencioso; resulta fácil reconocerlo por su coloración y costumbres."
   },
   {
     "id": 96,
     "name": "Jilguero Dorado",
-    "height": 0,
+    "height": 12,
     "height_location": 1,
     "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "scientific_name": "Sicalis flaveola",
+    "english_name": "Saffron Finch",
+    "description": "Dimorfismo sexual. Macho: frente dorado anaranjada. Dorso oliva estriado de negro; alas negras, plumas ribeteadas de amarillo. Garganta, pecho y vientre amarillo oro. Pico gris. Patas parduzcas. Hembra: sin amarillo, dorso gris estriado de negro y pardo, alas pardas oscuras con ribetes pardo amarillento en las primarias, ventral blancuzco con pecho y flancos estriado de pardo. Juvenil: similar a la hembra, el macho plumaje intermedio. Comportamiento: en pareja, terrícola, confiado, posa visible. Alimentación: semillas de gramíneas y sus brotes. Hábitat: áreas abiertas, montes, campos rurales y zona urbana. Comentario: parecido al Misto (Sicalis luteola). Por su agradable canto es un ave perseguida y es frecuente verla en jaula."
   },
   {
     "id": 97,
     "name": "Soldadito Común",
-    "height": 0,
+    "height": 12,
     "height_location": 1,
-    "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "frequency": 2,
+    "scientific_name": "Lophospingus pusillus",
+    "english_name": "Black-crested Finch",
+    "description": "Dimorfismo sexual. Macho: plumaje opaco. Copete prominente se eriza y eleva desde la nuca, garganta y antifaz negro; notable ceja y malar blanco. Dorsal gris, alas pardas ribeteadas de gris. Ventral gris ceniciento. Cola negruzca, plumas externas con la mitad blanca. Pico gris base blanquecina, cónico. Patas grises. Hembra: garganta blanca sin negro, dorsal parduzco, plumaje más apagado. Comportamiento: arborícola y también terrícola. Alimentación: semillas y algunos insectos. Hábitat: montes con bastante vegetación, también se lo encuentra en zonas rurales. Comentario: sumamente bello, conocido también como Cardenal de la Sierra. Es un ave perseguida."
   },
   {
     "id": 98,
     "name": "Pepitero Chico",
-    "height": 0,
+    "height": 15,
     "height_location": 1,
     "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "scientific_name": "Saltatricula multicolor",
+    "english_name": "Many-colored Chaco-Finch",
+    "description": "Notable ceja blanca; frente y lados del cuello negro; zona auricular y collar gris. Espalda pardo oliva; alas pardas con las plumas ribeteadas de canela; rabadilla pardo grisáceo. Garganta blanca; zona ventral canela con abdomen blanquecino. Cola negruzca con ápice blanco notable en vuelo. Pico más alto que ancho, amarillo anaranjado con culmen negruzco. Patas negruzcas. Comportamiento: en pareja o pequeños grupos. Curioso, muy cantor. Alimentación: principalmente granívoro, complementada con frutos e insectos. Hábitat: montes nativos con mucha vegetación. Comentario: es fácil localizarlo; canto agradable y persistente. También llamado Vira vira. Es un ave perseguida."
   },
   {
     "id": 99,
     "name": "Monterita Canela",
-    "height": 0,
+    "height": 12,
     "height_location": 1,
     "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "scientific_name": "Poospiza ornata",
+    "english_name": "Cinnamon Warbling-Finch",
+    "description": "Dimorfismo sexual. Macho: cabeza gris; ancha ceja canela; periocular blanco. Dorso gris con tonos castaños; alas negruzcas, primarias ribeteadas de blanquecino y secundarias ribeteadas de canela, cubiertas negruzcas con puntas ocre; rabadilla gris. Garganta, pecho, flancos y subcaudal canela; vientre blanquecino. Cola negruzca, plumas bordeadas de blanquecino. Pico y patas grises. Hembra: dorso parduzco; ceja y zona ventral más clara. Comportamiento: en pareja o en grupo junto a otras Poospizas. Alimentación: semillas, brotes e insectos. Hábitat: bosques y montes arbustivos de áreas rurales y periurbanas. Comentario: también conocida como Ladrillito."
   },
   {
     "id": 100,
     "name": "Sietevestidos Serrano",
-    "height": 0,
+    "height": 12,
     "height_location": 1,
     "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "scientific_name": "Poospiza whitii",
+    "english_name": "Black-and-Chesnut Warbling-Finch",
+    "description": "Cara negra a modo de antifaz; corona negruzca; ancha ceja blanca finaliza castaña; notable línea malar blanca. Dorso negruzco; alas pardas oscuras, cubiertas grises. Garganta, pecho y flancos castaños; abdomen blanco. Cola parda oscura, plumas externas con ápice blanco. Juvenil: dorso, alas y cola parduzco, ventral jaspeado de ocráceo. Comportamiento: en pareja o en grupos, vuelo con aleteo intermitente, inquieto, bastante oculto. Alimentación: semillas, brotes e insectos. Hábitat: bosques nativos serranos, áreas rurales y periferia de poblados. Comentario: merodea a media y baja altura en la zona más arbustiva del monte."
   },
   {
     "id": 101,
     "name": "Monterita de Collar",
-    "height": 0,
+    "height": 12,
     "height_location": 1,
     "frequency": 3,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "scientific_name": "Poospiza torquata",
+    "english_name": "Ringled Warbling-Finch",
+    "description": "Dimorfismo sexual. Macho: notable ceja y garganta blanca; corona gris; fina sobreceja, antifaz y ancho collar negro. Dorsal gris plomizo; alas pardas, el diseño alar combina negro, blanco y nuevamente negro con algo de ocre. Pecho y zona ventral blanquecina; flancos grises; subcaudal castaño. Cola parda oscura con la mitad de las plumas terminales blancas. Hembra: más pálida, collar restringido. Juvenil: collar parduzco. Comportamiento: en pareja y grupos, recorredora, muy inquieta, bastante confiada. Alimentación: semillas, brotes y pequeños insectos. Hábitat: montes nativos bastante arbustivos, rurales y periurbanos. Comentario: también llamada \"Vizcachita\"."
   },
   {
     "id": 102,
@@ -1205,8 +1205,8 @@
     "height": 22,
     "height_location": 1,
     "frequency": 2,
-    "scientific_name": "",
-    "english_name": "",
-    "description": ""
+    "scientific_name": "Crypturellus tataupa",
+    "english_name": "Tataupa Tinamou",
+    "description": "Pecho gris. Pico naranja."
   }
 ]

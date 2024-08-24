@@ -15,21 +15,24 @@ import androidx.room.Room
 import com.pernasa.mybirdsapp.ui.theme.MyBirdsAppTheme
 import com.pernasa.mybirdsapp.models.room.RoomBirdsDatabase
 import com.pernasa.mybirdsapp.viewModels.BirdsListViewModel
+import com.pernasa.mybirdsapp.viewModels.GameGuessViewModel
 import com.pernasa.mybirdsapp.viewModels.ObservationRoutesViewModel
 
 class MainActivity : BaseActivity() {
-    private val prefs_name = "AppPrefs"
-    private val launch_counter = "launch_counter"
+    private val prefsName = "AppPrefs"
+    private val launchCounter = "launch_counter"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        val birdsListViewModel = prepareDatabaseAndBirdsListViewModel(this)
+
+        val sharedPreferences = getSharedPreferences(prefsName, Context.MODE_PRIVATE)
+
+        val birdsListViewModel = prepareDatabaseAndBirdsListViewModel(this, sharedPreferences)
         val observationRoutesViewModel = ObservationRoutesViewModel(this)
 
-        val sharedPreferences = getSharedPreferences(prefs_name, Context.MODE_PRIVATE)
-        val launchCount = sharedPreferences.getInt(launch_counter, 8) - 1
-        sharedPreferences.edit().putInt(launch_counter, launchCount).apply()
+        val launchCount = sharedPreferences.getInt(launchCounter, 8) - 1
+        sharedPreferences.edit().putInt(launchCounter, launchCount).apply()
 
         if (launchCount <= 0) {
             showRateAppDialog(sharedPreferences)
@@ -37,13 +40,17 @@ class MainActivity : BaseActivity() {
 
         setContent {
             MyBirdsAppTheme (darkTheme = true) {
-                Navigation(birdsListViewModel.value, observationRoutesViewModel)
+                Navigation(
+                    birdsListViewModel.value,
+                    observationRoutesViewModel
+                )
             }
         }
     }
 
     @Suppress("UNCHECKED_CAST")
-    private fun prepareDatabaseAndBirdsListViewModel(context: Context): Lazy<BirdsListViewModel> {
+    private fun prepareDatabaseAndBirdsListViewModel(context: Context, sharedPreferences: SharedPreferences)
+    : Lazy<BirdsListViewModel> {
         val database =
             Room.databaseBuilder(applicationContext, RoomBirdsDatabase::class.java, "birds_observed_list_db")
                 .fallbackToDestructiveMigration()
@@ -52,7 +59,7 @@ class MainActivity : BaseActivity() {
         return viewModels<BirdsListViewModel>(factoryProducer = {
             object : ViewModelProvider.Factory {
                 override fun <T : ViewModel> create(modelClass: Class<T>): T {
-                    return BirdsListViewModel(context, dao) as T
+                    return BirdsListViewModel(context, dao, sharedPreferences) as T
                 }
             }
         })
@@ -64,11 +71,11 @@ class MainActivity : BaseActivity() {
         dialogBuilder.setMessage("Si te gusta la aplicación, por favor califícala en Google Play. Me ayuda mucho a seguir mejorándola :)")
         dialogBuilder.setPositiveButton("Calificar") { _, _ ->
             openGooglePlayStore()
-            sharedPreferences.edit().putInt(launch_counter, 300).apply()
+            sharedPreferences.edit().putInt(launchCounter, 300).apply()
         }
         dialogBuilder.setNegativeButton("Más tarde") { dialog, _ ->
             dialog.dismiss()
-            sharedPreferences.edit().putInt(launch_counter, 20).apply()
+            sharedPreferences.edit().putInt(launchCounter, 20).apply()
         }
         dialogBuilder.create().show()
     }

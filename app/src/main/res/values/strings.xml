@@ -7,8 +7,10 @@
     <string name="birds_page_title">Lista de Aves</string>
     <string name="bird_description_page_title">Información Detallada</string>
     <string name="observation_routes_page_title">Recorridos</string>
+    <string name="game_guess_page_title">Minijuego</string>
     <string name="observation_route_description_page_title">Información de recorrido</string>
     <string name="about_us_page_title">Créditos</string>
+    <string name="guess_bird_title">¡Adivina el ave!</string>
 
     <string name="app_name">Aves de Merlo</string>
 
@@ -34,6 +36,7 @@
     #Buttons names
     <string name="birds_list">Lista de Aves</string>
     <string name="observation_routes">Recorridos</string>
+    <string name="game_guess">¡Adivina el Ave!</string>
     <string name="about_us">  Créditos  </string>
     <string name="button_info">Información</string>
 
@@ -67,4 +70,7 @@
     <string name="height_location_123">\n500/2200</string>
     <string name="frequency_undefined">\nIndefinida</string>
 
+    #Guess Game
+    <string name="actual_points">Puntaje actual</string>
+    <string name="record_points">Puntaje récord</string>
 </resources>
