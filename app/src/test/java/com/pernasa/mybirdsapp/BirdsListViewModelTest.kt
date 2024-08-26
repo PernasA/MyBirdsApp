@@ -2,6 +2,7 @@ package com.pernasa.mybirdsapp
 
 import GlobalCounterBirdsObserved
 import android.content.Context
+import android.content.SharedPreferences
 import com.pernasa.mybirdsapp.models.Bird
 import com.pernasa.mybirdsapp.models.room.RoomBird
 import com.pernasa.mybirdsapp.models.room.RoomBirdsDao
@@ -35,6 +36,7 @@ class BirdsListViewModelTest {
     private val mockContext = mockk<Context>(relaxed = true)
     private val mockJsonReader = mockk<JsonReader>()
     private val mockRoomBirdsDao = mockk<RoomBirdsDao>()
+    private val mockSharedPreferences = mockk<SharedPreferences>()
 
     private lateinit var birdsListViewModel: BirdsListViewModel
 
@@ -42,13 +44,14 @@ class BirdsListViewModelTest {
     fun setUp() {
         Dispatchers.setMain(testDispatcher)
         coEvery { mockJsonReader.loadJsonBirdsFromAssets(mockContext, any()) } returns emptyList()
+        coEvery {mockSharedPreferences.getInt("high_score", 0)} returns 0
 
         val testBird = RoomBird(id = 1, false)
         coEvery { mockRoomBirdsDao.getAllBirds() } returns flowOf(listOf(testBird))
         mockkObject(GlobalCounterBirdsObserved)
         coEvery { GlobalCounterBirdsObserved.setCounter(any()) } just runs
 
-        birdsListViewModel = BirdsListViewModel(mockContext, mockRoomBirdsDao, mockJsonReader)
+        birdsListViewModel = BirdsListViewModel(mockContext, mockRoomBirdsDao, mockSharedPreferences, mockJsonReader)
     }
 
     @Test

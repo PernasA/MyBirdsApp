@@ -29,8 +29,10 @@ class GameGuessViewModel(
     init {
         viewModelScope.launch(Dispatchers.IO) {
             _highScore.value = sharedPreferences.getInt(highScoreKeySharedPrefs, 0)
-            _currentBird.value = dataBirdsList.random()
-            loadOptionsForCurrentBird()
+            if (dataBirdsList.isNotEmpty()) {
+                _currentBird.value = dataBirdsList.random()
+                loadOptionsForCurrentBird()
+            }
         }
     }
 
