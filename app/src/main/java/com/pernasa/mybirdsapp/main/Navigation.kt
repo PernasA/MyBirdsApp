@@ -21,7 +21,6 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.pernasa.mybirdsapp.R
 import com.pernasa.mybirdsapp.viewModels.BirdsListViewModel
-import com.pernasa.mybirdsapp.viewModels.GameGuessViewModel
 import com.pernasa.mybirdsapp.viewModels.ObservationRoutesViewModel
 import com.pernasa.mybirdsapp.views.BirdsListPage
 import com.pernasa.mybirdsapp.views.AboutUsPage

@@ -20,9 +20,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.Share
-import androidx.compose.material.icons.outlined.PlayArrow
 import androidx.compose.material3.CircularProgressIndicator
-import androidx.compose.material3.ExtendedFloatingActionButton
 import androidx.compose.material3.FilledTonalButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.LargeFloatingActionButton
@@ -220,7 +218,12 @@ fun MyFilledButton(
         modifier.fillMaxWidth(),
         border = BorderStroke(0.7.dp, MossGreenPrimaryContainer),
     ) {
-        Text(stringResource(buttonText), fontSize = BUTTON_HOME_TEXT_SIZE, color = textColor ?: Color.White)
+        Text(
+            stringResource(buttonText),
+            fontSize = BUTTON_HOME_TEXT_SIZE,
+            color = textColor ?: Color.White,
+            textAlign = TextAlign.Center
+        )
     }
 }
 

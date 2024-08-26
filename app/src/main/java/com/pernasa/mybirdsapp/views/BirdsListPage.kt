@@ -19,6 +19,8 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.text.KeyboardActions
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowDropDown
 import androidx.compose.material.icons.filled.Search
@@ -45,11 +47,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.state.ToggleableState
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.pernasa.mybirdsapp.R
@@ -108,64 +112,16 @@ fun BirdsListPage(
         modifier = Modifier.fillMaxSize()
     ) {
         item {
-            Row(
-                modifier = Modifier
-                    .padding(start = 10.dp, end = 10.dp, top = 10.dp)
-                    .fillMaxWidth(),
-                verticalAlignment = Alignment.CenterVertically,
-                horizontalArrangement = Arrangement.SpaceBetween
-            ) {
-                TextField(
-                    trailingIcon = {
-                        Icon(
-                            imageVector = Icons.Filled.Search,
-                            contentDescription = "Icono de búsqueda",
-                            tint = Color.Black
-                        )
-                    },
-                    value = searchQuery,
-                    colors = TextFieldDefaults.colors(
-                        unfocusedContainerColor = SearchFieldBackground,
-                        focusedContainerColor = SearchFieldBackground,
-                        disabledTextColor = SearchPlaceholderColor,
-                        focusedTextColor = Color.Black,
-                        unfocusedLeadingIconColor = Color.Black,
-                        focusedLeadingIconColor = Color.Black
-                    ),
-                    onValueChange = { query ->
-                        searchQuery = query
-                    },
-                    label = { Text(stringResource(R.string.search_by_name)) },
-                    modifier = Modifier
-                        .weight(1f)
-                        .clip(RoundedCornerShape(8.dp))
-                        .border(BorderStroke(0.8.dp, MossGreenRealTertiary), RoundedCornerShape(8.dp)),
-                )
-                Spacer(modifier = Modifier.width(8.dp))
-
-                Column(
-                    Modifier.padding(4.dp),
-                    verticalArrangement = Arrangement.SpaceBetween,
-                    horizontalAlignment = Alignment.CenterHorizontally
-                ){
-                    Text(text = "¿Observadas?", color = MossGreenPrimary)
-                    TriStateCheckbox(
-                        state = observationFilterState,
-                        onClick = {
-                            observationFilterState = when (observationFilterState) {
-                                ToggleableState.On -> ToggleableState.Indeterminate
-                                ToggleableState.Off -> ToggleableState.On
-                                ToggleableState.Indeterminate -> ToggleableState.Off
-                            }
-                        },
-                        colors = CheckboxDefaults.colors(
-                            checkedColor = OrangeBird,
-                            uncheckedColor = MossGreenPrimary,
-                            checkmarkColor = Color.Black
-                        )
-                    )
+            SearchRow(
+                searchQuery = searchQuery,
+                onSearchQueryChange = { query ->
+                    searchQuery = query
+                },
+                observationFilterState = observationFilterState,
+                onObservationFilterStateChange = { newState ->
+                    observationFilterState = newState
                 }
-            }
+            )
         }
 
         item {
@@ -193,6 +149,84 @@ fun BirdsListPage(
                     Spacer(modifier = Modifier.weight(1f))
                 }
             }
+        }
+    }
+}
+
+@Composable
+fun SearchRow(
+    searchQuery: String,
+    onSearchQueryChange: (String) -> Unit,
+    observationFilterState: ToggleableState,
+    onObservationFilterStateChange: (ToggleableState) -> Unit
+) {
+    val keyboardController = LocalSoftwareKeyboardController.current
+
+    Row(
+        modifier = Modifier
+            .padding(start = 10.dp, end = 10.dp, top = 10.dp)
+            .fillMaxWidth(),
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.SpaceBetween
+    ) {
+        TextField(
+            trailingIcon = {
+                Icon(
+                    imageVector = Icons.Filled.Search,
+                    contentDescription = "Icono de búsqueda",
+                    tint = Color.Black
+                )
+            },
+            value = searchQuery,
+            colors = TextFieldDefaults.colors(
+                unfocusedContainerColor = SearchFieldBackground,
+                focusedContainerColor = SearchFieldBackground,
+                disabledTextColor = SearchPlaceholderColor,
+                focusedTextColor = Color.Black,
+                unfocusedLeadingIconColor = Color.Black,
+                focusedLeadingIconColor = Color.Black
+            ),
+            onValueChange = onSearchQueryChange,
+            label = { Text(stringResource(R.string.search_by_name)) },
+            modifier = Modifier
+                .weight(1f)
+                .clip(RoundedCornerShape(8.dp))
+                .border(BorderStroke(0.8.dp, MossGreenRealTertiary), RoundedCornerShape(8.dp)),
+            singleLine = true,
+            keyboardOptions = KeyboardOptions(
+                imeAction = ImeAction.Done
+            ),
+            keyboardActions = KeyboardActions(
+                onDone = {
+                    keyboardController?.hide()
+                }
+            )
+        )
+        Spacer(modifier = Modifier.width(8.dp))
+
+        Column(
+            Modifier.padding(4.dp),
+            verticalArrangement = Arrangement.SpaceBetween,
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Text(text = "¿Observadas?", color = MossGreenPrimary)
+            TriStateCheckbox(
+                state = observationFilterState,
+                onClick = {
+                    onObservationFilterStateChange(
+                        when (observationFilterState) {
+                            ToggleableState.On -> ToggleableState.Indeterminate
+                            ToggleableState.Off -> ToggleableState.On
+                            ToggleableState.Indeterminate -> ToggleableState.Off
+                        }
+                    )
+                },
+                colors = CheckboxDefaults.colors(
+                    checkedColor = OrangeBird,
+                    uncheckedColor = MossGreenPrimary,
+                    checkmarkColor = Color.Black
+                )
+            )
         }
     }
 }

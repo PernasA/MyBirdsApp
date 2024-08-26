@@ -59,11 +59,15 @@ class GameGuessViewModel(
         } else {
             _newScore.value = 0
         }
-        moveToNextBird()
+        //moveToNextBird()
     }
 
-    private fun moveToNextBird() {
+    fun moveToNextBird() {
         _currentBird.value = dataBirdsList.random()
         loadOptionsForCurrentBird()
+    }
+
+    fun isCorrectOption(option: String): Boolean {
+        return option == currentBird.value?.name
     }
 }

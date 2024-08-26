@@ -15,7 +15,6 @@ import androidx.room.Room
 import com.pernasa.mybirdsapp.ui.theme.MyBirdsAppTheme
 import com.pernasa.mybirdsapp.models.room.RoomBirdsDatabase
 import com.pernasa.mybirdsapp.viewModels.BirdsListViewModel
-import com.pernasa.mybirdsapp.viewModels.GameGuessViewModel
 import com.pernasa.mybirdsapp.viewModels.ObservationRoutesViewModel
 
 class MainActivity : BaseActivity() {
@@ -69,13 +68,20 @@ class MainActivity : BaseActivity() {
         val dialogBuilder = AlertDialog.Builder(this)
         dialogBuilder.setTitle("¡Gracias por usar la aplicación!")
         dialogBuilder.setMessage("Si te gusta la aplicación, por favor califícala en Google Play. Me ayuda mucho a seguir mejorándola :)")
+
         dialogBuilder.setPositiveButton("Calificar") { _, _ ->
             openGooglePlayStore()
-            sharedPreferences.edit().putInt(launchCounter, 300).apply()
+            sharedPreferences.edit().putInt(launchCounter, 50).apply()
         }
+
         dialogBuilder.setNegativeButton("Más tarde") { dialog, _ ->
             dialog.dismiss()
-            sharedPreferences.edit().putInt(launchCounter, 20).apply()
+            sharedPreferences.edit().putInt(launchCounter, 15).apply()
+        }
+
+        dialogBuilder.setNeutralButton("Ya la valoré") { dialog, _ ->
+            dialog.dismiss()
+            sharedPreferences.edit().putInt(launchCounter, 900).apply()
         }
         dialogBuilder.create().show()
     }
