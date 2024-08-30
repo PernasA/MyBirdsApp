@@ -184,7 +184,8 @@ fun SearchRow(
                 disabledTextColor = SearchPlaceholderColor,
                 focusedTextColor = Color.Black,
                 unfocusedLeadingIconColor = Color.Black,
-                focusedLeadingIconColor = Color.Black
+                focusedLeadingIconColor = Color.Black,
+                unfocusedTextColor = Color.Black
             ),
             onValueChange = onSearchQueryChange,
             label = { Text(stringResource(R.string.search_by_name)) },

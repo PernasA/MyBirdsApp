@@ -89,7 +89,7 @@ class MainActivity : BaseActivity() {
     private fun openGooglePlayStore() {
         val appPackageName = packageName
         try {
-            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=$appPackageName"))) //todo: CUANDO ESTE PUBLICADA, CHECKEAR EL LINK A LA PLAY STORE
+            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=$appPackageName")))
         } catch (e: android.content.ActivityNotFoundException) {
             startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=$appPackageName")))
         }

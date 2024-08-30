@@ -29,8 +29,11 @@
     <string name="button_whatsapp">Contactar a Raúl</string>
     <string name="button_maps">Ver en\nGoogle Maps</string>
     <string name="button_linkedIn">Perfil LinkedIn</string>
+
     <string name="button_share_text">Te invito a descargar esta aplicación sobre aves.\n
-    Tiene mucho contenido interesante! En la Play Store aparece como Aves Merlo San Luis</string> #TODO
+    Tiene mucho contenido interesante! En la Play Store aparece como Aves de Merlo San Luis. El link es: \n
+    https://play.google.com/store/apps/details?id=com.pernasa.mybirdsapp</string>
+
     <string name="search_by_name">Buscar ave por nombre</string>
 
     #Buttons names
@@ -49,7 +52,7 @@
     <string name="bird_hight_location">Altimetría (msnm)</string>
     <string name="bird_full_description">Descripción general</string>
     <string name="tooltip_message_observation_routes">En esta sección se muestran\n
-    distintos recorridos para\nrealizar en la zona serrana\ny avistar distintos tipos de aves.</string>
+    varios recorridos para\nrealizar en la zona serrana\ny avistar distintos tipos de aves.</string>
 
     #About Us Page
     <string name="book_name">Libro Aves de las Sierras Centrales de Merlo</string>
