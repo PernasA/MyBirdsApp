@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.widget.Toast
+import androidx.annotation.DrawableRes
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
@@ -15,6 +16,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
@@ -22,8 +24,15 @@ import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ExtendedFloatingActionButton
 import androidx.compose.material3.Icon
+import androidx.compose.material3.ScrollableTabRow
+import androidx.compose.material3.Tab
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -57,7 +66,7 @@ fun AboutUsPage() {
             .padding(top = 5.dp, start = 9.dp, end = 9.dp, bottom = 5.dp)
     ) {
         Column (Modifier.weight(1F)) {
-            BookCard(Modifier.weight(1F))
+            BookCardWithTabs(Modifier.weight(1F))
             WriterCard(Modifier.weight(1F))
         }
         DeveloperCard()
@@ -65,7 +74,14 @@ fun AboutUsPage() {
 }
 
 @Composable
-fun BookCard(modifier: Modifier) {
+fun BookCardWithTabs(modifier: Modifier = Modifier) {
+    val tabTitles = listOf(
+        stringResource(R.string.tab_title_1_aves_sierras_centrales),
+        stringResource(R.string.tab_title_2_figuritas_bsas),
+        stringResource(R.string.tab_title_3_figuritas_cordoba)
+    )
+    var selectedTabIndex by remember { mutableIntStateOf(0) }
+
     Card(
         colors = CardDefaults.cardColors(
             containerColor = MossGreenSecondary,
@@ -78,61 +94,110 @@ fun BookCard(modifier: Modifier) {
             .fillMaxWidth()
             .padding(start = 4.dp, top = 15.dp, end = 4.dp, bottom = 6.dp)
     ) {
-        val scrollState = rememberScrollState()
-        Row(
-            Modifier
-                .fillMaxSize()
-                .verticalScroll(scrollState),
-            verticalAlignment = Alignment.CenterVertically
-        ) {
-            Image(
-                modifier = Modifier
-                    .width(130.dp)
-                    .padding(horizontal = 10.dp, vertical = 10.dp)
-                    .border(BorderStroke(0.8.dp, OrangeBird), RoundedCornerShape(8.dp))
-                    .clip(RoundedCornerShape(8.dp)),
-                painter = painterResource(R.drawable.util_book_front),
-                contentDescription = stringResource(R.string.image_book_description),
-                contentScale = ContentScale.Fit
-            )
-            Column(
-                Modifier
-                    .fillMaxWidth()
-                    .padding(start = 2.dp, end = 18.dp),
-                verticalArrangement = Arrangement.SpaceEvenly,
-                horizontalAlignment = Alignment.CenterHorizontally
+        Column {
+            ScrollableTabRow(
+                selectedTabIndex = selectedTabIndex,
+                edgePadding = 8.dp,
+                containerColor = MossGreenSecondary,
+                contentColor = Color.White
             ) {
-                Text(
-                    modifier = Modifier
-                        .padding(top = 10.dp)
-                        .fillMaxWidth(),
-                    text = stringResource(R.string.book_name),
-                    style = TextStyle(
-                        fontWeight = FontWeight.Bold,
-                        fontSize = TITLE_TEXT_SIZE,
-                        lineHeight = TITLE_TEXT_SIZE,
-                        textAlign = TextAlign.Center,
-                        color = Color.Black
+                tabTitles.forEachIndexed { index, title ->
+                    Tab(
+                        selected = selectedTabIndex == index,
+                        onClick = { selectedTabIndex = index },
+                        text = {
+                            Text(
+                                text = title,
+                                color = if (selectedTabIndex == index) OrangeBird else Color.White
+                            )
+                        }
                     )
+                }
+            }
+
+            when (selectedTabIndex) {
+                0 -> TabContent(
+                    imageRes = R.drawable.util_book_front,
+                    title = stringResource(R.string.book_name),
+                    description = stringResource(R.string.book_full_description),
+                    Modifier.width(110.dp)
                 )
-                Text(
-                    modifier = Modifier
-                        .padding(top = 10.dp)
-                        .fillMaxWidth(),
-                    text = stringResource(R.string.book_full_description),
-                    style = TextStyle(
-                        fontWeight = FontWeight.Normal,
-                        fontSize = SUBTITLE_TEXT_SIZE,
-                        lineHeight = SUBTITLE_TEXT_SIZE,
-                        textAlign = TextAlign.Justify,
-                        color = Color.Black,
-                        lineBreak = LineBreak.Paragraph
-                    )
+                1 -> TabContent(
+                    imageRes = R.drawable.util_book_figus_bsas,
+                    title = stringResource(R.string.book_name_figus_bsas),
+                    description = "",
+                    Modifier.fillMaxSize()
+                )
+                2 -> TabContent(
+                    imageRes = R.drawable.util_book_figus_center,
+                    title = stringResource(R.string.book_name_figus_centro),
+                    description = "",
+                    Modifier.fillMaxSize()
                 )
             }
         }
     }
 }
+
+@Composable
+fun TabContent(
+    @DrawableRes imageRes: Int,
+    title: String,
+    description: String,
+    modifier: Modifier = Modifier
+) {
+    Column(
+        Modifier
+            .fillMaxWidth()
+            .padding(12.dp),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Text(
+            text = title,
+            style = TextStyle(
+                fontWeight = FontWeight.Bold,
+                fontSize = TITLE_TEXT_SIZE,
+                lineHeight = TITLE_TEXT_SIZE,
+                textAlign = TextAlign.Center,
+                color = Color.Black,
+            ),
+            maxLines = 2
+        )
+        Row(
+            Modifier
+                .fillMaxSize()
+                .padding(top = 5.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Image(
+                modifier = modifier
+                    .border(BorderStroke(0.8.dp, OrangeBird), RoundedCornerShape(8.dp))
+                    .clip(RoundedCornerShape(8.dp)),
+                painter = painterResource(imageRes),
+                contentDescription = title,
+                contentScale = ContentScale.FillBounds
+            )
+            LazyColumn {
+                item {
+                    Text(
+                        modifier = Modifier.padding(start = 10.dp),
+                        text = description,
+                        style = TextStyle(
+                            fontWeight = FontWeight.Normal,
+                            fontSize = SUBTITLE_TEXT_SIZE,
+                            lineHeight = SUBTITLE_TEXT_SIZE,
+                            textAlign = TextAlign.Justify,
+                            color = Color.Black,
+                            lineBreak = LineBreak.Paragraph
+                        )
+                    )
+                }
+            }
+        }
+    }
+}
+
 
 @Composable
 fun WriterCard(modifier: Modifier) {

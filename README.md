@@ -52,7 +52,7 @@ Ing. Agustin Pernas - Desarrollador de la aplicación - [Perfil de LinkedIn](htt
 
 ### Agradecimientos
 
-Raúl Balla, escritor del libro que me inspiró a desarrollar esta aplicación.
+Raúl Balla, autor del libro que me inspiró a desarrollar esta aplicación.
 
 ### Licencia
 

@@ -19,7 +19,7 @@
     <string name="back_button">Botón flecha atrás</string>
     <string name="image_bird_description">Imagen del pájaro mencionado</string>
     <string name="image_book_description">Tapa del libro</string>
-    <string name="image_writer_description">Foto del escritor del libro</string>
+    <string name="image_writer_description">Foto del autor del libro</string>
     <string name="image_ruler_description">Imagen de regla</string>
     <string name="image_mountain_description">Imagen de montaña</string>
     <string name="image_route_description">Imagen de la ruta de observación mencionada</string>
@@ -55,10 +55,19 @@
     varios recorridos para\nrealizar en la zona serrana\ny avistar distintos tipos de aves.</string>
 
     #About Us Page
-    <string name="book_name">Libro Aves de las Sierras Centrales de Merlo</string>
-    <string name="book_full_description">Esta guía facilita la identificación de aves silvestres en las Sierras Centrales de Argentina, en Córdoba y San Luis. Invita a disfrutar de la naturaleza con un sistema novedoso que ayuda a recorrer circuitos predeterminados, haciendo de la observación y fotografía de aves una actividad agradable y gratificante.</string>
+    <string name="book_name">Libro Aves de las Sierras Centrales de Argentina</string>
+    <string name="book_name_figus_bsas">Libro de Figuritas de Aves de Buenos Aires</string>
+    <string name="book_name_figus_centro">Libro de Figuritas de Aves del Centro de Argentina</string>
+    <string name="book_full_description">Esta guía facilita la identificación de aves en las Sierras Centrales de Argentina, en Córdoba y San Luis. Invita a disfrutar de la naturaleza con un sistema que ayuda a recorrer circuitos, haciendo de la observación y fotografía de aves una actividad agradable y gratificante.</string>
+    <string name="book_full_description_figus_bsas">180 figuritas de aves de Buenos Aires en planchas sticker a todo color, para pegar en el interior del libro que está en blanco y negro, con el nombre y características de cada una de las aves, de forma que puedan identificarlas y así nutrirse del amor por la naturaleza en su observación.</string>
+    <string name="book_full_description_figus_centro">180 figuritas de aves del centro de Argentina en planchas sticker a todo color, para pegar en el interior del libro que está en blanco y negro, con el nombre y características de cada una de las aves, de forma que puedan identificarlas y así nutrirse del amor por la naturaleza en su observación.</string>
 
-    <string name="writer_name">Escritor Raúl Balla</string>
+    #Tab indexes
+    <string name="tab_title_1_aves_sierras_centrales">Libro guía de aves</string>
+    <string name="tab_title_2_figuritas_bsas">Libro figuritas Buenos Aires</string>
+    <string name="tab_title_3_figuritas_cordoba">Libro figuritas centro Argentina</string>
+
+    <string name="writer_name">Autor Raúl Balla</string>
     <string name="writer_full_description">Argentino, nació el 29 de agosto de 1956 en Noetinger, Córdoba. Desde el 2008 reside en Merlo, San Luis. Participa activamente en el COA Chiguanco en la localidad y permanece vinculado a sus amigos del COA Ñacurutú de General Roca. Colabora con gran empeño en su comunidad para difundir el conocimiento y cariño por las aves.</string>
 
     <string name="developer_name">Programador\nAgustin Pernas</string>

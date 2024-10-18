@@ -76,10 +76,8 @@ fun BirdsListPage(
     onBirdClick: (Bird) -> Unit
 ) {
     var searchQuery by rememberSaveable { mutableStateOf("") }
-    var selectedHeightRange by rememberSaveable {
-        mutableStateOf(listOf(
-            0..15,15..30,30..50,50..1000
-        ))
+    var selectedHeightRanges by rememberSaveable {
+        mutableStateOf(listOf<Int>())
     }
     var selectedFrequency by rememberSaveable {
         mutableStateOf(listOf(4,3,2,1))
@@ -102,8 +100,18 @@ fun BirdsListPage(
             ToggleableState.Off -> true
         }
 
+        val heightMatches = selectedHeightRanges.isEmpty() || selectedHeightRanges.any { selectedHeight ->
+            when (selectedHeight) {
+                15 -> bird.height in 0..15
+                30 -> bird.height in 15..30
+                50 -> bird.height in 30..50
+                1000 -> bird.height > 50
+                else -> false
+            }
+        }
+
         normalizedBirdName.contains(normalizedSearchQuery, ignoreCase = true) &&
-                (selectedHeightRange.isEmpty() || selectedHeightRange.any { bird.height in it }) &&
+                heightMatches &&
                 (selectedFrequency.isEmpty() || bird.frequency in selectedFrequency) &&
                 matchesObservation
     }
@@ -126,7 +134,7 @@ fun BirdsListPage(
 
         item {
             FiltersRow(
-                onHeightSelected = { selectedHeightRange = it },
+                onHeightSelected = { selectedHeightRanges = it },
                 onFrequencySelected = { selectedFrequency = it }
             )
         }
@@ -234,10 +242,10 @@ fun SearchRow(
 
 @Composable
 fun FiltersRow(
-    onHeightSelected: (List<IntRange>) -> Unit,
+    onHeightSelected: (List<Int>) -> Unit,
     onFrequencySelected: (List<Int>) -> Unit
 ) {
-    var selectedHeightRanges by rememberSaveable { mutableStateOf<List<IntRange>>(emptyList()) }
+    var selectedHeightRanges by rememberSaveable { mutableStateOf<List<Int>>(emptyList()) }
     var selectedFrequencies by rememberSaveable { mutableStateOf<List<Int>>(emptyList()) }
 
     Column(modifier = Modifier.padding(vertical = 4.dp)) {
@@ -250,10 +258,10 @@ fun FiltersRow(
             DropdownMenuFilter(
                 label = "Medida (cm)",
                 options = listOf(
-                    "0-15 cm" to 0..15,
-                    "15-30 cm" to 15..30,
-                    "30-50 cm" to 30..50,
-                    "50 cm o más" to 50..1000
+                    "0-15 cm" to 15,
+                    "15-30 cm" to 30,
+                    "30-50 cm" to 50,
+                    "50 cm o más" to 1000
                 ),
                 selectedOptions = selectedHeightRanges,
                 onSelectedChange = {
