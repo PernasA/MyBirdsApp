@@ -126,17 +126,18 @@ fun HomePageInit(
                 .align(Alignment.CenterHorizontally)
                 .padding(horizontal = 8.dp)
         )
-        Image(
-            painter = painterResource(id = R.drawable.b88_zorzal_chiguanco),
-            contentDescription = stringResource(R.string.main_page_image_description),
-            modifier = Modifier
+
+        ZoomableImage(
+            R.drawable.b195_zorzal_chiguanco,
+            Modifier
                 .size(300.dp)
                 .padding(top = 20.dp)
                 .clip(RoundedCornerShape(32.dp))
                 .shadow(100.dp, RoundedCornerShape(32.dp))
                 .border(BorderStroke(1.dp, OrangeBird), RoundedCornerShape(32.dp)),
-            contentScale = ContentScale.Crop
+            ContentScale.Crop
         )
+
         Column (
             Modifier
                 .width(250.dp)

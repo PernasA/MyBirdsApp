@@ -83,17 +83,16 @@ fun GameGuessPage(gameGuessViewModel: GameGuessViewModel) {
 
                 val currentBird by gameGuessViewModel.currentBird.collectAsState()
 
-                currentBird?.imageResId?.let { painterResource(id = it) }?.let {
-                    Image(
-                        painter = it,
-                        contentDescription = stringResource(R.string.main_page_image_description),
-                        modifier = Modifier
+                currentBird?.imageResId?.let {
+                    ZoomableImage(
+                        it,
+                        Modifier
                             .size(330.dp)
                             .padding(top = 20.dp)
                             .clip(RoundedCornerShape(32.dp))
                             .shadow(100.dp, RoundedCornerShape(32.dp))
                             .border(BorderStroke(2.dp, OrangeBird), RoundedCornerShape(32.dp)),
-                        contentScale = ContentScale.Crop
+                        ContentScale.Crop
                     )
                 }
                 ColumnOptions(gameGuessViewModel)

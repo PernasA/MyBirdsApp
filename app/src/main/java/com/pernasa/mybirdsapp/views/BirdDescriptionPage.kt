@@ -98,7 +98,7 @@ fun RowNames(bird: Bird) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .height(90.dp)
+            .height(95.dp)
     ) {
         Text(
             modifier = Modifier
@@ -147,16 +147,16 @@ fun RowNames(bird: Bird) {
             )
         }
     }
-    Image(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(top = 20.dp, start = 5.dp, end = 5.dp)
-                .border(BorderStroke(0.8.dp, OrangeBird), RoundedCornerShape(8.dp))
-                .clip(RoundedCornerShape(8.dp)),
-            painter = painterResource(id = bird.imageResId),
-            contentDescription = stringResource(R.string.image_bird_description),
-            contentScale = ContentScale.FillWidth
-        )
+
+    ZoomableImage(
+        bird.imageResId,
+        Modifier
+            .fillMaxWidth()
+            .padding(top = 20.dp, start = 5.dp, end = 5.dp)
+            .border(BorderStroke(0.8.dp, OrangeBird), RoundedCornerShape(8.dp))
+            .clip(RoundedCornerShape(8.dp)),
+        ContentScale.FillWidth
+    )
 }
 
 @Composable

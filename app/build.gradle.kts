@@ -65,6 +65,7 @@ dependencies {
     implementation(libs.firebase.crashlytics.buildtools)
     implementation(libs.gson)
     implementation(libs.androidx.runtime.livedata)
+    implementation(libs.androidx.foundation.android)
     testImplementation(libs.junit)
     testImplementation(libs.mockk)
     testImplementation(libs.androidx.core.testing)

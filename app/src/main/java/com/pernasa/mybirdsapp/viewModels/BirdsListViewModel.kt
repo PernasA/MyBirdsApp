@@ -75,6 +75,20 @@ class BirdsListViewModel(
                 } else {
                     val quantityBirdsWereObserved = _listObservedBirds.value.count { it.wasObserved }
                     GlobalCounterBirdsObserved.setCounter(quantityBirdsWereObserved)
+
+                    if (_listObservedBirds.value.size < dataBirdsList.size) {
+                        // Filtrar los nuevos pájaros que no están en la base de datos
+                        val existingBirdIds = _listObservedBirds.value.map { it.id }.toSet()
+                        val newBirds = dataBirdsList.filter { bird -> bird.id !in existingBirdIds }
+
+                        // Convertir los nuevos pájaros a RoomBird para insertarlos
+                        val newRoomBirds = newBirds.map { bird ->
+                            RoomBird(id = bird.id, wasObserved = false)
+                        }
+
+                        // Insertar los nuevos pájaros en la base de datos
+                        roomBirdsDao.insertAll(newRoomBirds)
+                    }
                 }
             }
         }
