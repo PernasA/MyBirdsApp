@@ -155,7 +155,7 @@
     "height": 35,
     "height_location": 1,
     "frequency": 2,
-    "scientific_name": "Bubulcus ibis",
+    "scientific_name": "Ardea ibis",
     "english_name": "Cattle Egret",
     "description": "Plumaje de reposo sexual enteramente blanco. Iris amarillo, cuello más corto que otras garzas. Pico robusto y grueso, amarillo anaranjado. Patas negro verdosas con dedos negruzcos. Juvenil: pico y patas negras. Comportamiento: siempre en grupos y bandadas, bastante caminadora. Alimentación: captura insectos, si logra atrapar una rana o lagartija no la desaprovecha. Hábitat: en campos acompañando al ganado; también en humedales y represas; posa en árboles y postes. Comentario: en periodo reproductivo aparecen plumas canela en la corona, nuca, pecho y dorso; sus patas se tornan amarillo rojizo. Esta garza (originaria de África) apareció en el país a principio de la década del 70 y se distribuyó ampliamente por todo el territorio."
   },
@@ -1265,8 +1265,8 @@
     "height": 16,
     "height_location": 23,
     "frequency": 3,
-    "scientific_name": "Asthenes sclateri",
-    "english_name": "Puna Canastero",
+    "scientific_name": "Asthenes wyatti",
+    "english_name": "Streak-backed Canastero",
     "description": "Notable mancha gular anaranjada. Cabeza parda, estriada de negro; ceja blancuzca; lados de la cara y cuello grisáceo. Dorsal pardo claro estriado de negro, muy contrastado; alas pardas con banda canela. Ventral gris ocráceo. Cola larga parda oscura, canela en la punta de las plumas externas, por debajo manchas blancuzcas, visibles en abanico cuando se asienta. Pico negruzco, mitad basal de la mandíbula córneo. Patas parduzcas. Juvenil: color apagado, mancha gular tenue o ausente. Comportamiento: solitario, muy terrícola. Alimentación: insectívoro. Hábitat: entre rocas, grietas y pastizales de la zona alta de la sierra de Comechingones. Comentario: muy diferente a otros Asthenes (Canasteros). Posee estridente canto que ayuda a detectar su ubicación."
   },
   {
@@ -1467,7 +1467,7 @@
     "frequency": 2,
     "scientific_name": "Serpophaga subcristata",
     "english_name": "White-crested Tyrannulet",
-    "description": "Muy pequeño. Cabeza gris plomiza, corona blanquecina poco visible, a veces la eriza en forma de cresta; leve ceja blanquecina. Dorso gris con tintes oliva; alas parduzcas con filetes blanquecinos. Garganta y pecho blanquecino. Vientre amarillento. Cola parda oscura con ribetes blanquecinos, por debajo amarillenta. Pico negro, corto. Patas negras. Comportamiento: generalmente solo, oculto. Alimentación: pequeños insectos. Hábitat: bosques nativos, áreas rurales y zona urbana. Comentario: muy movedizo, recorre constantemente el follaje."
+    "description": "Muy pequeño. Cabeza gris plomiza, corona blanquecina poco visible, a veces la eriza en forma de cresta; leve ceja blanquecina. Dorso gris con tintes oliva; alas parduzcas con filetes blanquecinos. Garganta blanquecina. Vientre amarillento. Cola parda oscura con ribetes blanquecinos, algo larga. Pico negro, corto. Patas negras. Comportamiento: generalmente solo, oculto. Alimentación: pequeños insectos. Hábitat: bosques nativos, áreas rurales y zona urbana. Comentario: muy movedizo, recorre el follaje. Muy similar al Piojito Trinador (Serphopaga griseicapilla)."
   },
   {
     "id": 148,
@@ -1874,7 +1874,7 @@
     "height": 10,
     "height_location": 12,
     "frequency": 3,
-    "scientific_name": "Troglodytes aedon",
+    "scientific_name": "Troglodytes musculus",
     "english_name": "House Wren",
     "description": "Pequeña. Cabeza gris parduzco; periocular blanquecino. Dorsal pardo oscuro con estrías ocráceas; alas y cola castaña con barras negruzcas. Garganta blanquecina; ventral pardo claro. Pico fino, largo y oscuro, base blanco-amarillenta. Patas negruzcas. Comportamiento: solitaria y en pareja. Confiada, muy activa, vuelo corto. Alimentación: insectos y gusanos pequeños. Hábitat: ambientes urbanos y rurales, bosques, montes y quebradas. Comentario: cercana al hombre, muy vista, también conocida con el nombre de \"Ratonera” o “Pititorra\"."
   },
@@ -2146,7 +2146,7 @@
     "frequency": 3,
     "scientific_name": "Poospiza whitii",
     "english_name": "Black-and-Chesnut Warbling-Finch",
-    "description": "Cara negra a modo de antifaz; corona negruzca; ancha ceja blanca finaliza castaña; notable línea malar blanca. Dorso negruzco; alas pardas oscuras, cubiertas grises. Garganta, pecho y flancos castaños; abdomen blanco. Cola parda oscura, plumas externas con ápice blanco. Juvenil: dorso, alas y cola parduzco, ventral jaspeado de ocráceo. Comportamiento: en pareja o en grupos, vuelo con aleteo intermitente, inquieto, bastante oculto. Alimentación: semillas, brotes e insectos. Hábitat: bosques nativos serranos, áreas rurales y periferia de poblados. Comentario: merodea a media y baja altura en la zona más arbustiva del monte."
+    "description": "Cara negra a modo de antifaz; corona negruzca; ancha ceja blanca finaliza castaña; notable línea malar blanca. Dorso negruzco; alas pardas oscuras, cubiertas grises. Garganta, pecho y flancos castaños; abdomen blanco. Cola parda oscura, plumas externas con ápice blanco. Juvenil: dorso, alas y cola parduzco, ventral jaspeado de ocráceo. Comportamiento: en pareja o en grupos, vuelo con aleteo intermitente, inquieto, bastante oculto. Alimentación: semillas, brotes e insectos. Hábitat: bosques nativos serranos, áreas rurales y periferia de poblados. Comentario: merodea a media y baja altura en la zona más arbustiva del monte. Visitar este interesante link: https://erreunovip.blogspot.com/p/nidos.html"
   },
   {
     "id": 216,

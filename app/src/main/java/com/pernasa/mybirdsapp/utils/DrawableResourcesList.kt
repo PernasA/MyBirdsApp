@@ -53,7 +53,7 @@ object DrawableResourcesList {
         R.drawable.b138_piojito_silbon, R.drawable.b139_mosqueta_estriada, R.drawable.b140_mosqueta_ojo_dorado, //138 139 140
         R.drawable.b141_fiofio_silbon, R.drawable.b142_fiofio_pico_corto, R.drawable.b143_suiriri_gris, //141 142 143
         R.drawable.b144_sobrepue, R.drawable.b145_piojito_gris, R.drawable.b146_piojito_vientre, //144 145 146
-        R.drawable.icon_bird, R.drawable.b148_piojito_trinador, R.drawable.b149_doradito_limon, //147 148 149
+        R.drawable.b147_piojito_tiquitiqui, R.drawable.b148_piojito_trinador, R.drawable.b149_doradito_limon, //147 148 149
         R.drawable.b150_doradito_olivaceo, R.drawable.b151_tachuri_sietecolores, R.drawable.b152_churrinche, //150 151 152
         R.drawable.b153_barullero, R.drawable.b154_cachudito_pico_amarillo, R.drawable.b155_cachudito_pico_negro, //153 154 155
         R.drawable.b156_calandri, R.drawable.b157_benteveo_rayado, R.drawable.b158_benteveo, //156 157 158
@@ -85,7 +85,7 @@ object DrawableResourcesList {
         R.drawable.b234_boyerito, R.drawable.b235_tordo_pico_corto, R.drawable.b236_tordo_renegrido, //234 235 236
         R.drawable.b237_tordo_musico, R.drawable.b238_varillero_congo, R.drawable.b239_varillero_ala_amarilla, //237 238 239
         R.drawable.b240_loica_comun, R.drawable.b241_pecho_colorado, R.drawable.b242_cabecita_negra, //240 241 242
-        R.drawable.icon_bird // 243
+        R.drawable.b243_gorrion // 243
         )
 
     val drawableListObservationRoutes = listOf(
