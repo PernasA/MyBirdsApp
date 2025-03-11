@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.pernasa.mybirdsapp"
+    namespace = "com.pernasa.varillasbirdsapp"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.pernasa.mybirdsapp"
+        applicationId = "com.pernasa.varillasbirdsapp"
         minSdk = 21
         targetSdk = 35
         versionCode = 5

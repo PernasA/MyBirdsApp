@@ -3,7 +3,7 @@
     <string name="title_main_page_appbar">Menu</string>
     <string name="title_main_page">AVES</string>
     <string name="subtitle_main_page">De las Sierras Centrales\nde Argentina</string>
-    <string name="second_subtitle_main_page">con centro en Villa de Merlo - San Luis</string>
+    <string name="second_subtitle_main_page">con centro Las Varillas - Córdoba</string>
     <string name="birds_page_title">Lista de Aves</string>
     <string name="bird_description_page_title">Información Detallada</string>
     <string name="observation_routes_page_title">Recorridos</string>
@@ -12,7 +12,7 @@
     <string name="about_us_page_title">Créditos</string>
     <string name="guess_bird_title">¡Adivina el ave!</string>
 
-    <string name="app_name">Aves de Merlo</string>
+    <string name="app_name">Aves de Las Varillas</string>
 
     #Images descriptions
     <string name="main_page_image_description">Imagen de aves</string>
@@ -31,8 +31,8 @@
     <string name="button_linkedIn">Perfil LinkedIn</string>
 
     <string name="button_share_text">Te invito a descargar esta aplicación sobre aves.\n
-    Tiene mucho contenido interesante! En la Play Store aparece como Aves de Merlo San Luis. El link es: \n
-    https://play.google.com/store/apps/details?id=com.pernasa.mybirdsapp</string>
+    Tiene mucho contenido interesante! En la Play Store aparece como Aves de Las Varillas San Luis. El link es: \n
+    https://play.google.com/store/apps/details?id=com.pernasa.varillasbirdsapp</string>
 
     <string name="search_by_name">Buscar ave por nombre</string>
 

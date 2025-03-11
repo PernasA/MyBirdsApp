@@ -10,12 +10,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/orange_bird_app_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyBirdsApp"
+        android:theme="@style/Theme.VarillasBirdsApp"
         tools:targetApi="31">
         <activity
-            android:name="com.pernasa.mybirdsapp.main.MainActivity"
+            android:name="com.pernasa.varillasbirdsapp.main.MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.MyBirdsApp">
+            android:theme="@style/Theme.VarillasBirdsApp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

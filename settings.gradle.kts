@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MyBirdsApp"
+rootProject.name = "VarillasBirdsApp"
 include(":app")
