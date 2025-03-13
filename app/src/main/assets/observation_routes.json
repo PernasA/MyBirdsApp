@@ -1,161 +1,111 @@
 [
   {
     "id": 1,
-    "name": "Damiana Vega",
-    "description": "Nombre alusivo a una antigua pobladora del lugar. Zona de faldeo serrano entre los 800 y los 1400 msnm. Predomina el monte autóctono, serranía y cauces de arroyos. Según épocas del año, encontraremos: Durmilí, Gallito de Collar, Sietevestidos Serrano, Arañero Caja Negra, Carpintero Negro, Carpintero Lomo Blanco, entre muchas otras.",
+    "name": "Cuatro Bocas",
+    "description": "",
     "coordinates_list": [
       {
-        "x": -32.355550,
-        "y": -64.960813
-      },
-      {
-        "x": -32.35663,
-        "y": -64.95984
-      },
-      {
-        "x": -32.358269,
-        "y": -64.966501
-      },
-      {
-        "x": -32.355853,
-        "y": -64.964201
+        "x": -31.816889697933,
+        "y": -62.66507190677737
       }
     ]
   },
   {
     "id": 2,
-    "name": "Filo Serrano y arroyos",
-    "description": "Algo más de 54 especies pueden encontrar en este circuito que registra variadas altimetrías en la sierra de Comechingones; paredes rocosas, quebradas, monte de tabaquillos, pastizales, pequeños humedales y arroyos comforman un ambiente en donde habitan Remolineras, Dormilonas, Cachirlas, Yales, Canaste Pálido, Espartillero, Ratona Aperdizada, Loica, Piquitodeoro, Gaucho Serrano, Águila Mora, Aguilucho Ñanco y además contemplar el vuelo del majestuoso Cóndor.",
+    "name": "Planta Tratamiento Las Varillas",
+    "description": "",
     "coordinates_list": [
       {
-        "x": -32.362111,
-        "y": -64.949042
-      },
-      {
-        "x": -32.367101,
-        "y": -64.937913
-      },
-      {
-        "x": -32.371061,
-        "y": -64.938331
-      },
-      {
-        "x": -32.378948,
-        "y": -64.924635
+        "x": -31.8945594539866,
+        "y": -62.70370995249563
       }
     ]
   },
   {
     "id": 3,
-    "name": "Monte del Whitii",
-    "description": "Su nombre está dado por la abundancia de Poospiza Whitii - Sietevestidos Serrano. Es un circuito periurbano con monte nativo, allí pueden observar Poospizas, Zorzales, Brasita de Fuego, Caburé Chico, Durmilí, Picaflor Cometa, Halcón Plomizo, Naranjero, Reinamora Grande, Pepitero de Collar, Pepitero Chico, Gallito de Collar, Gallito Copetón, Carpintero Lomo Blanco, Inambú Silbón entre otras. \nhttps://erreunovip.blogspot.com/p/nidos.html",
+    "name": "Estancia Las Varillas",
+    "description": "",
     "coordinates_list": [
       {
-        "x": -32.356109,
-        "y": -65.004680
-      },
-      {
-        "x": -32.365138,
-        "y": -65.005033
-      },
-      {
-        "x": -32.364224,
-        "y": -64.998519
-      },
-      {
-        "x": -32.366318,
-        "y": -65.007826
+        "x": -31.925065953111176,
+        "y": -62.71231254878608
       }
     ]
   },
   {
     "id": 4,
-    "name": "Bajo de Veliz",
-    "description": "Depresión angosta de 12 km recorrida de norte a sur por el río Cabeza de Novillo, con monte autóctono, serranía y cursos de agua. Podemos encontrar: Águila Coronada, Monjita Blanca, Reinamora Grande, Soldadito, Viudita Chaqueña, Pato Barcino, Garzas, Pepiteros, Pijuies, Durmilí, Martín Pescador Chico, Cuchillo Canela, Carpintero del Cardón, Carpintero Negro, entre muchas más.",
+    "name": "Camino Rural El Fortín",
+    "description": "",
     "coordinates_list": [
       {
-        "x": -32.321355,
-        "y": -65.408250
-      },
-      {
-        "x": -32.319570,
-        "y": -65.412065
-      },
-      {
-        "x": -32.282876,
-        "y": -65.406938
-      },
-      {
-        "x": -32.274266,
-        "y": -65.404655
+        "x": ,
+        "y":
       }
     ]
   },
   {
     "id": 5,
-    "name": "Carpintería",
-    "description": "El monte nativo con mollares y talas representan esta zona, ambiente propicio para encontrar Carpinteros, Fueguero, Rey del Bosque, Coludito Copetón, Juan Chiviro, Reinamora, Zorzales, Arañeros, Monteritas, Yerutí, Curutié Blanco, Chincheros, Piojitos, Choca Corona Negruzca, Anambé Común, entre muchas otras.",
+    "name": "Camino Tortelli Los Ucles",
+    "description": "",
     "coordinates_list": [
       {
-        "x": -32.372538,
-        "y": -64.990212
-      },
-      {
-        "x": -32.380131,
-        "y": -64.976098
-      },
-      {
-        "x": -32.400475,
-        "y": -64.978194
-      },
-      {
-        "x": -32.413464,
-        "y": -64.978584
-      },
-      {
-        "x": -32.413999,
-        "y": -64.972877
+        "x": -31.980576048033026,
+        "y": -62.21132995946421
       }
     ]
   },
   {
     "id": 6,
-    "name": "Lago Piscu Yaco",
-    "description": "También se analizan sus alrededores como Reserva Natural Quebrada Villa Helena y San Miguel: montes nativos, serranías y pequeño lago predominan esta zona, representado un área con múltiples ambientes por lo que las especies a observar son innumerables.",
+    "name": "Laguna Blaizot Pozo del Molle",
+    "description": "",
     "coordinates_list": [
       {
-        "x": -32.507247,
-        "y": -64.968149
-      },
-      {
-        "x": -32.555192,
-        "y": -64.961560
+        "x": ,
+        "y":
       }
     ]
   },
   {
     "id": 7,
-    "name": "Boca del Río",
-    "description": "Represa construida en 2012, ocupa 120 ha en la cuenca del arroyo Carrizalito. Ideal para navegar con bote a remo y observar una variedad de aves acuáticas. Entre árboles nativos, cortaderas y juncos se encuentran Leñateros, Loicas, Varillero Ala Amarilla, Pecho Colorado, Doradito Común, Tachuri, Sietecolores, Junquero, Verdón y Martín Pescador Chico, entre otras.",
+    "name": "Laguna Trinchera",
+    "description": "",
     "coordinates_list": [
       {
-        "x": -33.008827,
-        "y": -65.041004
-      },
-      {
-        "x": -33.006885,
-        "y": -65.064333
+        "x": -32.086545406153554,
+        "y": -62.87138320140485
       }
     ]
   },
   {
     "id": 8,
-    "name": "Reserva Don Félix y Sacha Juan",
-    "description": "Reserva floro faunística privada. Podrá conocer gran variedad de árboles autóctonos y las aves que allí habitan. Visitas guiadas gratuitas. Valor de la entrada: llevar una piedra. Contacto previo al teléfono: 011-4972-2388.",
+    "name": "Camino Rural Alvarez",
+    "description": "",
     "coordinates_list": [
       {
-        "x": -32.330091,
-        "y": -65.055696
+        "x": -31.83416999191379,
+        "y": -62.79057037713113
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Centro Cívico y Paseo del Caminante",
+    "description": "",
+    "coordinates_list": [
+      {
+        "x": -31.860629600537685,
+        "y": -62.70542273893791
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Monte Durando",
+    "description": "",
+    "coordinates_list": [
+      {
+        "x": -31.65372969253305,
+        "y": -62.73549392454902
       }
     ]
   }
