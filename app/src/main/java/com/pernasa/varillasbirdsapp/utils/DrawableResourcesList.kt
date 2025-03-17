@@ -89,8 +89,9 @@ object DrawableResourcesList {
         )
 
     val drawableListObservationRoutes = listOf(
-        R.drawable.m1_damiana_vega, R.drawable.m2_filo_serrano, // 1 2
-        R.drawable.m3_monte_whitii, R.drawable.m4_bajo_de_veliz, R.drawable.m5_carpinteria, // 3 4 5
-        R.drawable.m6_dique_piscu_yaco, R.drawable.m7_boca_de_rio, R.drawable.m8_reserva_don_felix_sacha_juan, // 6 7 8
+        R.drawable.r1recorrido, R.drawable.r2recorrido, // 1 2
+        R.drawable.r3recorrido, R.drawable.r4recorrido, R.drawable.r5recorrido, // 3 4 5
+        R.drawable.r6recorrido, R.drawable.r7recorrido, R.drawable.r8recorrido, // 6 7 8
+        R.drawable.r9recorrido, R.drawable.r10recorrido,
     )
 }

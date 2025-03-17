@@ -115,37 +115,18 @@ fun RowNames(bird: Bird) {
                 lineBreak = LineBreak.Heading
             )
         )
-        Column (
-            modifier = Modifier
-                .weight(1F)
-                .fillMaxHeight()
-                .align(Alignment.CenterVertically),
-            horizontalAlignment = Alignment.End
-        ) {
-            Text(
-                text = bird.scientificName,
-                style = TextStyle(
-                    fontWeight = FontWeight.Bold,
-                    fontSize = TITLE_TEXT_SIZE,
-                    lineHeight = TITLE_TEXT_SIZE,
-                    shadow = Shadow(OrangeBird, blurRadius = 1.0f),
-                    textAlign = TextAlign.Right,
-                    color = Color.White,
-                    fontStyle = FontStyle.Italic
-                )
+        Text(
+            text = bird.scientificName,
+            style = TextStyle(
+                fontWeight = FontWeight.Bold,
+                fontSize = TITLE_TEXT_SIZE,
+                lineHeight = TITLE_TEXT_SIZE,
+                shadow = Shadow(OrangeBird, blurRadius = 1.0f),
+                textAlign = TextAlign.Right,
+                color = Color.White,
+                fontStyle = FontStyle.Italic
             )
-            Text(
-                text = bird.englishName,
-                style = TextStyle(
-                    fontWeight = FontWeight.Bold,
-                    fontSize = TITLE_TEXT_SIZE,
-                    lineHeight = TITLE_TEXT_SIZE,
-                    shadow = Shadow(OrangeBird, blurRadius = 1.0f),
-                    textAlign = TextAlign.Right,
-                    color = Color.Yellow
-                )
-            )
-        }
+        )
     }
 
     ZoomableImage(
