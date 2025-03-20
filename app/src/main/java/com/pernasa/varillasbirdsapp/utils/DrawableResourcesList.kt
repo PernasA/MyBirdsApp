@@ -4,13 +4,13 @@ import com.pernasa.varillasbirdsapp.R
 
 object DrawableResourcesList {
     val drawableListBirds = listOf(
-        R.drawable.b1_niandu, R.drawable.b2_tataupa_montaraz, // 1 2
+        R.drawable.b1_niandu, R.drawable.b1_tataupa_montaraz, // 1 2
         R.drawable.b3_martineta_comun_copetona,  R.drawable.b4_inambu_montaraz_, R.drawable.b5_inambu_silbon_rb_d, // 3 4 5
         R.drawable.b6_inambu_comun_campestre, R.drawable.b7_maca_grande, R.drawable.b8_maca_pico_grueso,// 6 7 8
         R.drawable.b9_maca_comun,  R.drawable.b10__maca_gris, R.drawable.b11_bigua, // 9 10 11
         R.drawable.b12_garza_mora,  R.drawable.b13_mirasol, R.drawable.b14_garza_blanca, // 12 13 14
         R.drawable.b15_garcita_blanca,  R.drawable.b16_garcita_bueyera, R.drawable.b17_chiflon_rb_d, // 15 16 17
-        R.drawable.b18_garcita_azulada,  R.drawable.b19_garza_br, R.drawable.b20_cuervillo_de_caniada, // 18 19 20
+        R.drawable.b18_garcita_azulada,  R.drawable.b19_garza_br, R.drawable.b76_cuervillo_de_caniada, // 18 19 20
         R.drawable.b21_espatula_rosada,  R.drawable.b22_tuyuyu, R.drawable.b23_ciguenia_americana, // 21 22 23
         R.drawable.b24_condor_andino,  R.drawable.b25_jote_cabeza_colorada, R.drawable.b26_jote_cabeza_negra, // 24 25 26
         R.drawable.b27_flamenco_austral_,  R.drawable.b28_siriri_pampa, R.drawable.b29_coscoroba, // 27 28 29
@@ -24,7 +24,7 @@ object DrawableResourcesList {
         R.drawable.b51_halconcito_gris_,  R.drawable.b52_halcon_peregrino, R.drawable.b53_halcon_plomizo,// 51 52 53
         R.drawable.b54_halconcito_colorado,  R.drawable.b55_chiricote_, R.drawable.b56_gallineta_comun_picopintado,// 54 55 56
         R.drawable.b57_gallineta_overa,  R.drawable.b58_pollona_pintada_, R.drawable.b59_pollona_negra,// 57 58 59
-        R.drawable.b60_gallareta_ligas_rojas,  R.drawable.b61_gallareta_chica_, R.drawable.b62_gallareta_escudete_rojo,// 60 61 62
+        R.drawable.b60_gallareta_ligas_rojas,  R.drawable.b61_gallareta_chica_, R.drawable.b44_gallareta_escudete_rojo,// 60 61 62
         R.drawable.b63_carau_,  R.drawable.b64_jacana, R.drawable.b65_tero_real, //63 64 65
         R.drawable.b66_tero,  R.drawable.b67_pitotoy_grande, R.drawable.b68_pitotoy_chico_,// 66 67 68
         R.drawable.b69_becasinae_banado_,  R.drawable.b70_gaviota_capucho_cafe, R.drawable.b71_palomadomestica,// 69 70 71
@@ -34,7 +34,7 @@ object DrawableResourcesList {
         R.drawable.b81_loro_hablador,  R.drawable.b82_cuclillo_canela, R.drawable.b83_cuclillo_chico_,// 81 82 83
         R.drawable.b84_pirincho,  R.drawable.b85_crespin, R.drawable.b86_evivas_lechuza,// 84 85 86
         R.drawable.b87_tucuquere_i_h,  R.drawable.b88_alilicucu_comun, R.drawable.b89_cabure,// 87 88 89
-        R.drawable.b90_lechucita_vizcachera,  R.drawable.b91_lechuzon_orejudo_, R.drawable.b92_lechuzon_de_campo_,// 90 91 92
+        R.drawable.b90_lechucita_vizcachera,  R.drawable.b103_lechuzon_orejudo_, R.drawable.b92_lechuzon_de_campo_,// 90 91 92
         R.drawable.b93_atajacaminos_nanarca,  R.drawable.b94_evivas_atajacaminos, R.drawable.b95_atajacaminos_tijera,// 93 94 95
         R.drawable.b96_vencejo_de_collar,  R.drawable.b97_vencejo_blanco, R.drawable.b98_picaflore_baijo_,// 96 97 98
         R.drawable.b99_picaflor_comun_verde,  R.drawable.b100_pica_gigante_pa, R.drawable.b101_picaflor_cometa,// 99 100 101
@@ -66,7 +66,7 @@ object DrawableResourcesList {
         R.drawable.b177_dormilona_cara_negra, R.drawable.b178_anambe_grande, R.drawable.b179_anambe_negro, //177 178 179
         R.drawable.b180_cortarramas, R.drawable.b181_chivi_chivi, R.drawable.b182_juan_chiviro, //180 181 182
         R.drawable.b183_golondrina_negra, R.drawable.b184_golondrina_parda, R.drawable.b185_golondrina_cabeza_rojiza, //183 184 185
-        R.drawable.b186_golondrina_barranquera, R.drawable.b187_golondrina_ceja_blanca, R.drawable.b188_ratona_comun, //186 187 188
+        R.drawable.b187_golondrina_barranquera, R.drawable.b187_golondrina_ceja_blanca, R.drawable.b188_ratona_comun, //186 187 188
         R.drawable.b189_ratona_aperdizada, R.drawable.b190_tacuarita_azul, R.drawable.b191_zorzalito_boreal, //189 190 191
         R.drawable.b192_zorzal_chalchalero, R.drawable.b193_zorzal_colorado, R.drawable.b194_zorzal_cabeza_negra, //192 193 194
         R.drawable.b195_zorzal_chiguanco, R.drawable.b196_calandria_real, R.drawable.b197_calandria_grande, //195 196 197
@@ -82,7 +82,7 @@ object DrawableResourcesList {
         R.drawable.b225_piquitodeoro_grande, R.drawable.b226_diuca, R.drawable.b227_verdon, //225 226 227
         R.drawable.b228_fueguero_comun, R.drawable.b229_rey_del_bosque, R.drawable.b230_reinamora_grande, //228 229 230
         R.drawable.b231_chingolo, R.drawable.b232_cachilo_chaquenio, R.drawable.b233_cachilo_ceja_amarilla, //231 232 233
-        R.drawable.b234_boyerito, R.drawable.b235_tordo_pico_corto, R.drawable.b236_tordo_renegrido, //234 235 236
+        R.drawable.b234_boyerito, R.drawable.b235_tordo_pico_corto, R.drawable.b214_tordo_renegrido, //234 235 236
         R.drawable.b237_tordo_musico, R.drawable.b238_varillero_congo, R.drawable.b239_varillero_ala_amarilla, //237 238 239
         R.drawable.b240_loica_comun, R.drawable.b241_pecho_colorado, R.drawable.b242_cabecita_negra, //240 241 242
         R.drawable.b243_gorrion // 243
