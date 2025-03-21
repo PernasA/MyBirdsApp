@@ -126,7 +126,7 @@ fun HomePageInit(
         )
 
         ZoomableImage(
-            R.drawable.b195_zorzal_chiguanco,
+            R.drawable.b00_portada_carpinterito_barrado,
             Modifier
                 .size(300.dp)
                 .padding(top = 20.dp)
