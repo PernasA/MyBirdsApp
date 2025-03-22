@@ -11,7 +11,7 @@
   {
     "id": 2,
     "name": "Colorada",
-    "height": ,
+    "height": 42,
     "frequency": 1,
     "scientific_name": "Rynchotus rufescens",
     "description": ""
@@ -38,7 +38,7 @@
   {
     "id": 5,
     "name": "Chajá",
-    "height": ,
+    "height": 85,
     "frequency": 1,
     "scientific_name": "Chauna torquata",
     "description": ""
@@ -50,12 +50,12 @@
     "frequency": 3,
     "scientific_name": "Dendrocygna viduata",
     "english_name": "White-faced Whistling-Duck",
-    "description": "\nEn tierra postura erecta. Parte anterior de la cabeza blanca y posterior negra; garganta blanca; pequeño collar negro; cuello por delante blanco, por detrás negro y castaño en la base del cuello. Dorso rayado de canela y negro; alas negras. Pecho castaño, resto ventral negro con fino barrado blanco y negro en los flancos. Cola negra. Pico oscuro con franja grisácea. Patas gris azuladas. Juvenil: colores más tenues, cabeza gris acanelada. Comportamiento: formas bandadas, a veces junto a otros patos. Acuático. Las crías se desplazan siguiendo a sus padres en fila. Alimentación: granos, hierbas e insectos; con el pico filtra algas y microorganismos acuáticos. Hábitat: humedales rurales, lagunas y cunetas con juncos; también visto en lagos. Comentario: es reconocido por su repetido canto al volar \"siririi\", muchas veces se lo escucha durante la noche.\n"
+    "description": "En tierra postura erecta. Parte anterior de la cabeza blanca y posterior negra; garganta blanca; pequeño collar negro; cuello por delante blanco, por detrás negro y castaño en la base del cuello. Dorso rayado de canela y negro; alas negras. Pecho castaño, resto ventral negro con fino barrado blanco y negro en los flancos. Cola negra. Pico oscuro con franja grisácea. Patas gris azuladas. Juvenil: colores más tenues, cabeza gris acanelada. Comportamiento: formas bandadas, a veces junto a otros patos. Acuático. Las crías se desplazan siguiendo a sus padres en fila. Alimentación: granos, hierbas e insectos; con el pico filtra algas y microorganismos acuáticos. Hábitat: humedales rurales, lagunas y cunetas con juncos; también visto en lagos. Comentario: es reconocido por su repetido canto al volar \"siririi\", muchas veces se lo escucha durante la noche.\n"
   },
   {
     "id": 7,
     "name": "Sirirí Colorado",
-    "height": ,
+    "height": 38,
     "frequency": 1,
     "scientific_name": "Dendrocygna bicolor",
     "description": ""
@@ -83,7 +83,7 @@
   {
     "id": 10,
     "name": "Pato Crestudo",
-    "height": ,
+    "height": 60,
     "frequency": 1,
     "scientific_name": "Sarkidiornis sylvicola",
     "description": ""
@@ -91,7 +91,7 @@
   {
     "id": 11,
     "name": "Pato de Collar",
-    "height": ,
+    "height": 28,
     "frequency": 2,
     "scientific_name": "Callonetta leucophrys",
     "description": ""
@@ -109,7 +109,7 @@
   {
     "id": 13,
     "name": "Pato Capuchino",
-    "height": ,
+    "height": 30,
     "frequency": 1,
     "scientific_name": "Spatula versicolor",
     "description": ""
@@ -178,7 +178,7 @@
   {
     "id": 20,
     "name": "Pato Picazo",
-    "height": ,
+    "height": 53,
     "frequency": 2,
     "scientific_name": "Netta peposaca",
     "description": ""
@@ -186,7 +186,7 @@
   {
     "id": 21,
     "name": "Pato Cabeza Negra",
-    "height": ,
+    "height": 40,
     "frequency": 1,
     "scientific_name": "Heteronetta atricapilla",
     "description": ""
@@ -274,7 +274,7 @@
   {
     "id": 30,
     "name": "Ano Chico",
-    "height": ,
+    "height": 35,
     "frequency": 1,
     "scientific_name": "Crotophaga ani",
     "description": ""
@@ -313,7 +313,7 @@
   {
     "id": 34,
     "name": "Ñacunda",
-    "height": ,
+    "height": 41,
     "frequency": 1,
     "scientific_name": "Chordeiles nacunda",
     "description": ""
@@ -351,7 +351,7 @@
   {
     "id": 38,
     "name": "Urutau",
-    "height": ,
+    "height": 35,
     "frequency": 3,
     "scientific_name": "Nyctibius griseus",
     "description": ""
@@ -460,7 +460,7 @@
   {
     "id": 49,
     "name": "Chorlo Pampa",
-    "height": ,
+    "height": 28,
     "frequency": 1,
     "scientific_name": "Pluvialis dominicana",
     "description": ""
@@ -468,7 +468,7 @@
   {
     "id": 50,
     "name": "Chorlo Cabezón",
-    "height": ,
+    "height": 28,
     "frequency": 2,
     "scientific_name": "Oreopholus ruficollis",
     "description": ""
@@ -486,7 +486,7 @@
   {
     "id": 52,
     "name": "Chorlito de Collar",
-    "height": ,
+    "height": 16,
     "frequency": 1,
     "scientific_name": "Anarhynchus collaris",
     "description": ""
@@ -494,7 +494,7 @@
   {
     "id": 53,
     "name": "Aguatero",
-    "height": ,
+    "height": 20,
     "frequency": 1,
     "scientific_name": "Nycticryphes semicollaris",
     "description": ""
@@ -512,7 +512,7 @@
   {
     "id": 55,
     "name": "Batitu",
-    "height": ,
+    "height": 30,
     "frequency": 2,
     "scientific_name": "Bartramia longicauda",
     "description": ""
@@ -540,7 +540,7 @@
   {
     "id": 58,
     "name": "Pitotoy Solitario",
-    "height": ,
+    "height": 19,
     "frequency": 1,
     "scientific_name": "Tringa solitaria",
     "description": ""
@@ -569,7 +569,7 @@
   {
     "id": 61,
     "name": "Playero Zancudo",
-    "height": ,
+    "height": 20,
     "frequency": 1,
     "scientific_name": "Calidris himantopus",
     "description": ""
@@ -578,7 +578,7 @@
   {
     "id": 62,
     "name": "Playerito Unicolor",
-    "height": ,
+    "height": 17,
     "frequency": 2,
     "scientific_name": "Calidris bairdii",
     "description": ""
@@ -586,7 +586,7 @@
   {
     "id": 63,
     "name": "Playerita Rabadilla Blanca",
-    "height": ,
+    "height": 17,
     "frequency": 1,
     "scientific_name": "Calidris fuscicollis",
     "description": ""
@@ -594,7 +594,7 @@
   {
     "id": 64,
     "name": "Playerito Pectoral",
-    "height": ,
+    "height": 19,
     "frequency": 1,
     "scientific_name": "Calidris melanotos",
     "description": ""
@@ -612,7 +612,7 @@
   {
     "id": 66,
     "name": "Gaviota Capucho Gris",
-    "height": ,
+    "height": 38,
     "frequency": 1,
     "scientific_name": "Chroicocephalus cirrocephalus",
     "description": ""
@@ -620,7 +620,7 @@
   {
     "id": 67,
     "name": "Gaviotín Lagunero",
-    "height": ,
+    "height": 35,
     "frequency": 1,
     "scientific_name": "Sterna trudeaui",
     "description": ""
@@ -669,7 +669,7 @@
   {
     "id": 72,
     "name": "Macá Plateado",
-    "height": ,
+    "height": 28,
     "frequency": 1,
     "scientific_name": "Podiceps occipitalis",
     "description": ""
@@ -727,7 +727,7 @@
   {
     "id": 78,
     "name": "Bandurria Austral",
-    "height": ,
+    "height": 57,
     "frequency": 1,
     "scientific_name": "Theristicus melanopis",
     "description": ""
@@ -845,7 +845,7 @@
   {
     "id": 90,
     "name": "Gavilán Ceniciento",
-    "height": ,
+    "height": 42,
     "frequency": 1,
     "scientific_name": "Circus cinereus",
     "description": ""
@@ -853,7 +853,7 @@
   {
     "id": 91,
     "name": "Caracolero",
-    "height": ,
+    "height": 43,
     "frequency": 2,
     "scientific_name": "Rostrhamus sociabilis",
     "description": ""
@@ -1006,7 +1006,7 @@
   {
     "id": 106,
     "name": "Martín Pescador Mediano",
-    "height": ,
+    "height": 32,
     "frequency": 1,
     "scientific_name": "Chloroceryle amazona",
     "description": ""
@@ -1024,7 +1024,7 @@
   {
     "id": 108,
     "name": "Carpinterito Barrado",
-    "height": ,
+    "height": 9,
     "frequency": 3,
     "scientific_name": "Picumnus Cirratus",
     "description": ""
@@ -1143,7 +1143,7 @@
   {
     "id": 120,
     "name": "Chororo",
-    "height": ,
+    "height": 20,
     "frequency": 3,
     "scientific_name": "Taraba major",
     "description": ""
@@ -1244,7 +1244,7 @@
   {
     "id": 130,
     "name": "Espinero Pecho Manchado",
-    "height": ,
+    "height": 17,
     "frequency": 3,
     "scientific_name": "Phacellodomus striaticolis",
     "description": ""
@@ -1302,7 +1302,7 @@
   {
     "id": 136,
     "name": "Curutié Colorado",
-    "height": ,
+    "height": 14,
     "frequency": 1,
     "scientific_name": "Certhiaxis cinnamomeus",
     "description": ""
@@ -1310,7 +1310,7 @@
   {
     "id": 137,
     "name": "Espartillero Enano",
-    "height": ,
+    "height": 13,
     "frequency": 1,
     "scientific_name": "Spartonoica maluroides",
     "description": ""
@@ -1328,7 +1328,7 @@
   {
     "id": 139,
     "name": "Chotoy",
-    "height": ,
+    "height": 22,
     "frequency": 3,
     "scientific_name": "Schoeniophylax phryganophilus",
     "description": ""
@@ -1428,7 +1428,7 @@
   {
     "id": 149,
     "name": "Tachurí Canela",
-    "height": ,
+    "height": 10,
     "frequency": 1,
     "scientific_name": "Polystictus pectoralis",
     "description": ""
@@ -1446,7 +1446,7 @@
   {
     "id": 151,
     "name": "Doradito Pardo",
-    "height": ,
+    "height": 10,
     "frequency": 2,
     "scientific_name": "Pseudocolopteryx dinelliana",
     "description": ""
@@ -1466,7 +1466,7 @@
   {
     "id": 153,
     "name": "Fiofío Grande",
-    "height": ,
+    "height": 18,
     "frequency": 1,
     "scientific_name": "",
     "description": ""
@@ -1534,7 +1534,7 @@
   {
     "id": 160,
     "name": "Suirirí Pico Corto",
-    "height": ,
+    "height": 14,
     "frequency": 1,
     "scientific_name": "Sublegatus modestus",
     "description": ""
@@ -1583,7 +1583,7 @@
   {
     "id": 165,
     "name": "Suirirí Amarillo",
-    "height": ,
+    "height": 16,
     "frequency": 1,
     "scientific_name": "Satrapa Icterophrys",
     "description": ""
@@ -1611,7 +1611,7 @@
   {
     "id": 168,
     "name": "Monjita Castaña",
-    "height": ,
+    "height": 18,
     "frequency": 2,
     "scientific_name": "Neoxolmis rubetra",
     "description": ""
@@ -1619,7 +1619,7 @@
   {
     "id": 169,
     "name": "Monjita Chocolate",
-    "height": ,
+    "height": 23,
     "frequency": 1,
     "scientific_name": "Neoxolmis rufiventris",
     "description": ""
@@ -1734,20 +1734,18 @@
     "english_name": "",
     "description": "Llamativo iris rojo anaranjado; cabeza grande; frente y cejas castañas; cara y collar en la parte posterior del cuello gris parduzco. Dorso y cola verde oliváceo; alas algo parduzcas. Garganta blanquecina; pecho amarillento; resto ventral blanquecino con algo de canela. Pico robusto y grueso. Patas negruzcas. Comportamiento: solitario, movimientos acrobáticos. Alimentación: insectos, utiliza sus patas para destruir capullos y así extrae la crisálida con su pico. Hábitat: montes y bosques nativos, en zona rural y urbana hasta piedemonte. Comentario: canto melodioso. Recorre el follaje a media altura, bastante oculto, es más oído que visto."
   },
-
-181 chivi comun será el chivi chivi?,
   {
     "id": 181,
     "name": "Chiví Común",
-    "height": ,
+    "height": 15,
     "frequency": 2,
-    "scientific_name": "",
-    "description": ""
+    "scientific_name": "Vireo chivi",
+    "description": "Corona y nuca gris, marcada ceja blanca, iris pardo, línea ocular y sobreceja negra. Dorsal oliváceo. Alas y cola con filetesamarillentos. Ventral blanquecino, flancos algo amarillento. Pico robusto y patas grises. Comportamiento: solitario, acrobático, muycantor. Alimentación: principalmente arañas, insectos, sus larvas y huevos, también frutos silvestres. Hábitat: montes y bosques,sector medio y alto de árboles, a menudo en jardines. Comentario: más oído que visto, fuerte e incansable canto. Migra al norte en invierno."
   },
   {
     "id": 182,
     "name": "Golondrina Zapadora",
-    "height": ,
+    "height": 12,
     "frequency": 1,
     "scientific_name": "Riparia Riparia",
     "description": ""
@@ -1765,7 +1763,7 @@
   {
     "id": 184,
     "name": "Golondrina Doméstica",
-    "height": ,
+    "height": 18,
     "frequency": 1,
     "scientific_name": "Progne chalybea",
     "description": ""
@@ -1812,7 +1810,7 @@
   {
     "id": 189,
     "name": "Golondrina Tijerita",
-    "height": ,
+    "height": 16,
     "frequency": 2,
     "scientific_name": "Hirundo rustica",
     "description": ""
@@ -1820,7 +1818,7 @@
   {
     "id": 190,
     "name": "Golondrina Rabadilla",
-    "height": ,
+    "height": 13,
     "frequency": 1,
     "scientific_name": "Petrochiledon pyrrhonota",
     "description": ""
@@ -1858,7 +1856,7 @@
   {
     "id": 194,
     "name": "Estornino Pinto",
-    "height": ,
+    "height": 22,
     "frequency": 2,
     "scientific_name": "Sturnus vulgaris",
     "description": ""
@@ -1936,7 +1934,7 @@
   {
     "id": 202,
     "name": "Cachirla Chica",
-    "height": ,
+    "height": 13,
     "frequency": 1,
     "scientific_name": "Anthus chii",
     "description": ""
@@ -1944,7 +1942,7 @@
   {
     "id": 203,
     "name": "Cachirla Uña Corta",
-    "height": ,
+    "height": 14,
     "frequency": 1,
     "scientific_name": "Anthus furcatus",
     "description": ""
@@ -1952,7 +1950,7 @@
   {
     "id": 204,
     "name": "Cachirla Trinadora",
-    "height": ,
+    "height": 13,
     "frequency": 1,
     "scientific_name": "Anthus chacoensis",
     "description": ""
@@ -2090,7 +2088,7 @@
   {
     "id": 218,
     "name": "Pecho Amarillo",
-    "height": ,
+    "height": 21,
     "frequency": 1,
     "scientific_name": "Pseudoleistes virescens",
     "description": ""
@@ -2228,7 +2226,7 @@
   {
     "id": 232,
     "name": "Volatinero",
-    "height": ,
+    "height": 10,
     "frequency": 1,
     "scientific_name": "Volatinia jacarina",
     "description": ""
@@ -2236,7 +2234,7 @@
   {
     "id": 233,
     "name": "Capuchino Canela",
-    "height": ,
+    "height": 11,
     "frequency": 1,
     "scientific_name": "Sporophila Ruficollis",
     "description": ""
@@ -2244,7 +2242,7 @@
   {
     "id": 234,
     "name": "Capuchino Garganta Café",
-    "height": ,
+    "height": 11,
     "frequency": 2,
     "scientific_name": "Sporophila ruficollis",
     "description": ""
@@ -2263,7 +2261,7 @@
   {
     "id": 236,
     "name": "Corbatita Dominó",
-    "height": ,
+    "height": 12,
     "frequency": 1,
     "scientific_name": "Sporophila collaris",
     "description": ""
