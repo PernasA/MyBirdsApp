@@ -5,7 +5,6 @@ import android.content.Intent
 import android.net.Uri
 import android.widget.Toast
 import androidx.compose.foundation.BorderStroke
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
@@ -27,7 +26,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Shadow
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
@@ -37,8 +35,8 @@ import androidx.compose.ui.unit.dp
 import com.pernasa.varillasbirdsapp.R
 import com.pernasa.varillasbirdsapp.models.Coordinates
 import com.pernasa.varillasbirdsapp.models.ObservationRoute
-import com.pernasa.varillasbirdsapp.ui.theme.SkyBluePrimary
 import com.pernasa.varillasbirdsapp.ui.theme.GreenLime
+import com.pernasa.varillasbirdsapp.ui.theme.SkyBluePrimary
 import com.pernasa.varillasbirdsapp.utils.Constants.Companion.BIG_TEXT_SIZE
 import com.pernasa.varillasbirdsapp.utils.Constants.Companion.MEDIUM_TEXT_SIZE
 import com.pernasa.varillasbirdsapp.utils.Constants.Companion.SUBTITLE_TEXT_SIZE

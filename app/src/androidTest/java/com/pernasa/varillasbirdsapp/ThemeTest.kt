@@ -31,7 +31,7 @@ class ThemeTest {
     @Test
     fun testDarkTheme() {
         composeTestRule.setContent {
-            VarillasBirdsAppTheme(darkTheme = true) {
+            VarillasBirdsAppTheme() {
                 TestContent()
             }
         }
@@ -44,7 +44,7 @@ class ThemeTest {
     @Test
     fun testLightTheme() {
         composeTestRule.setContent {
-            VarillasBirdsAppTheme(darkTheme = false) {
+            VarillasBirdsAppTheme() {
                 TestContent()
             }
         }

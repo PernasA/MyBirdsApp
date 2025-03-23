@@ -15,14 +15,10 @@
     <string name="app_name">Aves de Las Varillas</string>
 
     #Images descriptions
-    <string name="main_page_image_description">Imagen de aves</string>
     <string name="back_button">Botón flecha atrás</string>
     <string name="image_bird_description">Imagen del pájaro mencionado</string>
     <string name="image_book_description">Tapa del libro</string>
-    <string name="image_writer_description">Foto del autor del libro</string>
     <string name="image_ruler_description">Imagen de regla</string>
-    <string name="image_mountain_description">Imagen de montaña</string>
-    <string name="image_route_description">Imagen de la ruta de observación mencionada</string>
 
     #Buttons actions
     <string name="button_share">Compartir</string>
@@ -31,7 +27,7 @@
     <string name="button_linkedIn">Perfil LinkedIn</string>
 
     <string name="button_share_text">Te invito a descargar esta aplicación sobre aves.\n
-    Tiene mucho contenido interesante! En la Play Store aparece como Aves de Las Varillas San Luis. El link es: \n
+    Tiene mucho contenido interesante! En la Play Store aparece como Aves de Las Varillas Córdoba. El link es: \n
     https://play.google.com/store/apps/details?id=com.pernasa.varillasbirdsapp</string>
 
     <string name="search_by_name">Buscar ave por nombre</string>
@@ -49,7 +45,6 @@
     <string name="birds_observed">Aves observadas</string>
     <string name="bird_height">Medida aproximada</string>
     <string name="bird_frequency">Facilidad observación</string>
-    <string name="bird_hight_location">Altimetría (msnm)</string>
     <string name="bird_full_description">Descripción general</string>
     <string name="tooltip_message_observation_routes">En esta sección se muestran\n
     varios recorridos para\nrealizar en la zona serrana\ny avistar distintos tipos de aves.</string>
@@ -59,8 +54,6 @@
     <string name="book_name_figus_bsas">Libro de Figuritas de Aves de Buenos Aires</string>
     <string name="book_name_figus_centro">Libro de Figuritas de Aves del Centro de Argentina</string>
     <string name="book_full_description">Esta guía facilita la identificación de aves en las Sierras Centrales de Argentina, en Córdoba y San Luis. Invita a disfrutar de la naturaleza con un sistema que ayuda a recorrer circuitos, haciendo de la observación y fotografía de aves una actividad agradable y gratificante.</string>
-    <string name="book_full_description_figus_bsas">180 figuritas de aves de Buenos Aires en planchas sticker a todo color, para pegar en el interior del libro que está en blanco y negro, con el nombre y características de cada una de las aves, de forma que puedan identificarlas y así nutrirse del amor por la naturaleza en su observación.</string>
-    <string name="book_full_description_figus_centro">180 figuritas de aves del centro de Argentina en planchas sticker a todo color, para pegar en el interior del libro que está en blanco y negro, con el nombre y características de cada una de las aves, de forma que puedan identificarlas y así nutrirse del amor por la naturaleza en su observación.</string>
 
     #Tab indexes
     <string name="tab_title_1_aves_sierras_centrales">Libro guía de aves</string>
@@ -73,14 +66,6 @@
     <string name="developer_name">Programador\nAgustin Pernas</string>
 
     #Texts heights location
-    <string name="height_location_1">\n500/1200</string>
-    <string name="height_location_2">\n1200/1600</string>
-    <string name="height_location_3">\n1600/2200</string>
-    <string name="height_location_12">\n500/1600</string>
-    <string name="height_location_13">\n500/1200\n1600/2200</string>
-    <string name="height_location_23">\n1200/2200</string>
-    <string name="height_location_123">\n500/2200</string>
-    <string name="frequency_undefined">\nIndefinida</string>
 
     #Guess Game
     <string name="actual_points">Puntaje actual</string>

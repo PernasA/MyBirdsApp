@@ -315,7 +315,7 @@ fun ExtendedShareButton() {
 @Preview(showBackground = true)
 @Composable
 fun HomePagePreview() {
-    VarillasBirdsAppTheme (true) {
+    VarillasBirdsAppTheme () {
         HomePage(
             birdsListOnClick = {},
             observationRoutesOnClick = {},

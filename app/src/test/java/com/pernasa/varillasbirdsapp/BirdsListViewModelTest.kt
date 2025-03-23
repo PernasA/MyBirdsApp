@@ -1,6 +1,6 @@
 package com.pernasa.varillasbirdsapp
 
-import GlobalCounterBirdsObserved
+import com.pernasa.varillasbirdsapp.models.GlobalCounterBirdsObserved
 import android.content.Context
 import android.content.SharedPreferences
 import com.pernasa.varillasbirdsapp.models.Bird

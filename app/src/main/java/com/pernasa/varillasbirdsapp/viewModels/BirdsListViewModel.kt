@@ -5,6 +5,7 @@ import android.content.SharedPreferences
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.pernasa.varillasbirdsapp.models.Bird
+import com.pernasa.varillasbirdsapp.models.GlobalCounterBirdsObserved
 import com.pernasa.varillasbirdsapp.models.room.RoomBird
 import com.pernasa.varillasbirdsapp.models.room.RoomBirdsDao
 import com.pernasa.varillasbirdsapp.utils.DrawableResourcesList

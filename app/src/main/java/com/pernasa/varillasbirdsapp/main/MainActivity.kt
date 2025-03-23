@@ -38,7 +38,7 @@ class MainActivity : BaseActivity() {
         }
 
         setContent {
-            VarillasBirdsAppTheme (darkTheme = true) {
+            VarillasBirdsAppTheme () {
                 Navigation(
                     birdsListViewModel.value,
                     observationRoutesViewModel

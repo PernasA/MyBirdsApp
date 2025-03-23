@@ -2,9 +2,4 @@
 <resources>
 
     <style name="Theme.VarillasBirdsApp" parent="android:Theme.Material.Light.NoActionBar" />
-    <style name="TitleTextStyle">
-        <item name="android:textSize">22sp</item>
-        <item name="android:letterSpacing">0</item>
-        <item name="android:textStyle">bold</item>
-    </style>
 </resources>

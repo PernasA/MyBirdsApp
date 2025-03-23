@@ -1,3 +1,5 @@
+package com.pernasa.varillasbirdsapp.models
+
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 

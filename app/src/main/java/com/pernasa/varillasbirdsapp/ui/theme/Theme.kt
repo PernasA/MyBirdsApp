@@ -24,7 +24,6 @@ val DarkColorScheme = darkColorScheme(
 
 @Composable
 fun VarillasBirdsAppTheme(
-    darkTheme: Boolean,
     content: @Composable () -> Unit
 ) {
     MaterialTheme(

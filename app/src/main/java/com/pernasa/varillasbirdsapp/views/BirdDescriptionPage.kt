@@ -45,6 +45,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.pernasa.varillasbirdsapp.R
 import com.pernasa.varillasbirdsapp.models.Bird
+import com.pernasa.varillasbirdsapp.models.GlobalCounterBirdsObserved
 import com.pernasa.varillasbirdsapp.models.room.RoomBird
 import com.pernasa.varillasbirdsapp.ui.theme.SkyBluePrimary
 import com.pernasa.varillasbirdsapp.ui.theme.SkyBluePrimaryContainer
