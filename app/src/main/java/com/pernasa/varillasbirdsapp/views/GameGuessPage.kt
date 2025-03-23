@@ -44,9 +44,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.pernasa.varillasbirdsapp.R
 import com.pernasa.varillasbirdsapp.ui.theme.MossGreenBright
-import com.pernasa.varillasbirdsapp.ui.theme.MossGreenPrimaryContainer
-import com.pernasa.varillasbirdsapp.ui.theme.MossGreenSecondary
-import com.pernasa.varillasbirdsapp.ui.theme.OrangeBird
+import com.pernasa.varillasbirdsapp.ui.theme.SkyBluePrimaryContainer
+import com.pernasa.varillasbirdsapp.ui.theme.SkyBlueSecondary
+import com.pernasa.varillasbirdsapp.ui.theme.GreenLime
 import com.pernasa.varillasbirdsapp.utils.Constants.Companion.BIG_TEXT_SIZE
 import com.pernasa.varillasbirdsapp.utils.Constants.Companion.BUTTON_HOME_TEXT_SIZE
 import com.pernasa.varillasbirdsapp.utils.Constants.Companion.MEDIUM_TEXT_SIZE
@@ -73,7 +73,7 @@ fun GameGuessPage(gameGuessViewModel: GameGuessViewModel) {
                         letterSpacing = 1.sp,
                         textAlign = TextAlign.Center,
                         color = Color.White,
-                        shadow = Shadow(OrangeBird),
+                        shadow = Shadow(GreenLime),
                     ),
                     modifier = Modifier.fillMaxWidth()
                 )
@@ -89,7 +89,7 @@ fun GameGuessPage(gameGuessViewModel: GameGuessViewModel) {
                             .padding(top = 20.dp)
                             .clip(RoundedCornerShape(32.dp))
                             .shadow(100.dp, RoundedCornerShape(32.dp))
-                            .border(BorderStroke(2.dp, OrangeBird), RoundedCornerShape(32.dp)),
+                            .border(BorderStroke(2.dp, GreenLime), RoundedCornerShape(32.dp)),
                         ContentScale.Crop
                     )
                 }
@@ -122,7 +122,7 @@ fun RowGamePoints(gameGuessViewModel: GameGuessViewModel) {
                     fontSize = MEDIUM_TEXT_SIZE,
                     lineHeight = MEDIUM_TEXT_SIZE,
                     textAlign = TextAlign.Center,
-                    color = MossGreenPrimaryContainer,
+                    color = SkyBluePrimaryContainer,
                 ),
                 modifier = Modifier.fillMaxWidth()
             )
@@ -133,7 +133,7 @@ fun RowGamePoints(gameGuessViewModel: GameGuessViewModel) {
                     fontSize = BIG_TEXT_SIZE,
                     lineHeight = BIG_TEXT_SIZE,
                     textAlign = TextAlign.Center,
-                    color = MossGreenPrimaryContainer,
+                    color = SkyBluePrimaryContainer,
                 ),
                 modifier = Modifier
                     .fillMaxWidth()
@@ -141,7 +141,7 @@ fun RowGamePoints(gameGuessViewModel: GameGuessViewModel) {
             )
         }
         VerticalDivider (
-            color = OrangeBird,
+            color = GreenLime,
             modifier = Modifier
                 .width(1.dp)
                 .height(60.dp)
@@ -158,7 +158,7 @@ fun RowGamePoints(gameGuessViewModel: GameGuessViewModel) {
                     fontSize = MEDIUM_TEXT_SIZE,
                     lineHeight = MEDIUM_TEXT_SIZE,
                     textAlign = TextAlign.Center,
-                    color = MossGreenPrimaryContainer,
+                    color = SkyBluePrimaryContainer,
                 ),
                 modifier = Modifier.fillMaxWidth()
             )
@@ -169,7 +169,7 @@ fun RowGamePoints(gameGuessViewModel: GameGuessViewModel) {
                     fontSize = BIG_TEXT_SIZE,
                     lineHeight = BIG_TEXT_SIZE,
                     textAlign = TextAlign.Center,
-                    color = MossGreenPrimaryContainer,
+                    color = SkyBluePrimaryContainer,
                 ),
                 modifier = Modifier
                     .fillMaxWidth()
@@ -190,10 +190,10 @@ fun ColumnOptions(gameGuessViewModel: GameGuessViewModel) {
             val isCorrect = gameGuessViewModel.isCorrectOption(option)
             val buttonColor by animateColorAsState(
                 targetValue = when {
-                    selectedOption == null -> MossGreenSecondary
+                    selectedOption == null -> SkyBlueSecondary
                     isCorrect && option == selectedOption -> MossGreenBright
                     !isCorrect && option == selectedOption -> Color.Red
-                    else -> MossGreenSecondary
+                    else -> SkyBlueSecondary
                 },
                 animationSpec = tween(durationMillis = 1000), label = ""
             )

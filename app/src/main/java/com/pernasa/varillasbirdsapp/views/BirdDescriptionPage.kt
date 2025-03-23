@@ -34,7 +34,6 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.graphics.Shadow
-import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -44,14 +43,13 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.LineBreak
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.zIndex
 import com.pernasa.varillasbirdsapp.R
 import com.pernasa.varillasbirdsapp.models.Bird
 import com.pernasa.varillasbirdsapp.models.room.RoomBird
-import com.pernasa.varillasbirdsapp.ui.theme.MossGreenPrimary
-import com.pernasa.varillasbirdsapp.ui.theme.MossGreenPrimaryContainer
-import com.pernasa.varillasbirdsapp.ui.theme.MossGreenTertiaryLight
-import com.pernasa.varillasbirdsapp.ui.theme.OrangeBird
+import com.pernasa.varillasbirdsapp.ui.theme.SkyBluePrimary
+import com.pernasa.varillasbirdsapp.ui.theme.SkyBluePrimaryContainer
+import com.pernasa.varillasbirdsapp.ui.theme.SkyBlueTertiaryLight
+import com.pernasa.varillasbirdsapp.ui.theme.GreenLime
 import com.pernasa.varillasbirdsapp.utils.Constants.Companion.BIG_TEXT_SIZE
 import com.pernasa.varillasbirdsapp.utils.Constants.Companion.MEDIUM_TEXT_SIZE
 import com.pernasa.varillasbirdsapp.utils.Constants.Companion.SUBTITLE_TEXT_SIZE
@@ -110,7 +108,7 @@ fun RowNames(bird: Bird) {
                 fontWeight = FontWeight.Bold,
                 fontSize = BIG_TEXT_SIZE,
                 lineHeight = BIG_TEXT_SIZE,
-                shadow = Shadow(OrangeBird, blurRadius = 1.0f),
+                shadow = Shadow(GreenLime, blurRadius = 1.0f),
                 textAlign = TextAlign.Left,
                 color = Color.White,
                 lineBreak = LineBreak.Heading
@@ -122,7 +120,7 @@ fun RowNames(bird: Bird) {
                 fontWeight = FontWeight.Bold,
                 fontSize = TITLE_TEXT_SIZE,
                 lineHeight = TITLE_TEXT_SIZE,
-                shadow = Shadow(OrangeBird, blurRadius = 1.0f),
+                shadow = Shadow(GreenLime, blurRadius = 1.0f),
                 textAlign = TextAlign.Right,
                 color = Color.White,
                 lineBreak = LineBreak.Heading,
@@ -139,7 +137,7 @@ fun RowNames(bird: Bird) {
         Modifier
             .fillMaxWidth()
             .padding(top = 8.dp, start = 5.dp, end = 5.dp)
-            .border(BorderStroke(0.8.dp, OrangeBird), RoundedCornerShape(8.dp))
+            .border(BorderStroke(0.8.dp, GreenLime), RoundedCornerShape(8.dp))
             .clip(RoundedCornerShape(8.dp)),
         ContentScale.FillWidth
     )
@@ -181,7 +179,7 @@ fun RowCounterObserved(bird: Bird, birdsListViewModel: BirdsListViewModel) {
                     fontSize = MEDIUM_TEXT_SIZE,
                     lineHeight = MEDIUM_TEXT_SIZE,
                     textAlign = TextAlign.Center,
-                    color = MossGreenPrimaryContainer,
+                    color = SkyBluePrimaryContainer,
                 ),
                 modifier = Modifier.fillMaxWidth()
             )
@@ -193,7 +191,7 @@ fun RowCounterObserved(bird: Bird, birdsListViewModel: BirdsListViewModel) {
                     fontSize = BIG_TEXT_SIZE,
                     lineHeight = BIG_TEXT_SIZE,
                     textAlign = TextAlign.Center,
-                    color = MossGreenPrimaryContainer,
+                    color = SkyBluePrimaryContainer,
                 ),
                 modifier = Modifier
                     .fillMaxWidth()
@@ -221,7 +219,7 @@ fun SwitchWasObserved(birdsListViewModel: BirdsListViewModel, birdId: Int) {
                     imageVector = Icons.Filled.Check,
                     contentDescription = null,
                     modifier = Modifier.size(20.dp),
-                    tint = MossGreenPrimary,
+                    tint = SkyBluePrimary,
                 )
             }
         } else { null }
@@ -276,11 +274,11 @@ fun RowBirdAttributes(bird: Bird){
                     .height(40.dp)
                     .padding(horizontal = 14.dp),
                 contentScale = ContentScale.FillBounds,
-                colorFilter = ColorFilter.tint(MossGreenPrimary)
+                colorFilter = ColorFilter.tint(SkyBluePrimary)
             )
         }
         VerticalDivider (
-            color = OrangeBird,
+            color = GreenLime,
             modifier = Modifier
                 .width(1.dp)
                 .fillMaxHeight()
@@ -317,7 +315,7 @@ fun FrequencyIconImage(birdFrequency: Int) {
                 .height(12.dp)
                 .padding(horizontal = 17.dp, vertical = 2.dp)
                 .clip(RoundedCornerShape(8.dp))
-                .background(if (i <= birdFrequency) MossGreenTertiaryLight else Color.White)
+                .background(if (i <= birdFrequency) SkyBlueTertiaryLight else Color.White)
         )
     }
 }
@@ -332,7 +330,7 @@ fun BirdFullDescription(bird: Bird) {
             fontSize = MEDIUM_TEXT_SIZE,
             lineHeight = MEDIUM_TEXT_SIZE,
             textAlign = TextAlign.Left,
-            color = MossGreenPrimary,
+            color = SkyBluePrimary,
         )
     )
     Text(

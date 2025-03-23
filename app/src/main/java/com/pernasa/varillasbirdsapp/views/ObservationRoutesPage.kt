@@ -29,7 +29,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.pernasa.varillasbirdsapp.R
 import com.pernasa.varillasbirdsapp.models.ObservationRoute
-import com.pernasa.varillasbirdsapp.ui.theme.MossGreenPrimary
+import com.pernasa.varillasbirdsapp.ui.theme.SkyBluePrimary
 import com.pernasa.varillasbirdsapp.utils.Constants.Companion.TITLE_TEXT_SIZE
 import com.pernasa.varillasbirdsapp.viewModels.ObservationRoutesViewModel
 
@@ -69,7 +69,7 @@ fun MyListItem(
     ) {
     Card(
         colors = CardDefaults.cardColors(
-            containerColor = MossGreenPrimary,
+            containerColor = SkyBluePrimary,
         ),
         elevation = CardDefaults.cardElevation(
             defaultElevation = 22.dp,

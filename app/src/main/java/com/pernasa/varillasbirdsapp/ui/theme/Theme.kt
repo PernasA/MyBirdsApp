@@ -2,7 +2,6 @@ package com.pernasa.varillasbirdsapp.ui.theme
 
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
-import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import org.jetbrains.annotations.TestOnly
@@ -15,11 +14,11 @@ import org.jetbrains.annotations.TestOnly
 
 @TestOnly
 val DarkColorScheme = darkColorScheme(
-    primary = MossGreenPrimary,
-    secondary = MossGreenSecondary,
-    tertiary = MossGreenRealTertiary,
-    primaryContainer = MossGreenPrimaryContainer,
-    secondaryContainer = MossGreenRealTertiary,
+    primary = SkyBluePrimary,
+    secondary = SkyBlueSecondary,
+    tertiary = SkyBlueTertiary,
+    primaryContainer = SkyBluePrimaryContainer,
+    secondaryContainer = SkyBlueTertiary,
     onSurfaceVariant = Color.Black,
 )
 

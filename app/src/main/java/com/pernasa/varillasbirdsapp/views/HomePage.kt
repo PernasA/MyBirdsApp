@@ -51,15 +51,12 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Popup
 import androidx.compose.ui.window.PopupProperties
 import com.pernasa.varillasbirdsapp.R
-import com.pernasa.varillasbirdsapp.ui.theme.MossGreenPrimary
-import com.pernasa.varillasbirdsapp.ui.theme.MossGreenPrimaryContainer
-import com.pernasa.varillasbirdsapp.ui.theme.MossGreenRealTertiary
-import com.pernasa.varillasbirdsapp.ui.theme.MossGreenSecondaryLight
+import com.pernasa.varillasbirdsapp.ui.theme.SkyBluePrimary
+import com.pernasa.varillasbirdsapp.ui.theme.SkyBluePrimaryContainer
+import com.pernasa.varillasbirdsapp.ui.theme.SkyBlueSecondaryLight
 import com.pernasa.varillasbirdsapp.ui.theme.VarillasBirdsAppTheme
-import com.pernasa.varillasbirdsapp.ui.theme.OrangeBird
+import com.pernasa.varillasbirdsapp.ui.theme.GreenLime
 import com.pernasa.varillasbirdsapp.utils.Constants.Companion.BUTTON_HOME_TEXT_SIZE
-import com.pernasa.varillasbirdsapp.utils.Constants.Companion.MEDIUM_TEXT_SIZE
-import com.pernasa.varillasbirdsapp.utils.Constants.Companion.TITLE_TEXT_SIZE
 
 @Composable
 fun HomePage(
@@ -97,7 +94,7 @@ fun HomePage(
                     .align(Alignment.Center)
             ) {
                 CircularProgressIndicator(
-                    color = OrangeBird,
+                    color = GreenLime,
                     modifier = Modifier.align(Alignment.Center)
                 )
             }
@@ -126,13 +123,13 @@ fun HomePageInit(
         )
 
         ZoomableImage(
-            R.drawable.b109_carpintero_blanco_elegid,
+            R.drawable.b00_portada_carpinterito_barrado,
             Modifier
                 .size(300.dp)
                 .padding(top = 20.dp)
                 .clip(RoundedCornerShape(32.dp))
                 .shadow(100.dp, RoundedCornerShape(32.dp))
-                .border(BorderStroke(1.dp, OrangeBird), RoundedCornerShape(32.dp)),
+                .border(BorderStroke(1.dp, GreenLime), RoundedCornerShape(32.dp)),
             ContentScale.Crop
         )
 
@@ -150,7 +147,7 @@ fun HomePageInit(
                 onClick = gameGuessOnClick,
                 R.string.game_guess,
                 Modifier.padding(top = 15.dp),
-                OrangeBird
+                GreenLime
             )
             MyFilledButton(
                 aboutUsOnClick,
@@ -173,7 +170,7 @@ fun RowTitle(modifier: Modifier) {
             letterSpacing = 6.sp,
             textAlign = TextAlign.Center,
             color = Color.White,
-            shadow = Shadow(OrangeBird),
+            shadow = Shadow(GreenLime),
         ),
         modifier = modifier.padding(top = 5.dp)
     )
@@ -186,8 +183,8 @@ fun RowTitle(modifier: Modifier) {
             lineHeight = 35.sp,
             letterSpacing = 2.sp,
             textAlign = TextAlign.Center,
-            color = OrangeBird,
-            shadow = Shadow(MossGreenPrimary),
+            color = GreenLime,
+            shadow = Shadow(SkyBluePrimary),
         ),
         modifier = modifier.padding(5.dp)
     )
@@ -200,8 +197,8 @@ fun RowTitle(modifier: Modifier) {
             lineHeight = 17.sp,
             letterSpacing = 1.sp,
             textAlign = TextAlign.Center,
-            color = OrangeBird,
-            shadow = Shadow(MossGreenPrimary),
+            color = GreenLime,
+            shadow = Shadow(SkyBluePrimary),
         ),
         modifier = modifier
             .padding(top = 5.dp, start = 5.dp, end = 5.dp, bottom = 25.dp)
@@ -218,7 +215,7 @@ fun MyFilledButton(
     FilledTonalButton(
         onClick = { onClick() },
         modifier.fillMaxWidth(),
-        border = BorderStroke(0.7.dp, MossGreenPrimaryContainer),
+        border = BorderStroke(0.7.dp, SkyBluePrimaryContainer),
     ) {
         Text(
             stringResource(buttonText),
@@ -274,9 +271,9 @@ fun RowRoutesButtons(
                     Surface(
                         modifier = Modifier.padding(8.dp),
                         shape = RoundedCornerShape(8.dp),
-                        color = MossGreenPrimary,
+                        color = SkyBluePrimary,
                         shadowElevation = 4.dp,
-                        border = BorderStroke(0.5.dp, OrangeBird)
+                        border = BorderStroke(0.5.dp, GreenLime)
                     ) {
                         Text(
                             text = stringResource(R.string.tooltip_message_observation_routes),
@@ -306,7 +303,7 @@ fun ExtendedShareButton() {
         LargeFloatingActionButton(
             onClick = { context.startActivity(whatsappIntent) },
             shape = CircleShape,
-            containerColor = MossGreenSecondaryLight,
+            containerColor = SkyBlueSecondaryLight,
             contentColor = Color.Black,
             modifier = Modifier.size(60.dp)
         ) {

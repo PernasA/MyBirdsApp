@@ -37,8 +37,8 @@ import androidx.compose.ui.unit.dp
 import com.pernasa.varillasbirdsapp.R
 import com.pernasa.varillasbirdsapp.models.Coordinates
 import com.pernasa.varillasbirdsapp.models.ObservationRoute
-import com.pernasa.varillasbirdsapp.ui.theme.MossGreenPrimary
-import com.pernasa.varillasbirdsapp.ui.theme.OrangeBird
+import com.pernasa.varillasbirdsapp.ui.theme.SkyBluePrimary
+import com.pernasa.varillasbirdsapp.ui.theme.GreenLime
 import com.pernasa.varillasbirdsapp.utils.Constants.Companion.BIG_TEXT_SIZE
 import com.pernasa.varillasbirdsapp.utils.Constants.Companion.MEDIUM_TEXT_SIZE
 import com.pernasa.varillasbirdsapp.utils.Constants.Companion.SUBTITLE_TEXT_SIZE
@@ -70,7 +70,7 @@ fun RowName(
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .height(90.dp)
+            .height(130.dp)
     ) {
         Text(
             modifier = Modifier
@@ -82,7 +82,7 @@ fun RowName(
                 fontWeight = FontWeight.Bold,
                 fontSize = BIG_TEXT_SIZE,
                 lineHeight = BIG_TEXT_SIZE,
-                shadow = Shadow(OrangeBird, blurRadius = 1.0f),
+                shadow = Shadow(GreenLime, blurRadius = 1.0f),
                 textAlign = TextAlign.Left,
                 color = Color.White,
                 lineBreak = LineBreak.Heading
@@ -91,14 +91,13 @@ fun RowName(
         ExtendedRouteMapButton(Modifier.weight(1F), observationRoute)
     }
     val routeImageResId = observationRouteViewModel.getDrawableIdByRouteIdPosition(observationRoute.id)
-    Image(
+    ZoomableImage(
+        routeImageResId,
         modifier = Modifier
             .fillMaxWidth()
             .padding(top = 2.dp, start = 5.dp, end = 5.dp)
-            .border(BorderStroke(0.8.dp, OrangeBird), RoundedCornerShape(8.dp))
+            .border(BorderStroke(0.8.dp, GreenLime), RoundedCornerShape(8.dp))
             .clip(RoundedCornerShape(8.dp)),
-        painter = painterResource(id = routeImageResId),
-        contentDescription = stringResource(R.string.image_route_description),
         contentScale = ContentScale.FillWidth
     )
 }
@@ -112,9 +111,9 @@ fun ExtendedRouteMapButton(modifier: Modifier, observationRoute: ObservationRout
         text = { Text(stringResource(R.string.button_maps), fontSize = SUBTITLE_TEXT_SIZE) },
         icon = { Icon(Icons.Rounded.LocationOn, "") },
         containerColor = Color.Black,
-        contentColor = MossGreenPrimary,
+        contentColor = SkyBluePrimary,
         modifier = modifier
-            .height(60.dp)
+            .height(90.dp)
             .padding(start = 15.dp)
     )
 }
@@ -154,7 +153,7 @@ fun RowDescription(
             fontSize = TITLE_TEXT_SIZE,
             lineHeight = TITLE_TEXT_SIZE,
             textAlign = TextAlign.Left,
-            color = MossGreenPrimary,
+            color = SkyBluePrimary,
         )
     )
     Text(

@@ -55,11 +55,9 @@ class BirdsListViewModel(
                 Bird(
                     name = birdJson.name,
                     id = birdJson.id,
-                    heightLocation = birdJson.heightLocation,
                     height = birdJson.height,
                     frequency = birdJson.frequency,
                     scientificName = birdJson.scientificName,
-                    englishName = birdJson.englishName,
                     description = birdJson.description,
                     imageResId = getDrawableIdByBirdIdPosition(birdJson.id)
                 )

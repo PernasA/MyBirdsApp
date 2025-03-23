@@ -49,10 +49,10 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.pernasa.varillasbirdsapp.R
-import com.pernasa.varillasbirdsapp.ui.theme.MossGreenPrimary
-import com.pernasa.varillasbirdsapp.ui.theme.MossGreenSecondary
+import com.pernasa.varillasbirdsapp.ui.theme.SkyBluePrimary
+import com.pernasa.varillasbirdsapp.ui.theme.SkyBlueSecondary
 import com.pernasa.varillasbirdsapp.ui.theme.VarillasBirdsAppTheme
-import com.pernasa.varillasbirdsapp.ui.theme.OrangeBird
+import com.pernasa.varillasbirdsapp.ui.theme.GreenLime
 import com.pernasa.varillasbirdsapp.utils.Constants.Companion.MEDIUM_TEXT_SIZE
 import com.pernasa.varillasbirdsapp.utils.Constants.Companion.SUBTITLE_TEXT_SIZE
 import com.pernasa.varillasbirdsapp.utils.Constants.Companion.TITLE_TEXT_SIZE
@@ -83,12 +83,12 @@ fun BookCardWithTabs(modifier: Modifier = Modifier) {
 
     Card(
         colors = CardDefaults.cardColors(
-            containerColor = MossGreenSecondary,
+            containerColor = SkyBlueSecondary,
         ),
         elevation = CardDefaults.cardElevation(
             defaultElevation = 22.dp,
         ),
-        border = BorderStroke(2.dp, MossGreenPrimary),
+        border = BorderStroke(2.dp, SkyBluePrimary),
         modifier = modifier
             .fillMaxWidth()
             .padding(start = 4.dp, top = 15.dp, end = 4.dp, bottom = 6.dp)
@@ -97,7 +97,7 @@ fun BookCardWithTabs(modifier: Modifier = Modifier) {
             ScrollableTabRow(
                 selectedTabIndex = selectedTabIndex,
                 edgePadding = 8.dp,
-                containerColor = MossGreenSecondary,
+                containerColor = SkyBlueSecondary,
                 contentColor = Color.White
             ) {
                 tabTitles.forEachIndexed { index, title ->
@@ -107,7 +107,7 @@ fun BookCardWithTabs(modifier: Modifier = Modifier) {
                         text = {
                             Text(
                                 text = title,
-                                color = if (selectedTabIndex == index) OrangeBird else Color.White
+                                color = if (selectedTabIndex == index) GreenLime else Color.White
                             )
                         }
                     )
@@ -171,7 +171,7 @@ fun TabContent(
         ) {
             Image(
                 modifier = modifier
-                    .border(BorderStroke(0.8.dp, OrangeBird), RoundedCornerShape(8.dp))
+                    .border(BorderStroke(0.8.dp, GreenLime), RoundedCornerShape(8.dp))
                     .clip(RoundedCornerShape(8.dp)),
                 painter = painterResource(imageRes),
                 contentDescription = title,
@@ -202,12 +202,12 @@ fun TabContent(
 fun WriterCard(modifier: Modifier) {
     Card(
         colors = CardDefaults.cardColors(
-            containerColor = MossGreenSecondary,
+            containerColor = SkyBlueSecondary,
         ),
         elevation = CardDefaults.cardElevation(
             defaultElevation = 22.dp,
         ),
-        border = BorderStroke(2.dp, MossGreenPrimary),
+        border = BorderStroke(2.dp, SkyBluePrimary),
         modifier = modifier
             .fillMaxWidth()
             .padding(start = 4.dp, top = 15.dp, end = 4.dp, bottom = 6.dp)
@@ -223,7 +223,7 @@ fun WriterCard(modifier: Modifier) {
                 modifier = Modifier
                     .width(110.dp)
                     .padding(horizontal = 10.dp, vertical = 10.dp)
-                    .border(BorderStroke(0.8.dp, OrangeBird), RoundedCornerShape(8.dp))
+                    .border(BorderStroke(0.8.dp, GreenLime), RoundedCornerShape(8.dp))
                     .clip(RoundedCornerShape(8.dp)),
                 painter = painterResource(R.drawable.util_raul_balla),
                 contentDescription = stringResource(R.string.image_book_description),
@@ -273,12 +273,12 @@ fun WriterCard(modifier: Modifier) {
 fun DeveloperCard() {
     Card(
         colors = CardDefaults.cardColors(
-            containerColor = MossGreenSecondary,
+            containerColor = SkyBlueSecondary,
         ),
         elevation = CardDefaults.cardElevation(
             defaultElevation = 22.dp,
         ),
-        border = BorderStroke(2.dp, MossGreenPrimary),
+        border = BorderStroke(2.dp, SkyBluePrimary),
         modifier = Modifier
             .height(140.dp)
             .padding(start = 4.dp, top = 15.dp, end = 4.dp, bottom = 15.dp)
@@ -291,7 +291,7 @@ fun DeveloperCard() {
                 modifier = Modifier
                     .width(110.dp)
                     .padding(vertical = 10.dp, horizontal = 10.dp)
-                    .border(BorderStroke(0.8.dp, OrangeBird), RoundedCornerShape(8.dp))
+                    .border(BorderStroke(0.8.dp, GreenLime), RoundedCornerShape(8.dp))
                     .clip(RoundedCornerShape(8.dp)),
                 painter = painterResource(R.drawable.util_agustin_photo),
                 contentDescription = stringResource(R.string.image_book_description),
@@ -335,7 +335,7 @@ fun ExtendedContactWriterButton(modifier: Modifier) {
                 modifier.height(20.dp)
             ) },
         containerColor = Color.Black,
-        contentColor = OrangeBird,
+        contentColor = GreenLime,
         modifier = modifier
             .height(50.dp)
             .padding(top = 10.dp)
@@ -369,7 +369,7 @@ fun ExtendedContactDeveloperButton(modifier: Modifier) {
             modifier.height(15.dp)
         ) },
         containerColor = Color.Black,
-        contentColor = OrangeBird,
+        contentColor = GreenLime,
         modifier = modifier
             .height(50.dp)
             .padding(top = 8.dp, bottom = 8.dp)

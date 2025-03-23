@@ -59,10 +59,10 @@ import androidx.compose.ui.unit.dp
 import com.pernasa.varillasbirdsapp.R
 import com.pernasa.varillasbirdsapp.models.Bird
 import com.pernasa.varillasbirdsapp.models.room.RoomBird
-import com.pernasa.varillasbirdsapp.ui.theme.MossGreenPrimary
-import com.pernasa.varillasbirdsapp.ui.theme.MossGreenPrimaryLight
-import com.pernasa.varillasbirdsapp.ui.theme.MossGreenRealTertiary
-import com.pernasa.varillasbirdsapp.ui.theme.OrangeBird
+import com.pernasa.varillasbirdsapp.ui.theme.SkyBluePrimary
+import com.pernasa.varillasbirdsapp.ui.theme.SkyBluePrimaryLight
+import com.pernasa.varillasbirdsapp.ui.theme.SkyBlueTertiary
+import com.pernasa.varillasbirdsapp.ui.theme.GreenLime
 import com.pernasa.varillasbirdsapp.ui.theme.SearchFieldBackground
 import com.pernasa.varillasbirdsapp.ui.theme.SearchPlaceholderColor
 import com.pernasa.varillasbirdsapp.utils.Constants.Companion.SUBTITLE_TEXT_SIZE
@@ -200,7 +200,7 @@ fun SearchRow(
             modifier = Modifier
                 .weight(1f)
                 .clip(RoundedCornerShape(8.dp))
-                .border(BorderStroke(0.8.dp, MossGreenRealTertiary), RoundedCornerShape(8.dp)),
+                .border(BorderStroke(0.8.dp, SkyBlueTertiary), RoundedCornerShape(8.dp)),
             singleLine = true,
             keyboardOptions = KeyboardOptions(
                 imeAction = ImeAction.Done
@@ -218,7 +218,7 @@ fun SearchRow(
             verticalArrangement = Arrangement.SpaceBetween,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Text(text = "¿Observadas?", color = MossGreenPrimary)
+            Text(text = "¿Observadas?", color = SkyBluePrimary)
             TriStateCheckbox(
                 state = observationFilterState,
                 onClick = {
@@ -231,8 +231,8 @@ fun SearchRow(
                     )
                 },
                 colors = CheckboxDefaults.colors(
-                    checkedColor = OrangeBird,
-                    uncheckedColor = MossGreenPrimary,
+                    checkedColor = GreenLime,
+                    uncheckedColor = SkyBluePrimary,
                     checkmarkColor = Color.Black
                 )
             )
@@ -304,10 +304,10 @@ fun <T> DropdownMenuFilter(
         Row(
             modifier = modifier.clickable { expanded = true }
                 .background(
-                    color = MossGreenPrimary ,
+                    color = SkyBluePrimary ,
                     shape = RoundedCornerShape(8.dp)
                 ).border(
-                    BorderStroke(2.dp, if (selectedOptions.isEmpty()) Color.Black else OrangeBird),
+                    BorderStroke(2.dp, if (selectedOptions.isEmpty()) Color.Black else GreenLime),
                     shape = RoundedCornerShape(8.dp)
                 ).height(40.dp).fillMaxWidth(),
             horizontalArrangement = Arrangement.Center,
@@ -348,7 +348,7 @@ fun <T> DropdownMenuFilter(
                                 checked = isChecked,
                                 onCheckedChange = null,
                                 colors = CheckboxDefaults.colors(
-                                    checkedColor = MossGreenPrimaryLight,
+                                    checkedColor = SkyBluePrimaryLight,
                                     uncheckedColor = Color.White
                                 )
                             )
@@ -376,7 +376,7 @@ fun BirdCard(
         elevation = CardDefaults.cardElevation(
             defaultElevation = 22.dp,
         ),
-        border = BorderStroke(2.dp, MossGreenRealTertiary),
+        border = BorderStroke(2.dp, SkyBlueTertiary),
         modifier = modifier
             .fillMaxHeight()
             .padding(start = 4.dp, top = 6.dp, end = 4.dp, bottom = 6.dp)
@@ -408,7 +408,7 @@ fun BirdCard(
                     .height(150.dp)
                     .padding(horizontal = 10.dp)
                     .clip(RoundedCornerShape(8.dp))
-                    .border(BorderStroke(0.8.dp, MossGreenRealTertiary), RoundedCornerShape(8.dp)),
+                    .border(BorderStroke(0.8.dp, SkyBlueTertiary), RoundedCornerShape(8.dp)),
                 painter = painterResource(id = bird.imageResId),
                 contentDescription = stringResource(R.string.image_bird_description),
                 contentScale = ContentScale.Crop
