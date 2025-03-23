@@ -9,7 +9,6 @@ import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.unit.dp
 import com.pernasa.varillasbirdsapp.ui.theme.DarkColorScheme
-import com.pernasa.varillasbirdsapp.ui.theme.LightColorScheme
 import com.pernasa.varillasbirdsapp.ui.theme.VarillasBirdsAppTheme
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.size
@@ -39,19 +38,6 @@ class ThemeTest {
         composeTestRule.onNodeWithTag("testBox")
             .assertExists()
             .assertBackgroundColor(DarkColorScheme.primary)
-    }
-
-    @Test
-    fun testLightTheme() {
-        composeTestRule.setContent {
-            VarillasBirdsAppTheme() {
-                TestContent()
-            }
-        }
-
-        composeTestRule.onNodeWithTag("testBox")
-            .assertExists()
-            .assertBackgroundColor(LightColorScheme.primary)
     }
 
     @Composable

@@ -22,12 +22,12 @@
 
     #Buttons actions
     <string name="button_share">Compartir</string>
-    <string name="button_whatsapp">Contactar a Raúl</string>
+    <string name="button_whatsapp">Contactar\na Hugo</string>
     <string name="button_maps">Ver en\nGoogle Maps</string>
     <string name="button_linkedIn">Perfil LinkedIn</string>
 
     <string name="button_share_text">Te invito a descargar esta aplicación sobre aves.\n
-    Tiene mucho contenido interesante! En la Play Store aparece como Aves de Las Varillas Córdoba. El link es: \n
+    Tiene mucho contenido interesante! En la Play Store aparece como Aves de Las Varillas. El link es: \n
     https://play.google.com/store/apps/details?id=com.pernasa.varillasbirdsapp</string>
 
     <string name="search_by_name">Buscar ave por nombre</string>
@@ -49,19 +49,27 @@
     <string name="tooltip_message_observation_routes">En esta sección se muestran\n
     varios recorridos para\nrealizar en la zona serrana\ny avistar distintos tipos de aves.</string>
 
-    #About Us Page
-    <string name="book_name">Libro Aves de las Sierras Centrales de Argentina</string>
-    <string name="book_name_figus_bsas">Libro de Figuritas de Aves de Buenos Aires</string>
-    <string name="book_name_figus_centro">Libro de Figuritas de Aves del Centro de Argentina</string>
-    <string name="book_full_description">Esta guía facilita la identificación de aves en las Sierras Centrales de Argentina, en Córdoba y San Luis. Invita a disfrutar de la naturaleza con un sistema que ayuda a recorrer circuitos, haciendo de la observación y fotografía de aves una actividad agradable y gratificante.</string>
-
     #Tab indexes
-    <string name="tab_title_1_aves_sierras_centrales">Libro guía de aves</string>
-    <string name="tab_title_2_figuritas_bsas">Libro figuritas Buenos Aires</string>
-    <string name="tab_title_3_figuritas_cordoba">Libro figuritas centro Argentina</string>
+    <string name="writer_name">Hugo\nCaverzasi</string>
+    <string name="writer_full_description">Soy Hugo Caverzasi, observador de aves y fotógrafo aficionado. Aproximadamente en 2015
+comencé a recorrer caminos y campos de los alrededores de Las Varillas, para saber cuántas
+especies de aves se podían ver en la zona. Era una incógnita. Con el pasar del tiempo el área se
+fue ampliando hasta llegar a los 40-50 km de los alrededores, donde quedan incluidos varios
+parajes y pueblos.\n\nHasta el momento llevo contabilizadas 240 especies, de las cuales muchas
+las he podido ver una sola vez en 10 años y otras que son habituales en mis salidas. En cada
+salida mantengo la ilusión de poder seguir ampliando ese número
+\n\nQuiero expresar mi mayor agradecimiento al Sr Raúl Balla, observador y fotógrafo de Merlo,
+San Luis, quién ha publicado una guía y una app con las aves de esa zona y me ha permitido
+utilizar generosamente la mayor parte de la información contenida en ella, para elaborar, con
+algunas diferencias, el listado de las aves de Las Varillas
+\n\nTambién quiero agradecer a dos amigos observadores y excelentes fotógrafos que me han
+cedido las fotos de especies difíciles de fotografiar. Ellos son Miguel Durando de la ciudad de
+Balnearia y Jesús Enrique de Miguel Torres, provincia de Santa Fé. Agradezco así mismo a Agustín Pernas el programador que ha desarrollado la aplicación
 
-    <string name="writer_name">Autor Raúl Balla</string>
-    <string name="writer_full_description">Argentino, nació el 29 de agosto de 1956 en Noetinger, Córdoba. Desde el 2008 reside en Merlo, San Luis. Participa activamente en el COA Chiguanco en la localidad y permanece vinculado a sus amigos del COA Ñacurutú de General Roca. Colabora con gran empeño en su comunidad para difundir el conocimiento y cariño por las aves.</string>
+\n\nA los que les interese salir a observar aves le recomiendo que bajen también la aplicación
+Merlín Bird ID, desarrollada por The Cornell Lab. La misma es
+gratuita y es una excelente herramienta que permite utilizando una foto o grabando un audio
+identificar muchas especies de aves en forma automática.</string>
 
     <string name="developer_name">Programador\nAgustin Pernas</string>
 

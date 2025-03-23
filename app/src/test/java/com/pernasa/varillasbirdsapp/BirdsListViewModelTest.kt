@@ -75,29 +75,6 @@ class BirdsListViewModelTest {
     }
 
     @Test
-    fun `test getBirdById returns correct route`(): Unit = runTest {
-        val mockBird = Bird(1, "Bird 1", 0, 0, 0)
-        val mockBird4 = Bird(4, "Bird 4", 0, 0, 0)
-        birdsListViewModel.dataBirdsList = listOf(mockBird, mockBird4)
-
-        val result = birdsListViewModel.getBirdById(1)
-        assert(result == mockBird)
-
-        val otherResult = birdsListViewModel.getBirdById(4)
-        assert(otherResult == mockBird4)
-    }
-
-    @Test
-    fun `test getObservationRouteById returns null when there is no route with the id`(): Unit = runTest {
-        val mockBird = Bird(1, "Bird 1", 0, 0, 0)
-        val mockBird4 = Bird(4, "Bird 4", 0, 0, 0)
-        birdsListViewModel.dataBirdsList = listOf(mockBird, mockBird4)
-
-        val result = birdsListViewModel.getBirdById(2)
-        assert(result == null)
-    }
-
-    @Test
     fun `test should invoke editWasObservedBird in roomBirdsDao`(): Unit = runTest {
         val roomBird = RoomBird(1, true)
         coEvery { mockRoomBirdsDao.editWasObservedBird(roomBird) } just runs

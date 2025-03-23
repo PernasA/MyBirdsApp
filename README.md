@@ -1,6 +1,6 @@
-# Aves de Las Varillas Córdoba
+# Aves de Las Varillas
 
-Aves de Las Varillas Córdoba es una aplicación móvil diseñada para ayudarte a identificar y registrar las aves que observas en la región de Las Varillas Córdoba. La aplicación permite a los usuarios almacenar una lista de aves observadas, elegir distintos recorridos en los alrededores de Merlo y proporciona una interfaz fácil de usar para la navegación y el registro de observaciones.
+Aves de Las Varillas es una aplicación móvil diseñada para ayudarte a identificar y registrar las aves que observas en la región de Las Varillas Córdoba. La aplicación permite a los usuarios almacenar una lista de aves observadas, elegir distintos recorridos en los alrededores de Merlo y proporciona una interfaz fácil de usar para la navegación y el registro de observaciones.
 
 ## Introducción
 
