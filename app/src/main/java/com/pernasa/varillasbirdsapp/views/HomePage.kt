@@ -126,7 +126,7 @@ fun HomePageInit(
         )
 
         ZoomableImage(
-            R.drawable.b00_portada_carpinterito_barrado,
+            R.drawable.b109_carpintero_blanco_elegid,
             Modifier
                 .size(300.dp)
                 .padding(top = 20.dp)
@@ -169,36 +169,39 @@ fun RowTitle(modifier: Modifier) {
             fontWeight = FontWeight.ExtraBold,
             fontFamily = FontFamily.Serif,
             fontSize = 65.sp,
-            lineHeight = 65.sp,
+            lineHeight = 55.sp,
             letterSpacing = 6.sp,
             textAlign = TextAlign.Center,
             color = Color.White,
             shadow = Shadow(OrangeBird),
         ),
-        modifier = modifier.padding(top = 15.dp)
+        modifier = modifier.padding(top = 5.dp)
     )
     Text(
         text = stringResource(R.string.subtitle_main_page),
         style = TextStyle(
-            fontWeight = FontWeight.Bold,
+            fontWeight = FontWeight.ExtraBold,
             fontFamily = FontFamily.Serif,
-            fontSize = TITLE_TEXT_SIZE,
-            lineHeight = TITLE_TEXT_SIZE,
+            fontSize = 38.sp,
+            lineHeight = 35.sp,
+            letterSpacing = 2.sp,
             textAlign = TextAlign.Center,
             color = OrangeBird,
-            shadow = Shadow(MossGreenRealTertiary)
+            shadow = Shadow(MossGreenPrimary),
         ),
         modifier = modifier.padding(5.dp)
     )
     Text(
         text = stringResource(R.string.second_subtitle_main_page),
         style = TextStyle(
-            fontWeight = FontWeight.Bold,
-            fontSize = MEDIUM_TEXT_SIZE,
-            lineHeight = MEDIUM_TEXT_SIZE,
+            fontWeight = FontWeight.ExtraBold,
+            fontFamily = FontFamily.Serif,
+            fontSize = 20.sp,
+            lineHeight = 17.sp,
+            letterSpacing = 1.sp,
             textAlign = TextAlign.Center,
-            color = Color.White,
-            shadow = Shadow(OrangeBird)
+            color = OrangeBird,
+            shadow = Shadow(MossGreenPrimary),
         ),
         modifier = modifier
             .padding(top = 5.dp, start = 5.dp, end = 5.dp, bottom = 25.dp)

@@ -16,7 +16,7 @@ object DrawableResourcesList {
         R.drawable.b27_yeruti_gri,  R.drawable.b28_torcaz, R.drawable.b29_pirincho, // 27 28 29
         R.drawable.b30_ano_chico,  R.drawable.b31_crespin, R.drawable.b32_cuclillo_chico, // 30 31 32
         R.drawable.b33_cuclillo_canela_,  R.drawable.b34_niacurutu_elegid, R.drawable.b35_atajacamino_chic, // 33 34 35
-        R.drawable.b37_atajacaminos_tijera__copi,  R.drawable.b38_urutau, R.drawable.b39_picaflor_verd, // 36 37 38
+        R.drawable.b36_atajacaminos_nianarc , R.drawable.b37_atajacaminos_tijera__copi,  R.drawable.b38_urutau, // 36 37 38
         R.drawable.b39_picaflor_verd , R.drawable.b40_gallineta_overa,  R.drawable.b41_gallineta_comun, // 39 40 41
         R.drawable.b42_pollona_pintad,  R.drawable.b43_pollona_negra, R.drawable.b44_gallareta_escudete_rojo,// 42 43 44
         R.drawable.b45_gallareta_ligas_rojas,  R.drawable.b46_gallareta_chic, R.drawable.b47_carau_,// 45 46 47

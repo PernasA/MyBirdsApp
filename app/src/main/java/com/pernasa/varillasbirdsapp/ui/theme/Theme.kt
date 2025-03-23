@@ -23,24 +23,13 @@ val DarkColorScheme = darkColorScheme(
     onSurfaceVariant = Color.Black,
 )
 
-@TestOnly
-val LightColorScheme = lightColorScheme(
-    primary = MossGreenPrimaryLight,
-    secondary = MossGreenSecondaryLight,
-    tertiary = MossGreenTertiaryLight,
-    primaryContainer = MossGreenPrimaryContainerLight,
-    secondaryContainer = MossGreenTertiaryLight
-)
-
 @Composable
 fun VarillasBirdsAppTheme(
     darkTheme: Boolean,
     content: @Composable () -> Unit
 ) {
-    val colorScheme = if (darkTheme) DarkColorScheme
-    else LightColorScheme
     MaterialTheme(
-        colorScheme = colorScheme,
+        colorScheme = DarkColorScheme,
         typography = Typography,
         content = content
     )

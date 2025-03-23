@@ -103,5 +103,5 @@ class RoomSchemaArgProvider(
 }
 
 ksp {
-    arg(RoomSchemaArgProvider(File(projectDir, "schemas")))
+    arg("room.schemaLocation", File(projectDir, "schemas").path)
 }

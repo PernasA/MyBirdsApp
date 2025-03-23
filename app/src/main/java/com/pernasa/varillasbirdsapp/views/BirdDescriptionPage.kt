@@ -98,12 +98,13 @@ fun RowNames(bird: Bird) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .height(95.dp)
+            .height(80.dp)
     ) {
         Text(
             modifier = Modifier
                 .weight(1F)
-                .align(Alignment.Top),
+                .align(Alignment.Top)
+                .padding(end = 10.dp),
             text = "${bird.id}. ${bird.name}",
             style = TextStyle(
                 fontWeight = FontWeight.Bold,
@@ -124,8 +125,12 @@ fun RowNames(bird: Bird) {
                 shadow = Shadow(OrangeBird, blurRadius = 1.0f),
                 textAlign = TextAlign.Right,
                 color = Color.White,
+                lineBreak = LineBreak.Heading,
                 fontStyle = FontStyle.Italic
-            )
+            ),
+            modifier = Modifier.weight(1F)
+                .align(Alignment.Top)
+                .padding(start = 10.dp),
         )
     }
 
@@ -133,7 +138,7 @@ fun RowNames(bird: Bird) {
         bird.imageResId,
         Modifier
             .fillMaxWidth()
-            .padding(top = 20.dp, start = 5.dp, end = 5.dp)
+            .padding(top = 8.dp, start = 5.dp, end = 5.dp)
             .border(BorderStroke(0.8.dp, OrangeBird), RoundedCornerShape(8.dp))
             .clip(RoundedCornerShape(8.dp)),
         ContentScale.FillWidth
@@ -237,7 +242,7 @@ fun RowBirdAttributes(bird: Bird){
                 .align(Alignment.Top)
         ) {
             Text(
-                text = stringResource(R.string.bird_height),
+                text = stringResource(R.string.bird_height).replace(" ", "\n", true),
                 style = TextStyle(
                     fontWeight = FontWeight.Bold,
                     fontSize = MEDIUM_TEXT_SIZE,
@@ -299,68 +304,6 @@ fun RowBirdAttributes(bird: Bird){
                     .padding(bottom = 10.dp)
             )
             FrequencyIconImage(bird.frequency)
-        }
-        VerticalDivider (
-            color = OrangeBird,
-            modifier = Modifier
-                .width(1.dp)
-                .fillMaxHeight()
-        )
-        Column(
-            Modifier
-                .weight(1F)
-                .align(Alignment.Top)
-        ) {
-            Text(
-                text = stringResource(R.string.bird_hight_location),
-                style = TextStyle(
-                    fontWeight = FontWeight.Bold,
-                    fontSize = MEDIUM_TEXT_SIZE,
-                    lineHeight = MEDIUM_TEXT_SIZE,
-                    textAlign = TextAlign.Center,
-                    color = Color.White,
-                ),
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(bottom = 5.dp)
-            )
-            val heightLocationText = when(bird.heightLocation){
-                1 -> stringResource(R.string.height_location_1)
-                2 -> stringResource(R.string.height_location_2)
-                3 -> stringResource(R.string.height_location_3)
-                12 -> stringResource(R.string.height_location_12)
-                13 -> stringResource(R.string.height_location_13)
-                23 -> stringResource(R.string.height_location_23)
-                123 -> stringResource(R.string.height_location_123)
-                else -> {stringResource(R.string.frequency_undefined)}
-            }
-            Box(modifier = Modifier.fillMaxSize().align(Alignment.CenterHorizontally)) {
-                Text(
-                    text = heightLocationText,
-                    style = TextStyle(
-                        fontWeight = FontWeight.Bold,
-                        fontSize = MEDIUM_TEXT_SIZE,
-                        lineHeight = MEDIUM_TEXT_SIZE,
-                        textAlign = TextAlign.Center,
-                        color = Color.White
-                    ),
-                    modifier = Modifier.padding(top = 6.dp)
-                        .zIndex(1f)
-                        .align(Alignment.Center),
-                    maxLines = 3
-                )
-                Image(
-                    painter = painterResource(R.drawable.icon_mountain),
-                    contentDescription = stringResource(R.string.image_mountain_description),
-                    modifier = Modifier
-                        .fillMaxSize()
-                        .zIndex(0f)
-                        .graphicsLayer(alpha = 0.6f),
-                    contentScale = ContentScale.Fit,
-                    colorFilter = ColorFilter.tint(MossGreenPrimary)
-                )
-            }
-
         }
     }
 }

@@ -2,8 +2,8 @@
     #Titles pages
     <string name="title_main_page_appbar">Menu</string>
     <string name="title_main_page">AVES</string>
-    <string name="subtitle_main_page">De las Sierras Centrales\nde Argentina</string>
-    <string name="second_subtitle_main_page">con centro Las Varillas - Córdoba</string>
+    <string name="subtitle_main_page">LAS VARILLAS</string>
+    <string name="second_subtitle_main_page">CÓRDOBA</string>
     <string name="birds_page_title">Lista de Aves</string>
     <string name="bird_description_page_title">Información Detallada</string>
     <string name="observation_routes_page_title">Recorridos</string>
