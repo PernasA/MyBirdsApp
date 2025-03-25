@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Cuatro Bocas",
-    "description": "",
+    "description": "Cercana a Las Varillas y Las Varas, esta laguna es uno de los mejores lugares para observar aves. El listado suma unas 130 especies. Pequeña y fácil de recorrer ya que tiene un camino rural que la atraviesa. Es alimentada por agua de lluvia, por lo que cuando las precipitaciones son muy bajas, llega a secarse completamente. Hay juncales, totorales y pastizales donde pueden observarse Tachuris, Junqueros, Doraditos, Varilleros, Gallaretas y varios tipos de Patos , Flamencos.",
     "coordinates_list": [
       {
         "x": -31.813367085396507,
@@ -17,7 +17,7 @@
   {
     "id": 2,
     "name": "Planta Tratamiento Las Varillas",
-    "description": "",
+    "description": "Comprende dos pequeñas lagunas alimentadas por las aguas residuales de la ciudad. Fácil de recorrer. Aquí es posible observar varias especies de Patos, Gallaretas, Macaes, Falaropos, Teros reales. La cantidad de especies aumenta en años con pocas precipitaciones, ya que es el único lugar donde pueden refugiarse del calor y la sequía.",
     "coordinates_list": [
       {
         "x": -31.89854102350448,
@@ -32,7 +32,7 @@
   {
     "id": 3,
     "name": "Estancia Las Varillas",
-    "description": "",
+    "description": "Cerca de la ciudad este camino rural esta bordeado por monte nativo y pastizal natural. Al recorrerlo podemos encontrar, Cardenales, Espineros, Pijui, Arañero, Tijereta, Monjita. Calandrias Recorrer el camino durante la noche se puede escuchar Urutaú, Lechuzón orejudo, Alilicucu común.",
     "coordinates_list": [
       {
         "x": -31.91470593258791,
@@ -47,7 +47,7 @@
   {
     "id": 4,
     "name": "Camino Rural El Fortín",
-    "description": "",
+    "description": "Este camino se encuentra cerca del limite con la provincia de Santa Fe. El recorrido incluye lotes de agricultura y ganadería. Pastizales naturales donde se pueden observar diversidad de especies, como Monjitas, Pecho colorado, Capuchinos, Cachirlas, Golondrinas, Tachuris, Bandurritas.",
     "coordinates_list": [
       {
         "x": -32.05856476139343,
@@ -62,7 +62,7 @@
   {
     "id": 5,
     "name": "Camino Tortelli Los Ucles",
-    "description": "",
+    "description": "A este camino se puede ingresar desde Los Ucles y está rodeado en parte de campos con monte nativo, pastizales naturales, lotes con pasturas y agricultura. Se pueden observar gran diversidad de especies. Carpinteros, Espineros, Cacholotes, Pijui, Piojitos, Pepiteros, Cardenales, Taguato, Crespín.",
     "coordinates_list": [
       {
         "x": -32.10291169888908,
@@ -77,7 +77,7 @@
   {
     "id": 6,
     "name": "Laguna Blaizot Pozo del Molle",
-    "description": "",
+    "description": "Una gran laguna ubicada en propiedad privada, aunque en uno de los extremos hay un camino rural que permite observar diversidad de vegetación. Totorales y juncales y un pequeño montecito de chañares. Para recorrerla completamente hay que solicitar permiso. Esta alimentada por los excesos de precipitaciones de una gran zona. En años secos puede llegar a secarse completamente. El listado es de140 especies, que varía de acuerdo a la época y el nivel de la laguna. Gran variedad y cantidad de Patos, Garzas, Espátula rosada, Cigueñas, Varilleros, Chajá, Sobrepuesto, Cachirlas, Tero real, Gaviotas, Leñatero.",
     "coordinates_list": [
       {
         "x": -32.08895993170787,
@@ -92,7 +92,7 @@
   {
     "id": 7,
     "name": "Laguna Trinchera",
-    "description": "",
+    "description": "Masa de agua que varía de acuerdo a las precipitaciones que se dan en el año. Cerca de la ruta nacional 158. Rodeada de campos con pastos naturales y algo de agricultura. También hay un incipiente monte ralo. En años de poca lluvia se seca completamente. Ahí se pueden observar Flamencos, Cigüeña, Gallaretas, Patos, Cachirlas, Golondrinas, Pitotoy, Tero real.",
     "coordinates_list": [
       {
         "x": -31.945967070662885,
@@ -107,7 +107,7 @@
   {
     "id": 8,
     "name": "Camino Rural Alvarez",
-    "description": "",
+    "description": "Este camino incluye zona con montes, lotes ganaderos y agricultura. Diversidad de especies según se transita. Tijeretas, Chotoy, Cortarramas, Tordos, Piojitos, Cardenales, Torcazas, Carpinteros, Chororó.",
     "coordinates_list": [
       {
         "x": -31.80950859534477,
@@ -122,7 +122,7 @@
   {
     "id": 9,
     "name": "Centro Cívico y Paseo del Caminante",
-    "description": "",
+    "description": "Recorre el centro de la ciudad y el sendero llega hasta el cementerio local. Son aproximadamente 1,5 km con arbolado ralo. Aquí se pueden ver las especies mas comunes de  la zona. Palomas, Torcazas, Pirinchos, Tordos, Cotorras, Calandrias, Benteveo, Horneros y algunas otras.",
     "coordinates_list": [
       {
         "x": -31.873092951770953,
@@ -137,7 +137,7 @@
   {
     "id": 10,
     "name": "Monte Durando",
-    "description": "",
+    "description": "Camino a San Bartolome se encuentra el monte natural más grande que aún perdura en la zona. Es atravesado por un camino rural. Aquí podemos ver las especies comunes del monte, como Chororo, Suiriri, Carpinteros, Tuquitos, Benteveos, Pijui, Piojitos, Monteritas, Pepiteros, Zorzales, Tacuaritas. Canasteros, Espineros. Por la noche es posible encontrar Atajacaminos, Alilicucus, Ñacurutu, Urutaú.",
     "coordinates_list": [
       {
         "x": -31.65889279509166,

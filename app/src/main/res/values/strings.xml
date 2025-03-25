@@ -3,6 +3,7 @@
     <string name="title_main_page_appbar">Menu</string>
     <string name="title_main_page">AVES</string>
     <string name="subtitle_main_page">LAS VARILLAS</string>
+    <string name="third_subtitle_main_page">y alrededores</string>
     <string name="second_subtitle_main_page">CÓRDOBA</string>
     <string name="birds_page_title">Lista de Aves</string>
     <string name="bird_description_page_title">Información Detallada</string>
@@ -22,7 +23,6 @@
 
     #Buttons actions
     <string name="button_share">Compartir</string>
-    <string name="button_whatsapp">Contactar\na Hugo</string>
     <string name="button_maps">Ver en\nGoogle Maps</string>
     <string name="button_linkedIn">Perfil LinkedIn</string>
 

@@ -165,8 +165,8 @@ fun RowTitle(modifier: Modifier) {
         style = TextStyle(
             fontWeight = FontWeight.ExtraBold,
             fontFamily = FontFamily.Serif,
-            fontSize = 65.sp,
-            lineHeight = 55.sp,
+            fontSize = 55.sp,
+            lineHeight = 45.sp,
             letterSpacing = 6.sp,
             textAlign = TextAlign.Center,
             color = Color.White,
@@ -179,8 +179,8 @@ fun RowTitle(modifier: Modifier) {
         style = TextStyle(
             fontWeight = FontWeight.ExtraBold,
             fontFamily = FontFamily.Serif,
-            fontSize = 38.sp,
-            lineHeight = 35.sp,
+            fontSize = 34.sp,
+            lineHeight = 20.sp,
             letterSpacing = 2.sp,
             textAlign = TextAlign.Center,
             color = GreenLime,
@@ -189,19 +189,34 @@ fun RowTitle(modifier: Modifier) {
         modifier = modifier.padding(5.dp)
     )
     Text(
-        text = stringResource(R.string.second_subtitle_main_page),
+        text = stringResource(R.string.third_subtitle_main_page),
         style = TextStyle(
             fontWeight = FontWeight.ExtraBold,
             fontFamily = FontFamily.Serif,
-            fontSize = 20.sp,
-            lineHeight = 17.sp,
+            fontSize = 16.sp,
+            lineHeight = 8.sp,
             letterSpacing = 1.sp,
             textAlign = TextAlign.Center,
             color = GreenLime,
             shadow = Shadow(SkyBluePrimary),
         ),
         modifier = modifier
-            .padding(top = 5.dp, start = 5.dp, end = 5.dp, bottom = 25.dp)
+            .padding(top = 0.dp, start = 5.dp, end = 5.dp)
+    )
+    Text(
+        text = stringResource(R.string.second_subtitle_main_page),
+        style = TextStyle(
+            fontWeight = FontWeight.ExtraBold,
+            fontFamily = FontFamily.Serif,
+            fontSize = 25.sp,
+            lineHeight = 14.sp,
+            letterSpacing = 1.sp,
+            textAlign = TextAlign.Center,
+            color = GreenLime,
+            shadow = Shadow(SkyBluePrimary),
+        ),
+        modifier = modifier
+            .padding(top = 15.dp, start = 5.dp, end = 5.dp, bottom = 25.dp)
     )
 }
 
@@ -305,7 +320,7 @@ fun ExtendedShareButton() {
             shape = CircleShape,
             containerColor = SkyBlueSecondaryLight,
             contentColor = Color.Black,
-            modifier = Modifier.size(60.dp)
+            modifier = Modifier.size(50.dp)
         ) {
             Icon(Icons.Filled.Share, stringResource(R.string.button_share))
         }

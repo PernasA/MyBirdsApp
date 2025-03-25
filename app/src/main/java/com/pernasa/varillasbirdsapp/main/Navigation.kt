@@ -1,5 +1,6 @@
 package com.pernasa.varillasbirdsapp.main
 
+import android.app.Application
 import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
@@ -12,6 +13,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
@@ -20,6 +22,7 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.pernasa.varillasbirdsapp.R
+import com.pernasa.varillasbirdsapp.utils.SoundsController
 import com.pernasa.varillasbirdsapp.viewModels.BirdsListViewModel
 import com.pernasa.varillasbirdsapp.viewModels.ObservationRoutesViewModel
 import com.pernasa.varillasbirdsapp.views.BirdsListPage
@@ -51,13 +54,19 @@ fun Navigation(
     val backStackEntry by navController.currentBackStackEntryAsState()
     val currentScreen = getCurrentScreen(backStackEntry?.destination?.route)
 
+    val localContext = LocalContext.current.applicationContext as Application
+    val soundsController = SoundsController(localContext)
+
     Scaffold(
         modifier = Modifier,
         topBar = {
             MyAppBar(
                 currentScreen = currentScreen,
                 canNavigateBack = navController.previousBackStackEntry != null,
-                navigateUp = { navController.navigateUp() }
+                navigateUp = {
+                    //soundsController.stopSound()
+                    navController.navigateUp()
+                }
             )
         }
     ) { innerPadding ->
@@ -65,7 +74,8 @@ fun Navigation(
             navController,
             birdsListViewModel,
             observationRoutesViewModel,
-            innerPadding
+            innerPadding,
+            soundsController
         )
     }
 }
@@ -75,8 +85,10 @@ private fun CreateNavigationHost(
     navController: NavHostController,
     birdsListViewModel: BirdsListViewModel,
     observationRoutesViewModel: ObservationRoutesViewModel,
-    innerPadding: PaddingValues
+    innerPadding: PaddingValues,
+    soundsController: SoundsController
 ) {
+
     NavHost(
         navController = navController,
         startDestination = NameOfScreen.StartNav.name,
@@ -141,7 +153,7 @@ private fun CreateNavigationHost(
         ) { backStackEntry ->
             val birdId = backStackEntry.arguments?.getInt("birdId") ?: return@composable
             val bird = birdsListViewModel.getBirdById(birdId) ?: return@composable
-            BirdDescriptionPage(bird = bird, birdsListViewModel)
+            BirdDescriptionPage(bird = bird, birdsListViewModel, soundsController)
         }
 
         composable(route = NameOfScreen.ObservationRoutesPageNav.name) {

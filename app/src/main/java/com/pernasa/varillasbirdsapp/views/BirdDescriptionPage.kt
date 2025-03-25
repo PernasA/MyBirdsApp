@@ -55,6 +55,7 @@ import com.pernasa.varillasbirdsapp.utils.Constants.Companion.BIG_TEXT_SIZE
 import com.pernasa.varillasbirdsapp.utils.Constants.Companion.MEDIUM_TEXT_SIZE
 import com.pernasa.varillasbirdsapp.utils.Constants.Companion.SUBTITLE_TEXT_SIZE
 import com.pernasa.varillasbirdsapp.utils.Constants.Companion.TITLE_TEXT_SIZE
+import com.pernasa.varillasbirdsapp.utils.SoundsController
 import com.pernasa.varillasbirdsapp.viewModels.BirdsListViewModel
 
 sealed class WidgetItem {
@@ -65,7 +66,12 @@ sealed class WidgetItem {
 }
 
 @Composable
-fun BirdDescriptionPage(bird: Bird, birdsListViewModel: BirdsListViewModel) {
+fun BirdDescriptionPage(
+    bird: Bird,
+    birdsListViewModel: BirdsListViewModel,
+    soundsController: SoundsController
+) {
+    soundsController.toggleSound(bird.id)
     val widgetItems = listOf(
         WidgetItem.RowNames(bird),
         WidgetItem.RowCounterObserved(bird, birdsListViewModel),
