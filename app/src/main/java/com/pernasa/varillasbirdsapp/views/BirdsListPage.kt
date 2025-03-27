@@ -17,6 +17,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardActions
@@ -86,14 +87,14 @@ fun BirdsListPage(
 
     var observationFilterState by rememberSaveable { mutableStateOf(ToggleableState.Off) }
 
+    val observedBirds by birdsListViewModel.listObservedBirds.collectAsState()
+
     val normalizedSearchQuery = Normalizer.normalize(searchQuery, Normalizer.Form.NFD)
         .replace(Regex("\\p{InCombiningDiacriticalMarks}+"), "")
 
     val filteredBirdsList = birdsListViewModel.dataBirdsList.filter { bird ->
         val normalizedBirdName = Normalizer.normalize(bird.name, Normalizer.Form.NFD)
             .replace(Regex("\\p{InCombiningDiacriticalMarks}+"), "")
-
-        val observedBirds by birdsListViewModel.listObservedBirds.collectAsState()
 
         val matchesObservation = when (observationFilterState) {
             ToggleableState.On -> observedBirds.any { it.id == bird.id && it.wasObserved }
@@ -141,223 +142,19 @@ fun BirdsListPage(
         }
 
         items(filteredBirdsList.chunked(2)) { rowBirds ->
-            Row(
+            LazyRow(
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(270.dp)
             ) {
-                for (bird in rowBirds) {
+                items(rowBirds) { bird ->
                     BirdCard(
                         bird,
                         onBirdClick,
                         birdsListViewModel,
-                        Modifier.weight(1F)
+                        Modifier.fillParentMaxWidth(0.5f)
                     )
                 }
-                if (rowBirds.size == 1) {
-                    Spacer(modifier = Modifier.weight(1f))
-                }
-            }
-        }
-    }
-}
-
-@Composable
-fun SearchRow(
-    searchQuery: String,
-    onSearchQueryChange: (String) -> Unit,
-    observationFilterState: ToggleableState,
-    onObservationFilterStateChange: (ToggleableState) -> Unit
-) {
-    val keyboardController = LocalSoftwareKeyboardController.current
-
-    Row(
-        modifier = Modifier
-            .padding(start = 10.dp, end = 10.dp, top = 10.dp)
-            .fillMaxWidth(),
-        verticalAlignment = Alignment.CenterVertically,
-        horizontalArrangement = Arrangement.SpaceBetween
-    ) {
-        TextField(
-            trailingIcon = {
-                Icon(
-                    imageVector = Icons.Filled.Search,
-                    contentDescription = "Icono de búsqueda",
-                    tint = Color.Black
-                )
-            },
-            value = searchQuery,
-            colors = TextFieldDefaults.colors(
-                unfocusedContainerColor = SearchFieldBackground,
-                focusedContainerColor = SearchFieldBackground,
-                disabledTextColor = SearchPlaceholderColor,
-                focusedTextColor = Color.Black,
-                unfocusedLeadingIconColor = Color.Black,
-                focusedLeadingIconColor = Color.Black,
-                unfocusedTextColor = Color.Black
-            ),
-            onValueChange = onSearchQueryChange,
-            label = { Text(stringResource(R.string.search_by_name)) },
-            modifier = Modifier
-                .weight(1f)
-                .clip(RoundedCornerShape(8.dp))
-                .border(BorderStroke(0.8.dp, SkyBlueTertiary), RoundedCornerShape(8.dp)),
-            singleLine = true,
-            keyboardOptions = KeyboardOptions(
-                imeAction = ImeAction.Done
-            ),
-            keyboardActions = KeyboardActions(
-                onDone = {
-                    keyboardController?.hide()
-                }
-            )
-        )
-        Spacer(modifier = Modifier.width(8.dp))
-
-        Column(
-            Modifier.padding(4.dp),
-            verticalArrangement = Arrangement.SpaceBetween,
-            horizontalAlignment = Alignment.CenterHorizontally
-        ) {
-            Text(text = "¿Observadas?", color = SkyBluePrimary)
-            TriStateCheckbox(
-                state = observationFilterState,
-                onClick = {
-                    onObservationFilterStateChange(
-                        when (observationFilterState) {
-                            ToggleableState.On -> ToggleableState.Indeterminate
-                            ToggleableState.Off -> ToggleableState.On
-                            ToggleableState.Indeterminate -> ToggleableState.Off
-                        }
-                    )
-                },
-                colors = CheckboxDefaults.colors(
-                    checkedColor = GreenLime,
-                    uncheckedColor = SkyBluePrimary,
-                    checkmarkColor = Color.Black
-                )
-            )
-        }
-    }
-}
-
-@Composable
-fun FiltersRow(
-    onHeightSelected: (List<Int>) -> Unit,
-    onFrequencySelected: (List<Int>) -> Unit
-) {
-    var selectedHeightRanges by rememberSaveable { mutableStateOf<List<Int>>(emptyList()) }
-    var selectedFrequencies by rememberSaveable { mutableStateOf<List<Int>>(emptyList()) }
-
-    Column(modifier = Modifier.padding(vertical = 4.dp)) {
-        Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(vertical = 8.dp),
-            horizontalArrangement = Arrangement.Center
-        ) {
-            DropdownMenuFilter(
-                label = "Medida (cm)",
-                options = listOf(
-                    "0-15 cm" to 15,
-                    "15-30 cm" to 30,
-                    "30-50 cm" to 50,
-                    "50 cm o más" to 1000
-                ),
-                selectedOptions = selectedHeightRanges,
-                onSelectedChange = {
-                    selectedHeightRanges = it
-                    onHeightSelected(it)
-                },
-                Modifier.weight(1F).align(Alignment.CenterVertically)
-            )
-
-            DropdownMenuFilter(
-                label = "Facilidad Observación",
-                options = listOf(
-                    "Abundante" to 4,
-                    "Frecuente" to 3,
-                    "Escaso" to 2,
-                    "Dificil" to 1
-                ),
-                selectedOptions = selectedFrequencies,
-                onSelectedChange = {
-                    selectedFrequencies = it
-                    onFrequencySelected(it)
-                },
-                Modifier.weight(1F).align(Alignment.CenterVertically)
-            )
-        }
-    }
-}
-
-@Composable
-fun <T> DropdownMenuFilter(
-    label: String,
-    options: List<Pair<String, T>>,
-    selectedOptions: List<T>,
-    onSelectedChange: (List<T>) -> Unit,
-    modifier: Modifier
-) {
-    var expanded by rememberSaveable { mutableStateOf(false) }
-
-    Box(modifier.padding(8.dp)) {
-        Row(
-            modifier = modifier.clickable { expanded = true }
-                .background(
-                    color = SkyBluePrimary ,
-                    shape = RoundedCornerShape(8.dp)
-                ).border(
-                    BorderStroke(2.dp, if (selectedOptions.isEmpty()) Color.Black else GreenLime),
-                    shape = RoundedCornerShape(8.dp)
-                ).height(40.dp).fillMaxWidth(),
-            horizontalArrangement = Arrangement.Center,
-            verticalAlignment = Alignment.CenterVertically
-        ) {
-            Text(
-                text = label,
-                color = if (selectedOptions.isEmpty()) Color.White else Color.Black,
-                modifier = Modifier.padding(start = 3.dp)
-            )
-            Icon(
-                imageVector = Icons.Filled.ArrowDropDown,
-                contentDescription = "Dropdown Arrow",
-                tint = if (selectedOptions.isEmpty()) Color.White else Color.Black
-            )
-        }
-        DropdownMenu(
-            expanded = expanded,
-            onDismissRequest = { expanded = false }
-        ) {
-            options.forEach { (label, value) ->
-                val isChecked = value in selectedOptions
-                DropdownMenuItem(
-                    onClick = {
-                        val newSelectedOptions = if (isChecked) {
-                            selectedOptions - value
-                        } else {
-                            selectedOptions + value
-                        }
-                        onSelectedChange(newSelectedOptions)
-                    },
-                    text = {
-                        Row(
-                            verticalAlignment = Alignment.CenterVertically,
-                            modifier = Modifier.fillMaxWidth()
-                        ) {
-                            Checkbox(
-                                checked = isChecked,
-                                onCheckedChange = null,
-                                colors = CheckboxDefaults.colors(
-                                    checkedColor = SkyBluePrimaryLight,
-                                    uncheckedColor = Color.White
-                                )
-                            )
-                            Spacer(modifier = Modifier.width(8.dp))
-                            Text(text = label, color = Color.White)
-                        }
-                    }
-                )
             }
         }
     }
