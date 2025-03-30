@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -43,6 +44,7 @@ import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.LineBreak
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.zIndex
 import com.pernasa.mybirdsapp.R
@@ -98,8 +100,10 @@ fun RowNames(bird: Bird) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .height(95.dp)
+            .wrapContentHeight()
     ) {
+        val adjustedFontSize = if (bird.name.length > 19) BIG_TEXT_SIZE * 0.8 else BIG_TEXT_SIZE
+
         Text(
             modifier = Modifier
                 .weight(1F)
@@ -107,13 +111,15 @@ fun RowNames(bird: Bird) {
             text = "${bird.id}. ${bird.name}",
             style = TextStyle(
                 fontWeight = FontWeight.Bold,
-                fontSize = BIG_TEXT_SIZE,
-                lineHeight = BIG_TEXT_SIZE,
+                fontSize = adjustedFontSize,
+                lineHeight = adjustedFontSize,
                 shadow = Shadow(OrangeBird, blurRadius = 1.0f),
                 textAlign = TextAlign.Left,
                 color = Color.White,
                 lineBreak = LineBreak.Heading
-            )
+            ),
+            maxLines = 3,
+            overflow = TextOverflow.Ellipsis
         )
         Column (
             modifier = Modifier
@@ -122,24 +128,28 @@ fun RowNames(bird: Bird) {
                 .align(Alignment.CenterVertically),
             horizontalAlignment = Alignment.End
         ) {
+            val adjustedFontSizeScientific = if (bird.scientificName.length > 17) TITLE_TEXT_SIZE * 0.8 else TITLE_TEXT_SIZE
+
             Text(
                 text = bird.scientificName,
                 style = TextStyle(
                     fontWeight = FontWeight.Bold,
-                    fontSize = TITLE_TEXT_SIZE,
-                    lineHeight = TITLE_TEXT_SIZE,
+                    fontSize = adjustedFontSizeScientific,
+                    lineHeight = adjustedFontSizeScientific,
                     shadow = Shadow(OrangeBird, blurRadius = 1.0f),
                     textAlign = TextAlign.Right,
                     color = Color.White,
                     fontStyle = FontStyle.Italic
                 )
             )
+            val adjustedFontSizeEnglish = if (bird.englishName.length > 17) TITLE_TEXT_SIZE * 0.8 else TITLE_TEXT_SIZE
+
             Text(
                 text = bird.englishName,
                 style = TextStyle(
                     fontWeight = FontWeight.Bold,
-                    fontSize = TITLE_TEXT_SIZE,
-                    lineHeight = TITLE_TEXT_SIZE,
+                    fontSize = adjustedFontSizeEnglish,
+                    lineHeight = adjustedFontSizeEnglish,
                     shadow = Shadow(OrangeBird, blurRadius = 1.0f),
                     textAlign = TextAlign.Right,
                     color = Color.Yellow

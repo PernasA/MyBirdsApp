@@ -56,6 +56,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import coil.compose.AsyncImage
 import com.pernasa.mybirdsapp.R
 import com.pernasa.mybirdsapp.models.Bird
 import com.pernasa.mybirdsapp.models.room.RoomBird
@@ -373,9 +374,6 @@ fun BirdCard(
         colors = CardDefaults.cardColors(
             containerColor = MaterialTheme.colorScheme.primaryContainer,
         ),
-        elevation = CardDefaults.cardElevation(
-            defaultElevation = 22.dp,
-        ),
         border = BorderStroke(2.dp, MossGreenRealTertiary),
         modifier = modifier
             .fillMaxHeight()
@@ -402,16 +400,16 @@ fun BirdCard(
                 ),
                 maxLines = 2
             )
-            Image(
+            AsyncImage(
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(150.dp)
                     .padding(horizontal = 10.dp)
                     .clip(RoundedCornerShape(8.dp))
                     .border(BorderStroke(0.8.dp, MossGreenRealTertiary), RoundedCornerShape(8.dp)),
-                painter = painterResource(id = bird.imageResId),
                 contentDescription = stringResource(R.string.image_bird_description),
-                contentScale = ContentScale.Crop
+                contentScale = ContentScale.Crop,
+                model = bird.imageResId
             )
             CardRowCheckBox(
                 birdsListViewModel,
