@@ -7,6 +7,7 @@ import com.pernasa.varillasbirdsapp.R
 
 class SoundsController(application: Application) : AndroidViewModel(application) {
     private val context = application.applicationContext
+    private var mediaPlayer: MediaPlayer? = null
 
     private val audioList = mapOf(
         1 to R.raw.a1_tataupa_comun_a,
@@ -25,24 +26,34 @@ class SoundsController(application: Application) : AndroidViewModel(application)
     )
 
     fun toggleSound(birdId: Int) {
-        val sound = getSoundById(birdId) ?: return
+        stopSound()
 
-        sound.setVolume(0.8f, 0.8f)
-        sound.start()
+        val soundResId = audioList[birdId] ?: return
+
+        stopSound() // Asegura que el anterior se libere antes de iniciar uno nuevo
+
+        mediaPlayer = MediaPlayer.create(context, soundResId).apply {
+            setVolume(0.8f, 0.8f)
+            start()
+
+            setOnCompletionListener {
+                stopSound() // Detiene el sonido y libera la memoria al finalizar
+            }
+        }
     }
 
-    private fun getSoundById(birdId: Int): MediaPlayer? {
-        return audioList[birdId]?.let { MediaPlayer.create(context, it) }
-    }
-
-    /*fun stopSound() {
+    fun stopSound() {
         mediaPlayer?.let {
             if (it.isPlaying) {
                 it.stop() // Detiene la reproducción
             }
-            it.reset()  // Resetea el MediaPlayer
-            it.release() // Libera recursos
+            it.release() // Libera los recursos del MediaPlayer
         }
-        mediaPlayer = null
-    }*/
+        mediaPlayer = null // Evita referencias colgadas
+    }
+
+    override fun onCleared() {
+        super.onCleared()
+        stopSound() // Se ejecuta cuando se cierra la pantalla
+    }
 }

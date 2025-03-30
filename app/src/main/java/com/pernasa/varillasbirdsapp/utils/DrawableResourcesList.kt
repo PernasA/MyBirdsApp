@@ -49,7 +49,7 @@ object DrawableResourcesList {
         R.drawable.b126_junquero, R.drawable.b127_remolinera_pard, R.drawable.b128_coludito_copeton, //126 127 128
         R.drawable.b129_espinero_chico, R.drawable.b130_espinero_pecho_manchad, R.drawable.b131_leniatero, //129 130 131
         R.drawable.b132_crestud, R.drawable.b133_canastero_chaquenio_, R.drawable.b134_canastero_colud, //132 133 134
-        R.drawable.b135_curutie_blanco, R.drawable.b136_curutie_colorado, R.drawable.b137_espartillero_enan, //135 136 137
+        R.drawable.b135_curutie_blanco, R.drawable.b136_curutie_colorado, R.drawable.b137_espartillero, //135 136 137
         R.drawable.b138_cacholote_castani, R.drawable.b139_chotoy, R.drawable.b140_pijui_cola_parda, //138 139 140
         R.drawable.b141_pijui_frente_gris, R.drawable.b142_cortarrama, R.drawable.b143_anambe_comun, //141 142 143
         R.drawable.b144_tachuri_sietecolores, R.drawable.b145_mosqueta_ojo_dorado_audio, R.drawable.b146_piojito_silbon_o_comu, //144 145 146
@@ -60,7 +60,7 @@ object DrawableResourcesList {
         R.drawable.b159_mosqueta_estriad, R.drawable.b160_suiriri_pico_corto, R.drawable.b161_churrinche__elegid, //159 160 161
         R.drawable.b162_sobrepuesto, R.drawable.b163_viudita_trinadora, R.drawable.b164_pico_de_plata_hembra_elegid, //162 163 164
         R.drawable.b165_suiriri_amarillo, R.drawable.b166_monjita_blanca, R.drawable.b167_monjita_coronadaaa, //165 166 167
-        R.drawable.b168_monjita_castania, R.drawable.b169_monjita_chocolat, R.drawable.b170_gaucho_comun, //168 169 170
+        R.drawable.b168_monjita_castania, R.drawable.b169_monjita_chocolate, R.drawable.b170_gaucho_comun, //168 169 170
         R.drawable.b171_gaucho_chico_aa, R.drawable.b172_viudita_lomo_negro, R.drawable.b173_burlisto_pico_canela, //171 172 173
         R.drawable.b174_picabue, R.drawable.b175_benteveo, R.drawable.b176_benteveo_rayad, //174 175 176
         R.drawable.b177_tuquito_gris, R.drawable.b178_suiriri_real, R.drawable.b179_tijeret, //177 178 179
@@ -71,8 +71,8 @@ object DrawableResourcesList {
         R.drawable.b192_ratona_comun, R.drawable.b193_ratona_aperdizada, R.drawable.b194_estornino_pinto, //192 193 194
         R.drawable.b195_calandria_mora, R.drawable.b196_calandria_grand, R.drawable.b197_calandria_real_elegi, //195 196 197
         R.drawable.b198_zorzal_colorado, R.drawable.b199_zorzal_chalchaler, R.drawable.b200_zorzal_chiguanc, //198 199 200
-        R.drawable.b201_gorrion_comu, R.drawable.b202_cachirla__chic, R.drawable.b203_cachirla_unia_cort, //201 202 203
-        R.drawable.b204_cachirla_trinador, R.drawable.b205_cachirla_gotead, R.drawable.b206_cachirla_palida, //204 205 206
+        R.drawable.b201_gorrion_comu, R.drawable.b202_cachirla__chic, R.drawable.b203_cachirla_unia_corta, //201 202 203
+        R.drawable.b204_cachirla_trinadora, R.drawable.b205_cachirla_gotead, R.drawable.b206_cachirla_palida, //204 205 206
         R.drawable.b207_cabecita_negra_comun, R.drawable.b208_cachilo_chaqueni, R.drawable.b209_cachilo_ceja_amarill, //207 208 209
         R.drawable.b210_chingol, R.drawable.b211_pecho_colorad, R.drawable.b212_boyerito, //210 211 212
         R.drawable.b213_tordo_pico_corto, R.drawable.b214_tordo_renegrido, R.drawable.b215_tordo_musico, //213 214 215

@@ -14,6 +14,8 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.widthIn
+import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -25,6 +27,7 @@ import androidx.compose.material3.SwitchDefaults
 import androidx.compose.material3.Text
 import androidx.compose.material3.VerticalDivider
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.livedata.observeAsState
@@ -42,6 +45,7 @@ import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.LineBreak
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.pernasa.varillasbirdsapp.R
 import com.pernasa.varillasbirdsapp.models.Bird
@@ -71,7 +75,9 @@ fun BirdDescriptionPage(
     birdsListViewModel: BirdsListViewModel,
     soundsController: SoundsController
 ) {
-    soundsController.toggleSound(bird.id)
+    LaunchedEffect(bird.id) {
+        soundsController.toggleSound(bird.id)
+    }
     val widgetItems = listOf(
         WidgetItem.RowNames(bird),
         WidgetItem.RowCounterObserved(bird, birdsListViewModel),
@@ -103,39 +109,52 @@ fun RowNames(bird: Bird) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .height(80.dp)
+            .wrapContentHeight()
     ) {
+        val adjustedFontSize = if (bird.name.length > 18) BIG_TEXT_SIZE * 0.85 else BIG_TEXT_SIZE
+
         Text(
             modifier = Modifier
                 .weight(1F)
                 .align(Alignment.Top)
-                .padding(end = 10.dp),
+                .padding(end = 6.dp),
             text = "${bird.id}. ${bird.name}",
             style = TextStyle(
                 fontWeight = FontWeight.Bold,
-                fontSize = BIG_TEXT_SIZE,
-                lineHeight = BIG_TEXT_SIZE,
+                fontSize = adjustedFontSize,
+                lineHeight = adjustedFontSize,
                 shadow = Shadow(GreenLime, blurRadius = 1.0f),
                 textAlign = TextAlign.Left,
-                color = Color.White,
-                lineBreak = LineBreak.Heading
-            )
+                color = Color.White
+            ),
+            maxLines = 3,
+            overflow = TextOverflow.Ellipsis
         )
+
+        val adjustedFontSizeScientific = if (bird.scientificName.length > 18) TITLE_TEXT_SIZE * 0.85 else TITLE_TEXT_SIZE
+
+        val scientificNameParts = bird.scientificName.split(" ")
+        val scientificNameFormatted = if (scientificNameParts.size == 2) {
+            "${scientificNameParts[0]}\n${scientificNameParts[1]}"
+        } else {
+            bird.scientificName
+        }
+
         Text(
-            text = bird.scientificName,
+            text = scientificNameFormatted,
             style = TextStyle(
                 fontWeight = FontWeight.Bold,
-                fontSize = TITLE_TEXT_SIZE,
-                lineHeight = TITLE_TEXT_SIZE,
+                fontSize = adjustedFontSizeScientific,
+                lineHeight = adjustedFontSizeScientific,
                 shadow = Shadow(GreenLime, blurRadius = 1.0f),
                 textAlign = TextAlign.Right,
                 color = Color.White,
-                lineBreak = LineBreak.Heading,
                 fontStyle = FontStyle.Italic
             ),
-            modifier = Modifier.weight(1F)
+            modifier = Modifier
                 .align(Alignment.Top)
-                .padding(start = 10.dp),
+                .padding(start = 8.dp)
+                .widthIn(max = 160.dp),
         )
     }
 
