@@ -47,6 +47,7 @@ import com.pernasa.varillasbirdsapp.ui.theme.MossGreenBright
 import com.pernasa.varillasbirdsapp.ui.theme.SkyBluePrimaryContainer
 import com.pernasa.varillasbirdsapp.ui.theme.SkyBlueSecondary
 import com.pernasa.varillasbirdsapp.ui.theme.GreenLime
+import com.pernasa.varillasbirdsapp.ui.theme.SkyBlueSecondaryLight
 import com.pernasa.varillasbirdsapp.utils.Constants.Companion.BIG_TEXT_SIZE
 import com.pernasa.varillasbirdsapp.utils.Constants.Companion.BUTTON_HOME_TEXT_SIZE
 import com.pernasa.varillasbirdsapp.utils.Constants.Companion.MEDIUM_TEXT_SIZE
@@ -72,8 +73,8 @@ fun GameGuessPage(gameGuessViewModel: GameGuessViewModel) {
                         lineHeight = 35.sp,
                         letterSpacing = 1.sp,
                         textAlign = TextAlign.Center,
-                        color = Color.White,
-                        shadow = Shadow(GreenLime),
+                        color = GreenLime,
+                        shadow = Shadow(SkyBlueSecondaryLight),
                     ),
                     modifier = Modifier.fillMaxWidth()
                 )

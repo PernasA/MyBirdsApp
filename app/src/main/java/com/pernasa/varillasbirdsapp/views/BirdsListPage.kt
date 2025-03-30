@@ -1,12 +1,8 @@
 package com.pernasa.varillasbirdsapp.views
 
 import androidx.compose.foundation.BorderStroke
-import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -20,27 +16,17 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.foundation.text.KeyboardActions
-import androidx.compose.foundation.text.KeyboardOptions
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ArrowDropDown
-import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Checkbox
-import androidx.compose.material3.CheckboxDefaults
-import androidx.compose.material3.DropdownMenu
-import androidx.compose.material3.DropdownMenuItem
-import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextField
-import androidx.compose.material3.TextFieldDefaults
-import androidx.compose.material3.TriStateCheckbox
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
@@ -48,25 +34,18 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.platform.LocalSoftwareKeyboardController
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.state.ToggleableState
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import coil.compose.AsyncImage
 import com.pernasa.varillasbirdsapp.R
 import com.pernasa.varillasbirdsapp.models.Bird
 import com.pernasa.varillasbirdsapp.models.GlobalCounterBirdsObserved
 import com.pernasa.varillasbirdsapp.models.room.RoomBird
-import com.pernasa.varillasbirdsapp.ui.theme.SkyBluePrimary
-import com.pernasa.varillasbirdsapp.ui.theme.SkyBluePrimaryLight
 import com.pernasa.varillasbirdsapp.ui.theme.SkyBlueTertiary
-import com.pernasa.varillasbirdsapp.ui.theme.GreenLime
-import com.pernasa.varillasbirdsapp.ui.theme.SearchFieldBackground
-import com.pernasa.varillasbirdsapp.ui.theme.SearchPlaceholderColor
 import com.pernasa.varillasbirdsapp.utils.Constants.Companion.SUBTITLE_TEXT_SIZE
 import com.pernasa.varillasbirdsapp.utils.Constants.Companion.TITLE_TEXT_SIZE
 import com.pernasa.varillasbirdsapp.viewModels.BirdsListViewModel
@@ -92,32 +71,35 @@ fun BirdsListPage(
     val normalizedSearchQuery = Normalizer.normalize(searchQuery, Normalizer.Form.NFD)
         .replace(Regex("\\p{InCombiningDiacriticalMarks}+"), "")
 
-    val filteredBirdsList = birdsListViewModel.dataBirdsList.filter { bird ->
-        val normalizedBirdName = Normalizer.normalize(bird.name, Normalizer.Form.NFD)
-            .replace(Regex("\\p{InCombiningDiacriticalMarks}+"), "")
+    val filteredBirdsList by remember(searchQuery, selectedHeightRanges, selectedFrequency, observationFilterState, observedBirds) {
+        derivedStateOf {
+            birdsListViewModel.dataBirdsList.filter { bird ->
+                val normalizedBirdName = Normalizer.normalize(bird.name, Normalizer.Form.NFD)
+                    .replace(Regex("\\p{InCombiningDiacriticalMarks}+"), "")
 
-        val matchesObservation = when (observationFilterState) {
-            ToggleableState.On -> observedBirds.any { it.id == bird.id && it.wasObserved }
-            ToggleableState.Indeterminate -> observedBirds.none { it.id == bird.id && it.wasObserved }
-            ToggleableState.Off -> true
-        }
+                val matchesObservation = when (observationFilterState) {
+                    ToggleableState.On -> observedBirds.any { it.id == bird.id && it.wasObserved }
+                    ToggleableState.Indeterminate -> observedBirds.none { it.id == bird.id && it.wasObserved }
+                    ToggleableState.Off -> true
+                }
 
-        val heightMatches = selectedHeightRanges.isEmpty() || selectedHeightRanges.any { selectedHeight ->
-            when (selectedHeight) {
-                15 -> bird.height in 0..15
-                30 -> bird.height in 15..30
-                50 -> bird.height in 30..50
-                1000 -> bird.height > 50
-                else -> false
+                val heightMatches = selectedHeightRanges.isEmpty() || selectedHeightRanges.any { selectedHeight ->
+                    when (selectedHeight) {
+                        15 -> bird.height in 0..15
+                        30 -> bird.height in 15..30
+                        50 -> bird.height in 30..50
+                        1000 -> bird.height > 50
+                        else -> false
+                    }
+                }
+
+                normalizedBirdName.contains(normalizedSearchQuery, ignoreCase = true) &&
+                        heightMatches &&
+                        (selectedFrequency.isEmpty() || bird.frequency in selectedFrequency) &&
+                        matchesObservation
             }
         }
-
-        normalizedBirdName.contains(normalizedSearchQuery, ignoreCase = true) &&
-                heightMatches &&
-                (selectedFrequency.isEmpty() || bird.frequency in selectedFrequency) &&
-                matchesObservation
     }
-
     LazyColumn(
         modifier = Modifier.fillMaxSize()
     ) {
@@ -141,13 +123,13 @@ fun BirdsListPage(
             )
         }
 
-        items(filteredBirdsList.chunked(2)) { rowBirds ->
+        items(filteredBirdsList.chunked(2), key = { it.first().id }) { rowBirds ->
             LazyRow(
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(270.dp)
             ) {
-                items(rowBirds) { bird ->
+                items(rowBirds, key = { it.id }) { bird ->
                     BirdCard(
                         bird,
                         onBirdClick,
@@ -170,9 +152,6 @@ fun BirdCard(
     Card(
         colors = CardDefaults.cardColors(
             containerColor = MaterialTheme.colorScheme.primaryContainer,
-        ),
-        elevation = CardDefaults.cardElevation(
-            defaultElevation = 22.dp,
         ),
         border = BorderStroke(2.dp, SkyBlueTertiary),
         modifier = modifier
@@ -200,16 +179,17 @@ fun BirdCard(
                 ),
                 maxLines = 2
             )
-            Image(
+            AsyncImage(
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(150.dp)
                     .padding(horizontal = 10.dp)
                     .clip(RoundedCornerShape(8.dp))
                     .border(BorderStroke(0.8.dp, SkyBlueTertiary), RoundedCornerShape(8.dp)),
-                painter = painterResource(id = bird.imageResId),
+                //painter = painterResource(id = bird.imageResId),
                 contentDescription = stringResource(R.string.image_bird_description),
-                contentScale = ContentScale.Crop
+                contentScale = ContentScale.Crop,
+                model = bird.imageResId
             )
             CardRowCheckBox(
                 birdsListViewModel,
@@ -228,6 +208,10 @@ fun CardRowCheckBox(
     birdId: Int,
     modifier: Modifier
     ) {
+
+    val isObservedFlow = remember { birdsListViewModel.getBirdObservationState(birdId) }
+    val isObserved by isObservedFlow.collectAsState(initial = false)
+
     Row(
         modifier = modifier
             .padding(start = 15.dp, top = 10.dp, bottom = 10.dp, end = 10.dp)
@@ -245,8 +229,6 @@ fun CardRowCheckBox(
             )
         )
         Spacer(modifier = Modifier.width(8.dp))
-
-        val isObserved by birdsListViewModel.getBirdObservationState(birdId).collectAsState(initial = false)
 
         Checkbox(
             modifier = Modifier.align(Alignment.CenterVertically),

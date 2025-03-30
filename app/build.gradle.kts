@@ -66,6 +66,8 @@ dependencies {
     implementation(libs.gson)
     implementation(libs.androidx.runtime.livedata)
     implementation(libs.androidx.foundation.android)
+    implementation(libs.coil)
+
     testImplementation(libs.junit)
     testImplementation(libs.mockk)
     testImplementation(libs.androidx.core.testing)
