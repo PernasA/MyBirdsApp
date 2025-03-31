@@ -13,7 +13,7 @@
     "name": "Colorada",
     "height": 42,
     "frequency": 1,
-    "scientific_name": "Rynchotus rufescens",
+    "scientific_name": "Rhynchotus rufescens",
     "description": "Ave de gran tamaño con cabeza y cuello de tonalidad rufo ocrácea uniforme. Posee una corona erectil y un dorso barrado. Su pico es algo largo y curvo. Su canto es un silbo esporádico y melancólico. Habita en pastizales altos de sabanas y áreas rurales."
   },
   {
@@ -712,7 +712,7 @@
   },
   {
     "id": 79,
-    "name": "Espátula Rosa",
+    "name": "Espátula Rosada",
     "height": 65,
     
     "frequency": 1,
@@ -1058,7 +1058,7 @@
     "height": 25,
     
     "frequency": 1,
-    "scientific_name": "Spiziapteryx circumcincta",
+    "scientific_name": "Spiziapteryz circumcintus",
      
     "description": "Cabeza gris; iris amarillo, larga ceja, garganta y línea malar blancas, bigote negro. Dorso gris parduzco estriado. Alasredondeadas, pardas con línea moteada blanca uniforme, muy notables en vuelo. Pecho y ventral blanquecino con estrías pardas;rabadilla y supracaudal blanco. Cola negra con bandas blancas ventrales. Pico corto, ganchudo, gris. Patas amarillas o anaranjadas.Comportamiento: solo o en pareja. Confiado, tranquilo, posa expuesto en ramas secas, sobre cables. Aleteo veloz. Alimentación:aves, pequeños roedores e insectos. Hábitat: áreas rurales, montes semiáridos. Comentario: el tamaño del macho es algo menor alde la hembra. Posado las alas no pasan de la mitad de la cola."
   },
@@ -1771,7 +1771,7 @@
   },
   {
     "id": 190,
-    "name": "Golondrina Rabadilla",
+    "name": "Golondrina Rabadilla Canela",
     "height": 13,
     "frequency": 1,
     "scientific_name": "Petrochiledon pyrrhonota",
